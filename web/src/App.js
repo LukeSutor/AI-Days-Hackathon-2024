@@ -1,9 +1,17 @@
-import Layout from './components/Layout';
+import React from "react";
+import Globe from "react-globe.gl";
 
 function App() {
   return (
     <div>
-      <h1 className='text-3xl'>Body</h1>
+      <div className="flex flex-row h-full">
+        <div className="w-1/2 bg-black">
+          <Globe />
+        </div>
+        <div className="w-1/2">
+
+        </div>
+      </div>
     </div>
   );
 }
