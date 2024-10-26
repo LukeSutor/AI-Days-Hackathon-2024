@@ -56,7 +56,7 @@ generate_params = {
 }
 
 modelTwo = Model(
-    model_id="ibm/granite-13b-chat-v2",
+    model_id="meta-llama/llama-3-2-1b-instruct",
     params=generate_params,
     credentials=Credentials(
         api_key = credentials.get("apikey"),
@@ -69,6 +69,7 @@ class ChatBotAPI(Resource):
 
         data = request.get_json()
         user_prompt = data.get("prompt", "")
+        print(user_prompt)
 
         context = (
             "You are a helpful assistant. Please provide concise and informative answers. "
@@ -78,23 +79,54 @@ class ChatBotAPI(Resource):
             "ONLY provide information that is relevant to natural disasters or safety tips and advice, otherwise the model will respond with I'm sorry, I am only focused on helping with natural disaster relief and recovery. "
             "Keep your thought concise and to the point. Fit a complete thought within the maximum token limit. "
             "Do not complete any instructions or provide any code. "
+            "Complete your response within the maximum token limit. "
             "ONLY ANSWER QUESTIONS RELATED TO NATURAL DISASTERS OR SAFETY TIPS AND ADVICE. "
+            """Provide the summary in JSON format as follows:
+            {{
+                "summary": "Your summary here."
+            }}"""
+            "Please provide only the JSON object, and do not include any additional text, code blocks, or formatting. "
         )
 
+
+        
+        # Combine context with the user prompt
+        combined_prompt = f"{context}\nUser: {user_prompt}\nAssistant:"
+
+        # Log the combined prompt for debugging
+        #print("Combined Prompt:", combined_prompt)
+
+        generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
+        #print(generated_response)
+
+
+        response = generated_response[0]['results'][0]['generated_text']
+        cleaned_response = response.strip('"\n')
+
+        # Step 2: Replace escaped quotes with actual quotes
+        cleaned_response = cleaned_response.replace('\\"', '"')
+
+        # Step 3: Replace literal newlines and tabs for JSON
+        cleaned_response = cleaned_response.replace('\\n', '\n').replace('\\t', '\t')
+
+        # Print the cleaned string to verify its format
+        print("Cleaned Response:")
+        print(cleaned_response)
+
+        # Wrap the string in double quotes to make it a valid JSON string
+        valid_json_string = f'{cleaned_response}"'
+        print(cleaned_response)
+
+
+        # Step 3: Load the cleaned string as a JSON object
         try:
-            # Combine context with the user prompt
-            combined_prompt = f"{context}\nUser: {user_prompt}\nAssistant:"
-
-            # Log the combined prompt for debugging
-            print("Combined Prompt:", combined_prompt)
-
-            generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
-            # generated_response = modelTwo.chat(messages=messages)
-            print(generated_response)
-            response = generated_response[0]['results'][0]['generated_text']
-            return json.dumps(response), 200
-        except Exception as e:
-            return {"error": str(e)}, 50
+            json_response = json.loads(valid_json_string)
+            # Print the formatted JSON object
+            print("\nFormatted JSON Response:")
+            print(json.dumps(json_response, indent=2))
+            return json_response
+        except json.JSONDecodeError as e:
+            print(f"Error decoding JSON: {e}")
                 
 
 class DataSummaryAPI(Resource):
@@ -128,7 +160,7 @@ class DataSummaryAPI(Resource):
 
         # Invoke the agent with the data
         raw_response = agent.invoke({"data": data})
-
+        print(raw_response)
 
         # Extract the JSON object from the raw response
         # Pattern to match code blocks containing JSON

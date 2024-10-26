@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Globe from "react-globe.gl";
 import axios from "axios";
 import Card from './components/Card';
+import CountyCard from "./components/CountyCard";
 import Navbar from "./components/Navbar";
 import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from "three";
@@ -54,18 +55,21 @@ function App() {
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [countyToAlerts, setCountyToAlerts] = useState({});
   const [selectedItem, setSelectedItem] = useState(null);
+  const [clickedCounty, setClickedCounty] = useState(null);
   const [safetyTips, setSafetyTips] = useState([])
   const [stepsToTake, setStepsToTake] = useState([])
+  const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
 
 
   function handleMenuItemSelect(item) {
+    resetCounty();
     setSelectedItem(item);
   }
 
-  const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
-
-  function handleGlobeClick(e) {
-    console.log(e);
+  function resetCounty() {
+    setClickedCounty(null);
+    setSafetyTips([]);
+    setStepsToTake([]);
   }
 
   const zoomToLocation = (targetLat, targetLng) => {
@@ -92,15 +96,16 @@ function App() {
 
   async function handleCountyClick(e) {
     console.log(e);
+    setSelectedItem(null);
+    setClickedCounty(e);
     const state = stateMap[e.properties.STATEFP];
-    const county = e.properties.NAME;
 
     console.log(stateCoordinates[state].lat, stateCoordinates[state].lng); 
     zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
 
     const newCameraPosition = { lat: stateCoordinates[state].lat, lng: stateCoordinates[state].lng, altitude: 1.5 };
 
-    console.log(newCameraPosition);
+    // console.log(newCameraPosition);
 
     // Get the data for the model, just include the first element of the arrays
     var properties = {
@@ -313,6 +318,35 @@ function App() {
             </div>
           </div>
         )}
+        {clickedCounty && (
+          <div
+          className="fixed inset-0 flex items-center justify-center z-20 bg-black bg-opacity-50"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              resetCounty();
+            }
+          }}
+        >
+          {/* Container for both Cards */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
+            {/* Left Card */}
+            <motion.div
+              initial={{ y: '-100%', opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: '-100%', opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="w-full max-w-2xl"
+            >
+              <CountyCard
+                county={clickedCounty}
+                safetyTips={safetyTips}
+                stepsToTake={stepsToTake}
+                onClose={() => resetCounty()}
+              />
+            </motion.div>
+          </div>
+        </div>
+        )}
       </AnimatePresence>
 
       {/* Globe */}
@@ -333,17 +367,12 @@ function App() {
             polygonSideColor={({ properties: p }) => severityToColor(p.severity)}
             polygonAltitude={0.001}
             onPolygonClick={handleCountyClick}
-            hexPolygonLabel={({ properties: d }) => `
-            {console.log(d)}
-              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-              Population: <i>${d.POP_EST}</i>
-            `}
 
             // stars in atmosphere?
             customLayerData={[...Array(500).keys()].map(() => ({
               lat: (Math.random() - 1) * 360,
               lng: (Math.random() - 1) * 360,
-              altitude: Math.random() * 2,
+              altitude: Math.random() * 2 + 0.5,
               size: Math.random() * 0.4,
               color: '#ffffff',
             }))}
