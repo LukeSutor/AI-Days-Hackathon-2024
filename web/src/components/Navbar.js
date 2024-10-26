@@ -21,12 +21,43 @@ const Navbar = ({ onMenuItemSelect }) => {
         <div className="navbar bg-black bg-opacity-50 fixed top-0 left-0 w-full z-10">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <ul
+                    {/* <ul
                         tabIndex={0}
-                        className="menu menu-vertical lg:menu-horizontal bg-transparent text-white">
+                        className="menu menu-vertical lg:menu-horizontal bg-transparent text-white text-lg">
                         <li><a onClick={() => onMenuItemSelect('General Tips')}>General Tips</a></li>
                         <li><a onClick={() => onMenuItemSelect('Resources')}>Resources</a></li>
-                        <li><a onClick={() => onMenuItemSelect('After the incident')}>After the incident</a></li>
+                        <li><a onClick={() => onMenuItemSelect('After the incident')}>Assistance After a Disaster</a></li>
+                    </ul> */}
+                    <ul className="menu menu-horizontal bg-transparent text-white">
+                        <li>
+                            <details close>
+                            <summary>General Disaster Information</summary>
+                            <ul className='menu menu-horizontal border border-white bg-transparent text-white w-fit'>
+                                <li><a onClick={() => onMenuItemSelect('How a Disaster Gets Declared')}>How a Disaster Gets Declared</a></li>
+                                <li><a onClick={() => onMenuItemSelect('Disaster Authorities')}>Disaster Authorities</a></li>
+                                <li><a onClick={() => onMenuItemSelect('Historic Disasters')}>Historic Disasters</a></li>
+                            </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                            <summary>Tools to Recover</summary>
+                            <ul className='menu menu-horizontal border border-white bg-transparent text-white w-fit'>
+                                <li><a onClick={() => onMenuItemSelect('Common Rumors')}>Common Rumors</a></li>
+                                <li><a onClick={() => onMenuItemSelect('Save Your Family Treasures')}>Submenu 2</a></li>
+                                <li><a onClick={() => onMenuItemSelect('Volunteer and Donate')}>Volunteer and Donate</a></li>
+                            </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                            <summary>Assistance After a Disaster</summary>
+                            <ul className='menu menu-horizontal border border-white bg-transparent text-white w-fit'>
+                                <li><a onClick={() => onMenuItemSelect('Governments and Private Non-Profits')}>Governments and Private Non-Profits</a></li>
+                                <li><a onClick={() => onMenuItemSelect('Individuals and Families')}>Individuals and Families</a></li>
+                            </ul>
+                            </details>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,6 @@ import axios from "axios";
 import Card from './components/Card';
 import Navbar from "./components/Navbar";
 import { motion, AnimatePresence } from 'framer-motion';
-
 import * as THREE from "three";
 import { useRef } from "react";
 
