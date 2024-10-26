@@ -1,10 +1,18 @@
-from flask import Flask
+from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+
+from ibm_watsonx_ai.foundation_models import Model
+from ibm_watsonx_ai import Credentials
+from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
+from ibm_watsonx_ai.foundation_models.utils.enums import ModelTypes, DecodingMethods
 
 # Langchain imports
 from langchain.prompts import PromptTemplate
 from langchain_ibm import WatsonxLLM
 from dotenv import load_dotenv
+
+from flask_cors import CORS
+
 import os
 import json
 import logging
@@ -13,6 +21,7 @@ import re
 app = Flask(__name__)
 api = Api(app)
 
+CORS(app)
 
 load_dotenv()
 
@@ -38,6 +47,37 @@ model = WatsonxLLM(
     project_id=credentials.get("project_id"),
     params=params  # Include the params here
 )
+
+
+generate_params = {
+    GenParams.MAX_NEW_TOKENS: 50,
+
+}
+
+modelTwo = Model(
+    model_id="ibm/granite-13b-chat-v2",
+    params=generate_params,
+    credentials=Credentials(
+        api_key = credentials.get("apikey"),
+        url = "https://us-south.ml.cloud.ibm.com"),
+    project_id=credentials.get("project_id")
+    )
+
+class ChatBotAPI(Resource):
+    def post(self):
+
+        data = request.get_json()
+        user_prompt = data.get("prompt", "")
+
+        try:
+            generated_response = modelTwo.generate(prompt=[user_prompt], params=generate_params)
+            # generated_response = modelTwo.chat(messages=messages)
+            print(generated_response)
+            response = generated_response[0]['results'][0]['generated_text']
+            return json.dumps(response), 200
+        except Exception as e:
+            return {"error": str(e)}, 50
+                
 
 class DataSummaryAPI(Resource):
     def get(self):
@@ -94,6 +134,7 @@ class DataSummaryAPI(Resource):
             return {"error": "Invalid JSON format in the model's response.", "details": str(e)}, 500
 
 api.add_resource(DataSummaryAPI, '/summarize')
+api.add_resource(ChatBotAPI, '/chat')
 
 if __name__ == '__main__':
     app.run(debug=True)

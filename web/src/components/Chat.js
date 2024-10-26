@@ -2,7 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
-
+import { useMemo } from 'react'
+import axios from 'axios'
 
 
 
@@ -24,7 +25,45 @@ const Chat = () => {
         }, 300);
     };
 
+    const [userInput, setUserInput] = useState('');
+    const [chatHistory, setChatHistory] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    const handleInputChange = (e) => {
+        setUserInput(e.target.value);
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleSubmit(e);
+        }
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        setChatHistory((prev) => [...prev, { text: userInput, sender: 'user' }]);
+        
+        setUserInput('');
+
+        setLoading(true);
+        try {
+            const response = await axios.post('http://127.0.0.1:5000/chat', {
+                prompt: userInput
+            });
+            console.log('Response from API:', response.data); 
+
+            setChatHistory((prev) => [...prev, { text: response.data, sender: 'bot' }]);
+        } catch (error) {
+            const errorMessage = error.response ? error.response.data.error : 'An error occurred';
+            setChatHistory((prev) => [...prev, { text: errorMessage, sender: 'bot' }]);
+        } finally {
+            setLoading(false);
+        }
+    };
     
+    const memoizedChatHistory = useMemo(() => chatHistory, [chatHistory]);
+
 
     return (
         <>
@@ -55,20 +94,27 @@ const Chat = () => {
                     <div className="h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
                     <div className="p-4 h-72 overflow-y-auto">
                         <div className="flex flex-col space-y-2">
-                            <div className="flex">
-                                <div className="bg-blue-500 text-white p-2 rounded-lg">Test</div>
-                            </div>
-                            <div className="flex justify-end">
-                                <div className="bg-gray-200 p-2 rounded-lg">Test</div>
-                            </div>
+                            {memoizedChatHistory.map((msg, index) => (
+                                <div key={index} className={`flex ${msg.sender === 'bot' ? 'justify-start' : 'justify-end'}`}>
+                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-200':'bg-blue-500 text-white'}`}>
+                                        {msg.text}
+                                    </div>
+                                </div>
+                            ))}
+                            {loading && <div>Loading...</div>}
                         </div>
                     </div>
                     <div className="p-4 border-t">
                         <input 
                             type="text" 
                             className="w-full border rounded-lg p-2" 
-                            placeholder="Type your message..." 
+                            placeholder="Type your message..."
+                            value={userInput}
+                            onChange={handleInputChange}
+                            onKeyDown={handleKeyDown}
                         />
+                        <button type="submit" onClick={handleSubmit}>Send</button>
+
                     </div>
                 </div>
             )}
