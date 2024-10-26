@@ -188,6 +188,7 @@ api.add_resource(DataSummaryAPI, '/summarize')
 class IncidentAPI(Resource):
     def post(self):
 
+
         incident_data = request.get_json(force=True)
 
         if not incident_data:

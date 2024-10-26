@@ -10,7 +10,7 @@ const Navbar = ({ onMenuItemSelect }) => {
     if (searchTerm.trim() === '') return;
 
     try {
-      // Fetch data here
+      // Implement search functionality here
       console.log(`Search for: ${searchTerm}`);
       setSearchTerm('');
     } catch (error) {
@@ -80,23 +80,25 @@ const Navbar = ({ onMenuItemSelect }) => {
               <button
                 className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 focus:outline-none"
                 onClick={() => toggleDropdown(index)}
+                aria-haspopup="true"
+                aria-expanded={openDropdown === index}
               >
                 {menu.title}
               </button>
               {/* Dropdown Menu */}
               <div
-                className={`absolute left-0 mt-2 bg-transparent border border-white rounded-md overflow-hidden transition-all duration-300 ${
+                className={`absolute left-0 mt-2 bg-white text-black rounded-md shadow-lg overflow-hidden transition-all duration-300 ${
                   openDropdown === index
-                    ? 'max-h-60 opacity-100'
+                    ? 'max-h-screen opacity-100'
                     : 'max-h-0 opacity-0'
                 }`}
-                style={{ width: '300px' }} // Adjust width as needed
+                style={{ width: '300px' }}
               >
-                <ul className="flex flex-col bg-transparent text-white">
+                <ul className="flex flex-col bg-white text-black">
                   {menu.items.map((item, idx) => (
                     <li key={idx} className="border-b last:border-b-0">
                       <button
-                        className="w-full text-left px-4 py-2 hover:bg-gray-700"
+                        className="w-full text-left px-4 py-2 hover:bg-gray-200"
                         onClick={() => {
                           onMenuItemSelect(item);
                           setOpenDropdown(null);
@@ -116,7 +118,7 @@ const Navbar = ({ onMenuItemSelect }) => {
         <label className="input input-bordered flex items-center gap-2 focus:border-4 focus:border-blue-500">
           <input
             type="text"
-            className="grow placeholder-black text-black bg-transparent"
+            className="grow placeholder-gray-500 text-black bg-transparent"
             placeholder="Search County"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -130,6 +132,7 @@ const Navbar = ({ onMenuItemSelect }) => {
             fill="black"
             className="h-4 w-4 opacity-70 cursor-pointer"
             onClick={handleSearch}
+            aria-label="Search"
           >
             <path
               fillRule="evenodd"
