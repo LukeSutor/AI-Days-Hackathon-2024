@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar bg-black">
+        <div className="navbar bg-transparent">
             <div className="navbar-start">
                 
             </div>
