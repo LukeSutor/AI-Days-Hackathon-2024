@@ -103,6 +103,31 @@ function App() {
     updateImpactedCounties()
   }, []);
 
+  const globeRef = useRef(null);
+ 
+  useEffect(() => {
+    if (globeRef.current) {
+        const scene = globeRef.current.scene();
+
+        // Create the sunlight
+        const sunlight = new THREE.DirectionalLight(0xffffff, 3);
+        sunlight.position.set(50, 50, 50); 
+        scene.add(sunlight);
+    }
+}, []);
+
+  const globeReady = () => {
+    if (globeRef.current) {
+      globeRef.current.controls().autoRotate = true;
+      globeRef.current.controls().enableZoom = true;
+ 
+      globeRef.current.pointOfView({
+        lat: 30.054339351561637,
+        lng: -90.421161072148465,
+        altitude: 1.8,
+      });
+    }
+  };
 
 
   return (
