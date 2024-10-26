@@ -5,6 +5,8 @@ import Card from './components/Card';
 import Navbar from "./components/Navbar";
 import { motion, AnimatePresence } from 'framer-motion';
 
+import * as THREE from "three";
+import { useRef } from "react";
 
 const stateMap = {"01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO", "09": "CT", "10": "DE", "12": "FL", "13": "GA", "15": "HI", "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY", "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN", "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH", "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH", "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA", "54": "WV", "55": "WI", "56": "WY"};
 
@@ -112,9 +114,31 @@ function App() {
     updateImpactedCounties()
   }, []);
 
+  const globeRef = useRef(null);
+ 
+  useEffect(() => {
+    if (globeRef.current) {
+        const scene = globeRef.current.scene();
 
+        // Create the sunlight
+        const sunlight = new THREE.DirectionalLight(0xffffff, 3);
+        sunlight.position.set(50, 50, 50); 
+        scene.add(sunlight);
+    }
+}, []);
 
-  const weightColor = [];
+  const globeReady = () => {
+    if (globeRef.current) {
+      globeRef.current.controls().autoRotate = false;
+      globeRef.current.controls().enableZoom = true;
+ 
+      globeRef.current.pointOfView({
+        lat: 30.054339351561637,
+        lng: -90.421161072148465,
+        altitude: 1.8,
+      });
+    }
+  };
 
 
   return (
@@ -156,17 +180,42 @@ function App() {
       {/* Globe */}
       <div className="absolute top-0 left-0 h-full w-full">
         <Globe
-          globeImageUrl="./earth.jpg"
-          polygonsData={displayedCounties.features}
-          polygonStrokeColor={() => '#000000'}
-          polygonCapColor={() => '#fff'}
-          polygonSideColor={() => '#fff'}
-          onPolygonClick={handleCountyClick}
-          hexPolygonLabel={({ properties: d }) => `
-            <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-            Population: <i>${d.POP_EST}</i>
-          `}
-        />
+            // initial load
+            ref={globeRef}
+            onGlobeReady={globeReady}
+
+            globeImageUrl="./earth.jpg"
+            polygonsData={displayedCounties.features}
+            polygonStrokeColor={() => '#000000'}
+            polygonCapColor={() => '#fff'}
+            polygonSideColor={() => '#fff'}
+            onPolygonClick={handleCountyClick}
+            hexPolygonLabel={({ properties: d }) => `
+            {console.log(d)}
+              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+              Population: <i>${d.POP_EST}</i>
+            `}
+
+            // stars in atmosphere?
+            customLayerData={[...Array(500).keys()].map(() => ({
+              lat: (Math.random() - 1) * 360,
+              lng: (Math.random() - 1) * 360,
+              altitude: Math.random() * 2,
+              size: Math.random() * 0.4,
+              color: '#ffffff',
+            }))}
+            customThreeObject={(sliceData) => {
+              const { size, color } = sliceData;
+              return new THREE.Mesh(new THREE.SphereGeometry(size), new THREE.MeshBasicMaterial({ color }));
+            }}
+            customThreeObjectUpdate={(obj, sliceData) => {
+              const { lat, lng, altitude } = sliceData;
+              return Object.assign(obj.position, globeRef.current?.getCoords(lat, lng, altitude));
+            }}
+            />
+        <div className="w-1/2">
+
+        </div>
       </div>
     </div>
   );
