@@ -51,7 +51,7 @@ model = WatsonxLLM(
 
 
 generate_params = {
-    GenParams.MAX_NEW_TOKENS: 50,
+    GenParams.MAX_NEW_TOKENS: 250,
 
 }
 

@@ -105,9 +105,6 @@ function App() {
 
 
 
-  const weightColor = [];
-
-
   return (
     <div>
       <div className="flex flex-row h-full">

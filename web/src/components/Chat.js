@@ -12,6 +12,9 @@ const Chat = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
 
+    const formatResponse = (responseText) => {
+        return responseText.replace(/\n/g, '<br />');
+    };
 
     const handleOpen = () => {
         setIsOpen(true);
@@ -52,8 +55,9 @@ const Chat = () => {
                 prompt: userInput
             });
             console.log('Response from API:', response.data); 
-
-            setChatHistory((prev) => [...prev, { text: response.data, sender: 'bot' }]);
+            const formattedResponse = formatResponse(response.data)
+            console.log(formattedResponse);
+            setChatHistory((prev) => [...prev, { text: formattedResponse, sender: 'bot' }]);
         } catch (error) {
             const errorMessage = error.response ? error.response.data.error : 'An error occurred';
             setChatHistory((prev) => [...prev, { text: errorMessage, sender: 'bot' }]);
@@ -96,8 +100,8 @@ const Chat = () => {
                         <div className="flex flex-col space-y-2">
                             {memoizedChatHistory.map((msg, index) => (
                                 <div key={index} className={`flex ${msg.sender === 'bot' ? 'justify-start' : 'justify-end'}`}>
-                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-200':'bg-blue-500 text-white'}`}>
-                                        {msg.text}
+                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-200':'bg-blue-500 text-white'}`} dangerouslySetInnerHTML={{ __html: msg.text }}                                    
+                                    >
                                     </div>
                                 </div>
                             ))}
