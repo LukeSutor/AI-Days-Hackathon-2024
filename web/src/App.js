@@ -56,6 +56,83 @@ function App() {
     return county.trim();
   }
 
+  function getActiveAlerts() {
+    let countyToZonesData = null;
+    let zoneToCountyData = null;
+  
+    // Fetch county_to_zones.json
+    fetch('./county_to_zones.json')
+      .then(response => response.json())
+      .then(data => {
+        countyToZonesData = data;
+        console.log('county_to_zones.json:', countyToZonesData);
+      })
+      .catch(error => console.error('Error fetching county_to_zones.json:', error));
+  
+    // Fetch zone_to_county.json
+    fetch('./zone_to_county.json')
+      .then(response => response.json())
+      .then(data => {
+        zoneToCountyData = data;
+        console.log('zone_to_county.json:', zoneToCountyData);
+      })
+      .catch(error => console.error('Error fetching zone_to_county.json:', error));
+
+    axios.get("https://api.weather.gov/alerts/active")
+      .then((res) => {
+        console.log(res.data.features);
+
+        // Create a set of all active zones and a mapping of UGC codes to features
+        const ugcSet = new Set();
+        const ugcToFeatureMap = {};
+
+        res.data.features.forEach(feature => {
+          const ugcCodes = feature.properties.geocode.UGC;
+          ugcCodes.forEach(code => {
+            const modifiedCode = code.slice(0, 2) + code.slice(3);
+            ugcSet.add(modifiedCode);
+
+            if (!ugcToFeatureMap[modifiedCode]) {
+              ugcToFeatureMap[modifiedCode] = [];
+            }
+            ugcToFeatureMap[modifiedCode].push(feature);
+          });
+        });
+
+        console.log("UGC Set:", ugcSet);
+        console.log("UGC to Feature Map:", ugcToFeatureMap);
+
+        const countySet = new Set();
+
+        ugcSet.forEach(ugcCode => {
+          if (zoneToCountyData && zoneToCountyData[ugcCode]) {
+            countySet.add(zoneToCountyData[ugcCode]);
+          }
+        });
+
+        console.log("County Set:", countySet);
+
+        // Fetch all zones
+        fetch(`./counties.geojson?timestamp=${new Date().getTime()}`)
+          .then(res => res.json())
+          .then(data => {
+            var filtered_counties = [];
+
+            for (let i = 0; i < data.features.length; i++) {
+              const feature = data.features[i];
+              const state = stateMap[feature.properties.STATEFP];
+              const county = feature.properties.NAME;
+                if (countySet.has(`${state}-${county}`)) {
+                  filtered_counties.push(feature);
+                }
+            }
+            console.log("filtered", filtered_counties)
+            setDisplayedCounties({ features: filtered_counties });
+          })
+          .catch((err) => console.error("Error fetching data:", err));
+      })
+  }
+
   function updateImpactedCounties(k = 4) {
     // Get the date one week ago
     const filter_date = getDateKWeeksInThePast(k)
@@ -68,7 +145,7 @@ function App() {
         const declaredEmergencies = affected_counties.data.DisasterDeclarationsSummaries;
         setEmergencies(declaredEmergencies);
 
-        console.log("emergencies", declaredEmergencies);
+        // console.log("emergencies", declaredEmergencies);
 
         // Create a set of state-county pairs for efficient filtering
         const disasterSet = new Set();
@@ -79,13 +156,13 @@ function App() {
           disasterSet.add(`${stateCode}-${county}`);
         }
 
-        console.log("Set", disasterSet);
+        // console.log("Set", disasterSet);
 
         // Load all county data
         fetch('./counties.geojson')
           .then(res => res.json())
           .then((all_counties) => {
-          console.log("newcounties", all_counties)
+          // console.log("newcounties", all_counties)
           
           const filteredCounties = all_counties.features.filter(county => {
             const state = stateMap[county.properties.STATEFP];
@@ -93,7 +170,7 @@ function App() {
             return disasterSet.has(`${state}-${name}`);
           });
   
-          console.log("filter", filteredCounties)
+          // console.log("filter", filteredCounties)
   
           setDisplayedCounties({ features: filteredCounties });
         });
@@ -102,16 +179,35 @@ function App() {
   }
 
   useEffect(() => {
-    // load data
-    axios.get('https://www.fema.gov/api/open/v1/FemaWebDisasterDeclarations')
-      .then((res) => {
-        const { features } = res.data; 
-        setMarkers(features);
-      })
-      .catch((err) => console.error("Error fetching data:", err));
-      
-    // Load the affected counties and filter them on the globe
-    updateImpactedCounties()
+    const worker = new Worker(new URL('./workers/fetchWorker.js', import.meta.url));
+    getActiveAlerts();
+
+    // Use absolute URL to fetch the file from the public directory
+    // worker.postMessage({ url: `${window.location.origin}/forecast_zones.geojson?timestamp=${new Date().getTime()}` });
+
+    worker.onmessage = function(event) {
+      const { data, error } = event.data;
+
+      if (error) {
+        console.error("Error fetching data:", error);
+        return;
+      }
+
+      const subset = data.features;
+      setDisplayedCounties({ features: subset });
+    };
+
+    return () => worker.terminate();
+    // // updateImpactedCounties();
+    // fetch(`./forecast_zones.geojson?timestamp=${new Date().getTime()}`)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     const subset = data.features.slice(0, 10);
+    //     setDisplayedCounties({ features: subset });
+    //   })
+    //   .catch((err) => console.error("Error fetching data:", err));
+    // // fetch('./zones.geojson').then(res => res.json()).then(setDisplayedCounties);
+    // // updateImpactedCounties()
   }, []);
 
   const globeRef = useRef(null);
@@ -187,8 +283,8 @@ function App() {
             globeImageUrl="./earth.jpg"
             polygonsData={displayedCounties.features}
             polygonStrokeColor={() => '#000000'}
-            polygonCapColor={() => '#fff'}
-            polygonSideColor={() => '#fff'}
+            polygonCapColor={() => 'rgba(255, 255, 255, 1)'}
+            polygonSideColor={() => 'rgba(0, 0, 0, 0)'}
             onPolygonClick={handleCountyClick}
             hexPolygonLabel={({ properties: d }) => `
             {console.log(d)}
