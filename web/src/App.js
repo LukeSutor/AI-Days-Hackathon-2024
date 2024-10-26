@@ -2,7 +2,18 @@ import React, { useEffect, useState } from "react";
 import Globe from "react-globe.gl";
 import axios from "axios";
 
+
+import { useRef } from 'react';
+import * as THREE from 'three';
+import * as topojson from 'topojson-client';
+ 
+import landTopology from './assets/land_10m.json';
+import pointsData from './assets/random-locations.json';
+import texture from './assets/texture4.jpeg';
+
 const stateMap = {"01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO", "09": "CT", "10": "DE", "12": "FL", "13": "GA", "15": "HI", "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY", "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN", "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH", "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH", "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA", "54": "WV", "55": "WI", "56": "WY"};
+
+ 
 
 function App() {
   const [markers, setMarkers] = useState([]);
@@ -103,23 +114,88 @@ function App() {
     updateImpactedCounties()
   }, []);
 
+  const globeRef = useRef(null);
+ 
+  useEffect(() => {
+    if (globeRef.current) {
+        const scene = globeRef.current.scene();
+
+        // Create the sunlight
+        const sunlight = new THREE.DirectionalLight(0xffffff, 3);
+        sunlight.position.set(50, 50, 50); 
+        scene.add(sunlight);
+    }
+}, []);
+
+  const globeReady = () => {
+    if (globeRef.current) {
+      globeRef.current.controls().autoRotate = true;
+      globeRef.current.controls().enableZoom = true;
+ 
+      globeRef.current.pointOfView({
+        lat: 30.054339351561637,
+        lng: -90.421161072148465,
+        altitude: 1.8,
+      });
+    }
+  };
 
 
   return (
     <div>
       <div className="flex flex-row h-full">
         <Globe
-            globeImageUrl="./earth.jpg"
-            polygonsData={displayedCounties.features}
-            polygonStrokeColor={() => '#000000'}
-            polygonCapColor={() => '#fff'}
-            polygonSideColor={() => '#fff'}
-            onPolygonClick={handleCountyClick}
-            hexPolygonLabel={({ properties: d }) => `
-            {console.log(d)}
-              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-              Population: <i>${d.POP_EST}</i>
-            `}
+            //globeImageUrl="./earth.jpg"
+
+            ref={globeRef}
+            onGlobeReady={globeReady}
+            backgroundColor='#08070e'
+            rendererConfig={{ antialias: true, alpha: true }}
+            globeMaterial={
+              new THREE.MeshPhongMaterial({
+                color: '#3399ff', // ocean color
+                opacity: 1,
+                transparent: true,
+              })
+            }
+            atmosphereColor='#5784a7'
+            atmosphereAltitude={0.5}
+
+            // blue: #3399ff
+            // green: #33cc33
+
+            
+
+            customLayerData={[...Array(500).keys()].map(() => ({
+              lat: (Math.random() - 1) * 360,
+              lng: (Math.random() - 1) * 360,
+              altitude: Math.random() * 2,
+              size: Math.random() * 0.4,
+              color: '#ffffff',
+            }))}
+            customThreeObject={(sliceData) => {
+              const { size, color } = sliceData;
+              return new THREE.Mesh(new THREE.SphereGeometry(size), new THREE.MeshBasicMaterial({ color }));
+            }}
+            customThreeObjectUpdate={(obj, sliceData) => {
+              const { lat, lng, altitude } = sliceData;
+              return Object.assign(obj.position, globeRef.current?.getCoords(lat, lng, altitude));
+            }}
+
+            polygonsData={topojson.feature(landTopology, landTopology.objects.land).features}
+            polygonSideColor={() => '#00000000'}
+            polygonCapMaterial={
+              new THREE.MeshPhongMaterial({
+                color: '#33cc33',
+                side: THREE.DoubleSide,
+                map: new THREE.TextureLoader().load(texture),
+              })
+            }
+            polygonAltitude={0.005}
+
+              
+
+            
             />
         <div className="w-1/2">
 
