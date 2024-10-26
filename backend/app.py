@@ -68,7 +68,6 @@ class ChatBotAPI(Resource):
     def post(self):
         data = request.get_json()
         user_prompt = data.get("prompt", "")
-        print("User Prompt:", user_prompt)
 
         # Updated context to include JSON error message
         context = (
@@ -100,7 +99,6 @@ class ChatBotAPI(Resource):
 
         # Extract the generated text
         response = generated_response[0]['results'][0]['generated_text']
-        print("Raw Response:", response)
 
         # Clean the response
         cleaned_response = response.strip().strip('"')
@@ -114,9 +112,6 @@ class ChatBotAPI(Resource):
         # Remove actual newlines and tabs
         cleaned_response = cleaned_response.replace('\n', '').replace('\t', '')
 
-        # Debug: Print the cleaned response
-        print("Cleaned Response:", cleaned_response)
-
         # Extract JSON object from the cleaned response
         json_regex = re.compile(r'\{.*\}', re.DOTALL)
         match = json_regex.search(cleaned_response)
@@ -125,15 +120,11 @@ class ChatBotAPI(Resource):
             try:
                 json_response = json.loads(json_string)
                 # Debug: Print the formatted JSON object
-                print("\nFormatted JSON Response:")
-                print(json.dumps(json_response, indent=2))
                 # Return the JSON response
                 return json_response, 200
             except json.JSONDecodeError as e:
-                print(f"Error decoding JSON: {e}")
                 return {"error": "Invalid JSON format in response"}, 400
         else:
-            print("No JSON object found in the response")
             return {"error": "No JSON object found in the response"}, 400
                 
 
