@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ onMenuItemSelect }) => {
     
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -9,9 +9,7 @@ const Navbar = () => {
         if (searchTerm.trim() === '') return;
 
         try {
-            // const response = await fetch(`https://api.example.com/search?county=${searchTerm}`);
-            // const data = await response.json();
-            // console.log(data);
+            // Fetch data here
             console.log(`Search for: ${searchTerm}`);
             setSearchTerm('');
         } catch (error) {
@@ -20,15 +18,23 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar bg-transparent">
+        <div className="navbar bg-black bg-opacity-50 fixed top-0 left-0 w-full z-10">
             <div className="navbar-start">
-                
+                <div className="dropdown">
+                    <ul
+                        tabIndex={0}
+                        className="menu menu-vertical lg:menu-horizontal bg-transparent text-white">
+                        <li><a onClick={() => onMenuItemSelect('General Tips')}>General Tips</a></li>
+                        <li><a onClick={() => onMenuItemSelect('Resources')}>Resources</a></li>
+                        <li><a onClick={() => onMenuItemSelect('After the incident')}>After the incident</a></li>
+                    </ul>
+                </div>
             </div>
             <div className="navbar-center">
-                <label className="input input-bordered flex items-center gap-2">
+                <label className="input input-bordered flex items-center gap-2 focus:border-4 focus:border-blue-500">
                     <input
                         type="text"
-                        className="grow placeholder-black focus:border-4 focus:border-white"
+                        className="grow placeholder-black text-black bg-transparent"
                         placeholder="Search County"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
@@ -40,7 +46,7 @@ const Navbar = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 16 16"
                         fill="black"
-                        className="h-4 w-4 opacity-70"
+                        className="h-4 w-4 opacity-70 cursor-pointer"
                         onClick={handleSearch}
                     >
                         <path
@@ -52,7 +58,7 @@ const Navbar = () => {
                 </label>
             </div>
             <div className="navbar-end">
-                
+                {/* Add any additional navbar items here */}
             </div>
         </div>
     );

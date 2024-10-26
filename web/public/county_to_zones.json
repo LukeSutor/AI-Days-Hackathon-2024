@@ -1,0 +1,11941 @@
+{
+  "NM-Northwest Plateau": [
+    "NM201"
+  ],
+  "NM-Chuska Mountains": [
+    "NM202"
+  ],
+  "NM-Far Northwest Highlands": [
+    "NM203"
+  ],
+  "NM-Northwest Highlands": [
+    "NM204"
+  ],
+  "NM-West Central Plateau": [
+    "NM205"
+  ],
+  "NM-West Central Mountains": [
+    "NM206"
+  ],
+  "NM-West Central Highlands": [
+    "NM207"
+  ],
+  "NM-Southwest Mountains": [
+    "NM208"
+  ],
+  "NM-San Francisco River Valley": [
+    "NM209"
+  ],
+  "NM-Tusas Mountains Including Chama": [
+    "NM210"
+  ],
+  "NM-Jemez Mountains": [
+    "NM211"
+  ],
+  "NM-Glorieta Mesa Including Glorieta Pass": [
+    "NM212"
+  ],
+  "NM-Northern Sangre de Cristo Mountains": [
+    "NM213"
+  ],
+  "NM-Southern Sangre de Cristo Mountains": [
+    "NM214"
+  ],
+  "NM-East Slopes Sangre de Cristo Mountains": [
+    "NM215"
+  ],
+  "NM-Upper Rio Grande Valley": [
+    "NM216"
+  ],
+  "NM-Espanola Valley": [
+    "NM217"
+  ],
+  "NM-Santa Fe Metro Area": [
+    "NM218"
+  ],
+  "NM-Middle Rio Grande Valley/Albuquerque Metro Area": [
+    "NM219"
+  ],
+  "NM-Lower Rio Grande Valley": [
+    "NM220"
+  ],
+  "NM-Sandia/Manzano Mountains Including Edgewood": [
+    "NM221"
+  ],
+  "NM-Estancia Valley": [
+    "NM222"
+  ],
+  "NM-Central Highlands": [
+    "NM223"
+  ],
+  "NM-South Central Highlands": [
+    "NM224"
+  ],
+  "NM-Upper Tularosa Valley": [
+    "NM225"
+  ],
+  "NM-South Central Mountains": [
+    "NM226"
+  ],
+  "NM-Johnson and Bartlett Mesas Including Raton Pass": [
+    "NM227"
+  ],
+  "NM-Far Northeast Highlands": [
+    "NM228"
+  ],
+  "NM-Northeast Highlands": [
+    "NM229"
+  ],
+  "NM-Union County": [
+    "NM230"
+  ],
+  "NM-Harding County": [
+    "NM231"
+  ],
+  "NM-Eastern San Miguel County": [
+    "NM232"
+  ],
+  "NM-Guadalupe County": [
+    "NM233"
+  ],
+  "NM-Quay County": [
+    "NM234"
+  ],
+  "NM-Curry County": [
+    "NM235"
+  ],
+  "NM-Roosevelt County": [
+    "NM236"
+  ],
+  "NM-De Baca County": [
+    "NM237"
+  ],
+  "NM-Chaves County Plains": [
+    "NM238"
+  ],
+  "NM-Eastern Lincoln County": [
+    "NM239"
+  ],
+  "NM-Southwest Chaves County": [
+    "NM240"
+  ],
+  "NM-San Agustin Plains and Adjacent Lowlands": [
+    "NM241"
+  ],
+  "MN-Traverse": [
+    "MN039"
+  ],
+  "MN-Big Stone": [
+    "MN046"
+  ],
+  "SD-Corson": [
+    "SD003"
+  ],
+  "SD-Campbell": [
+    "SD004"
+  ],
+  "SD-McPherson": [
+    "SD005"
+  ],
+  "SD-Brown": [
+    "SD006"
+  ],
+  "SD-Marshall": [
+    "SD007"
+  ],
+  "SD-Roberts": [
+    "SD008"
+  ],
+  "SD-Walworth": [
+    "SD009"
+  ],
+  "SD-Edmunds": [
+    "SD010"
+  ],
+  "SD-Day": [
+    "SD011"
+  ],
+  "SD-Dewey": [
+    "SD015"
+  ],
+  "SD-Potter": [
+    "SD016"
+  ],
+  "SD-Faulk": [
+    "SD017"
+  ],
+  "SD-Spink": [
+    "SD018"
+  ],
+  "SD-Clark": [
+    "SD019"
+  ],
+  "SD-Codington": [
+    "SD020"
+  ],
+  "SD-Grant": [
+    "SD021"
+  ],
+  "SD-Hamlin": [
+    "SD022"
+  ],
+  "SD-Deuel": [
+    "SD023"
+  ],
+  "SD-Stanley": [
+    "SD033"
+  ],
+  "SD-Sully": [
+    "SD034"
+  ],
+  "SD-Hughes": [
+    "SD035"
+  ],
+  "SD-Hyde": [
+    "SD036"
+  ],
+  "SD-Hand": [
+    "SD037"
+  ],
+  "SD-Jones": [
+    "SD045"
+  ],
+  "SD-Lyman": [
+    "SD048"
+  ],
+  "SD-Buffalo": [
+    "SD051"
+  ],
+  "AK-Anchorage ": [
+    "AK102"
+  ],
+  "AK-East Turnagain Arm ": [
+    "AK103"
+  ],
+  "AK-Matanuska Valley ": [
+    "AK112"
+  ],
+  "AK-Western Kenai Peninsula": [
+    "AK121"
+  ],
+  "AK-Western Prince William Sound ": [
+    "AK126"
+  ],
+  "AK-Northeast Prince William Sound ": [
+    "AK132"
+  ],
+  "AK-Southeast Prince William Sound": [
+    "AK135"
+  ],
+  "AK-Copper River Basin ": [
+    "AK142"
+  ],
+  "AK-Susitna Valley": [
+    "AK145"
+  ],
+  "AK-Lower Kuskokwim Valley": [
+    "AK152"
+  ],
+  "AK-Kuskokwim Delta": [
+    "AK155"
+  ],
+  "AK-Bristol Bay": [
+    "AK161"
+  ],
+  "AK-Kodiak Island": [
+    "AK171"
+  ],
+  "AK-Alaska Peninsula": [
+    "AK181"
+  ],
+  "AK-Eastern Aleutians": [
+    "AK185"
+  ],
+  "AK-Central Aleutians": [
+    "AK187"
+  ],
+  "AK-Western Aleutians": [
+    "AK191"
+  ],
+  "AK-Pribilof Islands": [
+    "AK195"
+  ],
+  "AK-Western Arctic Coast": [
+    "AK801"
+  ],
+  "AK-Northwest Arctic Coast": [
+    "AK802"
+  ],
+  "AK-Northern Arctic Coast": [
+    "AK803"
+  ],
+  "AK-Central Beaufort Sea Coast": [
+    "AK804"
+  ],
+  "AK-Eastern Beaufort Sea Coast": [
+    "AK805"
+  ],
+  "AK-Western Arctic Plains": [
+    "AK806"
+  ],
+  "AK-Howard Pass and the Delong Mountains": [
+    "AK807"
+  ],
+  "AK-Central Arctic Plains": [
+    "AK808"
+  ],
+  "AK-Central Brooks Range": [
+    "AK809"
+  ],
+  "AK-Romanzof Mountains": [
+    "AK810"
+  ],
+  "AK-South Slopes of the Eastern Brooks Range": [
+    "AK811"
+  ],
+  "AK-South Slopes of the Central Brooks Range": [
+    "AK812"
+  ],
+  "AK-South Slopes of the Western Brooks Range": [
+    "AK813"
+  ],
+  "AK-Noatak Valley": [
+    "AK814"
+  ],
+  "AK-Kivalina and Red Dog Dock": [
+    "AK815"
+  ],
+  "AK-Lower Kobuk Valley": [
+    "AK816"
+  ],
+  "AK-Baldwin Peninsula": [
+    "AK817"
+  ],
+  "AK-Northern Seward Peninsula": [
+    "AK818"
+  ],
+  "AK-Upper Kobuk Valleys": [
+    "AK819"
+  ],
+  "AK-Shishmaref": [
+    "AK820"
+  ],
+  "AK-Bering Strait Coast": [
+    "AK821"
+  ],
+  "AK-Southern Seward Peninsula Coast": [
+    "AK822"
+  ],
+  "AK-Interior Seward Peninsula": [
+    "AK823"
+  ],
+  "AK-Eastern Norton Sound and Nulato Hills": [
+    "AK824"
+  ],
+  "AK-Yukon Delta Coast": [
+    "AK825"
+  ],
+  "AK-Lower Yukon River": [
+    "AK826"
+  ],
+  "AK-St. Lawrence Island": [
+    "AK827"
+  ],
+  "AK-Lower Koyukuk Valley": [
+    "AK828"
+  ],
+  "AK-Middle Yukon Valley": [
+    "AK829"
+  ],
+  "AK-Lower Yukon and Innoko Valleys": [
+    "AK830"
+  ],
+  "AK-Upper Koyukuk Valley": [
+    "AK831"
+  ],
+  "AK-Dalton Highway Summits": [
+    "AK832"
+  ],
+  "AK-Yukon Flats": [
+    "AK833"
+  ],
+  "AK-White Mountains and High Terrain South of the Yukon River": [
+    "AK834"
+  ],
+  "AK-Fortymile Country": [
+    "AK835"
+  ],
+  "AK-Upper Tanana Valley": [
+    "AK836"
+  ],
+  "AK-Delta Junction": [
+    "AK837"
+  ],
+  "AK-Upper Chena River Valley": [
+    "AK838"
+  ],
+  "AK-Tanana Flats": [
+    "AK839"
+  ],
+  "AK-Eielson Air Force Base and Salcha": [
+    "AK840"
+  ],
+  "AK-Goldstream Valley and Nenana Hills": [
+    "AK841"
+  ],
+  "AK-Chatanika River Valley": [
+    "AK842"
+  ],
+  "AK-Two Rivers": [
+    "AK843"
+  ],
+  "AK-Fairbanks Metro Area": [
+    "AK844"
+  ],
+  "AK-Nenana": [
+    "AK845"
+  ],
+  "AK-Central Interior": [
+    "AK846"
+  ],
+  "AK-Northern Denali Borough": [
+    "AK847"
+  ],
+  "AK-Southern Denali Borough": [
+    "AK848"
+  ],
+  "AK-Eastern Alaska Range North of Trims Camp": [
+    "AK849"
+  ],
+  "AK-Eastern Alaska Range South of Trims Camp": [
+    "AK850"
+  ],
+  "AK-North Slopes of the Western Alaska Range": [
+    "AK851"
+  ],
+  "AK-Upper Kuskokwim Valley": [
+    "AK852"
+  ],
+  "AK-City and Borough of Yakutat": [
+    "AK317"
+  ],
+  "AK-Municipality of Skagway": [
+    "AK318"
+  ],
+  "AK-Haines Borough and Klukwan": [
+    "AK319"
+  ],
+  "AK-Glacier Bay": [
+    "AK320"
+  ],
+  "AK-Eastern Chichagof Island": [
+    "AK321"
+  ],
+  "AK-Cape Fairweather to Lisianski Strait": [
+    "AK322"
+  ],
+  "AK-City and Borough of Sitka": [
+    "AK323"
+  ],
+  "AK-Admiralty Island": [
+    "AK324"
+  ],
+  "AK-City and Borough of Juneau": [
+    "AK325"
+  ],
+  "AK-Petersburg Borough": [
+    "AK326"
+  ],
+  "AK-Western Kupreanof and Kuiu Island": [
+    "AK327"
+  ],
+  "AK-Prince of Wales Island": [
+    "AK328"
+  ],
+  "AK-City and Borough of Wrangell": [
+    "AK329"
+  ],
+  "AK-Ketchikan Gateway Borough": [
+    "AK330"
+  ],
+  "AK-City of Hyder": [
+    "AK331"
+  ],
+  "AK-Annette Island": [
+    "AK332"
+  ],
+  "MD-Dorchester": [
+    "MD021"
+  ],
+  "MD-Wicomico": [
+    "MD022"
+  ],
+  "MD-Somerset": [
+    "MD023"
+  ],
+  "MD-Inland Worcester": [
+    "MD024"
+  ],
+  "MD-Maryland Beaches": [
+    "MD025"
+  ],
+  "NC-Northampton": [
+    "NC012"
+  ],
+  "NC-Hertford": [
+    "NC013"
+  ],
+  "NC-Gates": [
+    "NC014"
+  ],
+  "NC-Pasquotank": [
+    "NC015"
+  ],
+  "NC-Camden": [
+    "NC016"
+  ],
+  "NC-Western Currituck": [
+    "NC017"
+  ],
+  "NC-Bertie": [
+    "NC030"
+  ],
+  "NC-Chowan": [
+    "NC031"
+  ],
+  "NC-Perquimans": [
+    "NC032"
+  ],
+  "NC-Eastern Currituck": [
+    "NC102"
+  ],
+  "VA-Fluvanna": [
+    "VA048"
+  ],
+  "VA-Prince Edward": [
+    "VA060"
+  ],
+  "VA-Cumberland": [
+    "VA061"
+  ],
+  "VA-Goochland": [
+    "VA062"
+  ],
+  "VA-Caroline": [
+    "VA064"
+  ],
+  "VA-Mecklenburg": [
+    "VA065"
+  ],
+  "VA-Lunenburg": [
+    "VA066"
+  ],
+  "VA-Nottoway": [
+    "VA067"
+  ],
+  "VA-Amelia": [
+    "VA068"
+  ],
+  "VA-Powhatan": [
+    "VA069"
+  ],
+  "VA-Westmoreland": [
+    "VA075"
+  ],
+  "VA-Richmond": [
+    "VA076"
+  ],
+  "VA-Northumberland": [
+    "VA077"
+  ],
+  "VA-Lancaster": [
+    "VA078"
+  ],
+  "VA-Brunswick": [
+    "VA079"
+  ],
+  "VA-Dinwiddie": [
+    "VA080"
+  ],
+  "VA-Prince George": [
+    "VA081"
+  ],
+  "VA-Charles City": [
+    "VA082"
+  ],
+  "VA-New Kent": [
+    "VA083"
+  ],
+  "VA-Gloucester": [
+    "VA084"
+  ],
+  "VA-Middlesex": [
+    "VA085"
+  ],
+  "VA-Mathews": [
+    "VA086"
+  ],
+  "VA-Greensville": [
+    "VA087"
+  ],
+  "VA-Sussex": [
+    "VA088"
+  ],
+  "VA-Surry": [
+    "VA089"
+  ],
+  "VA-James City": [
+    "VA090"
+  ],
+  "VA-Southampton": [
+    "VA092"
+  ],
+  "VA-Isle of Wight": [
+    "VA093"
+  ],
+  "VA-Norfolk/Portsmouth": [
+    "VA095"
+  ],
+  "VA-Suffolk": [
+    "VA096"
+  ],
+  "VA-Chesapeake": [
+    "VA097"
+  ],
+  "VA-Virginia Beach": [
+    "VA098"
+  ],
+  "VA-Accomack": [
+    "VA099"
+  ],
+  "VA-Northampton": [
+    "VA100"
+  ],
+  "VA-Western Louisa": [
+    "VA509"
+  ],
+  "VA-Eastern Louisa": [
+    "VA510"
+  ],
+  "VA-Western Hanover": [
+    "VA511"
+  ],
+  "VA-Eastern Hanover": [
+    "VA512"
+  ],
+  "VA-Western Chesterfield": [
+    "VA513"
+  ],
+  "VA-Eastern Chesterfield (Including Col. Heights)": [
+    "VA514"
+  ],
+  "VA-Western Henrico (Including the City of Richmond)": [
+    "VA515"
+  ],
+  "VA-Eastern Henrico": [
+    "VA516"
+  ],
+  "VA-Western King William": [
+    "VA517"
+  ],
+  "VA-Eastern King William": [
+    "VA518"
+  ],
+  "VA-Western King and Queen": [
+    "VA519"
+  ],
+  "VA-Eastern King and Queen": [
+    "VA520"
+  ],
+  "VA-Western Essex": [
+    "VA521"
+  ],
+  "VA-Eastern Essex": [
+    "VA522"
+  ],
+  "VA-York": [
+    "VA523"
+  ],
+  "VA-Newport News/Hampton": [
+    "VA524"
+  ],
+  "VA-Hampton/Poquoson": [
+    "VA525"
+  ],
+  "CT-Northern Litchfield": [
+    "CT001"
+  ],
+  "CT-Southern Litchfield": [
+    "CT013"
+  ],
+  "MA-Northern Berkshire": [
+    "MA001"
+  ],
+  "MA-Southern Berkshire": [
+    "MA025"
+  ],
+  "NY-Northern Herkimer": [
+    "NY032"
+  ],
+  "NY-Hamilton": [
+    "NY033"
+  ],
+  "NY-Southern Herkimer": [
+    "NY038"
+  ],
+  "NY-Southern Fulton": [
+    "NY039"
+  ],
+  "NY-Montgomery": [
+    "NY040"
+  ],
+  "NY-Northern Saratoga": [
+    "NY041"
+  ],
+  "NY-Northern Warren": [
+    "NY042"
+  ],
+  "NY-Northern Washington": [
+    "NY043"
+  ],
+  "NY-Schoharie": [
+    "NY047"
+  ],
+  "NY-Western Schenectady": [
+    "NY048"
+  ],
+  "NY-Eastern Schenectady": [
+    "NY049"
+  ],
+  "NY-Southern Saratoga": [
+    "NY050"
+  ],
+  "NY-Western Albany": [
+    "NY051"
+  ],
+  "NY-Eastern Albany": [
+    "NY052"
+  ],
+  "NY-Western Rensselaer": [
+    "NY053"
+  ],
+  "NY-Eastern Rensselaer": [
+    "NY054"
+  ],
+  "NY-Western Greene": [
+    "NY058"
+  ],
+  "NY-Eastern Greene": [
+    "NY059"
+  ],
+  "NY-Western Columbia": [
+    "NY060"
+  ],
+  "NY-Eastern Columbia": [
+    "NY061"
+  ],
+  "NY-Western Ulster": [
+    "NY063"
+  ],
+  "NY-Eastern Ulster": [
+    "NY064"
+  ],
+  "NY-Western Dutchess": [
+    "NY065"
+  ],
+  "NY-Eastern Dutchess": [
+    "NY066"
+  ],
+  "NY-Northern Fulton": [
+    "NY082"
+  ],
+  "NY-Southeast Warren": [
+    "NY083"
+  ],
+  "NY-Southern Washington": [
+    "NY084"
+  ],
+  "VT-Bennington": [
+    "VT013"
+  ],
+  "VT-Western Windham": [
+    "VT014"
+  ],
+  "VT-Eastern Windham": [
+    "VT015"
+  ],
+  "OK-Cimarron": [
+    "OK001"
+  ],
+  "OK-Texas": [
+    "OK002"
+  ],
+  "OK-Beaver": [
+    "OK003"
+  ],
+  "TX-Dallam": [
+    "TX001"
+  ],
+  "TX-Sherman": [
+    "TX002"
+  ],
+  "TX-Hansford": [
+    "TX003"
+  ],
+  "TX-Ochiltree": [
+    "TX004"
+  ],
+  "TX-Lipscomb": [
+    "TX005"
+  ],
+  "TX-Hartley": [
+    "TX006"
+  ],
+  "TX-Moore": [
+    "TX007"
+  ],
+  "TX-Hutchinson": [
+    "TX008"
+  ],
+  "TX-Roberts": [
+    "TX009"
+  ],
+  "TX-Hemphill": [
+    "TX010"
+  ],
+  "TX-Oldham": [
+    "TX011"
+  ],
+  "TX-Potter": [
+    "TX012"
+  ],
+  "TX-Carson": [
+    "TX013"
+  ],
+  "TX-Gray": [
+    "TX014"
+  ],
+  "TX-Wheeler": [
+    "TX015"
+  ],
+  "TX-Deaf Smith": [
+    "TX016"
+  ],
+  "TX-Randall": [
+    "TX017"
+  ],
+  "TX-Armstrong": [
+    "TX018"
+  ],
+  "TX-Donley": [
+    "TX019"
+  ],
+  "TX-Collingsworth": [
+    "TX020"
+  ],
+  "TX-Palo Duro Canyon": [
+    "TX317"
+  ],
+  "MI-Emmet": [
+    "MI016"
+  ],
+  "MI-Cheboygan": [
+    "MI017"
+  ],
+  "MI-Presque Isle": [
+    "MI018"
+  ],
+  "MI-Leelanau": [
+    "MI020"
+  ],
+  "MI-Antrim": [
+    "MI021"
+  ],
+  "MI-Otsego": [
+    "MI022"
+  ],
+  "MI-Montmorency": [
+    "MI023"
+  ],
+  "MI-Alpena": [
+    "MI024"
+  ],
+  "MI-Benzie": [
+    "MI025"
+  ],
+  "MI-Grand Traverse": [
+    "MI026"
+  ],
+  "MI-Kalkaska": [
+    "MI027"
+  ],
+  "MI-Crawford": [
+    "MI028"
+  ],
+  "MI-Oscoda": [
+    "MI029"
+  ],
+  "MI-Alcona": [
+    "MI030"
+  ],
+  "MI-Manistee": [
+    "MI031"
+  ],
+  "MI-Wexford": [
+    "MI032"
+  ],
+  "MI-Missaukee": [
+    "MI033"
+  ],
+  "MI-Roscommon": [
+    "MI034"
+  ],
+  "MI-Ogemaw": [
+    "MI035"
+  ],
+  "MI-Iosco": [
+    "MI036"
+  ],
+  "MI-Gladwin": [
+    "MI041"
+  ],
+  "MI-Arenac": [
+    "MI042"
+  ],
+  "MI-Western Chippewa ": [
+    "MI086"
+  ],
+  "MI-Central Chippewa ": [
+    "MI087"
+  ],
+  "MI-Southeast Chippewa ": [
+    "MI088"
+  ],
+  "MI-Western Mackinac ": [
+    "MI095"
+  ],
+  "MI-Eastern Mackinac ": [
+    "MI096"
+  ],
+  "MI-Mackinac Island/Bois Blanc Island ": [
+    "MI097"
+  ],
+  "MI-Beaver Island ": [
+    "MI098"
+  ],
+  "MI-Charlevoix ": [
+    "MI099"
+  ],
+  "IA-Mitchell": [
+    "IA008"
+  ],
+  "IA-Howard": [
+    "IA009"
+  ],
+  "IA-Winneshiek": [
+    "IA010"
+  ],
+  "IA-Allamakee": [
+    "IA011"
+  ],
+  "IA-Floyd": [
+    "IA018"
+  ],
+  "IA-Chickasaw": [
+    "IA019"
+  ],
+  "IA-Fayette": [
+    "IA029"
+  ],
+  "IA-Clayton": [
+    "IA030"
+  ],
+  "MN-Wabasha": [
+    "MN079"
+  ],
+  "MN-Dodge": [
+    "MN086"
+  ],
+  "MN-Olmsted": [
+    "MN087"
+  ],
+  "MN-Winona": [
+    "MN088"
+  ],
+  "MN-Mower": [
+    "MN094"
+  ],
+  "MN-Fillmore": [
+    "MN095"
+  ],
+  "MN-Houston": [
+    "MN096"
+  ],
+  "WI-Taylor": [
+    "WI017"
+  ],
+  "WI-Clark": [
+    "WI029"
+  ],
+  "WI-Buffalo": [
+    "WI032"
+  ],
+  "WI-Trempealeau": [
+    "WI033"
+  ],
+  "WI-Jackson": [
+    "WI034"
+  ],
+  "WI-La Crosse": [
+    "WI041"
+  ],
+  "WI-Monroe": [
+    "WI042"
+  ],
+  "WI-Juneau": [
+    "WI043"
+  ],
+  "WI-Adams": [
+    "WI044"
+  ],
+  "WI-Vernon": [
+    "WI053"
+  ],
+  "WI-Crawford": [
+    "WI054"
+  ],
+  "WI-Richland": [
+    "WI055"
+  ],
+  "WI-Grant": [
+    "WI061"
+  ],
+  "NY-Northern Oneida": [
+    "NY009"
+  ],
+  "NY-Yates": [
+    "NY015"
+  ],
+  "NY-Seneca": [
+    "NY016"
+  ],
+  "NY-Southern Cayuga": [
+    "NY017"
+  ],
+  "NY-Onondaga": [
+    "NY018"
+  ],
+  "NY-Steuben": [
+    "NY022"
+  ],
+  "NY-Schuyler": [
+    "NY023"
+  ],
+  "NY-Chemung": [
+    "NY024"
+  ],
+  "NY-Tompkins": [
+    "NY025"
+  ],
+  "NY-Madison": [
+    "NY036"
+  ],
+  "NY-Southern Oneida": [
+    "NY037"
+  ],
+  "NY-Cortland": [
+    "NY044"
+  ],
+  "NY-Chenango": [
+    "NY045"
+  ],
+  "NY-Otsego": [
+    "NY046"
+  ],
+  "NY-Tioga": [
+    "NY055"
+  ],
+  "NY-Broome": [
+    "NY056"
+  ],
+  "NY-Delaware": [
+    "NY057"
+  ],
+  "NY-Sullivan": [
+    "NY062"
+  ],
+  "PA-Bradford": [
+    "PA038"
+  ],
+  "PA-Susquehanna": [
+    "PA039"
+  ],
+  "PA-Northern Wayne": [
+    "PA040"
+  ],
+  "PA-Wyoming": [
+    "PA043"
+  ],
+  "PA-Lackawanna": [
+    "PA044"
+  ],
+  "PA-Luzerne": [
+    "PA047"
+  ],
+  "PA-Pike": [
+    "PA048"
+  ],
+  "PA-Southern Wayne": [
+    "PA072"
+  ],
+  "ND-Divide": [
+    "ND001"
+  ],
+  "ND-Burke": [
+    "ND002"
+  ],
+  "ND-Renville": [
+    "ND003"
+  ],
+  "ND-Bottineau": [
+    "ND004"
+  ],
+  "ND-Rolette": [
+    "ND005"
+  ],
+  "ND-Williams": [
+    "ND009"
+  ],
+  "ND-Mountrail": [
+    "ND010"
+  ],
+  "ND-Ward": [
+    "ND011"
+  ],
+  "ND-McHenry": [
+    "ND012"
+  ],
+  "ND-Pierce": [
+    "ND013"
+  ],
+  "ND-McKenzie": [
+    "ND017"
+  ],
+  "ND-Dunn": [
+    "ND018"
+  ],
+  "ND-Mercer": [
+    "ND019"
+  ],
+  "ND-Oliver": [
+    "ND020"
+  ],
+  "ND-McLean": [
+    "ND021"
+  ],
+  "ND-Sheridan": [
+    "ND022"
+  ],
+  "ND-Wells": [
+    "ND023"
+  ],
+  "ND-Foster": [
+    "ND025"
+  ],
+  "ND-Golden Valley": [
+    "ND031"
+  ],
+  "ND-Billings": [
+    "ND032"
+  ],
+  "ND-Stark": [
+    "ND033"
+  ],
+  "ND-Morton": [
+    "ND034"
+  ],
+  "ND-Burleigh": [
+    "ND035"
+  ],
+  "ND-Kidder": [
+    "ND036"
+  ],
+  "ND-Stutsman": [
+    "ND037"
+  ],
+  "ND-Slope": [
+    "ND040"
+  ],
+  "ND-Hettinger": [
+    "ND041"
+  ],
+  "ND-Grant": [
+    "ND042"
+  ],
+  "ND-Bowman": [
+    "ND043"
+  ],
+  "ND-Adams": [
+    "ND044"
+  ],
+  "ND-Sioux": [
+    "ND045"
+  ],
+  "ND-Emmons": [
+    "ND046"
+  ],
+  "ND-Logan": [
+    "ND047"
+  ],
+  "ND-La Moure": [
+    "ND048"
+  ],
+  "ND-McIntosh": [
+    "ND050"
+  ],
+  "ND-Dickey": [
+    "ND051"
+  ],
+  "AL-Marion": [
+    "AL011"
+  ],
+  "AL-Lamar": [
+    "AL012"
+  ],
+  "AL-Fayette": [
+    "AL013"
+  ],
+  "AL-Winston": [
+    "AL014"
+  ],
+  "AL-Walker": [
+    "AL015"
+  ],
+  "AL-Blount": [
+    "AL017"
+  ],
+  "AL-Etowah": [
+    "AL018"
+  ],
+  "AL-Calhoun": [
+    "AL019"
+  ],
+  "AL-Cherokee": [
+    "AL020"
+  ],
+  "AL-Cleburne": [
+    "AL021"
+  ],
+  "AL-Pickens": [
+    "AL022"
+  ],
+  "AL-Tuscaloosa": [
+    "AL023"
+  ],
+  "AL-Jefferson": [
+    "AL024"
+  ],
+  "AL-Shelby": [
+    "AL025"
+  ],
+  "AL-St. Clair": [
+    "AL026"
+  ],
+  "AL-Talladega": [
+    "AL027"
+  ],
+  "AL-Clay": [
+    "AL028"
+  ],
+  "AL-Randolph": [
+    "AL029"
+  ],
+  "AL-Sumter": [
+    "AL030"
+  ],
+  "AL-Greene": [
+    "AL031"
+  ],
+  "AL-Hale": [
+    "AL032"
+  ],
+  "AL-Perry": [
+    "AL033"
+  ],
+  "AL-Bibb": [
+    "AL034"
+  ],
+  "AL-Chilton": [
+    "AL035"
+  ],
+  "AL-Coosa": [
+    "AL036"
+  ],
+  "AL-Tallapoosa": [
+    "AL037"
+  ],
+  "AL-Chambers": [
+    "AL038"
+  ],
+  "AL-Marengo": [
+    "AL039"
+  ],
+  "AL-Dallas": [
+    "AL040"
+  ],
+  "AL-Autauga": [
+    "AL041"
+  ],
+  "AL-Lowndes": [
+    "AL042"
+  ],
+  "AL-Elmore": [
+    "AL043"
+  ],
+  "AL-Montgomery": [
+    "AL044"
+  ],
+  "AL-Macon": [
+    "AL045"
+  ],
+  "AL-Bullock": [
+    "AL046"
+  ],
+  "AL-Lee": [
+    "AL047"
+  ],
+  "AL-Russell": [
+    "AL048"
+  ],
+  "AL-Pike": [
+    "AL049"
+  ],
+  "AL-Barbour": [
+    "AL050"
+  ],
+  "ID-West Central Mountains": [
+    "ID011"
+  ],
+  "ID-Lower Treasure Valley": [
+    "ID012"
+  ],
+  "ID-Boise Mountains": [
+    "ID013"
+  ],
+  "ID-Upper Treasure Valley": [
+    "ID014"
+  ],
+  "ID-Southwest Highlands": [
+    "ID015"
+  ],
+  "ID-Western Magic Valley": [
+    "ID016"
+  ],
+  "ID-Camas Prairie": [
+    "ID028"
+  ],
+  "ID-Owyhee Mountains": [
+    "ID029"
+  ],
+  "ID-Southern Twin Falls County": [
+    "ID030"
+  ],
+  "ID-Upper Weiser River": [
+    "ID033"
+  ],
+  "OR-Harney County": [
+    "OR061"
+  ],
+  "OR-Baker County": [
+    "OR062"
+  ],
+  "OR-Malheur County": [
+    "OR063"
+  ],
+  "OR-Oregon Lower Treasure Valley": [
+    "OR064"
+  ],
+  "CO-Jackson County Below 9000 Feet": [
+    "CO030"
+  ],
+  "CO-West Jackson and West Grand Counties Above 9000 Feet": [
+    "CO031"
+  ],
+  "CO-Grand and Summit Counties Below 9000 Feet": [
+    "CO032"
+  ],
+  "CO-South and East Jackson/Larimer/North and Northeast Grand/Northwest Boulder Counties Above 9000 Feet": [
+    "CO033"
+  ],
+  "CO-South and Southeast Grand/West Central and Southwest Boulder/Gilpin/Clear Creek/Summit/North and West Park Counties Above 9000 Feet": [
+    "CO034"
+  ],
+  "CO-Larimer and Boulder Counties Between 6000 and 9000 Feet": [
+    "CO035"
+  ],
+  "CO-Jefferson and West Douglas Counties Above  6000 Feet/Gilpin/Clear Creek/Northeast Park Counties Below 9000 Feet": [
+    "CO036"
+  ],
+  "CO-Central and Southeast Park County": [
+    "CO037"
+  ],
+  "CO-Larimer County Below 6000 Feet/Northwest Weld County": [
+    "CO038"
+  ],
+  "CO-Boulder And Jefferson Counties Below 6000 Feet/West Broomfield County": [
+    "CO039"
+  ],
+  "CO-North Douglas County Below 6000 Feet/Denver/West Adams and Arapahoe Counties/East Broomfield County": [
+    "CO040"
+  ],
+  "CO-Elbert/Central and East Douglas Counties Above 6000 Feet": [
+    "CO041"
+  ],
+  "CO-Northeast Weld County": [
+    "CO042"
+  ],
+  "CO-Central and South Weld County": [
+    "CO043"
+  ],
+  "CO-Morgan County": [
+    "CO044"
+  ],
+  "CO-Central and East Adams and Arapahoe Counties": [
+    "CO045"
+  ],
+  "CO-North and Northeast Elbert County Below 6000 Feet/North Lincoln County": [
+    "CO046"
+  ],
+  "CO-Southeast Elbert County Below 6000 Feet/South Lincoln County": [
+    "CO047"
+  ],
+  "CO-Logan County": [
+    "CO048"
+  ],
+  "CO-Washington County": [
+    "CO049"
+  ],
+  "CO-Sedgwick County": [
+    "CO050"
+  ],
+  "CO-Phillips County": [
+    "CO051"
+  ],
+  "CT-Hartford": [
+    "CT002"
+  ],
+  "CT-Tolland": [
+    "CT003"
+  ],
+  "CT-Windham": [
+    "CT004"
+  ],
+  "MA-Western Franklin": [
+    "MA002"
+  ],
+  "MA-Eastern Franklin": [
+    "MA003"
+  ],
+  "MA-Northern Worcester": [
+    "MA004"
+  ],
+  "MA-Central Middlesex County": [
+    "MA005"
+  ],
+  "MA-Western Essex": [
+    "MA006"
+  ],
+  "MA-Eastern Essex": [
+    "MA007"
+  ],
+  "MA-Western Hampshire": [
+    "MA008"
+  ],
+  "MA-Western Hampden": [
+    "MA009"
+  ],
+  "MA-Eastern Hampshire": [
+    "MA010"
+  ],
+  "MA-Eastern Hampden": [
+    "MA011"
+  ],
+  "MA-Southern Worcester": [
+    "MA012"
+  ],
+  "MA-Western Norfolk": [
+    "MA013"
+  ],
+  "MA-Southeast Middlesex": [
+    "MA014"
+  ],
+  "MA-Suffolk": [
+    "MA015"
+  ],
+  "MA-Eastern Norfolk": [
+    "MA016"
+  ],
+  "MA-Northern Bristol": [
+    "MA017"
+  ],
+  "MA-Western Plymouth": [
+    "MA018"
+  ],
+  "MA-Eastern Plymouth": [
+    "MA019"
+  ],
+  "MA-Southern Bristol": [
+    "MA020"
+  ],
+  "MA-Southern Plymouth": [
+    "MA021"
+  ],
+  "MA-Barnstable": [
+    "MA022"
+  ],
+  "MA-Dukes": [
+    "MA023"
+  ],
+  "MA-Nantucket": [
+    "MA024"
+  ],
+  "MA-Northwest Middlesex County": [
+    "MA026"
+  ],
+  "NH-Cheshire": [
+    "NH011"
+  ],
+  "NH-Eastern Hillsborough": [
+    "NH012"
+  ],
+  "NH-Western And Central Hillsborough": [
+    "NH015"
+  ],
+  "RI-Northwest Providence": [
+    "RI001"
+  ],
+  "RI-Southeast Providence": [
+    "RI002"
+  ],
+  "RI-Western Kent": [
+    "RI003"
+  ],
+  "RI-Eastern Kent": [
+    "RI004"
+  ],
+  "RI-Bristol": [
+    "RI005"
+  ],
+  "RI-Washington": [
+    "RI006"
+  ],
+  "RI-Newport": [
+    "RI007"
+  ],
+  "RI-Block Island": [
+    "RI008"
+  ],
+  "TX-Zapata": [
+    "TX248"
+  ],
+  "TX-Jim Hogg": [
+    "TX249"
+  ],
+  "TX-Brooks": [
+    "TX250"
+  ],
+  "TX-Inland Kenedy": [
+    "TX251"
+  ],
+  "TX-Starr": [
+    "TX252"
+  ],
+  "TX-Southern Hidalgo": [
+    "TX253"
+  ],
+  "TX-Inland Willacy": [
+    "TX254"
+  ],
+  "TX-Inland Cameron": [
+    "TX255"
+  ],
+  "TX-Coastal Kenedy": [
+    "TX351"
+  ],
+  "TX-Northern Hidalgo ": [
+    "TX353"
+  ],
+  "TX-Coastal Willacy": [
+    "TX354"
+  ],
+  "TX-Coastal Cameron": [
+    "TX355"
+  ],
+  "TX-Kenedy Island": [
+    "TX451"
+  ],
+  "TX-Willacy Island": [
+    "TX454"
+  ],
+  "TX-Cameron Island": [
+    "TX455"
+  ],
+  "NY-Northern St. Lawrence": [
+    "NY026"
+  ],
+  "NY-Northern Franklin": [
+    "NY027"
+  ],
+  "NY-Eastern Clinton": [
+    "NY028"
+  ],
+  "NY-Southeastern St. Lawrence": [
+    "NY029"
+  ],
+  "NY-Southern Franklin": [
+    "NY030"
+  ],
+  "NY-Western Clinton": [
+    "NY031"
+  ],
+  "NY-Western Essex": [
+    "NY034"
+  ],
+  "NY-Eastern Essex": [
+    "NY035"
+  ],
+  "NY-Southwestern St. Lawrence": [
+    "NY087"
+  ],
+  "VT-Grand Isle": [
+    "VT001"
+  ],
+  "VT-Western Franklin": [
+    "VT002"
+  ],
+  "VT-Orleans": [
+    "VT003"
+  ],
+  "VT-Essex": [
+    "VT004"
+  ],
+  "VT-Western Chittenden": [
+    "VT005"
+  ],
+  "VT-Lamoille": [
+    "VT006"
+  ],
+  "VT-Caledonia": [
+    "VT007"
+  ],
+  "VT-Washington": [
+    "VT008"
+  ],
+  "VT-Western Addison": [
+    "VT009"
+  ],
+  "VT-Orange": [
+    "VT010"
+  ],
+  "VT-Western Rutland": [
+    "VT011"
+  ],
+  "VT-Eastern Franklin": [
+    "VT016"
+  ],
+  "VT-Eastern Chittenden": [
+    "VT017"
+  ],
+  "VT-Eastern Addison": [
+    "VT018"
+  ],
+  "VT-Eastern Rutland": [
+    "VT019"
+  ],
+  "VT-Western Windsor": [
+    "VT020"
+  ],
+  "VT-Eastern Windsor": [
+    "VT021"
+  ],
+  "NY-Niagara": [
+    "NY001"
+  ],
+  "NY-Orleans": [
+    "NY002"
+  ],
+  "NY-Monroe": [
+    "NY003"
+  ],
+  "NY-Wayne": [
+    "NY004"
+  ],
+  "NY-Northern Cayuga": [
+    "NY005"
+  ],
+  "NY-Oswego": [
+    "NY006"
+  ],
+  "NY-Jefferson": [
+    "NY007"
+  ],
+  "NY-Lewis": [
+    "NY008"
+  ],
+  "NY-Northern Erie": [
+    "NY010"
+  ],
+  "NY-Genesee": [
+    "NY011"
+  ],
+  "NY-Wyoming": [
+    "NY012"
+  ],
+  "NY-Livingston": [
+    "NY013"
+  ],
+  "NY-Ontario": [
+    "NY014"
+  ],
+  "NY-Chautauqua": [
+    "NY019"
+  ],
+  "NY-Cattaraugus": [
+    "NY020"
+  ],
+  "NY-Allegany": [
+    "NY021"
+  ],
+  "NY-Southern Erie": [
+    "NY085"
+  ],
+  "MT-Musselshell": [
+    "MT029"
+  ],
+  "MT-Treasure": [
+    "MT030"
+  ],
+  "MT-Northern Rosebud": [
+    "MT031"
+  ],
+  "MT-Custer": [
+    "MT032"
+  ],
+  "MT-Fallon": [
+    "MT033"
+  ],
+  "MT-Northern Stillwater": [
+    "MT034"
+  ],
+  "MT-Powder River": [
+    "MT036"
+  ],
+  "MT-Carter": [
+    "MT037"
+  ],
+  "MT-Northern Park": [
+    "MT040"
+  ],
+  "MT-Golden Valley": [
+    "MT042"
+  ],
+  "MT-Red Lodge Foothills": [
+    "MT056"
+  ],
+  "MT-Northern Big Horn": [
+    "MT057"
+  ],
+  "MT-Southern Rosebud": [
+    "MT058"
+  ],
+  "MT-Judith Gap": [
+    "MT063"
+  ],
+  "MT-Paradise Valley": [
+    "MT064"
+  ],
+  "MT-Livingston Area": [
+    "MT065"
+  ],
+  "MT-Beartooth Foothills": [
+    "MT066"
+  ],
+  "MT-Absaroka/Beartooth Mountains": [
+    "MT067"
+  ],
+  "MT-Crazy Mountains": [
+    "MT068"
+  ],
+  "MT-Southern Big Horn": [
+    "MT138"
+  ],
+  "MT-Southeastern Carbon": [
+    "MT139"
+  ],
+  "MT-Northern Sweet Grass": [
+    "MT141"
+  ],
+  "MT-Bighorn Canyon": [
+    "MT169"
+  ],
+  "MT-Northern Carbon": [
+    "MT170"
+  ],
+  "MT-Pryor/Northern Bighorn Mountains": [
+    "MT171"
+  ],
+  "MT-Melville Foothills": [
+    "MT172"
+  ],
+  "MT-Northeastern Yellowstone": [
+    "MT173"
+  ],
+  "MT-Southern Wheatland": [
+    "MT228"
+  ],
+  "MT-Southwestern Yellowstone": [
+    "MT235"
+  ],
+  "WY-Northeast Big Horn Mountains": [
+    "WY198"
+  ],
+  "WY-Sheridan Foothills": [
+    "WY199"
+  ],
+  "GA-Lincoln": [
+    "GA040"
+  ],
+  "GA-McDuffie": [
+    "GA063"
+  ],
+  "GA-Columbia": [
+    "GA064"
+  ],
+  "GA-Richmond": [
+    "GA065"
+  ],
+  "GA-Burke": [
+    "GA077"
+  ],
+  "SC-Chesterfield": [
+    "SC016"
+  ],
+  "SC-McCormick": [
+    "SC018"
+  ],
+  "SC-Newberry": [
+    "SC020"
+  ],
+  "SC-Fairfield": [
+    "SC021"
+  ],
+  "SC-Kershaw": [
+    "SC022"
+  ],
+  "SC-Edgefield": [
+    "SC025"
+  ],
+  "SC-Saluda": [
+    "SC026"
+  ],
+  "SC-Lexington": [
+    "SC027"
+  ],
+  "SC-Richland": [
+    "SC028"
+  ],
+  "SC-Lee": [
+    "SC029"
+  ],
+  "SC-Aiken": [
+    "SC030"
+  ],
+  "SC-Sumter": [
+    "SC031"
+  ],
+  "SC-Barnwell": [
+    "SC035"
+  ],
+  "SC-Calhoun": [
+    "SC037"
+  ],
+  "SC-Clarendon": [
+    "SC038"
+  ],
+  "SC-Bamberg": [
+    "SC041"
+  ],
+  "SC-Northern Lancaster ": [
+    "SC115"
+  ],
+  "SC-Southern Lancaster ": [
+    "SC116"
+  ],
+  "SC-Northwestern Orangeburg": [
+    "SC135"
+  ],
+  "SC-Central Orangeburg": [
+    "SC136"
+  ],
+  "SC-Southeastern Orangeburg": [
+    "SC137"
+  ],
+  "ME-Northwest Aroostook": [
+    "ME001"
+  ],
+  "ME-Northeast Aroostook": [
+    "ME002"
+  ],
+  "ME-Northern Somerset": [
+    "ME003"
+  ],
+  "ME-Northern Piscataquis": [
+    "ME004"
+  ],
+  "ME-Northern Penobscot": [
+    "ME005"
+  ],
+  "ME-Southeast Aroostook": [
+    "ME006"
+  ],
+  "ME-Central Piscataquis": [
+    "ME010"
+  ],
+  "ME-Central Penobscot": [
+    "ME011"
+  ],
+  "ME-Southern Penobscot": [
+    "ME015"
+  ],
+  "ME-Interior Hancock": [
+    "ME016"
+  ],
+  "ME-Central Washington": [
+    "ME017"
+  ],
+  "ME-Coastal Hancock": [
+    "ME029"
+  ],
+  "ME-Coastal Washington": [
+    "ME030"
+  ],
+  "ME-Southern Piscataquis": [
+    "ME031"
+  ],
+  "ME-Northern Washington": [
+    "ME032"
+  ],
+  "GA-Jenkins": [
+    "GA087"
+  ],
+  "GA-Screven": [
+    "GA088"
+  ],
+  "GA-Candler": [
+    "GA099"
+  ],
+  "GA-Bulloch": [
+    "GA100"
+  ],
+  "GA-Effingham": [
+    "GA101"
+  ],
+  "GA-Tattnall": [
+    "GA114"
+  ],
+  "GA-Evans": [
+    "GA115"
+  ],
+  "GA-Inland Bryan": [
+    "GA116"
+  ],
+  "GA-Coastal Bryan": [
+    "GA117"
+  ],
+  "GA-Inland Chatham": [
+    "GA118"
+  ],
+  "GA-Coastal Chatham": [
+    "GA119"
+  ],
+  "GA-Long": [
+    "GA137"
+  ],
+  "GA-Inland Liberty": [
+    "GA138"
+  ],
+  "GA-Coastal Liberty": [
+    "GA139"
+  ],
+  "GA-Inland McIntosh": [
+    "GA140"
+  ],
+  "GA-Coastal McIntosh": [
+    "GA141"
+  ],
+  "SC-Allendale": [
+    "SC040"
+  ],
+  "SC-Hampton": [
+    "SC042"
+  ],
+  "SC-Inland Colleton": [
+    "SC043"
+  ],
+  "SC-Dorchester": [
+    "SC044"
+  ],
+  "SC-Inland Berkeley": [
+    "SC045"
+  ],
+  "SC-Inland Jasper": [
+    "SC047"
+  ],
+  "SC-Beaufort": [
+    "SC048"
+  ],
+  "SC-Coastal Colleton": [
+    "SC049"
+  ],
+  "SC-Charleston": [
+    "SC050"
+  ],
+  "SC-Coastal Jasper": [
+    "SC051"
+  ],
+  "SC-Tidal Berkeley": [
+    "SC052"
+  ],
+  "OH-Lucas": [
+    "OH003"
+  ],
+  "OH-Wood": [
+    "OH006"
+  ],
+  "OH-Ottawa": [
+    "OH007"
+  ],
+  "OH-Sandusky": [
+    "OH008"
+  ],
+  "OH-Erie": [
+    "OH009"
+  ],
+  "OH-Lorain": [
+    "OH010"
+  ],
+  "OH-Cuyahoga": [
+    "OH011"
+  ],
+  "OH-Lake": [
+    "OH012"
+  ],
+  "OH-Geauga": [
+    "OH013"
+  ],
+  "OH-Ashtabula Inland": [
+    "OH014"
+  ],
+  "OH-Hancock": [
+    "OH017"
+  ],
+  "OH-Seneca": [
+    "OH018"
+  ],
+  "OH-Huron": [
+    "OH019"
+  ],
+  "OH-Medina": [
+    "OH020"
+  ],
+  "OH-Summit": [
+    "OH021"
+  ],
+  "OH-Portage": [
+    "OH022"
+  ],
+  "OH-Trumbull": [
+    "OH023"
+  ],
+  "OH-Wyandot": [
+    "OH027"
+  ],
+  "OH-Crawford": [
+    "OH028"
+  ],
+  "OH-Richland": [
+    "OH029"
+  ],
+  "OH-Ashland": [
+    "OH030"
+  ],
+  "OH-Wayne": [
+    "OH031"
+  ],
+  "OH-Stark": [
+    "OH032"
+  ],
+  "OH-Mahoning": [
+    "OH033"
+  ],
+  "OH-Marion": [
+    "OH036"
+  ],
+  "OH-Morrow": [
+    "OH037"
+  ],
+  "OH-Holmes": [
+    "OH038"
+  ],
+  "OH-Knox": [
+    "OH047"
+  ],
+  "OH-Ashtabula Lakeshore": [
+    "OH089"
+  ],
+  "PA-Northern Erie": [
+    "PA001"
+  ],
+  "PA-Southern Erie": [
+    "PA002"
+  ],
+  "PA-Crawford": [
+    "PA003"
+  ],
+  "TX-La Salle": [
+    "TX229"
+  ],
+  "TX-McMullen": [
+    "TX230"
+  ],
+  "TX-Live Oak": [
+    "TX231"
+  ],
+  "TX-Bee": [
+    "TX232"
+  ],
+  "TX-Goliad": [
+    "TX233"
+  ],
+  "TX-Victoria": [
+    "TX234"
+  ],
+  "TX-Webb": [
+    "TX239"
+  ],
+  "TX-Duval": [
+    "TX240"
+  ],
+  "TX-Jim Wells": [
+    "TX241"
+  ],
+  "TX-Inland Kleberg": [
+    "TX242"
+  ],
+  "TX-Inland Nueces": [
+    "TX243"
+  ],
+  "TX-Inland San Patricio": [
+    "TX244"
+  ],
+  "TX-Aransas": [
+    "TX245"
+  ],
+  "TX-Inland Refugio": [
+    "TX246"
+  ],
+  "TX-Inland Calhoun": [
+    "TX247"
+  ],
+  "TX-Coastal Kleberg": [
+    "TX342"
+  ],
+  "TX-Coastal Nueces": [
+    "TX343"
+  ],
+  "TX-Coastal San Patricio": [
+    "TX344"
+  ],
+  "TX-Aransas County Islands": [
+    "TX345"
+  ],
+  "TX-Coastal Refugio": [
+    "TX346"
+  ],
+  "TX-Coastal Calhoun": [
+    "TX347"
+  ],
+  "TX-Kleberg County Island": [
+    "TX442"
+  ],
+  "TX-Nueces County Islands": [
+    "TX443"
+  ],
+  "TX-Calhoun County Island": [
+    "TX447"
+  ],
+  "PA-Warren": [
+    "PA004"
+  ],
+  "PA-McKean": [
+    "PA005"
+  ],
+  "PA-Potter": [
+    "PA006"
+  ],
+  "PA-Elk": [
+    "PA010"
+  ],
+  "PA-Cameron": [
+    "PA011"
+  ],
+  "PA-Northern Clinton": [
+    "PA012"
+  ],
+  "PA-Clearfield": [
+    "PA017"
+  ],
+  "PA-Northern Centre": [
+    "PA018"
+  ],
+  "PA-Southern Centre": [
+    "PA019"
+  ],
+  "PA-Cambria": [
+    "PA024"
+  ],
+  "PA-Blair": [
+    "PA025"
+  ],
+  "PA-Huntingdon": [
+    "PA026"
+  ],
+  "PA-Mifflin": [
+    "PA027"
+  ],
+  "PA-Juniata": [
+    "PA028"
+  ],
+  "PA-Somerset": [
+    "PA033"
+  ],
+  "PA-Bedford": [
+    "PA034"
+  ],
+  "PA-Fulton": [
+    "PA035"
+  ],
+  "PA-Franklin": [
+    "PA036"
+  ],
+  "PA-Tioga": [
+    "PA037"
+  ],
+  "PA-Northern Lycoming": [
+    "PA041"
+  ],
+  "PA-Sullivan": [
+    "PA042"
+  ],
+  "PA-Southern Clinton": [
+    "PA045"
+  ],
+  "PA-Southern Lycoming": [
+    "PA046"
+  ],
+  "PA-Union": [
+    "PA049"
+  ],
+  "PA-Snyder": [
+    "PA050"
+  ],
+  "PA-Montour": [
+    "PA051"
+  ],
+  "PA-Northumberland": [
+    "PA052"
+  ],
+  "PA-Columbia": [
+    "PA053"
+  ],
+  "PA-Perry": [
+    "PA056"
+  ],
+  "PA-Dauphin": [
+    "PA057"
+  ],
+  "PA-Schuylkill": [
+    "PA058"
+  ],
+  "PA-Lebanon": [
+    "PA059"
+  ],
+  "PA-Cumberland": [
+    "PA063"
+  ],
+  "PA-Adams": [
+    "PA064"
+  ],
+  "PA-York": [
+    "PA065"
+  ],
+  "PA-Lancaster": [
+    "PA066"
+  ],
+  "NE-Dawes": [
+    "NE002"
+  ],
+  "NE-Box Butte": [
+    "NE003"
+  ],
+  "NE-Scotts Bluff": [
+    "NE019"
+  ],
+  "NE-Banner": [
+    "NE020"
+  ],
+  "NE-Morrill": [
+    "NE021"
+  ],
+  "NE-Kimball": [
+    "NE054"
+  ],
+  "NE-Cheyenne": [
+    "NE055"
+  ],
+  "NE-North Sioux": [
+    "NE095"
+  ],
+  "NE-South Sioux": [
+    "NE096"
+  ],
+  "WY-Converse County Lower Elevations": [
+    "WY101"
+  ],
+  "WY-Niobrara County": [
+    "WY102"
+  ],
+  "WY-North Laramie Range": [
+    "WY103"
+  ],
+  "WY-Ferris/Seminoe/Shirley Mountains": [
+    "WY104"
+  ],
+  "WY-Shirley Basin": [
+    "WY105"
+  ],
+  "WY-Central Laramie Range and Southwest Platte County": [
+    "WY106"
+  ],
+  "WY-East Platte County": [
+    "WY107"
+  ],
+  "WY-Goshen County": [
+    "WY108"
+  ],
+  "WY-Central Carbon County": [
+    "WY109"
+  ],
+  "WY-North Snowy Range Foothills": [
+    "WY110"
+  ],
+  "WY-Southwest Carbon County": [
+    "WY111"
+  ],
+  "WY-Sierra Madre Range": [
+    "WY112"
+  ],
+  "WY-Upper North Platte River Basin": [
+    "WY113"
+  ],
+  "WY-Snowy Range": [
+    "WY114"
+  ],
+  "WY-Laramie Valley": [
+    "WY115"
+  ],
+  "WY-South Laramie Range": [
+    "WY116"
+  ],
+  "WY-South Laramie Range Foothills": [
+    "WY117"
+  ],
+  "WY-Central Laramie County": [
+    "WY118"
+  ],
+  "WY-East Laramie County": [
+    "WY119"
+  ],
+  "KS-Trego": [
+    "KS030"
+  ],
+  "KS-Ellis": [
+    "KS031"
+  ],
+  "KS-Scott": [
+    "KS043"
+  ],
+  "KS-Lane": [
+    "KS044"
+  ],
+  "KS-Ness": [
+    "KS045"
+  ],
+  "KS-Rush": [
+    "KS046"
+  ],
+  "KS-Hamilton": [
+    "KS061"
+  ],
+  "KS-Kearny": [
+    "KS062"
+  ],
+  "KS-Finney": [
+    "KS063"
+  ],
+  "KS-Hodgeman": [
+    "KS064"
+  ],
+  "KS-Pawnee": [
+    "KS065"
+  ],
+  "KS-Stafford": [
+    "KS066"
+  ],
+  "KS-Stanton": [
+    "KS074"
+  ],
+  "KS-Grant": [
+    "KS075"
+  ],
+  "KS-Haskell": [
+    "KS076"
+  ],
+  "KS-Gray": [
+    "KS077"
+  ],
+  "KS-Ford": [
+    "KS078"
+  ],
+  "KS-Edwards": [
+    "KS079"
+  ],
+  "KS-Kiowa": [
+    "KS080"
+  ],
+  "KS-Pratt": [
+    "KS081"
+  ],
+  "KS-Morton": [
+    "KS084"
+  ],
+  "KS-Stevens": [
+    "KS085"
+  ],
+  "KS-Seward": [
+    "KS086"
+  ],
+  "KS-Meade": [
+    "KS087"
+  ],
+  "KS-Clark": [
+    "KS088"
+  ],
+  "KS-Comanche": [
+    "KS089"
+  ],
+  "KS-Barber": [
+    "KS090"
+  ],
+  "MN-Koochiching": [
+    "MN010"
+  ],
+  "MN-North St. Louis": [
+    "MN011"
+  ],
+  "MN-Northern Cook/Northern Lake": [
+    "MN012"
+  ],
+  "MN-North Itasca": [
+    "MN018"
+  ],
+  "MN-Central St. Louis": [
+    "MN019"
+  ],
+  "MN-Southern Lake/North Shore": [
+    "MN020"
+  ],
+  "MN-Southern Cook/North Shore": [
+    "MN021"
+  ],
+  "MN-North Cass": [
+    "MN025"
+  ],
+  "MN-South Itasca": [
+    "MN026"
+  ],
+  "MN-South Cass": [
+    "MN033"
+  ],
+  "MN-Crow Wing": [
+    "MN034"
+  ],
+  "MN-Northern Aitkin": [
+    "MN035"
+  ],
+  "MN-South Aitkin": [
+    "MN036"
+  ],
+  "MN-Carlton/South St. Louis": [
+    "MN037"
+  ],
+  "MN-Pine": [
+    "MN038"
+  ],
+  "WI-Douglas": [
+    "WI001"
+  ],
+  "WI-Bayfield": [
+    "WI002"
+  ],
+  "WI-Ashland": [
+    "WI003"
+  ],
+  "WI-Iron": [
+    "WI004"
+  ],
+  "WI-Burnett": [
+    "WI006"
+  ],
+  "WI-Washburn": [
+    "WI007"
+  ],
+  "WI-Sawyer": [
+    "WI008"
+  ],
+  "WI-Price": [
+    "WI009"
+  ],
+  "IA-Emmet": [
+    "IA004"
+  ],
+  "IA-Kossuth": [
+    "IA005"
+  ],
+  "IA-Winnebago": [
+    "IA006"
+  ],
+  "IA-Worth": [
+    "IA007"
+  ],
+  "IA-Palo Alto": [
+    "IA015"
+  ],
+  "IA-Hancock": [
+    "IA016"
+  ],
+  "IA-Cerro Gordo": [
+    "IA017"
+  ],
+  "IA-Pocahontas": [
+    "IA023"
+  ],
+  "IA-Humboldt": [
+    "IA024"
+  ],
+  "IA-Wright": [
+    "IA025"
+  ],
+  "IA-Franklin": [
+    "IA026"
+  ],
+  "IA-Butler": [
+    "IA027"
+  ],
+  "IA-Bremer": [
+    "IA028"
+  ],
+  "IA-Sac": [
+    "IA033"
+  ],
+  "IA-Calhoun": [
+    "IA034"
+  ],
+  "IA-Webster": [
+    "IA035"
+  ],
+  "IA-Hamilton": [
+    "IA036"
+  ],
+  "IA-Hardin": [
+    "IA037"
+  ],
+  "IA-Grundy": [
+    "IA038"
+  ],
+  "IA-Black Hawk": [
+    "IA039"
+  ],
+  "IA-Crawford": [
+    "IA044"
+  ],
+  "IA-Carroll": [
+    "IA045"
+  ],
+  "IA-Greene": [
+    "IA046"
+  ],
+  "IA-Boone": [
+    "IA047"
+  ],
+  "IA-Story": [
+    "IA048"
+  ],
+  "IA-Marshall": [
+    "IA049"
+  ],
+  "IA-Tama": [
+    "IA050"
+  ],
+  "IA-Audubon": [
+    "IA057"
+  ],
+  "IA-Guthrie": [
+    "IA058"
+  ],
+  "IA-Dallas": [
+    "IA059"
+  ],
+  "IA-Polk": [
+    "IA060"
+  ],
+  "IA-Jasper": [
+    "IA061"
+  ],
+  "IA-Poweshiek": [
+    "IA062"
+  ],
+  "IA-Cass": [
+    "IA070"
+  ],
+  "IA-Adair": [
+    "IA071"
+  ],
+  "IA-Madison": [
+    "IA072"
+  ],
+  "IA-Warren": [
+    "IA073"
+  ],
+  "IA-Marion": [
+    "IA074"
+  ],
+  "IA-Mahaska": [
+    "IA075"
+  ],
+  "IA-Adams": [
+    "IA081"
+  ],
+  "IA-Union": [
+    "IA082"
+  ],
+  "IA-Clarke": [
+    "IA083"
+  ],
+  "IA-Lucas": [
+    "IA084"
+  ],
+  "IA-Monroe": [
+    "IA085"
+  ],
+  "IA-Wapello": [
+    "IA086"
+  ],
+  "IA-Taylor": [
+    "IA092"
+  ],
+  "IA-Ringgold": [
+    "IA093"
+  ],
+  "IA-Decatur": [
+    "IA094"
+  ],
+  "IA-Wayne": [
+    "IA095"
+  ],
+  "IA-Appanoose": [
+    "IA096"
+  ],
+  "IA-Davis": [
+    "IA097"
+  ],
+  "MI-Midland": [
+    "MI047"
+  ],
+  "MI-Bay": [
+    "MI048"
+  ],
+  "MI-Huron": [
+    "MI049"
+  ],
+  "MI-Saginaw": [
+    "MI053"
+  ],
+  "MI-Tuscola": [
+    "MI054"
+  ],
+  "MI-Sanilac": [
+    "MI055"
+  ],
+  "MI-Shiawassee": [
+    "MI060"
+  ],
+  "MI-Genesee": [
+    "MI061"
+  ],
+  "MI-Lapeer": [
+    "MI062"
+  ],
+  "MI-St. Clair": [
+    "MI063"
+  ],
+  "MI-Livingston": [
+    "MI068"
+  ],
+  "MI-Oakland": [
+    "MI069"
+  ],
+  "MI-Macomb": [
+    "MI070"
+  ],
+  "MI-Washtenaw": [
+    "MI075"
+  ],
+  "MI-Wayne": [
+    "MI076"
+  ],
+  "MI-Lenawee": [
+    "MI082"
+  ],
+  "MI-Monroe": [
+    "MI083"
+  ],
+  "IA-Buchanan": [
+    "IA040"
+  ],
+  "IA-Delaware": [
+    "IA041"
+  ],
+  "IA-Dubuque": [
+    "IA042"
+  ],
+  "IA-Benton": [
+    "IA051"
+  ],
+  "IA-Linn": [
+    "IA052"
+  ],
+  "IA-Jones": [
+    "IA053"
+  ],
+  "IA-Jackson": [
+    "IA054"
+  ],
+  "IA-Iowa": [
+    "IA063"
+  ],
+  "IA-Johnson": [
+    "IA064"
+  ],
+  "IA-Cedar": [
+    "IA065"
+  ],
+  "IA-Clinton": [
+    "IA066"
+  ],
+  "IA-Muscatine": [
+    "IA067"
+  ],
+  "IA-Scott": [
+    "IA068"
+  ],
+  "IA-Keokuk": [
+    "IA076"
+  ],
+  "IA-Washington": [
+    "IA077"
+  ],
+  "IA-Louisa": [
+    "IA078"
+  ],
+  "IA-Jefferson": [
+    "IA087"
+  ],
+  "IA-Henry": [
+    "IA088"
+  ],
+  "IA-Des Moines": [
+    "IA089"
+  ],
+  "IA-Van Buren": [
+    "IA098"
+  ],
+  "IA-Lee": [
+    "IA099"
+  ],
+  "IL-Jo Daviess": [
+    "IL001"
+  ],
+  "IL-Stephenson": [
+    "IL002"
+  ],
+  "IL-Carroll": [
+    "IL007"
+  ],
+  "IL-Whiteside": [
+    "IL009"
+  ],
+  "IL-Rock Island": [
+    "IL015"
+  ],
+  "IL-Henry": [
+    "IL016"
+  ],
+  "IL-Bureau": [
+    "IL017"
+  ],
+  "IL-Putnam": [
+    "IL018"
+  ],
+  "IL-Mercer": [
+    "IL024"
+  ],
+  "IL-Henderson": [
+    "IL025"
+  ],
+  "IL-Warren": [
+    "IL026"
+  ],
+  "IL-Hancock": [
+    "IL034"
+  ],
+  "IL-McDonough": [
+    "IL035"
+  ],
+  "MO-Scotland": [
+    "MO009"
+  ],
+  "MO-Clark": [
+    "MO010"
+  ],
+  "KS-Atchison": [
+    "KS025"
+  ],
+  "KS-Miami": [
+    "KS057"
+  ],
+  "KS-Linn": [
+    "KS060"
+  ],
+  "KS-Doniphan": [
+    "KS102"
+  ],
+  "KS-Leavenworth": [
+    "KS103"
+  ],
+  "KS-Wyandotte": [
+    "KS104"
+  ],
+  "KS-Johnson": [
+    "KS105"
+  ],
+  "MO-Atchison": [
+    "MO001"
+  ],
+  "MO-Nodaway": [
+    "MO002"
+  ],
+  "MO-Worth": [
+    "MO003"
+  ],
+  "MO-Gentry": [
+    "MO004"
+  ],
+  "MO-Harrison": [
+    "MO005"
+  ],
+  "MO-Mercer": [
+    "MO006"
+  ],
+  "MO-Putnam": [
+    "MO007"
+  ],
+  "MO-Schuyler": [
+    "MO008"
+  ],
+  "MO-Holt": [
+    "MO011"
+  ],
+  "MO-Andrew": [
+    "MO012"
+  ],
+  "MO-De Kalb": [
+    "MO013"
+  ],
+  "MO-Daviess": [
+    "MO014"
+  ],
+  "MO-Grundy": [
+    "MO015"
+  ],
+  "MO-Sullivan": [
+    "MO016"
+  ],
+  "MO-Adair": [
+    "MO017"
+  ],
+  "MO-Buchanan": [
+    "MO020"
+  ],
+  "MO-Clinton": [
+    "MO021"
+  ],
+  "MO-Caldwell": [
+    "MO022"
+  ],
+  "MO-Livingston": [
+    "MO023"
+  ],
+  "MO-Linn": [
+    "MO024"
+  ],
+  "MO-Macon": [
+    "MO025"
+  ],
+  "MO-Platte": [
+    "MO028"
+  ],
+  "MO-Clay": [
+    "MO029"
+  ],
+  "MO-Ray": [
+    "MO030"
+  ],
+  "MO-Carroll": [
+    "MO031"
+  ],
+  "MO-Chariton": [
+    "MO032"
+  ],
+  "MO-Randolph": [
+    "MO033"
+  ],
+  "MO-Jackson": [
+    "MO037"
+  ],
+  "MO-Lafayette": [
+    "MO038"
+  ],
+  "MO-Saline": [
+    "MO039"
+  ],
+  "MO-Howard": [
+    "MO040"
+  ],
+  "MO-Cass": [
+    "MO043"
+  ],
+  "MO-Johnson": [
+    "MO044"
+  ],
+  "MO-Pettis": [
+    "MO045"
+  ],
+  "MO-Cooper": [
+    "MO046"
+  ],
+  "MO-Bates": [
+    "MO053"
+  ],
+  "MO-Henry": [
+    "MO054"
+  ],
+  "CA-Coastal Del Norte": [
+    "CA101"
+  ],
+  "CA-Del Norte Interior": [
+    "CA102"
+  ],
+  "CA-Northern Humboldt Coast": [
+    "CA103"
+  ],
+  "CA-Southwestern Humboldt": [
+    "CA104"
+  ],
+  "CA-Northern Humboldt Interior": [
+    "CA105"
+  ],
+  "CA-Southern Humboldt Interior": [
+    "CA106"
+  ],
+  "CA-Northern Trinity": [
+    "CA107"
+  ],
+  "CA-Southern Trinity": [
+    "CA108"
+  ],
+  "CA-Mendocino Coast": [
+    "CA109"
+  ],
+  "CA-Northwestern Mendocino Interior": [
+    "CA110"
+  ],
+  "CA-Northeastern Mendocino Interior": [
+    "CA111"
+  ],
+  "CA-Southwestern Mendocino Interior": [
+    "CA112"
+  ],
+  "CA-Southeastern Mendocino Interior": [
+    "CA113"
+  ],
+  "CA-Northern Lake County": [
+    "CA114"
+  ],
+  "CA-Southern Lake County": [
+    "CA115"
+  ],
+  "NM-Upper Gila River Valley": [
+    "NM401"
+  ],
+  "NM-Southern Gila Foothills/Mimbres Valley": [
+    "NM403"
+  ],
+  "NM-Southwest Desert/Lower Gila River Valley": [
+    "NM404"
+  ],
+  "NM-Lowlands of the Bootheel": [
+    "NM405"
+  ],
+  "NM-Uplands of the Bootheel": [
+    "NM406"
+  ],
+  "NM-Southwest Desert/Mimbres Basin": [
+    "NM407"
+  ],
+  "NM-Eastern Black Range Foothills": [
+    "NM408"
+  ],
+  "NM-Sierra County Lakes": [
+    "NM409"
+  ],
+  "NM-Northern Dona Ana County": [
+    "NM410"
+  ],
+  "NM-Southern Dona Ana County/Mesilla Valley": [
+    "NM411"
+  ],
+  "NM-West Slopes Sacramento Mountains Below 7500 Feet": [
+    "NM414"
+  ],
+  "NM-Sacramento Mountains Above 7500 Feet": [
+    "NM415"
+  ],
+  "NM-East Slopes Sacramento Mountains Below 7500 Feet": [
+    "NM416"
+  ],
+  "NM-Otero Mesa": [
+    "NM417"
+  ],
+  "NM-Central Grant County/Silver City Area ": [
+    "NM425"
+  ],
+  "NM-Southern Gila Region Highlands/Black Range ": [
+    "NM426"
+  ],
+  "NM-West Central Tularosa Basin/White Sands ": [
+    "NM427"
+  ],
+  "NM-East Central Tularosa Basin/Alamogordo ": [
+    "NM428"
+  ],
+  "NM-Southeast Tularosa Basin ": [
+    "NM429"
+  ],
+  "TX-Western El Paso County": [
+    "TX418"
+  ],
+  "TX-Eastern/Central El Paso County": [
+    "TX419"
+  ],
+  "TX-Northern Hudspeth Highlands/Hueco Mountains": [
+    "TX420"
+  ],
+  "TX-Salt Basin": [
+    "TX421"
+  ],
+  "TX-Southern Hudspeth Highlands": [
+    "TX422"
+  ],
+  "TX-Rio Grande Valley of Eastern El Paso/Western Hudspeth Counties": [
+    "TX423"
+  ],
+  "TX-Rio Grande Valley of Eastern Hudspeth County": [
+    "TX424"
+  ],
+  "TX-Llano": [
+    "TX171"
+  ],
+  "TX-Burnet": [
+    "TX172"
+  ],
+  "TX-Williamson": [
+    "TX173"
+  ],
+  "TX-Val Verde": [
+    "TX183"
+  ],
+  "TX-Edwards": [
+    "TX184"
+  ],
+  "TX-Real": [
+    "TX185"
+  ],
+  "TX-Kerr": [
+    "TX186"
+  ],
+  "TX-Bandera": [
+    "TX187"
+  ],
+  "TX-Gillespie": [
+    "TX188"
+  ],
+  "TX-Kendall": [
+    "TX189"
+  ],
+  "TX-Blanco": [
+    "TX190"
+  ],
+  "TX-Hays": [
+    "TX191"
+  ],
+  "TX-Travis": [
+    "TX192"
+  ],
+  "TX-Bastrop": [
+    "TX193"
+  ],
+  "TX-Lee": [
+    "TX194"
+  ],
+  "TX-Kinney": [
+    "TX202"
+  ],
+  "TX-Uvalde": [
+    "TX203"
+  ],
+  "TX-Medina": [
+    "TX204"
+  ],
+  "TX-Bexar": [
+    "TX205"
+  ],
+  "TX-Comal": [
+    "TX206"
+  ],
+  "TX-Guadalupe": [
+    "TX207"
+  ],
+  "TX-Caldwell": [
+    "TX208"
+  ],
+  "TX-Fayette": [
+    "TX209"
+  ],
+  "TX-Maverick": [
+    "TX217"
+  ],
+  "TX-Zavala": [
+    "TX218"
+  ],
+  "TX-Frio": [
+    "TX219"
+  ],
+  "TX-Atascosa": [
+    "TX220"
+  ],
+  "TX-Wilson": [
+    "TX221"
+  ],
+  "TX-Karnes": [
+    "TX222"
+  ],
+  "TX-Gonzales": [
+    "TX223"
+  ],
+  "TX-De Witt": [
+    "TX224"
+  ],
+  "TX-Lavaca": [
+    "TX225"
+  ],
+  "TX-Dimmit": [
+    "TX228"
+  ],
+  "GA-Dade": [
+    "GA001"
+  ],
+  "GA-Walker": [
+    "GA002"
+  ],
+  "GA-Catoosa": [
+    "GA003"
+  ],
+  "GA-Whitfield": [
+    "GA004"
+  ],
+  "GA-Murray": [
+    "GA005"
+  ],
+  "GA-Fannin": [
+    "GA006"
+  ],
+  "GA-Gilmer": [
+    "GA007"
+  ],
+  "GA-Union": [
+    "GA008"
+  ],
+  "GA-Towns": [
+    "GA009"
+  ],
+  "GA-Chattooga": [
+    "GA011"
+  ],
+  "GA-Gordon": [
+    "GA012"
+  ],
+  "GA-Pickens": [
+    "GA013"
+  ],
+  "GA-Dawson": [
+    "GA014"
+  ],
+  "GA-Lumpkin": [
+    "GA015"
+  ],
+  "GA-White": [
+    "GA016"
+  ],
+  "GA-Floyd": [
+    "GA019"
+  ],
+  "GA-Bartow": [
+    "GA020"
+  ],
+  "GA-Cherokee": [
+    "GA021"
+  ],
+  "GA-Forsyth": [
+    "GA022"
+  ],
+  "GA-Hall": [
+    "GA023"
+  ],
+  "GA-Banks": [
+    "GA024"
+  ],
+  "GA-Jackson": [
+    "GA025"
+  ],
+  "GA-Madison": [
+    "GA027"
+  ],
+  "GA-Polk": [
+    "GA030"
+  ],
+  "GA-Paulding": [
+    "GA031"
+  ],
+  "GA-Cobb": [
+    "GA032"
+  ],
+  "GA-North Fulton": [
+    "GA033"
+  ],
+  "GA-Gwinnett": [
+    "GA034"
+  ],
+  "GA-Barrow": [
+    "GA035"
+  ],
+  "GA-Clarke": [
+    "GA036"
+  ],
+  "GA-Oconee": [
+    "GA037"
+  ],
+  "GA-Oglethorpe": [
+    "GA038"
+  ],
+  "GA-Wilkes": [
+    "GA039"
+  ],
+  "GA-Haralson": [
+    "GA041"
+  ],
+  "GA-Carroll": [
+    "GA042"
+  ],
+  "GA-Douglas": [
+    "GA043"
+  ],
+  "GA-South Fulton": [
+    "GA044"
+  ],
+  "GA-De Kalb": [
+    "GA045"
+  ],
+  "GA-Rockdale": [
+    "GA046"
+  ],
+  "GA-Walton": [
+    "GA047"
+  ],
+  "GA-Newton": [
+    "GA048"
+  ],
+  "GA-Morgan": [
+    "GA049"
+  ],
+  "GA-Greene": [
+    "GA050"
+  ],
+  "GA-Taliaferro": [
+    "GA051"
+  ],
+  "GA-Heard": [
+    "GA052"
+  ],
+  "GA-Coweta": [
+    "GA053"
+  ],
+  "GA-Fayette": [
+    "GA054"
+  ],
+  "GA-Clayton": [
+    "GA055"
+  ],
+  "GA-Spalding": [
+    "GA056"
+  ],
+  "GA-Henry": [
+    "GA057"
+  ],
+  "GA-Butts": [
+    "GA058"
+  ],
+  "GA-Jasper": [
+    "GA059"
+  ],
+  "GA-Putnam": [
+    "GA060"
+  ],
+  "GA-Hancock": [
+    "GA061"
+  ],
+  "GA-Warren": [
+    "GA062"
+  ],
+  "GA-Troup": [
+    "GA066"
+  ],
+  "GA-Meriwether": [
+    "GA067"
+  ],
+  "GA-Pike": [
+    "GA068"
+  ],
+  "GA-Upson": [
+    "GA069"
+  ],
+  "GA-Lamar": [
+    "GA070"
+  ],
+  "GA-Monroe": [
+    "GA071"
+  ],
+  "GA-Jones": [
+    "GA072"
+  ],
+  "GA-Baldwin": [
+    "GA073"
+  ],
+  "GA-Washington": [
+    "GA074"
+  ],
+  "GA-Glascock": [
+    "GA075"
+  ],
+  "GA-Jefferson": [
+    "GA076"
+  ],
+  "GA-Harris": [
+    "GA078"
+  ],
+  "GA-Talbot": [
+    "GA079"
+  ],
+  "GA-Taylor": [
+    "GA080"
+  ],
+  "GA-Crawford": [
+    "GA081"
+  ],
+  "GA-Bibb": [
+    "GA082"
+  ],
+  "GA-Twiggs": [
+    "GA083"
+  ],
+  "GA-Wilkinson": [
+    "GA084"
+  ],
+  "GA-Johnson": [
+    "GA085"
+  ],
+  "GA-Emanuel": [
+    "GA086"
+  ],
+  "GA-Muscogee": [
+    "GA089"
+  ],
+  "GA-Chattahoochee": [
+    "GA090"
+  ],
+  "GA-Marion": [
+    "GA091"
+  ],
+  "GA-Schley": [
+    "GA092"
+  ],
+  "GA-Macon": [
+    "GA093"
+  ],
+  "GA-Peach": [
+    "GA094"
+  ],
+  "GA-Houston": [
+    "GA095"
+  ],
+  "GA-Bleckley": [
+    "GA096"
+  ],
+  "GA-Laurens": [
+    "GA097"
+  ],
+  "GA-Treutlen": [
+    "GA098"
+  ],
+  "GA-Stewart": [
+    "GA102"
+  ],
+  "GA-Webster": [
+    "GA103"
+  ],
+  "GA-Sumter": [
+    "GA104"
+  ],
+  "GA-Dooly": [
+    "GA105"
+  ],
+  "GA-Crisp": [
+    "GA106"
+  ],
+  "GA-Pulaski": [
+    "GA107"
+  ],
+  "GA-Wilcox": [
+    "GA108"
+  ],
+  "GA-Dodge": [
+    "GA109"
+  ],
+  "GA-Telfair": [
+    "GA110"
+  ],
+  "GA-Wheeler": [
+    "GA111"
+  ],
+  "GA-Montgomery": [
+    "GA112"
+  ],
+  "GA-Toombs": [
+    "GA113"
+  ],
+  "MN-West Polk": [
+    "MN001"
+  ],
+  "MN-Norman": [
+    "MN002"
+  ],
+  "MN-Clay": [
+    "MN003"
+  ],
+  "MN-Kittson": [
+    "MN004"
+  ],
+  "MN-Roseau": [
+    "MN005"
+  ],
+  "MN-Lake Of The Woods": [
+    "MN006"
+  ],
+  "MN-West Marshall": [
+    "MN007"
+  ],
+  "MN-East Marshall": [
+    "MN008"
+  ],
+  "MN-North Beltrami": [
+    "MN009"
+  ],
+  "MN-Pennington": [
+    "MN013"
+  ],
+  "MN-Red Lake": [
+    "MN014"
+  ],
+  "MN-East Polk": [
+    "MN015"
+  ],
+  "MN-North Clearwater": [
+    "MN016"
+  ],
+  "MN-South Beltrami": [
+    "MN017"
+  ],
+  "MN-Mahnomen": [
+    "MN022"
+  ],
+  "MN-South Clearwater": [
+    "MN023"
+  ],
+  "MN-Hubbard": [
+    "MN024"
+  ],
+  "MN-West Becker": [
+    "MN027"
+  ],
+  "MN-East Becker": [
+    "MN028"
+  ],
+  "MN-Wilkin": [
+    "MN029"
+  ],
+  "MN-West Otter Tail": [
+    "MN030"
+  ],
+  "MN-East Otter Tail": [
+    "MN031"
+  ],
+  "MN-Wadena": [
+    "MN032"
+  ],
+  "MN-Grant": [
+    "MN040"
+  ],
+  "ND-Towner": [
+    "ND006"
+  ],
+  "ND-Cavalier": [
+    "ND007"
+  ],
+  "ND-Pembina": [
+    "ND008"
+  ],
+  "ND-Benson": [
+    "ND014"
+  ],
+  "ND-Ramsey": [
+    "ND015"
+  ],
+  "ND-Eastern Walsh County": [
+    "ND016"
+  ],
+  "ND-Eddy": [
+    "ND024"
+  ],
+  "ND-Nelson": [
+    "ND026"
+  ],
+  "ND-Grand Forks": [
+    "ND027"
+  ],
+  "ND-Griggs": [
+    "ND028"
+  ],
+  "ND-Steele": [
+    "ND029"
+  ],
+  "ND-Traill": [
+    "ND030"
+  ],
+  "ND-Barnes": [
+    "ND038"
+  ],
+  "ND-Cass": [
+    "ND039"
+  ],
+  "ND-Ransom": [
+    "ND049"
+  ],
+  "ND-Sargent": [
+    "ND052"
+  ],
+  "ND-Richland": [
+    "ND053"
+  ],
+  "ND-Western Walsh County": [
+    "ND054"
+  ],
+  "AZ-Kaibab Plateau": [
+    "AZ004"
+  ],
+  "AZ-Marble and Glen Canyons": [
+    "AZ005"
+  ],
+  "AZ-Grand Canyon Country": [
+    "AZ006"
+  ],
+  "AZ-Coconino Plateau": [
+    "AZ007"
+  ],
+  "AZ-Yavapai County  Mountains": [
+    "AZ008"
+  ],
+  "AZ-Northeast Plateaus and Mesas Hwy 264 Northward": [
+    "AZ009"
+  ],
+  "AZ-Chinle Valley": [
+    "AZ010"
+  ],
+  "AZ-Chuska Mountains and Defiance Plateau": [
+    "AZ011"
+  ],
+  "AZ-Little Colorado River Valley in Coconino County": [
+    "AZ012"
+  ],
+  "AZ-Little Colorado River Valley in Navajo County": [
+    "AZ013"
+  ],
+  "AZ-Little Colorado River Valley in Apache County": [
+    "AZ014"
+  ],
+  "AZ-Western Mogollon Rim": [
+    "AZ015"
+  ],
+  "AZ-Eastern Mogollon Rim": [
+    "AZ016"
+  ],
+  "AZ-White Mountains": [
+    "AZ017"
+  ],
+  "AZ-Northern Gila County": [
+    "AZ018"
+  ],
+  "AZ-Yavapai County Valleys and Basins": [
+    "AZ037"
+  ],
+  "AZ-Oak Creek and Sycamore Canyons": [
+    "AZ038"
+  ],
+  "AZ-Black Mesa Area": [
+    "AZ039"
+  ],
+  "AZ-Northeast Plateaus and Mesas South of Hwy 264": [
+    "AZ040"
+  ],
+  "IA-Lyon": [
+    "IA001"
+  ],
+  "IA-Osceola": [
+    "IA002"
+  ],
+  "IA-Dickinson": [
+    "IA003"
+  ],
+  "IA-Sioux": [
+    "IA012"
+  ],
+  "IA-O'Brien": [
+    "IA013"
+  ],
+  "IA-Clay": [
+    "IA014"
+  ],
+  "IA-Plymouth": [
+    "IA020"
+  ],
+  "IA-Cherokee": [
+    "IA021"
+  ],
+  "IA-Buena Vista": [
+    "IA022"
+  ],
+  "IA-Woodbury": [
+    "IA031"
+  ],
+  "IA-Ida": [
+    "IA032"
+  ],
+  "MN-Lincoln": [
+    "MN071"
+  ],
+  "MN-Lyon": [
+    "MN072"
+  ],
+  "MN-Murray": [
+    "MN080"
+  ],
+  "MN-Cottonwood": [
+    "MN081"
+  ],
+  "MN-Nobles": [
+    "MN089"
+  ],
+  "MN-Jackson": [
+    "MN090"
+  ],
+  "MN-Pipestone": [
+    "MN097"
+  ],
+  "MN-Rock": [
+    "MN098"
+  ],
+  "NE-Dixon": [
+    "NE013"
+  ],
+  "NE-Dakota": [
+    "NE014"
+  ],
+  "SD-Beadle": [
+    "SD038"
+  ],
+  "SD-Kingsbury": [
+    "SD039"
+  ],
+  "SD-Brookings": [
+    "SD040"
+  ],
+  "SD-Gregory": [
+    "SD050"
+  ],
+  "SD-Jerauld": [
+    "SD052"
+  ],
+  "SD-Sanborn": [
+    "SD053"
+  ],
+  "SD-Miner": [
+    "SD054"
+  ],
+  "SD-Lake": [
+    "SD055"
+  ],
+  "SD-Moody": [
+    "SD056"
+  ],
+  "SD-Brule": [
+    "SD057"
+  ],
+  "SD-Aurora": [
+    "SD058"
+  ],
+  "SD-Davison": [
+    "SD059"
+  ],
+  "SD-Hanson": [
+    "SD060"
+  ],
+  "SD-McCook": [
+    "SD061"
+  ],
+  "SD-Minnehaha": [
+    "SD062"
+  ],
+  "SD-Charles Mix": [
+    "SD063"
+  ],
+  "SD-Douglas": [
+    "SD064"
+  ],
+  "SD-Hutchinson": [
+    "SD065"
+  ],
+  "SD-Turner": [
+    "SD066"
+  ],
+  "SD-Lincoln": [
+    "SD067"
+  ],
+  "SD-Bon Homme": [
+    "SD068"
+  ],
+  "SD-Yankton": [
+    "SD069"
+  ],
+  "SD-Clay": [
+    "SD070"
+  ],
+  "SD-Union": [
+    "SD071"
+  ],
+  "TX-Montague": [
+    "TX091"
+  ],
+  "TX-Cooke": [
+    "TX092"
+  ],
+  "TX-Grayson": [
+    "TX093"
+  ],
+  "TX-Fannin": [
+    "TX094"
+  ],
+  "TX-Lamar": [
+    "TX095"
+  ],
+  "TX-Young": [
+    "TX100"
+  ],
+  "TX-Jack": [
+    "TX101"
+  ],
+  "TX-Wise": [
+    "TX102"
+  ],
+  "TX-Denton": [
+    "TX103"
+  ],
+  "TX-Collin": [
+    "TX104"
+  ],
+  "TX-Hunt": [
+    "TX105"
+  ],
+  "TX-Delta": [
+    "TX106"
+  ],
+  "TX-Hopkins": [
+    "TX107"
+  ],
+  "TX-Stephens": [
+    "TX115"
+  ],
+  "TX-Palo Pinto": [
+    "TX116"
+  ],
+  "TX-Parker": [
+    "TX117"
+  ],
+  "TX-Tarrant": [
+    "TX118"
+  ],
+  "TX-Dallas": [
+    "TX119"
+  ],
+  "TX-Rockwall": [
+    "TX120"
+  ],
+  "TX-Kaufman": [
+    "TX121"
+  ],
+  "TX-Van Zandt": [
+    "TX122"
+  ],
+  "TX-Rains": [
+    "TX123"
+  ],
+  "TX-Eastland": [
+    "TX129"
+  ],
+  "TX-Erath": [
+    "TX130"
+  ],
+  "TX-Hood": [
+    "TX131"
+  ],
+  "TX-Somervell": [
+    "TX132"
+  ],
+  "TX-Johnson": [
+    "TX133"
+  ],
+  "TX-Ellis": [
+    "TX134"
+  ],
+  "TX-Henderson": [
+    "TX135"
+  ],
+  "TX-Comanche": [
+    "TX141"
+  ],
+  "TX-Mills": [
+    "TX142"
+  ],
+  "TX-Hamilton": [
+    "TX143"
+  ],
+  "TX-Bosque": [
+    "TX144"
+  ],
+  "TX-Hill": [
+    "TX145"
+  ],
+  "TX-Navarro": [
+    "TX146"
+  ],
+  "TX-Freestone": [
+    "TX147"
+  ],
+  "TX-Anderson": [
+    "TX148"
+  ],
+  "TX-Lampasas": [
+    "TX156"
+  ],
+  "TX-Coryell": [
+    "TX157"
+  ],
+  "TX-Bell": [
+    "TX158"
+  ],
+  "TX-McLennan": [
+    "TX159"
+  ],
+  "TX-Falls": [
+    "TX160"
+  ],
+  "TX-Limestone": [
+    "TX161"
+  ],
+  "TX-Leon": [
+    "TX162"
+  ],
+  "TX-Milam": [
+    "TX174"
+  ],
+  "TX-Robertson": [
+    "TX175"
+  ],
+  "MT-Central and Southeast Phillips": [
+    "MT016"
+  ],
+  "MT-Central and Southern Valley": [
+    "MT017"
+  ],
+  "MT-Daniels": [
+    "MT018"
+  ],
+  "MT-Sheridan": [
+    "MT019"
+  ],
+  "MT-Western Roosevelt": [
+    "MT020"
+  ],
+  "MT-Petroleum": [
+    "MT021"
+  ],
+  "MT-Garfield": [
+    "MT022"
+  ],
+  "MT-McCone": [
+    "MT023"
+  ],
+  "MT-Richland": [
+    "MT024"
+  ],
+  "MT-Dawson": [
+    "MT025"
+  ],
+  "MT-Prairie": [
+    "MT026"
+  ],
+  "MT-Wibaux": [
+    "MT027"
+  ],
+  "MT-Northern Phillips": [
+    "MT059"
+  ],
+  "MT-Southwest Phillips": [
+    "MT060"
+  ],
+  "MT-Northern Valley": [
+    "MT061"
+  ],
+  "MT-Eastern Roosevelt": [
+    "MT062"
+  ],
+  "KS-Phillips": [
+    "KS005"
+  ],
+  "KS-Smith": [
+    "KS006"
+  ],
+  "KS-Jewell": [
+    "KS007"
+  ],
+  "KS-Rooks": [
+    "KS017"
+  ],
+  "KS-Osborne": [
+    "KS018"
+  ],
+  "KS-Mitchell": [
+    "KS019"
+  ],
+  "NE-Valley": [
+    "NE039"
+  ],
+  "NE-Greeley": [
+    "NE040"
+  ],
+  "NE-Nance": [
+    "NE041"
+  ],
+  "NE-Sherman": [
+    "NE046"
+  ],
+  "NE-Howard": [
+    "NE047"
+  ],
+  "NE-Merrick": [
+    "NE048"
+  ],
+  "NE-Polk": [
+    "NE049"
+  ],
+  "NE-Dawson": [
+    "NE060"
+  ],
+  "NE-Buffalo": [
+    "NE061"
+  ],
+  "NE-Hall": [
+    "NE062"
+  ],
+  "NE-Hamilton": [
+    "NE063"
+  ],
+  "NE-York": [
+    "NE064"
+  ],
+  "NE-Gosper": [
+    "NE072"
+  ],
+  "NE-Phelps": [
+    "NE073"
+  ],
+  "NE-Kearney": [
+    "NE074"
+  ],
+  "NE-Adams": [
+    "NE075"
+  ],
+  "NE-Clay": [
+    "NE076"
+  ],
+  "NE-Fillmore": [
+    "NE077"
+  ],
+  "NE-Furnas": [
+    "NE082"
+  ],
+  "NE-Harlan": [
+    "NE083"
+  ],
+  "NE-Franklin": [
+    "NE084"
+  ],
+  "NE-Webster": [
+    "NE085"
+  ],
+  "NE-Nuckolls": [
+    "NE086"
+  ],
+  "NE-Thayer": [
+    "NE087"
+  ],
+  "CO-Lower Yampa River Basin": [
+    "CO001"
+  ],
+  "CO-Central Yampa River Basin": [
+    "CO002"
+  ],
+  "CO-Roan and Tavaputs Plateaus": [
+    "CO003"
+  ],
+  "CO-Elkhead and Park Mountains": [
+    "CO004"
+  ],
+  "CO-Upper Yampa River Basin": [
+    "CO005"
+  ],
+  "CO-Grand Valley": [
+    "CO006"
+  ],
+  "CO-Debeque to Silt Corridor": [
+    "CO007"
+  ],
+  "CO-Central Colorado River Basin": [
+    "CO008"
+  ],
+  "CO-Grand and Battlement Mesas": [
+    "CO009"
+  ],
+  "CO-Gore and Elk Mountains/Central Mountain Valleys": [
+    "CO010"
+  ],
+  "CO-Central Gunnison and Uncompahgre River Basin": [
+    "CO011"
+  ],
+  "CO-West Elk and Sawatch Mountains": [
+    "CO012"
+  ],
+  "CO-Flattops": [
+    "CO013"
+  ],
+  "CO-Upper Gunnison River Valley": [
+    "CO014"
+  ],
+  "CO-Uncompahgre Plateu/Dallas Divide": [
+    "CO017"
+  ],
+  "CO-Northwestern San Juan Mountains": [
+    "CO018"
+  ],
+  "CO-Southwest San Juan Mountains": [
+    "CO019"
+  ],
+  "CO-Paradox Valley/Little Dolores River": [
+    "CO020"
+  ],
+  "CO-Four Corners/Upper Dolores River": [
+    "CO021"
+  ],
+  "CO-Animas River Basin": [
+    "CO022"
+  ],
+  "CO-San Juan River Basin": [
+    "CO023"
+  ],
+  "UT-Southeast Utah": [
+    "UT022"
+  ],
+  "UT-Eastern Unita Mountains": [
+    "UT023"
+  ],
+  "UT-Eastern Uinta Basin": [
+    "UT024"
+  ],
+  "UT-Tavaputs Plateau": [
+    "UT025"
+  ],
+  "UT-Arches/Grand Flat": [
+    "UT027"
+  ],
+  "UT-La Sal and Abajo Mountains": [
+    "UT028"
+  ],
+  "UT-Canyonlands/Natural Bridges": [
+    "UT029"
+  ],
+  "CO-Yuma County": [
+    "CO090"
+  ],
+  "CO-Kit Carson County": [
+    "CO091"
+  ],
+  "CO-Cheyenne County": [
+    "CO092"
+  ],
+  "KS-Cheyenne": [
+    "KS001"
+  ],
+  "KS-Rawlins": [
+    "KS002"
+  ],
+  "KS-Decatur": [
+    "KS003"
+  ],
+  "KS-Norton": [
+    "KS004"
+  ],
+  "KS-Sherman": [
+    "KS013"
+  ],
+  "KS-Thomas": [
+    "KS014"
+  ],
+  "KS-Sheridan": [
+    "KS015"
+  ],
+  "KS-Graham": [
+    "KS016"
+  ],
+  "KS-Wallace": [
+    "KS027"
+  ],
+  "KS-Logan": [
+    "KS028"
+  ],
+  "KS-Gove": [
+    "KS029"
+  ],
+  "KS-Greeley": [
+    "KS041"
+  ],
+  "KS-Wichita": [
+    "KS042"
+  ],
+  "NE-Dundy": [
+    "NE079"
+  ],
+  "NE-Hitchcock": [
+    "NE080"
+  ],
+  "NE-Red Willow": [
+    "NE081"
+  ],
+  "WI-Vilas": [
+    "WI005"
+  ],
+  "WI-Oneida": [
+    "WI010"
+  ],
+  "WI-Forest": [
+    "WI011"
+  ],
+  "WI-Florence": [
+    "WI012"
+  ],
+  "WI-Northern Marinette County": [
+    "WI013"
+  ],
+  "WI-Lincoln": [
+    "WI018"
+  ],
+  "WI-Langlade": [
+    "WI019"
+  ],
+  "WI-Menominee": [
+    "WI020"
+  ],
+  "WI-Northern Oconto County": [
+    "WI021"
+  ],
+  "WI-Door": [
+    "WI022"
+  ],
+  "WI-Marathon": [
+    "WI030"
+  ],
+  "WI-Shawano": [
+    "WI031"
+  ],
+  "WI-Wood": [
+    "WI035"
+  ],
+  "WI-Portage": [
+    "WI036"
+  ],
+  "WI-Waupaca": [
+    "WI037"
+  ],
+  "WI-Outagamie": [
+    "WI038"
+  ],
+  "WI-Brown": [
+    "WI039"
+  ],
+  "WI-Kewaunee": [
+    "WI040"
+  ],
+  "WI-Waushara": [
+    "WI045"
+  ],
+  "WI-Winnebago": [
+    "WI048"
+  ],
+  "WI-Calumet": [
+    "WI049"
+  ],
+  "WI-Manitowoc": [
+    "WI050"
+  ],
+  "WI-Southern Marinette County": [
+    "WI073"
+  ],
+  "WI-Southern Oconto County": [
+    "WI074"
+  ],
+  "MI-Mason": [
+    "MI037"
+  ],
+  "MI-Lake": [
+    "MI038"
+  ],
+  "MI-Osceola": [
+    "MI039"
+  ],
+  "MI-Clare": [
+    "MI040"
+  ],
+  "MI-Oceana": [
+    "MI043"
+  ],
+  "MI-Newaygo": [
+    "MI044"
+  ],
+  "MI-Mecosta": [
+    "MI045"
+  ],
+  "MI-Isabella": [
+    "MI046"
+  ],
+  "MI-Muskegon": [
+    "MI050"
+  ],
+  "MI-Montcalm": [
+    "MI051"
+  ],
+  "MI-Gratiot": [
+    "MI052"
+  ],
+  "MI-Ottawa": [
+    "MI056"
+  ],
+  "MI-Kent": [
+    "MI057"
+  ],
+  "MI-Ionia": [
+    "MI058"
+  ],
+  "MI-Clinton": [
+    "MI059"
+  ],
+  "MI-Allegan": [
+    "MI064"
+  ],
+  "MI-Barry": [
+    "MI065"
+  ],
+  "MI-Eaton": [
+    "MI066"
+  ],
+  "MI-Ingham": [
+    "MI067"
+  ],
+  "MI-Van Buren": [
+    "MI071"
+  ],
+  "MI-Kalamazoo": [
+    "MI072"
+  ],
+  "MI-Calhoun": [
+    "MI073"
+  ],
+  "MI-Jackson": [
+    "MI074"
+  ],
+  "GA-Rabun": [
+    "GA010"
+  ],
+  "GA-Habersham": [
+    "GA017"
+  ],
+  "GA-Stephens": [
+    "GA018"
+  ],
+  "GA-Franklin": [
+    "GA026"
+  ],
+  "GA-Hart": [
+    "GA028"
+  ],
+  "GA-Elbert": [
+    "GA029"
+  ],
+  "NC-Avery": [
+    "NC033"
+  ],
+  "NC-Alexander": [
+    "NC035"
+  ],
+  "NC-Iredell": [
+    "NC036"
+  ],
+  "NC-Davie": [
+    "NC037"
+  ],
+  "NC-Madison": [
+    "NC048"
+  ],
+  "NC-Yancey": [
+    "NC049"
+  ],
+  "NC-Mitchell": [
+    "NC050"
+  ],
+  "NC-Swain": [
+    "NC051"
+  ],
+  "NC-Haywood": [
+    "NC052"
+  ],
+  "NC-Buncombe": [
+    "NC053"
+  ],
+  "NC-Catawba": [
+    "NC056"
+  ],
+  "NC-Rowan": [
+    "NC057"
+  ],
+  "NC-Graham": [
+    "NC058"
+  ],
+  "NC-Northern Jackson": [
+    "NC059"
+  ],
+  "NC-Macon": [
+    "NC062"
+  ],
+  "NC-Southern Jackson": [
+    "NC063"
+  ],
+  "NC-Transylvania": [
+    "NC064"
+  ],
+  "NC-Henderson": [
+    "NC065"
+  ],
+  "NC-Cleveland": [
+    "NC068"
+  ],
+  "NC-Lincoln": [
+    "NC069"
+  ],
+  "NC-Gaston": [
+    "NC070"
+  ],
+  "NC-Mecklenburg": [
+    "NC071"
+  ],
+  "NC-Cabarrus": [
+    "NC072"
+  ],
+  "NC-Union": [
+    "NC082"
+  ],
+  "NC-Caldwell Mountains": [
+    "NC501"
+  ],
+  "NC-Greater Caldwell": [
+    "NC502"
+  ],
+  "NC-Burke Mountains": [
+    "NC503"
+  ],
+  "NC-Greater Burke": [
+    "NC504"
+  ],
+  "NC-McDowell Mountains": [
+    "NC505"
+  ],
+  "NC-Eastern McDowell": [
+    "NC506"
+  ],
+  "NC-Rutherford Mountains": [
+    "NC507"
+  ],
+  "NC-Greater Rutherford": [
+    "NC508"
+  ],
+  "NC-Polk Mountains": [
+    "NC509"
+  ],
+  "NC-Eastern Polk": [
+    "NC510"
+  ],
+  "SC-Cherokee": [
+    "SC008"
+  ],
+  "SC-York": [
+    "SC009"
+  ],
+  "SC-Anderson": [
+    "SC010"
+  ],
+  "SC-Abbeville": [
+    "SC011"
+  ],
+  "SC-Laurens": [
+    "SC012"
+  ],
+  "SC-Union": [
+    "SC013"
+  ],
+  "SC-Chester": [
+    "SC014"
+  ],
+  "SC-Greenwood": [
+    "SC019"
+  ],
+  "SC-Oconee Mountains": [
+    "SC101"
+  ],
+  "SC-Pickens Mountains": [
+    "SC102"
+  ],
+  "SC-Greenville Mountains": [
+    "SC103"
+  ],
+  "SC-Greater Oconee": [
+    "SC104"
+  ],
+  "SC-Greater Pickens": [
+    "SC105"
+  ],
+  "SC-Central Greenville": [
+    "SC106"
+  ],
+  "SC-Southern Greenville": [
+    "SC107"
+  ],
+  "SC-Northern Spartanburg": [
+    "SC108"
+  ],
+  "SC-Southern Spartanburg": [
+    "SC109"
+  ],
+  "GU-Guam": [
+    "GU001"
+  ],
+  "MP-Rota": [
+    "MP001"
+  ],
+  "MP-Tinian": [
+    "MP002"
+  ],
+  "MP-Saipan": [
+    "MP003"
+  ],
+  "MP-Anatahan": [
+    "MP004"
+  ],
+  "MP-Alamagan": [
+    "MP005"
+  ],
+  "MP-Pagan": [
+    "MP006"
+  ],
+  "MP-Agrihan": [
+    "MP007"
+  ],
+  "ME-Northern Oxford": [
+    "ME007"
+  ],
+  "ME-Northern Franklin": [
+    "ME008"
+  ],
+  "ME-Central Somerset": [
+    "ME009"
+  ],
+  "ME-Southern Oxford": [
+    "ME012"
+  ],
+  "ME-Southern Franklin": [
+    "ME013"
+  ],
+  "ME-Southern Somerset": [
+    "ME014"
+  ],
+  "ME-Interior York": [
+    "ME018"
+  ],
+  "ME-Central Interior Cumberland": [
+    "ME019"
+  ],
+  "ME-Androscoggin": [
+    "ME020"
+  ],
+  "ME-Kennebec": [
+    "ME021"
+  ],
+  "ME-Interior Waldo": [
+    "ME022"
+  ],
+  "ME-Coastal York": [
+    "ME023"
+  ],
+  "ME-Coastal Cumberland": [
+    "ME024"
+  ],
+  "ME-Sagadahoc": [
+    "ME025"
+  ],
+  "ME-Lincoln": [
+    "ME026"
+  ],
+  "ME-Knox": [
+    "ME027"
+  ],
+  "ME-Coastal Waldo": [
+    "ME028"
+  ],
+  "ME-Interior Cumberland Highlands": [
+    "ME033"
+  ],
+  "NH-Northern Coos": [
+    "NH001"
+  ],
+  "NH-Southern Coos": [
+    "NH002"
+  ],
+  "NH-Northern Grafton": [
+    "NH003"
+  ],
+  "NH-Northern Carroll": [
+    "NH004"
+  ],
+  "NH-Southern Grafton": [
+    "NH005"
+  ],
+  "NH-Southern Carroll": [
+    "NH006"
+  ],
+  "NH-Sullivan": [
+    "NH007"
+  ],
+  "NH-Merrimack": [
+    "NH008"
+  ],
+  "NH-Belknap": [
+    "NH009"
+  ],
+  "NH-Strafford": [
+    "NH010"
+  ],
+  "NH-Interior Rockingham": [
+    "NH013"
+  ],
+  "NH-Coastal Rockingham": [
+    "NH014"
+  ],
+  "HI-Niihau": [
+    "HI001"
+  ],
+  "HI-Kauai Southwest": [
+    "HI003"
+  ],
+  "HI-Kauai Mountains": [
+    "HI004"
+  ],
+  "HI-Waianae Coast": [
+    "HI006"
+  ],
+  "HI-Oahu North Shore": [
+    "HI007"
+  ],
+  "HI-Olomana": [
+    "HI009"
+  ],
+  "HI-Central Oahu": [
+    "HI010"
+  ],
+  "HI-Waianae Mountains": [
+    "HI011"
+  ],
+  "HI-Lanai Mauka": [
+    "HI015"
+  ],
+  "HI-Kahoolawe": [
+    "HI016"
+  ],
+  "HI-Maui Windward West": [
+    "HI017"
+  ],
+  "HI-Maui Leeward West": [
+    "HI018"
+  ],
+  "HI-Haleakala Summit": [
+    "HI022"
+  ],
+  "HI-Kona": [
+    "HI023"
+  ],
+  "HI-Kohala": [
+    "HI026"
+  ],
+  "HI-Big Island Interior": [
+    "HI027"
+  ],
+  "HI-Big Island Summit": [
+    "HI028"
+  ],
+  "HI-Kauai North": [
+    "HI029"
+  ],
+  "HI-Kauai East": [
+    "HI030"
+  ],
+  "HI-Kauai South": [
+    "HI031"
+  ],
+  "HI-East Honolulu": [
+    "HI032"
+  ],
+  "HI-Honolulu Metro": [
+    "HI033"
+  ],
+  "HI-Ewa Plain": [
+    "HI034"
+  ],
+  "HI-Koolau Windward": [
+    "HI035"
+  ],
+  "HI-Koolau Leeward": [
+    "HI036"
+  ],
+  "HI-Molokai Windward": [
+    "HI037"
+  ],
+  "HI-Molokai Southeast": [
+    "HI038"
+  ],
+  "HI-Molokai North": [
+    "HI039"
+  ],
+  "HI-Molokai West": [
+    "HI040"
+  ],
+  "HI-Molokai Leeward South": [
+    "HI041"
+  ],
+  "HI-Lanai Windward": [
+    "HI042"
+  ],
+  "HI-Lanai Leeward": [
+    "HI043"
+  ],
+  "HI-Lanai South": [
+    "HI044"
+  ],
+  "HI-Maui Central Valley North": [
+    "HI045"
+  ],
+  "HI-Maui Central Valley South": [
+    "HI046"
+  ],
+  "HI-Windward Haleakala": [
+    "HI047"
+  ],
+  "HI-Kipahulu": [
+    "HI048"
+  ],
+  "HI-South Maui/Upcountry": [
+    "HI049"
+  ],
+  "HI-South Haleakala": [
+    "HI050"
+  ],
+  "HI-Big Island South": [
+    "HI051"
+  ],
+  "HI-Big Island Southeast": [
+    "HI052"
+  ],
+  "HI-Big Island East": [
+    "HI053"
+  ],
+  "HI-Big Island North": [
+    "HI054"
+  ],
+  "TX-Houston": [
+    "TX163"
+  ],
+  "TX-Trinity": [
+    "TX164"
+  ],
+  "TX-Madison": [
+    "TX176"
+  ],
+  "TX-Walker": [
+    "TX177"
+  ],
+  "TX-San Jancinto": [
+    "TX178"
+  ],
+  "TX-Polk": [
+    "TX179"
+  ],
+  "TX-Burleson": [
+    "TX195"
+  ],
+  "TX-Brazos": [
+    "TX196"
+  ],
+  "TX-Washington": [
+    "TX197"
+  ],
+  "TX-Grimes": [
+    "TX198"
+  ],
+  "TX-Montgomery": [
+    "TX199"
+  ],
+  "TX-Northern Liberty": [
+    "TX200"
+  ],
+  "TX-Colorado": [
+    "TX210"
+  ],
+  "TX-Austin": [
+    "TX211"
+  ],
+  "TX-Waller": [
+    "TX212"
+  ],
+  "TX-Inland Harris": [
+    "TX213"
+  ],
+  "TX-Chambers": [
+    "TX214"
+  ],
+  "TX-Wharton": [
+    "TX226"
+  ],
+  "TX-Fort Bend": [
+    "TX227"
+  ],
+  "TX-Inland Jackson": [
+    "TX235"
+  ],
+  "TX-Inland Matagorda": [
+    "TX236"
+  ],
+  "TX-Inland Brazoria": [
+    "TX237"
+  ],
+  "TX-Inland Galveston": [
+    "TX238"
+  ],
+  "TX-Southern Liberty": [
+    "TX300"
+  ],
+  "TX-Coastal Harris": [
+    "TX313"
+  ],
+  "TX-Coastal Jackson": [
+    "TX335"
+  ],
+  "TX-Coastal Matagorda": [
+    "TX336"
+  ],
+  "TX-Coastal Brazoria": [
+    "TX337"
+  ],
+  "TX-Coastal Galveston": [
+    "TX338"
+  ],
+  "TX-Matagorda Islands": [
+    "TX436"
+  ],
+  "TX-Brazoria Islands": [
+    "TX437"
+  ],
+  "TX-Galveston Island": [
+    "TX438"
+  ],
+  "TX-Bolivar Peninsula": [
+    "TX439"
+  ],
+  "CA-West Side Mountains north of 198": [
+    "CA300"
+  ],
+  "CA-Los Banos - Dos Palos": [
+    "CA301"
+  ],
+  "CA-Merced - Madera - Mendota": [
+    "CA302"
+  ],
+  "CA-Planada - Le Grand - Snelling": [
+    "CA303"
+  ],
+  "CA-Coalinga - Avenal": [
+    "CA304"
+  ],
+  "CA-West Side of Fresno and Kings Counties": [
+    "CA305"
+  ],
+  "CA-Caruthers - San Joaquin - Selma": [
+    "CA306"
+  ],
+  "CA-Fresno-Clovis": [
+    "CA307"
+  ],
+  "CA-West Side Mountains South of 198": [
+    "CA308"
+  ],
+  "CA-Buttonwillow - Lost Hills - I5": [
+    "CA309"
+  ],
+  "CA-Delano-Wasco-Shafter": [
+    "CA310"
+  ],
+  "CA-Hanford - Corcoran - Lemoore": [
+    "CA311"
+  ],
+  "CA-Visalia - Porterville - Reedley": [
+    "CA312"
+  ],
+  "CA-Buena Vista": [
+    "CA313"
+  ],
+  "CA-Bakersfield": [
+    "CA314"
+  ],
+  "CA-Southeast San Joaquin Valley": [
+    "CA315"
+  ],
+  "CA-South End San Joaquin Valley": [
+    "CA316"
+  ],
+  "CA-Mariposa Madera Foothills": [
+    "CA317"
+  ],
+  "CA-Mariposa-Madera Lower Sierra": [
+    "CA318"
+  ],
+  "CA-Fresno-Tulare Foothills": [
+    "CA319"
+  ],
+  "CA-Fresno-Tulare Lower Sierra": [
+    "CA320"
+  ],
+  "CA-South End Sierra Foothills": [
+    "CA321"
+  ],
+  "CA-South End of the Lower Sierra": [
+    "CA322"
+  ],
+  "CA-Yosemite NP outside of the valley": [
+    "CA323"
+  ],
+  "CA-Yosemite Valley": [
+    "CA324"
+  ],
+  "CA-San Joaquin River Canyon": [
+    "CA325"
+  ],
+  "CA-Upper San Joaquin River": [
+    "CA326"
+  ],
+  "CA-Kaiser to Rodgers Ridge": [
+    "CA327"
+  ],
+  "CA-Kings Canyon NP": [
+    "CA328"
+  ],
+  "CA-Grant Grove Area": [
+    "CA329"
+  ],
+  "CA-Sequoia NP": [
+    "CA330"
+  ],
+  "CA-South End of the Upper Sierra": [
+    "CA331"
+  ],
+  "CA-Kern River Valley": [
+    "CA332"
+  ],
+  "CA-Piute Walker Basin": [
+    "CA333"
+  ],
+  "CA-Tehachapi": [
+    "CA334"
+  ],
+  "CA-Grapevine": [
+    "CA335"
+  ],
+  "CA-Frazier Mountain Communities": [
+    "CA336"
+  ],
+  "CA-Indian Wells Valley": [
+    "CA337"
+  ],
+  "CA-Mojave Desert Slopes": [
+    "CA338"
+  ],
+  "CA-Mojave Desert": [
+    "CA339"
+  ],
+  "AL-Lauderdale": [
+    "AL001"
+  ],
+  "AL-Colbert": [
+    "AL002"
+  ],
+  "AL-Franklin": [
+    "AL003"
+  ],
+  "AL-Lawrence": [
+    "AL004"
+  ],
+  "AL-Limestone": [
+    "AL005"
+  ],
+  "AL-Madison": [
+    "AL006"
+  ],
+  "AL-Morgan": [
+    "AL007"
+  ],
+  "AL-Marshall": [
+    "AL008"
+  ],
+  "AL-Jackson": [
+    "AL009"
+  ],
+  "AL-DefireKalb": [
+    "AL010"
+  ],
+  "AL-Cullman": [
+    "AL016"
+  ],
+  "TN-Moore": [
+    "TN076"
+  ],
+  "TN-Lincoln": [
+    "TN096"
+  ],
+  "TN-Franklin": [
+    "TN097"
+  ],
+  "KS-Russell": [
+    "KS032"
+  ],
+  "KS-Lincoln": [
+    "KS033"
+  ],
+  "KS-Barton": [
+    "KS047"
+  ],
+  "KS-Ellsworth": [
+    "KS048"
+  ],
+  "KS-Saline": [
+    "KS049"
+  ],
+  "KS-Rice": [
+    "KS050"
+  ],
+  "KS-McPherson": [
+    "KS051"
+  ],
+  "KS-Marion": [
+    "KS052"
+  ],
+  "KS-Chase": [
+    "KS053"
+  ],
+  "KS-Reno": [
+    "KS067"
+  ],
+  "KS-Harvey": [
+    "KS068"
+  ],
+  "KS-Butler": [
+    "KS069"
+  ],
+  "KS-Greenwood": [
+    "KS070"
+  ],
+  "KS-Woodson": [
+    "KS071"
+  ],
+  "KS-Allen": [
+    "KS072"
+  ],
+  "KS-Kingman": [
+    "KS082"
+  ],
+  "KS-Sedgwick": [
+    "KS083"
+  ],
+  "KS-Harper": [
+    "KS091"
+  ],
+  "KS-Sumner": [
+    "KS092"
+  ],
+  "KS-Cowley": [
+    "KS093"
+  ],
+  "KS-Elk": [
+    "KS094"
+  ],
+  "KS-Wilson": [
+    "KS095"
+  ],
+  "KS-Neosho": [
+    "KS096"
+  ],
+  "KS-Chautauqua": [
+    "KS098"
+  ],
+  "KS-Montgomery": [
+    "KS099"
+  ],
+  "KS-Labette": [
+    "KS100"
+  ],
+  "NC-Robeson": [
+    "NC087"
+  ],
+  "NC-Bladen": [
+    "NC096"
+  ],
+  "NC-Columbus": [
+    "NC099"
+  ],
+  "NC-Inland Pender": [
+    "NC105"
+  ],
+  "NC-Coastal Pender": [
+    "NC106"
+  ],
+  "NC-Inland New Hanover": [
+    "NC107"
+  ],
+  "NC-Coastal New Hanover": [
+    "NC108"
+  ],
+  "NC-Inland Brunswick": [
+    "NC109"
+  ],
+  "NC-Coastal Brunswick": [
+    "NC110"
+  ],
+  "SC-Marlboro": [
+    "SC017"
+  ],
+  "SC-Darlington": [
+    "SC023"
+  ],
+  "SC-Dillon": [
+    "SC024"
+  ],
+  "SC-Florence": [
+    "SC032"
+  ],
+  "SC-Marion": [
+    "SC033"
+  ],
+  "SC-Williamsburg": [
+    "SC039"
+  ],
+  "SC-Coastal Horry": [
+    "SC054"
+  ],
+  "SC-Inland Georgetown": [
+    "SC055"
+  ],
+  "SC-Coastal Georgetown": [
+    "SC056"
+  ],
+  "SC-Central Horry": [
+    "SC058"
+  ],
+  "SC-Northern Horry": [
+    "SC059"
+  ],
+  "IN-Wayne": [
+    "IN050"
+  ],
+  "IN-Fayette": [
+    "IN058"
+  ],
+  "IN-Union": [
+    "IN059"
+  ],
+  "IN-Franklin": [
+    "IN066"
+  ],
+  "IN-Ripley": [
+    "IN073"
+  ],
+  "IN-Dearborn": [
+    "IN074"
+  ],
+  "IN-Ohio": [
+    "IN075"
+  ],
+  "IN-Switzerland": [
+    "IN080"
+  ],
+  "KY-Carroll": [
+    "KY089"
+  ],
+  "KY-Gallatin": [
+    "KY090"
+  ],
+  "KY-Boone": [
+    "KY091"
+  ],
+  "KY-Kenton": [
+    "KY092"
+  ],
+  "KY-Campbell": [
+    "KY093"
+  ],
+  "KY-Owen": [
+    "KY094"
+  ],
+  "KY-Grant": [
+    "KY095"
+  ],
+  "KY-Pendleton": [
+    "KY096"
+  ],
+  "KY-Bracken": [
+    "KY097"
+  ],
+  "KY-Robertson": [
+    "KY098"
+  ],
+  "KY-Mason": [
+    "KY099"
+  ],
+  "KY-Lewis": [
+    "KY100"
+  ],
+  "OH-Hardin": [
+    "OH026"
+  ],
+  "OH-Mercer": [
+    "OH034"
+  ],
+  "OH-Auglaize": [
+    "OH035"
+  ],
+  "OH-Darke": [
+    "OH042"
+  ],
+  "OH-Shelby": [
+    "OH043"
+  ],
+  "OH-Logan": [
+    "OH044"
+  ],
+  "OH-Union": [
+    "OH045"
+  ],
+  "OH-Delaware": [
+    "OH046"
+  ],
+  "OH-Miami": [
+    "OH051"
+  ],
+  "OH-Champaign": [
+    "OH052"
+  ],
+  "OH-Clark": [
+    "OH053"
+  ],
+  "OH-Madison": [
+    "OH054"
+  ],
+  "OH-Franklin": [
+    "OH055"
+  ],
+  "OH-Licking": [
+    "OH056"
+  ],
+  "OH-Preble": [
+    "OH060"
+  ],
+  "OH-Montgomery": [
+    "OH061"
+  ],
+  "OH-Greene": [
+    "OH062"
+  ],
+  "OH-Fayette": [
+    "OH063"
+  ],
+  "OH-Pickaway": [
+    "OH064"
+  ],
+  "OH-Fairfield": [
+    "OH065"
+  ],
+  "OH-Butler": [
+    "OH070"
+  ],
+  "OH-Warren": [
+    "OH071"
+  ],
+  "OH-Clinton": [
+    "OH072"
+  ],
+  "OH-Ross": [
+    "OH073"
+  ],
+  "OH-Hocking": [
+    "OH074"
+  ],
+  "OH-Hamilton": [
+    "OH077"
+  ],
+  "OH-Clermont": [
+    "OH078"
+  ],
+  "OH-Brown": [
+    "OH079"
+  ],
+  "OH-Highland": [
+    "OH080"
+  ],
+  "OH-Adams": [
+    "OH081"
+  ],
+  "OH-Pike": [
+    "OH082"
+  ],
+  "OH-Scioto": [
+    "OH088"
+  ],
+  "IL-Knox": [
+    "IL027"
+  ],
+  "IL-Stark": [
+    "IL028"
+  ],
+  "IL-Peoria": [
+    "IL029"
+  ],
+  "IL-Marshall": [
+    "IL030"
+  ],
+  "IL-Woodford": [
+    "IL031"
+  ],
+  "IL-Fulton": [
+    "IL036"
+  ],
+  "IL-Tazewell": [
+    "IL037"
+  ],
+  "IL-McLean": [
+    "IL038"
+  ],
+  "IL-Schuyler": [
+    "IL040"
+  ],
+  "IL-Mason": [
+    "IL041"
+  ],
+  "IL-Logan": [
+    "IL042"
+  ],
+  "IL-De Witt": [
+    "IL043"
+  ],
+  "IL-Piatt": [
+    "IL044"
+  ],
+  "IL-Champaign": [
+    "IL045"
+  ],
+  "IL-Vermilion": [
+    "IL046"
+  ],
+  "IL-Cass": [
+    "IL047"
+  ],
+  "IL-Menard": [
+    "IL048"
+  ],
+  "IL-Scott": [
+    "IL049"
+  ],
+  "IL-Morgan": [
+    "IL050"
+  ],
+  "IL-Sangamon": [
+    "IL051"
+  ],
+  "IL-Christian": [
+    "IL052"
+  ],
+  "IL-Macon": [
+    "IL053"
+  ],
+  "IL-Moultrie": [
+    "IL054"
+  ],
+  "IL-Douglas": [
+    "IL055"
+  ],
+  "IL-Coles": [
+    "IL056"
+  ],
+  "IL-Edgar": [
+    "IL057"
+  ],
+  "IL-Shelby": [
+    "IL061"
+  ],
+  "IL-Cumberland": [
+    "IL062"
+  ],
+  "IL-Clark": [
+    "IL063"
+  ],
+  "IL-Effingham": [
+    "IL066"
+  ],
+  "IL-Jasper": [
+    "IL067"
+  ],
+  "IL-Crawford": [
+    "IL068"
+  ],
+  "IL-Clay": [
+    "IL071"
+  ],
+  "IL-Richland": [
+    "IL072"
+  ],
+  "IL-Lawrence": [
+    "IL073"
+  ],
+  "IN-Carroll": [
+    "IN021"
+  ],
+  "IN-Warren": [
+    "IN028"
+  ],
+  "IN-Tippecanoe": [
+    "IN029"
+  ],
+  "IN-Clinton": [
+    "IN030"
+  ],
+  "IN-Howard": [
+    "IN031"
+  ],
+  "IN-Fountain": [
+    "IN035"
+  ],
+  "IN-Montgomery": [
+    "IN036"
+  ],
+  "IN-Boone": [
+    "IN037"
+  ],
+  "IN-Tipton": [
+    "IN038"
+  ],
+  "IN-Hamilton": [
+    "IN039"
+  ],
+  "IN-Madison": [
+    "IN040"
+  ],
+  "IN-Delaware": [
+    "IN041"
+  ],
+  "IN-Randolph": [
+    "IN042"
+  ],
+  "IN-Vermillion": [
+    "IN043"
+  ],
+  "IN-Parke": [
+    "IN044"
+  ],
+  "IN-Putnam": [
+    "IN045"
+  ],
+  "IN-Hendricks": [
+    "IN046"
+  ],
+  "IN-Marion": [
+    "IN047"
+  ],
+  "IN-Hancock": [
+    "IN048"
+  ],
+  "IN-Henry": [
+    "IN049"
+  ],
+  "IN-Vigo": [
+    "IN051"
+  ],
+  "IN-Clay": [
+    "IN052"
+  ],
+  "IN-Owen": [
+    "IN053"
+  ],
+  "IN-Morgan": [
+    "IN054"
+  ],
+  "IN-Johnson": [
+    "IN055"
+  ],
+  "IN-Shelby": [
+    "IN056"
+  ],
+  "IN-Rush": [
+    "IN057"
+  ],
+  "IN-Sullivan": [
+    "IN060"
+  ],
+  "IN-Greene": [
+    "IN061"
+  ],
+  "IN-Monroe": [
+    "IN062"
+  ],
+  "IN-Brown": [
+    "IN063"
+  ],
+  "IN-Bartholomew": [
+    "IN064"
+  ],
+  "IN-Decatur": [
+    "IN065"
+  ],
+  "IN-Knox": [
+    "IN067"
+  ],
+  "IN-Daviess": [
+    "IN068"
+  ],
+  "IN-Martin": [
+    "IN069"
+  ],
+  "IN-Lawrence": [
+    "IN070"
+  ],
+  "IN-Jackson": [
+    "IN071"
+  ],
+  "IN-Jennings": [
+    "IN072"
+  ],
+  "IN-Elkhart": [
+    "IN005"
+  ],
+  "IN-Lagrange": [
+    "IN006"
+  ],
+  "IN-Steuben": [
+    "IN007"
+  ],
+  "IN-Noble": [
+    "IN008"
+  ],
+  "IN-De Kalb": [
+    "IN009"
+  ],
+  "IN-Starke": [
+    "IN012"
+  ],
+  "IN-Pulaski": [
+    "IN013"
+  ],
+  "IN-Marshall": [
+    "IN014"
+  ],
+  "IN-Fulton": [
+    "IN015"
+  ],
+  "IN-Whitley": [
+    "IN017"
+  ],
+  "IN-Allen": [
+    "IN018"
+  ],
+  "IN-White": [
+    "IN020"
+  ],
+  "IN-Cass": [
+    "IN022"
+  ],
+  "IN-Miami": [
+    "IN023"
+  ],
+  "IN-Wabash": [
+    "IN024"
+  ],
+  "IN-Huntington": [
+    "IN025"
+  ],
+  "IN-Wells": [
+    "IN026"
+  ],
+  "IN-Adams": [
+    "IN027"
+  ],
+  "IN-Grant": [
+    "IN032"
+  ],
+  "IN-Blackford": [
+    "IN033"
+  ],
+  "IN-Jay": [
+    "IN034"
+  ],
+  "IN-Northern La Porte": [
+    "IN103"
+  ],
+  "IN-Eastern St. Joseph": [
+    "IN104"
+  ],
+  "IN-Northern Kosciusko": [
+    "IN116"
+  ],
+  "IN-Southern La Porte": [
+    "IN203"
+  ],
+  "IN-Western St. Joseph": [
+    "IN204"
+  ],
+  "IN-Southern Kosciusko": [
+    "IN216"
+  ],
+  "MI-Cass": [
+    "MI078"
+  ],
+  "MI-St. Joseph": [
+    "MI079"
+  ],
+  "MI-Branch": [
+    "MI080"
+  ],
+  "MI-Hillsdale": [
+    "MI081"
+  ],
+  "MI-Northern Berrien": [
+    "MI177"
+  ],
+  "MI-Southern Berrien": [
+    "MI277"
+  ],
+  "OH-Williams": [
+    "OH001"
+  ],
+  "OH-Fulton": [
+    "OH002"
+  ],
+  "OH-Defiance": [
+    "OH004"
+  ],
+  "OH-Henry": [
+    "OH005"
+  ],
+  "OH-Paulding": [
+    "OH015"
+  ],
+  "OH-Putnam": [
+    "OH016"
+  ],
+  "OH-Van Wert": [
+    "OH024"
+  ],
+  "OH-Allen": [
+    "OH025"
+  ],
+  "AR-Ashley": [
+    "AR074"
+  ],
+  "AR-Chicot": [
+    "AR075"
+  ],
+  "LA-Morehouse": [
+    "LA007"
+  ],
+  "LA-West Carroll": [
+    "LA008"
+  ],
+  "LA-East Carroll": [
+    "LA009"
+  ],
+  "LA-Richland": [
+    "LA015"
+  ],
+  "LA-Madison": [
+    "LA016"
+  ],
+  "LA-Franklin": [
+    "LA023"
+  ],
+  "LA-Catahoula": [
+    "LA024"
+  ],
+  "LA-Tensas": [
+    "LA025"
+  ],
+  "LA-Concordia": [
+    "LA026"
+  ],
+  "MS-Bolivar": [
+    "MS018"
+  ],
+  "MS-Sunflower": [
+    "MS019"
+  ],
+  "MS-Leflore": [
+    "MS025"
+  ],
+  "MS-Grenada": [
+    "MS026"
+  ],
+  "MS-Carroll": [
+    "MS027"
+  ],
+  "MS-Montgomery": [
+    "MS028"
+  ],
+  "MS-Webster": [
+    "MS029"
+  ],
+  "MS-Clay": [
+    "MS030"
+  ],
+  "MS-Lowndes": [
+    "MS031"
+  ],
+  "MS-Choctaw": [
+    "MS032"
+  ],
+  "MS-Oktibbeha": [
+    "MS033"
+  ],
+  "MS-Washington": [
+    "MS034"
+  ],
+  "MS-Humphreys": [
+    "MS035"
+  ],
+  "MS-Holmes": [
+    "MS036"
+  ],
+  "MS-Attala": [
+    "MS037"
+  ],
+  "MS-Winston": [
+    "MS038"
+  ],
+  "MS-Noxubee": [
+    "MS039"
+  ],
+  "MS-Issaquena": [
+    "MS040"
+  ],
+  "MS-Sharkey": [
+    "MS041"
+  ],
+  "MS-Yazoo": [
+    "MS042"
+  ],
+  "MS-Madison": [
+    "MS043"
+  ],
+  "MS-Leake": [
+    "MS044"
+  ],
+  "MS-Neshoba": [
+    "MS045"
+  ],
+  "MS-Kemper": [
+    "MS046"
+  ],
+  "MS-Warren": [
+    "MS047"
+  ],
+  "MS-Hinds": [
+    "MS048"
+  ],
+  "MS-Rankin": [
+    "MS049"
+  ],
+  "MS-Scott": [
+    "MS050"
+  ],
+  "MS-Newton": [
+    "MS051"
+  ],
+  "MS-Lauderdale": [
+    "MS052"
+  ],
+  "MS-Claiborne": [
+    "MS053"
+  ],
+  "MS-Copiah": [
+    "MS054"
+  ],
+  "MS-Simpson": [
+    "MS055"
+  ],
+  "MS-Smith": [
+    "MS056"
+  ],
+  "MS-Jasper": [
+    "MS057"
+  ],
+  "MS-Clarke": [
+    "MS058"
+  ],
+  "MS-Jefferson": [
+    "MS059"
+  ],
+  "MS-Adams": [
+    "MS060"
+  ],
+  "MS-Franklin": [
+    "MS061"
+  ],
+  "MS-Lincoln": [
+    "MS062"
+  ],
+  "MS-Lawrence": [
+    "MS063"
+  ],
+  "MS-Jefferson Davis": [
+    "MS064"
+  ],
+  "MS-Covington": [
+    "MS065"
+  ],
+  "MS-Jones": [
+    "MS066"
+  ],
+  "MS-Marion": [
+    "MS072"
+  ],
+  "MS-Lamar": [
+    "MS073"
+  ],
+  "MS-Forrest": [
+    "MS074"
+  ],
+  "FL-Eastern Hamilton": [
+    "FL120"
+  ],
+  "FL-Western Hamilton": [
+    "FL220"
+  ],
+  "FL-Suwannee": [
+    "FL021"
+  ],
+  "FL-Baker": [
+    "FL023"
+  ],
+  "FL-Inland Nassau": [
+    "FL024"
+  ],
+  "FL-Union": [
+    "FL030"
+  ],
+  "FL-Bradford": [
+    "FL031"
+  ],
+  "FL-Inland St. Johns": [
+    "FL033"
+  ],
+  "FL-Gilchrist": [
+    "FL035"
+  ],
+  "FL-Inland Flagler": [
+    "FL038"
+  ],
+  "FL-Coastal Nassau": [
+    "FL124"
+  ],
+  "FL-Coastal Duval": [
+    "FL125"
+  ],
+  "FL-Eastern Clay": [
+    "FL132"
+  ],
+  "FL-Coastal St. Johns": [
+    "FL133"
+  ],
+  "FL-Eastern Alachua ": [
+    "FL136"
+  ],
+  "FL-Eastern Putnam": [
+    "FL137"
+  ],
+  "FL-Coastal Flagler": [
+    "FL138"
+  ],
+  "FL-Eastern Marion ": [
+    "FL140"
+  ],
+  "FL-Trout River": [
+    "FL225"
+  ],
+  "FL-Western Clay": [
+    "FL232"
+  ],
+  "FL-Western Alachua ": [
+    "FL236"
+  ],
+  "FL-Western Putnam": [
+    "FL237"
+  ],
+  "FL-Central Marion ": [
+    "FL240"
+  ],
+  "FL-South Central Duval": [
+    "FL325"
+  ],
+  "FL-Western Marion ": [
+    "FL340"
+  ],
+  "FL-Western Duval": [
+    "FL425"
+  ],
+  "GA-Coffee": [
+    "GA132"
+  ],
+  "GA-Jeff Davis": [
+    "GA133"
+  ],
+  "GA-Bacon": [
+    "GA134"
+  ],
+  "GA-Appling": [
+    "GA135"
+  ],
+  "GA-Wayne": [
+    "GA136"
+  ],
+  "GA-Atkinson": [
+    "GA149"
+  ],
+  "GA-Pierce": [
+    "GA151"
+  ],
+  "GA-Brantley": [
+    "GA152"
+  ],
+  "GA-Inland Glynn": [
+    "GA153"
+  ],
+  "GA-Coastal Glynn": [
+    "GA154"
+  ],
+  "GA-Echols": [
+    "GA162"
+  ],
+  "GA-Clinch": [
+    "GA163"
+  ],
+  "GA-Inland Camden": [
+    "GA165"
+  ],
+  "GA-Coastal Camden": [
+    "GA166"
+  ],
+  "GA-Northern Ware ": [
+    "GA250"
+  ],
+  "GA-Northeastern Charlton ": [
+    "GA264"
+  ],
+  "GA-Southern Ware ": [
+    "GA350"
+  ],
+  "GA-Western Charlton ": [
+    "GA364"
+  ],
+  "KY-Fleming": [
+    "KY044"
+  ],
+  "KY-Montgomery": [
+    "KY050"
+  ],
+  "KY-Bath": [
+    "KY051"
+  ],
+  "KY-Rowan": [
+    "KY052"
+  ],
+  "KY-Estill": [
+    "KY058"
+  ],
+  "KY-Powell": [
+    "KY059"
+  ],
+  "KY-Menifee": [
+    "KY060"
+  ],
+  "KY-Rockcastle": [
+    "KY068"
+  ],
+  "KY-Jackson": [
+    "KY069"
+  ],
+  "KY-Pulaski": [
+    "KY079"
+  ],
+  "KY-Laurel": [
+    "KY080"
+  ],
+  "KY-Wayne": [
+    "KY083"
+  ],
+  "KY-McCreary": [
+    "KY084"
+  ],
+  "KY-Whitley": [
+    "KY085"
+  ],
+  "KY-Knox": [
+    "KY086"
+  ],
+  "KY-Bell": [
+    "KY087"
+  ],
+  "KY-Harlan": [
+    "KY088"
+  ],
+  "KY-Elliott": [
+    "KY104"
+  ],
+  "KY-Morgan": [
+    "KY106"
+  ],
+  "KY-Johnson": [
+    "KY107"
+  ],
+  "KY-Wolfe": [
+    "KY108"
+  ],
+  "KY-Magoffin": [
+    "KY109"
+  ],
+  "KY-Floyd": [
+    "KY110"
+  ],
+  "KY-Lee": [
+    "KY111"
+  ],
+  "KY-Breathitt": [
+    "KY112"
+  ],
+  "KY-Knott": [
+    "KY113"
+  ],
+  "KY-Owsley": [
+    "KY114"
+  ],
+  "KY-Perry": [
+    "KY115"
+  ],
+  "KY-Clay": [
+    "KY116"
+  ],
+  "KY-Leslie": [
+    "KY117"
+  ],
+  "KY-Letcher": [
+    "KY118"
+  ],
+  "KY-Martin": [
+    "KY119"
+  ],
+  "KY-Pike": [
+    "KY120"
+  ],
+  "FL-Monroe Upper Keys": [
+    "FL076"
+  ],
+  "FL-Monroe Middle Keys": [
+    "FL077"
+  ],
+  "FL-Monroe Lower Keys": [
+    "FL078"
+  ],
+  "NE-Sheridan": [
+    "NE004"
+  ],
+  "NE-Eastern Cherry": [
+    "NE005"
+  ],
+  "NE-Keya Paha": [
+    "NE006"
+  ],
+  "NE-Boyd": [
+    "NE007"
+  ],
+  "NE-Brown": [
+    "NE008"
+  ],
+  "NE-Rock": [
+    "NE009"
+  ],
+  "NE-Holt": [
+    "NE010"
+  ],
+  "NE-Garden": [
+    "NE022"
+  ],
+  "NE-Grant": [
+    "NE023"
+  ],
+  "NE-Hooker": [
+    "NE024"
+  ],
+  "NE-Thomas": [
+    "NE025"
+  ],
+  "NE-Blaine": [
+    "NE026"
+  ],
+  "NE-Loup": [
+    "NE027"
+  ],
+  "NE-Garfield": [
+    "NE028"
+  ],
+  "NE-Wheeler": [
+    "NE029"
+  ],
+  "NE-Arthur": [
+    "NE035"
+  ],
+  "NE-McPherson": [
+    "NE036"
+  ],
+  "NE-Logan": [
+    "NE037"
+  ],
+  "NE-Custer": [
+    "NE038"
+  ],
+  "NE-Deuel": [
+    "NE056"
+  ],
+  "NE-Keith": [
+    "NE057"
+  ],
+  "NE-Perkins": [
+    "NE058"
+  ],
+  "NE-Lincoln": [
+    "NE059"
+  ],
+  "NE-Chase": [
+    "NE069"
+  ],
+  "NE-Hayes": [
+    "NE070"
+  ],
+  "NE-Frontier": [
+    "NE071"
+  ],
+  "NE-Western Cherry": [
+    "NE094"
+  ],
+  "LA-Vernon": [
+    "LA027"
+  ],
+  "LA-Rapides": [
+    "LA028"
+  ],
+  "LA-Avoyelles": [
+    "LA029"
+  ],
+  "LA-Beauregard": [
+    "LA030"
+  ],
+  "LA-Allen": [
+    "LA031"
+  ],
+  "LA-Evangeline": [
+    "LA032"
+  ],
+  "LA-St. Landry": [
+    "LA033"
+  ],
+  "LA-Lafayette": [
+    "LA044"
+  ],
+  "LA-Upper St. Martin": [
+    "LA045"
+  ],
+  "LA-Lower St. Martin": [
+    "LA055"
+  ],
+  "LA-West Cameron": [
+    "LA073"
+  ],
+  "LA-East Cameron": [
+    "LA074"
+  ],
+  "LA-Upper Vermilion": [
+    "LA152"
+  ],
+  "LA-Northern Calcasieu": [
+    "LA141"
+  ],
+  "LA-Northern Jefferson Davis": [
+    "LA142"
+  ],
+  "LA-Northern Acadia": [
+    "LA143"
+  ],
+  "LA-Upper Iberia": [
+    "LA153"
+  ],
+  "LA-Upper St. Mary": [
+    "LA154"
+  ],
+  "LA-Southern Calcasieu": [
+    "LA241"
+  ],
+  "LA-Southern Jefferson Davis": [
+    "LA242"
+  ],
+  "LA-Southern Acadia": [
+    "LA243"
+  ],
+  "LA-Lower Vermilion": [
+    "LA252"
+  ],
+  "LA-Lower Iberia": [
+    "LA253"
+  ],
+  "LA-Lower St. Mary": [
+    "LA254"
+  ],
+  "TX-Upper Jefferson": [
+    "TX515"
+  ],
+  "TX-Northern Orange": [
+    "TX516"
+  ],
+  "TX-Lower Jefferson": [
+    "TX615"
+  ],
+  "TX-Southern Orange": [
+    "TX616"
+  ],
+  "TX-Tyler": [
+    "TX180"
+  ],
+  "TX-Hardin": [
+    "TX201"
+  ],
+  "TX-Northern Jasper": [
+    "TX259"
+  ],
+  "TX-Northern Newton": [
+    "TX260"
+  ],
+  "TX-Southern Jasper": [
+    "TX261"
+  ],
+  "TX-Southern Newton": [
+    "TX262"
+  ],
+  "LA-Pointe Coupee": [
+    "LA034"
+  ],
+  "LA-West Feliciana": [
+    "LA035"
+  ],
+  "LA-East Feliciana": [
+    "LA036"
+  ],
+  "LA-St. Helena": [
+    "LA037"
+  ],
+  "LA-Washington": [
+    "LA039"
+  ],
+  "LA-Iberville": [
+    "LA046"
+  ],
+  "LA-West Baton Rouge": [
+    "LA047"
+  ],
+  "LA-East Baton Rouge": [
+    "LA048"
+  ],
+  "LA-Assumption": [
+    "LA056"
+  ],
+  "LA-St. James": [
+    "LA057"
+  ],
+  "LA-St. John The Baptist": [
+    "LA058"
+  ],
+  "LA-Upper Lafourche": [
+    "LA059"
+  ],
+  "LA-St. Charles": [
+    "LA060"
+  ],
+  "LA-Upper St. Bernard": [
+    "LA064"
+  ],
+  "LA-Upper Terrebonne": [
+    "LA065"
+  ],
+  "LA-Lower Terrebonne": [
+    "LA066"
+  ],
+  "LA-Lower Lafourche": [
+    "LA067"
+  ],
+  "LA-Coastal Jefferson": [
+    "LA068"
+  ],
+  "LA-Lower Plaquemines": [
+    "LA069"
+  ],
+  "LA-Lower St. Bernard": [
+    "LA070"
+  ],
+  "LA-Northern Tangipahoa": [
+    "LA071"
+  ],
+  "LA-Southeast St. Tammany": [
+    "LA076"
+  ],
+  "LA-Western Orleans": [
+    "LA077"
+  ],
+  "LA-Eastern Orleans": [
+    "LA078"
+  ],
+  "LA-Northern St. Tammany": [
+    "LA079"
+  ],
+  "LA-Southwestern St. Tammany": [
+    "LA080"
+  ],
+  "LA-Central Tangipahoa": [
+    "LA081"
+  ],
+  "LA-Lower Tangipahoa": [
+    "LA082"
+  ],
+  "LA-Northern Livingston": [
+    "LA083"
+  ],
+  "LA-Southern Livingston": [
+    "LA084"
+  ],
+  "LA-Western Ascension": [
+    "LA085"
+  ],
+  "LA-Eastern Ascension": [
+    "LA086"
+  ],
+  "LA-Upper Jefferson": [
+    "LA087"
+  ],
+  "LA-Lower Jefferson": [
+    "LA088"
+  ],
+  "LA-Upper Plaquemines": [
+    "LA089"
+  ],
+  "LA-Central Plaquemines": [
+    "LA090"
+  ],
+  "MS-Wilkinson": [
+    "MS068"
+  ],
+  "MS-Amite": [
+    "MS069"
+  ],
+  "MS-Pike": [
+    "MS070"
+  ],
+  "MS-Walthall": [
+    "MS071"
+  ],
+  "MS-Pearl River": [
+    "MS077"
+  ],
+  "MS-Northern Hancock": [
+    "MS083"
+  ],
+  "MS-Northern Harrison": [
+    "MS084"
+  ],
+  "MS-Northern Jackson": [
+    "MS085"
+  ],
+  "MS-Southern Hancock": [
+    "MS086"
+  ],
+  "MS-Southern Harrison": [
+    "MS087"
+  ],
+  "MS-Southern Jackson": [
+    "MS088"
+  ],
+  "NV-Humboldt County": [
+    "NV030"
+  ],
+  "NV-Northern Elko County": [
+    "NV031"
+  ],
+  "NV-Extreme Eastern Elko County": [
+    "NV033"
+  ],
+  "NV-Ruby Mountains/East Humboldt Range": [
+    "NV034"
+  ],
+  "NV-White Pine County": [
+    "NV035"
+  ],
+  "NV-Northern Lander County and Northern Eureka County": [
+    "NV036"
+  ],
+  "NV-Southern Lander County and Southern Eureka County": [
+    "NV037"
+  ],
+  "NV-Southwest Elko County": [
+    "NV038"
+  ],
+  "NV-South Central Elko County": [
+    "NV039"
+  ],
+  "NV-Northwestern Nye County": [
+    "NV040"
+  ],
+  "NV-Northeastern Nye County": [
+    "NV041"
+  ],
+  "IN-Orange": [
+    "IN076"
+  ],
+  "IN-Washington": [
+    "IN077"
+  ],
+  "IN-Scott": [
+    "IN078"
+  ],
+  "IN-Jefferson": [
+    "IN079"
+  ],
+  "IN-Dubois": [
+    "IN083"
+  ],
+  "IN-Crawford": [
+    "IN084"
+  ],
+  "IN-Perry": [
+    "IN089"
+  ],
+  "IN-Harrison": [
+    "IN090"
+  ],
+  "IN-Floyd": [
+    "IN091"
+  ],
+  "IN-Clark": [
+    "IN092"
+  ],
+  "KY-Hancock": [
+    "KY023"
+  ],
+  "KY-Breckinridge": [
+    "KY024"
+  ],
+  "KY-Meade": [
+    "KY025"
+  ],
+  "KY-Ohio": [
+    "KY026"
+  ],
+  "KY-Grayson": [
+    "KY027"
+  ],
+  "KY-Hardin": [
+    "KY028"
+  ],
+  "KY-Bullitt": [
+    "KY029"
+  ],
+  "KY-Jefferson": [
+    "KY030"
+  ],
+  "KY-Oldham": [
+    "KY031"
+  ],
+  "KY-Trimble": [
+    "KY032"
+  ],
+  "KY-Henry": [
+    "KY033"
+  ],
+  "KY-Shelby": [
+    "KY034"
+  ],
+  "KY-Franklin": [
+    "KY035"
+  ],
+  "KY-Scott": [
+    "KY036"
+  ],
+  "KY-Harrison": [
+    "KY037"
+  ],
+  "KY-Spencer": [
+    "KY038"
+  ],
+  "KY-Anderson": [
+    "KY039"
+  ],
+  "KY-Woodford": [
+    "KY040"
+  ],
+  "KY-Fayette": [
+    "KY041"
+  ],
+  "KY-Bourbon": [
+    "KY042"
+  ],
+  "KY-Nicholas": [
+    "KY043"
+  ],
+  "KY-Nelson": [
+    "KY045"
+  ],
+  "KY-Washington": [
+    "KY046"
+  ],
+  "KY-Mercer": [
+    "KY047"
+  ],
+  "KY-Jessamine": [
+    "KY048"
+  ],
+  "KY-Clark": [
+    "KY049"
+  ],
+  "KY-Larue": [
+    "KY053"
+  ],
+  "KY-Marion": [
+    "KY054"
+  ],
+  "KY-Boyle": [
+    "KY055"
+  ],
+  "KY-Garrard": [
+    "KY056"
+  ],
+  "KY-Madison": [
+    "KY057"
+  ],
+  "KY-Butler": [
+    "KY061"
+  ],
+  "KY-Edmonson": [
+    "KY062"
+  ],
+  "KY-Hart": [
+    "KY063"
+  ],
+  "KY-Green": [
+    "KY064"
+  ],
+  "KY-Taylor": [
+    "KY065"
+  ],
+  "KY-Casey": [
+    "KY066"
+  ],
+  "KY-Lincoln": [
+    "KY067"
+  ],
+  "KY-Logan": [
+    "KY070"
+  ],
+  "KY-Warren": [
+    "KY071"
+  ],
+  "KY-Simpson": [
+    "KY072"
+  ],
+  "KY-Allen": [
+    "KY073"
+  ],
+  "KY-Barren": [
+    "KY074"
+  ],
+  "KY-Monroe": [
+    "KY075"
+  ],
+  "KY-Metcalf": [
+    "KY076"
+  ],
+  "KY-Adair": [
+    "KY077"
+  ],
+  "KY-Russell": [
+    "KY078"
+  ],
+  "KY-Cumberland": [
+    "KY081"
+  ],
+  "KY-Clinton": [
+    "KY082"
+  ],
+  "IL-Winnebago": [
+    "IL003"
+  ],
+  "IL-Boone": [
+    "IL004"
+  ],
+  "IL-McHenry": [
+    "IL005"
+  ],
+  "IL-Lake": [
+    "IL006"
+  ],
+  "IL-Ogle": [
+    "IL008"
+  ],
+  "IL-Lee": [
+    "IL010"
+  ],
+  "IL-De Kalb": [
+    "IL011"
+  ],
+  "IL-Kane": [
+    "IL012"
+  ],
+  "IL-DuPage": [
+    "IL013"
+  ],
+  "IL-La Salle": [
+    "IL019"
+  ],
+  "IL-Kendall": [
+    "IL020"
+  ],
+  "IL-Grundy": [
+    "IL021"
+  ],
+  "IL-Kankakee": [
+    "IL023"
+  ],
+  "IL-Livingston": [
+    "IL032"
+  ],
+  "IL-Iroquois": [
+    "IL033"
+  ],
+  "IL-Ford": [
+    "IL039"
+  ],
+  "IL-Northern Cook": [
+    "IL103"
+  ],
+  "IL-Central Cook": [
+    "IL104"
+  ],
+  "IL-Southern Cook": [
+    "IL105"
+  ],
+  "IL-Northern Will": [
+    "IL106"
+  ],
+  "IL-Southern Will": [
+    "IL107"
+  ],
+  "IL-Eastern Will": [
+    "IL108"
+  ],
+  "IN-Lake": [
+    "IN001"
+  ],
+  "IN-Porter": [
+    "IN002"
+  ],
+  "IN-Newton": [
+    "IN010"
+  ],
+  "IN-Jasper": [
+    "IN011"
+  ],
+  "IN-Benton": [
+    "IN019"
+  ],
+  "CA-Cuyama Valley": [
+    "CA038"
+  ],
+  "CA-Catalina Island": [
+    "CA087"
+  ],
+  "CA-Santa Clarita Valley": [
+    "CA088"
+  ],
+  "CA-San Luis Obispo County Beaches": [
+    "CA340"
+  ],
+  "CA-San Luis Obispo County Inland Central Coast": [
+    "CA341"
+  ],
+  "CA-Santa Lucia Mountains": [
+    "CA342"
+  ],
+  "CA-Southern Salinas Valley": [
+    "CA343"
+  ],
+  "CA-San Luis Obispo County Interior Valleys": [
+    "CA344"
+  ],
+  "CA-San Luis Obispo County Mountains": [
+    "CA345"
+  ],
+  "CA-Santa Barbara County Central Coast Beaches": [
+    "CA346"
+  ],
+  "CA-Santa Barbara County Inland Central Coast": [
+    "CA347"
+  ],
+  "CA-Santa Ynez Valley": [
+    "CA348"
+  ],
+  "CA-Santa Barbara County Southwestern Coast": [
+    "CA349"
+  ],
+  "CA-Santa Barbara County Southeastern Coast": [
+    "CA350"
+  ],
+  "CA-Santa Ynez Mountains Western Range": [
+    "CA351"
+  ],
+  "CA-Santa Ynez Mountains Eastern Range": [
+    "CA352"
+  ],
+  "CA-Santa Barbara County Interior Mountains": [
+    "CA353"
+  ],
+  "CA-Ventura County Beaches": [
+    "CA354"
+  ],
+  "CA-Ventura County Inland Coast": [
+    "CA355"
+  ],
+  "CA-Lake Casitas": [
+    "CA356"
+  ],
+  "CA-Ojai Valley": [
+    "CA357"
+  ],
+  "CA-Central Ventura County Valleys": [
+    "CA358"
+  ],
+  "CA-Malibu Coast": [
+    "CA362"
+  ],
+  "CA-Los Angeles County Beaches": [
+    "CA366"
+  ],
+  "CA-Palos Verdes Hills": [
+    "CA367"
+  ],
+  "CA-Los Angeles County Inland Coast including Downtown Los Angeles": [
+    "CA368"
+  ],
+  "CA-Western Santa Monica Mountains": [
+    "CA369"
+  ],
+  "CA-Eastern Santa Monica Mountains": [
+    "CA370"
+  ],
+  "CA-Calabasas and Agoura Hills": [
+    "CA371"
+  ],
+  "CA-Western San Fernando Valley": [
+    "CA372"
+  ],
+  "CA-Eastern San Fernando Valley": [
+    "CA373"
+  ],
+  "CA-Southeastern Ventura County Valleys": [
+    "CA374"
+  ],
+  "CA-Santa Susana Mountains": [
+    "CA375"
+  ],
+  "CA-Southern Ventura County Mountains": [
+    "CA376"
+  ],
+  "CA-Northern Ventura County Mountains": [
+    "CA377"
+  ],
+  "CA-Northwestern Los Angeles County Mountains including the Interstate 5 Corridor": [
+    "CA378"
+  ],
+  "CA-Western San Gabriel Mountains including the Highway 14 Corridor": [
+    "CA379"
+  ],
+  "CA-Eastern San Gabriel Mountains": [
+    "CA380"
+  ],
+  "CA-Western Antelope Valley Foothills": [
+    "CA381"
+  ],
+  "CA-Eastern Antelope Valley Foothills": [
+    "CA382"
+  ],
+  "CA-Antelope Valley ": [
+    "CA383"
+  ],
+  "CA-Los Angeles County San Gabriel Valley": [
+    "CA548"
+  ],
+  "CA-San Miguel and Santa Rosa Islands": [
+    "CA549"
+  ],
+  "CA-Santa Cruz and Anacapa Islands": [
+    "CA550"
+  ],
+  "IL-Greene": [
+    "IL058"
+  ],
+  "IL-Macoupin": [
+    "IL059"
+  ],
+  "IL-Montgomery": [
+    "IL060"
+  ],
+  "IL-Bond": [
+    "IL064"
+  ],
+  "IL-Fayette": [
+    "IL065"
+  ],
+  "IL-Clinton": [
+    "IL069"
+  ],
+  "IL-Marion": [
+    "IL070"
+  ],
+  "IL-Washington": [
+    "IL074"
+  ],
+  "IL-Randolph": [
+    "IL079"
+  ],
+  "IL-Adams": [
+    "IL095"
+  ],
+  "IL-Brown": [
+    "IL096"
+  ],
+  "IL-Pike": [
+    "IL097"
+  ],
+  "IL-Calhoun": [
+    "IL098"
+  ],
+  "IL-Jersey": [
+    "IL099"
+  ],
+  "IL-Madison": [
+    "IL100"
+  ],
+  "IL-St. Clair": [
+    "IL101"
+  ],
+  "IL-Monroe": [
+    "IL102"
+  ],
+  "MO-Knox": [
+    "MO018"
+  ],
+  "MO-Lewis": [
+    "MO019"
+  ],
+  "MO-Shelby": [
+    "MO026"
+  ],
+  "MO-Marion": [
+    "MO027"
+  ],
+  "MO-Monroe": [
+    "MO034"
+  ],
+  "MO-Ralls": [
+    "MO035"
+  ],
+  "MO-Pike": [
+    "MO036"
+  ],
+  "MO-Boone": [
+    "MO041"
+  ],
+  "MO-Audrain": [
+    "MO042"
+  ],
+  "MO-Moniteau": [
+    "MO047"
+  ],
+  "MO-Cole": [
+    "MO048"
+  ],
+  "MO-Osage": [
+    "MO049"
+  ],
+  "MO-Callaway": [
+    "MO050"
+  ],
+  "MO-Montgomery": [
+    "MO051"
+  ],
+  "MO-Lincoln": [
+    "MO052"
+  ],
+  "MO-Gasconade": [
+    "MO059"
+  ],
+  "MO-Warren": [
+    "MO060"
+  ],
+  "MO-St. Charles": [
+    "MO061"
+  ],
+  "MO-Franklin": [
+    "MO062"
+  ],
+  "MO-St. Louis": [
+    "MO063"
+  ],
+  "MO-St. Louis City": [
+    "MO064"
+  ],
+  "MO-Jefferson": [
+    "MO065"
+  ],
+  "MO-Crawford": [
+    "MO072"
+  ],
+  "MO-Washington": [
+    "MO073"
+  ],
+  "MO-St. Francois": [
+    "MO074"
+  ],
+  "MO-Ste. Genevieve": [
+    "MO075"
+  ],
+  "MO-Iron": [
+    "MO084"
+  ],
+  "MO-Madison": [
+    "MO085"
+  ],
+  "MO-Reynolds": [
+    "MO099"
+  ],
+  "TX-Parmer": [
+    "TX021"
+  ],
+  "TX-Castro": [
+    "TX022"
+  ],
+  "TX-Swisher": [
+    "TX023"
+  ],
+  "TX-Briscoe": [
+    "TX024"
+  ],
+  "TX-Hall": [
+    "TX025"
+  ],
+  "TX-Childress": [
+    "TX026"
+  ],
+  "TX-Bailey": [
+    "TX027"
+  ],
+  "TX-Lamb": [
+    "TX028"
+  ],
+  "TX-Hale": [
+    "TX029"
+  ],
+  "TX-Floyd": [
+    "TX030"
+  ],
+  "TX-Motley": [
+    "TX031"
+  ],
+  "TX-Cottle": [
+    "TX032"
+  ],
+  "TX-Cochran": [
+    "TX033"
+  ],
+  "TX-Hockley": [
+    "TX034"
+  ],
+  "TX-Lubbock": [
+    "TX035"
+  ],
+  "TX-Crosby": [
+    "TX036"
+  ],
+  "TX-Dickens": [
+    "TX037"
+  ],
+  "TX-King": [
+    "TX038"
+  ],
+  "TX-Yoakum": [
+    "TX039"
+  ],
+  "TX-Terry": [
+    "TX040"
+  ],
+  "TX-Lynn": [
+    "TX041"
+  ],
+  "TX-Garza": [
+    "TX042"
+  ],
+  "TX-Kent": [
+    "TX043"
+  ],
+  "TX-Stonewall": [
+    "TX044"
+  ],
+  "DC-District of Columbia": [
+    "DC001"
+  ],
+  "MD-Garrett": [
+    "MD001"
+  ],
+  "MD-Washington": [
+    "MD003"
+  ],
+  "MD-Frederick": [
+    "MD004"
+  ],
+  "MD-Carroll": [
+    "MD005"
+  ],
+  "MD-Northern Baltimore": [
+    "MD006"
+  ],
+  "MD-Cecil": [
+    "MD008"
+  ],
+  "MD-Southern Baltimore": [
+    "MD011"
+  ],
+  "MD-Prince Georges": [
+    "MD013"
+  ],
+  "MD-Anne Arundel": [
+    "MD014"
+  ],
+  "MD-Charles": [
+    "MD016"
+  ],
+  "MD-St. Marys": [
+    "MD017"
+  ],
+  "MD-Calvert": [
+    "MD018"
+  ],
+  "MD-Extreme Western Allegany": [
+    "MD501"
+  ],
+  "MD-Central and Eastern Allegany": [
+    "MD502"
+  ],
+  "MD-Northwest Montgomery": [
+    "MD503"
+  ],
+  "MD-Central and Southeast Montgomery": [
+    "MD504"
+  ],
+  "MD-Northwest Howard": [
+    "MD505"
+  ],
+  "MD-Central and Southeast Howard": [
+    "MD506"
+  ],
+  "MD-Northwest Harford": [
+    "MD507"
+  ],
+  "MD-Southeast Harford": [
+    "MD508"
+  ],
+  "VA-Northwest Prince William": [
+    "VA526"
+  ],
+  "VA-Central and Southeast Prince William/Manassas/Manassas Park": [
+    "VA527"
+  ],
+  "VA-Augusta": [
+    "VA025"
+  ],
+  "VA-Rockingham": [
+    "VA026"
+  ],
+  "VA-Shenandoah": [
+    "VA027"
+  ],
+  "VA-Frederick": [
+    "VA028"
+  ],
+  "VA-Page": [
+    "VA029"
+  ],
+  "VA-Warren": [
+    "VA030"
+  ],
+  "VA-Clarke": [
+    "VA031"
+  ],
+  "VA-Nelson": [
+    "VA036"
+  ],
+  "VA-Albemarle": [
+    "VA037"
+  ],
+  "VA-Greene": [
+    "VA038"
+  ],
+  "VA-Madison": [
+    "VA039"
+  ],
+  "VA-Rappahannock": [
+    "VA040"
+  ],
+  "VA-Orange": [
+    "VA050"
+  ],
+  "VA-Culpeper": [
+    "VA051"
+  ],
+  "VA-Fairfax": [
+    "VA053"
+  ],
+  "VA-Arlington/Falls Church/Alexandria": [
+    "VA054"
+  ],
+  "VA-Stafford": [
+    "VA055"
+  ],
+  "VA-Spotsylvania": [
+    "VA056"
+  ],
+  "VA-King George": [
+    "VA057"
+  ],
+  "VA-Northern Fauquier": [
+    "VA501"
+  ],
+  "VA-Southern Fauquier": [
+    "VA502"
+  ],
+  "VA-Western Highland": [
+    "VA503"
+  ],
+  "VA-Eastern Highland": [
+    "VA504"
+  ],
+  "VA-Western Loudoun": [
+    "VA505"
+  ],
+  "VA-Eastern Loudoun": [
+    "VA506"
+  ],
+  "VA-Northern Virginia Blue Ridge": [
+    "VA507"
+  ],
+  "VA-Central Virginia Blue Ridge": [
+    "VA508"
+  ],
+  "WV-Hampshire": [
+    "WV050"
+  ],
+  "WV-Morgan": [
+    "WV051"
+  ],
+  "WV-Berkeley": [
+    "WV052"
+  ],
+  "WV-Jefferson": [
+    "WV053"
+  ],
+  "WV-Hardy": [
+    "WV055"
+  ],
+  "WV-Western Grant": [
+    "WV501"
+  ],
+  "WV-Eastern Grant": [
+    "WV502"
+  ],
+  "WV-Western Mineral": [
+    "WV503"
+  ],
+  "WV-Eastern Mineral": [
+    "WV504"
+  ],
+  "WV-Western Pendleton": [
+    "WV505"
+  ],
+  "WV-Eastern Pendleton": [
+    "WV506"
+  ],
+  "AR-Marion": [
+    "AR004"
+  ],
+  "AR-Baxter": [
+    "AR005"
+  ],
+  "AR-Fulton": [
+    "AR006"
+  ],
+  "AR-Sharp": [
+    "AR007"
+  ],
+  "AR-Randolph": [
+    "AR008"
+  ],
+  "AR-Stone": [
+    "AR014"
+  ],
+  "AR-Izard": [
+    "AR015"
+  ],
+  "AR-Independence": [
+    "AR016"
+  ],
+  "AR-Lawrence": [
+    "AR017"
+  ],
+  "AR-Cleburne": [
+    "AR024"
+  ],
+  "AR-Jackson": [
+    "AR025"
+  ],
+  "AR-Conway": [
+    "AR031"
+  ],
+  "AR-Faulkner": [
+    "AR032"
+  ],
+  "AR-White": [
+    "AR033"
+  ],
+  "AR-Woodruff": [
+    "AR034"
+  ],
+  "AR-Perry": [
+    "AR039"
+  ],
+  "AR-Garland": [
+    "AR042"
+  ],
+  "AR-Saline": [
+    "AR043"
+  ],
+  "AR-Pulaski": [
+    "AR044"
+  ],
+  "AR-Lonoke": [
+    "AR045"
+  ],
+  "AR-Prairie": [
+    "AR046"
+  ],
+  "AR-Monroe": [
+    "AR047"
+  ],
+  "AR-Pike": [
+    "AR052"
+  ],
+  "AR-Clark": [
+    "AR053"
+  ],
+  "AR-Hot Spring": [
+    "AR054"
+  ],
+  "AR-Grant": [
+    "AR055"
+  ],
+  "AR-Jefferson": [
+    "AR056"
+  ],
+  "AR-Arkansas": [
+    "AR057"
+  ],
+  "AR-Dallas": [
+    "AR062"
+  ],
+  "AR-Cleveland": [
+    "AR063"
+  ],
+  "AR-Lincoln": [
+    "AR064"
+  ],
+  "AR-Desha": [
+    "AR065"
+  ],
+  "AR-Ouachita": [
+    "AR066"
+  ],
+  "AR-Calhoun": [
+    "AR067"
+  ],
+  "AR-Bradley": [
+    "AR068"
+  ],
+  "AR-Drew": [
+    "AR069"
+  ],
+  "AR-Boone County Except Southwest": [
+    "AR103"
+  ],
+  "AR-Newton County Higher Elevations": [
+    "AR112"
+  ],
+  "AR-Searcy County Lower Elevations": [
+    "AR113"
+  ],
+  "AR-Southern Johnson County": [
+    "AR121"
+  ],
+  "AR-Southern Pope County": [
+    "AR122"
+  ],
+  "AR-Southeast Van Buren County": [
+    "AR123"
+  ],
+  "AR-Western and Northern Logan County": [
+    "AR130"
+  ],
+  "AR-Northern Scott County": [
+    "AR137"
+  ],
+  "AR-Northwest Yell County": [
+    "AR138"
+  ],
+  "AR-Polk County Lower Elevations": [
+    "AR140"
+  ],
+  "AR-Central and Eastern Montgomery County": [
+    "AR141"
+  ],
+  "AR-Boone County Higher Elevations": [
+    "AR203"
+  ],
+  "AR-Newton County Lower Elevations": [
+    "AR212"
+  ],
+  "AR-Northwest Searcy County Higher Elevations": [
+    "AR213"
+  ],
+  "AR-Johnson County Higher Elevations": [
+    "AR221"
+  ],
+  "AR-Pope County Higher Elevations": [
+    "AR222"
+  ],
+  "AR-Van Buren County Higher Elevations": [
+    "AR223"
+  ],
+  "AR-Southern and Eastern Logan County": [
+    "AR230"
+  ],
+  "AR-Central and Southern Scott County": [
+    "AR237"
+  ],
+  "AR-Yell Excluding Northwest": [
+    "AR238"
+  ],
+  "AR-Northern Polk County Higher Elevations": [
+    "AR240"
+  ],
+  "AR-Northern Montgomery County Higher Elevations": [
+    "AR241"
+  ],
+  "AR-Eastern, Central, and Southern Searcy County Higher Elevations": [
+    "AR313"
+  ],
+  "AR-Southeast Polk County Higher Elevations": [
+    "AR340"
+  ],
+  "AR-Southwest Montgomery County Higher Elevations": [
+    "AR341"
+  ],
+  "NM-Guadalupe Mountains of Eddy County": [
+    "NM027"
+  ],
+  "NM-Eddy County Plains": [
+    "NM028"
+  ],
+  "NM-Northern Lea County": [
+    "NM029"
+  ],
+  "NM-Central Lea County": [
+    "NM033"
+  ],
+  "NM-Southern Lea County": [
+    "NM034"
+  ],
+  "TX-Gaines": [
+    "TX045"
+  ],
+  "TX-Dawson": [
+    "TX046"
+  ],
+  "TX-Borden": [
+    "TX047"
+  ],
+  "TX-Scurry": [
+    "TX048"
+  ],
+  "TX-Andrews": [
+    "TX050"
+  ],
+  "TX-Martin": [
+    "TX051"
+  ],
+  "TX-Howard": [
+    "TX052"
+  ],
+  "TX-Mitchell": [
+    "TX053"
+  ],
+  "TX-Loving": [
+    "TX059"
+  ],
+  "TX-Winkler": [
+    "TX060"
+  ],
+  "TX-Ector": [
+    "TX061"
+  ],
+  "TX-Midland": [
+    "TX062"
+  ],
+  "TX-Glasscock": [
+    "TX063"
+  ],
+  "TX-Ward": [
+    "TX067"
+  ],
+  "TX-Crane": [
+    "TX068"
+  ],
+  "TX-Upton": [
+    "TX069"
+  ],
+  "TX-Reagan": [
+    "TX070"
+  ],
+  "TX-Pecos": [
+    "TX075"
+  ],
+  "TX-Terrell": [
+    "TX082"
+  ],
+  "TX-Guadalupe Mountains Above 7000 Feet ": [
+    "TX270"
+  ],
+  "TX-Guadalupe and Delaware Mountains ": [
+    "TX271"
+  ],
+  "TX-Van Horn and Highway 54 Corridor ": [
+    "TX272"
+  ],
+  "TX-Eastern Culberson County ": [
+    "TX273"
+  ],
+  "TX-Reeves County Plains ": [
+    "TX274"
+  ],
+  "TX-Chinati Mountains ": [
+    "TX275"
+  ],
+  "TX-Marfa Plateau ": [
+    "TX276"
+  ],
+  "TX-Davis Mountains ": [
+    "TX277"
+  ],
+  "TX-Davis Mountains Foothills ": [
+    "TX278"
+  ],
+  "TX-Central Brewster County ": [
+    "TX279"
+  ],
+  "TX-Chisos Basin ": [
+    "TX280"
+  ],
+  "TX-Presidio Valley ": [
+    "TX281"
+  ],
+  "TX-Lower Brewster County ": [
+    "TX282"
+  ],
+  "AR-Clay": [
+    "AR009"
+  ],
+  "AR-Greene": [
+    "AR018"
+  ],
+  "AR-Craighead": [
+    "AR026"
+  ],
+  "AR-Poinsett": [
+    "AR027"
+  ],
+  "AR-Mississippi": [
+    "AR028"
+  ],
+  "AR-Cross": [
+    "AR035"
+  ],
+  "AR-Crittenden": [
+    "AR036"
+  ],
+  "AR-St. Francis": [
+    "AR048"
+  ],
+  "AR-Lee": [
+    "AR049"
+  ],
+  "AR-Phillips": [
+    "AR058"
+  ],
+  "MO-Dunklin": [
+    "MO113"
+  ],
+  "MO-Pemiscot": [
+    "MO115"
+  ],
+  "MS-DeSoto": [
+    "MS001"
+  ],
+  "MS-Marshall": [
+    "MS002"
+  ],
+  "MS-Benton": [
+    "MS003"
+  ],
+  "MS-Tippah": [
+    "MS004"
+  ],
+  "MS-Alcorn": [
+    "MS005"
+  ],
+  "MS-Tishomingo": [
+    "MS006"
+  ],
+  "MS-Tunica": [
+    "MS007"
+  ],
+  "MS-Tate": [
+    "MS008"
+  ],
+  "MS-Prentiss": [
+    "MS009"
+  ],
+  "MS-Coahoma": [
+    "MS010"
+  ],
+  "MS-Quitman": [
+    "MS011"
+  ],
+  "MS-Panola": [
+    "MS012"
+  ],
+  "MS-Lafayette": [
+    "MS013"
+  ],
+  "MS-Union": [
+    "MS014"
+  ],
+  "MS-Pontotoc": [
+    "MS015"
+  ],
+  "MS-Lee": [
+    "MS016"
+  ],
+  "MS-Itawamba": [
+    "MS017"
+  ],
+  "MS-Tallahatchie": [
+    "MS020"
+  ],
+  "MS-Yalobusha": [
+    "MS021"
+  ],
+  "MS-Calhoun": [
+    "MS022"
+  ],
+  "MS-Chickasaw": [
+    "MS023"
+  ],
+  "MS-Monroe": [
+    "MS024"
+  ],
+  "TN-Lake": [
+    "TN001"
+  ],
+  "TN-Obion": [
+    "TN002"
+  ],
+  "TN-Weakley": [
+    "TN003"
+  ],
+  "TN-Henry": [
+    "TN004"
+  ],
+  "TN-Dyer": [
+    "TN019"
+  ],
+  "TN-Gibson": [
+    "TN020"
+  ],
+  "TN-Carroll": [
+    "TN021"
+  ],
+  "TN-Lauderdale": [
+    "TN048"
+  ],
+  "TN-Tipton": [
+    "TN049"
+  ],
+  "TN-Haywood": [
+    "TN050"
+  ],
+  "TN-Crockett": [
+    "TN051"
+  ],
+  "TN-Madison": [
+    "TN052"
+  ],
+  "TN-Chester": [
+    "TN053"
+  ],
+  "TN-Henderson": [
+    "TN054"
+  ],
+  "TN-Decatur": [
+    "TN055"
+  ],
+  "TN-Shelby": [
+    "TN088"
+  ],
+  "TN-Fayette": [
+    "TN089"
+  ],
+  "TN-Hardeman": [
+    "TN090"
+  ],
+  "TN-McNairy": [
+    "TN091"
+  ],
+  "TN-Hardin": [
+    "TN092"
+  ],
+  "FL-Glades": [
+    "FL063"
+  ],
+  "FL-Hendry": [
+    "FL066"
+  ],
+  "FL-Inland Palm Beach County": [
+    "FL067"
+  ],
+  "FL-Metro Palm Beach County": [
+    "FL068"
+  ],
+  "FL-Coastal Collier County": [
+    "FL069"
+  ],
+  "FL-Inland Collier County": [
+    "FL070"
+  ],
+  "FL-Inland Broward County": [
+    "FL071"
+  ],
+  "FL-Metro Broward County": [
+    "FL072"
+  ],
+  "FL-Inland Miami-Dade County": [
+    "FL073"
+  ],
+  "FL-Metropolitan Miami Dade": [
+    "FL074"
+  ],
+  "FL-Mainland Monroe": [
+    "FL075"
+  ],
+  "FL-Coastal Palm Beach County": [
+    "FL168"
+  ],
+  "FL-Coastal Broward County": [
+    "FL172"
+  ],
+  "FL-Coastal Miami Dade County": [
+    "FL173"
+  ],
+  "FL-Far South Miami-Dade County": [
+    "FL174"
+  ],
+  "CA-Western Siskiyou County": [
+    "CA080"
+  ],
+  "CA-Central Siskiyou County": [
+    "CA081"
+  ],
+  "CA-South Central Siskiyou County": [
+    "CA082"
+  ],
+  "CA-North Central and Southeast Siskiyou County": [
+    "CA083"
+  ],
+  "CA-Northeast Siskiyou and Northwest Modoc Counties": [
+    "CA084"
+  ],
+  "CA-Modoc County": [
+    "CA085"
+  ],
+  "OR-South Central Oregon Coast": [
+    "OR021"
+  ],
+  "OR-Curry County Coast": [
+    "OR022"
+  ],
+  "OR-Central Douglas County": [
+    "OR023"
+  ],
+  "OR-Eastern Curry County and Josephine County": [
+    "OR024"
+  ],
+  "OR-Eastern Douglas County Foothills": [
+    "OR025"
+  ],
+  "OR-Jackson County": [
+    "OR026"
+  ],
+  "OR-South Central Oregon Cascades": [
+    "OR027"
+  ],
+  "OR-Siskiyou Mountains and Southern Oregon Cascades": [
+    "OR028"
+  ],
+  "OR-Klamath Basin": [
+    "OR029"
+  ],
+  "OR-Northern and Eastern Klamath County and Western Lake County": [
+    "OR030"
+  ],
+  "OR-Central and Eastern Lake County": [
+    "OR031"
+  ],
+  "NC-Martin": [
+    "NC029"
+  ],
+  "NC-Pitt": [
+    "NC044"
+  ],
+  "NC-Washington": [
+    "NC045"
+  ],
+  "NC-Tyrrell": [
+    "NC046"
+  ],
+  "NC-Mainland Dare": [
+    "NC047"
+  ],
+  "NC-Greene": [
+    "NC079"
+  ],
+  "NC-Beaufort": [
+    "NC080"
+  ],
+  "NC-Mainland Hyde": [
+    "NC081"
+  ],
+  "NC-Duplin": [
+    "NC090"
+  ],
+  "NC-Lenoir": [
+    "NC091"
+  ],
+  "NC-Jones": [
+    "NC092"
+  ],
+  "NC-Pamlico": [
+    "NC094"
+  ],
+  "NC-Northern Craven": [
+    "NC193"
+  ],
+  "NC-Southern Craven ": [
+    "NC194"
+  ],
+  "NC-West Carteret ": [
+    "NC195"
+  ],
+  "NC-East Carteret ": [
+    "NC196"
+  ],
+  "NC-Inland Onslow": [
+    "NC198"
+  ],
+  "NC-Coastal Onslow ": [
+    "NC199"
+  ],
+  "NC-Northern Outer Banks ": [
+    "NC203"
+  ],
+  "NC-Ocracoke Island ": [
+    "NC204"
+  ],
+  "NC-Hatteras Island ": [
+    "NC205"
+  ],
+  "WI-Marquette": [
+    "WI046"
+  ],
+  "WI-Green Lake": [
+    "WI047"
+  ],
+  "WI-Fond Du Lac": [
+    "WI051"
+  ],
+  "WI-Sheboygan": [
+    "WI052"
+  ],
+  "WI-Sauk": [
+    "WI056"
+  ],
+  "WI-Columbia": [
+    "WI057"
+  ],
+  "WI-Dodge": [
+    "WI058"
+  ],
+  "WI-Washington": [
+    "WI059"
+  ],
+  "WI-Ozaukee": [
+    "WI060"
+  ],
+  "WI-Iowa": [
+    "WI062"
+  ],
+  "WI-Dane": [
+    "WI063"
+  ],
+  "WI-Jefferson": [
+    "WI064"
+  ],
+  "WI-Waukesha": [
+    "WI065"
+  ],
+  "WI-Milwaukee": [
+    "WI066"
+  ],
+  "WI-Lafayette": [
+    "WI067"
+  ],
+  "WI-Green": [
+    "WI068"
+  ],
+  "WI-Rock": [
+    "WI069"
+  ],
+  "WI-Walworth": [
+    "WI070"
+  ],
+  "WI-Racine": [
+    "WI071"
+  ],
+  "WI-Kenosha": [
+    "WI072"
+  ],
+  "FL-Inland Volusia County": [
+    "FL041"
+  ],
+  "FL-Northern Lake County": [
+    "FL044"
+  ],
+  "FL-Orange": [
+    "FL045"
+  ],
+  "FL-Seminole": [
+    "FL046"
+  ],
+  "FL-Osceola": [
+    "FL053"
+  ],
+  "FL-Okeechobee": [
+    "FL058"
+  ],
+  "FL-Coastal Volusia County": [
+    "FL141"
+  ],
+  "FL-Southern Lake County": [
+    "FL144"
+  ],
+  "FL-Coastal Indian River": [
+    "FL154"
+  ],
+  "FL-Coastal St. Lucie": [
+    "FL159"
+  ],
+  "FL-Coastal Martin": [
+    "FL164"
+  ],
+  "FL-Inland Northern Brevard": [
+    "FL247"
+  ],
+  "FL-Inland Indian River": [
+    "FL254"
+  ],
+  "FL-Inland St. Lucie": [
+    "FL259"
+  ],
+  "FL-Inland Martin": [
+    "FL264"
+  ],
+  "FL-Mainland Northern Brevard": [
+    "FL347"
+  ],
+  "FL-Northern Brevard Barrier Islands": [
+    "FL447"
+  ],
+  "FL-Inland Southern Brevard": [
+    "FL547"
+  ],
+  "FL-Mainland Southern Brevard": [
+    "FL647"
+  ],
+  "FL-Southern Brevard Barrier Islands": [
+    "FL747"
+  ],
+  "AL-Choctaw": [
+    "AL051"
+  ],
+  "AL-Washington": [
+    "AL052"
+  ],
+  "AL-Clarke": [
+    "AL053"
+  ],
+  "AL-Wilcox": [
+    "AL054"
+  ],
+  "AL-Monroe": [
+    "AL055"
+  ],
+  "AL-Conecuh": [
+    "AL056"
+  ],
+  "AL-Butler": [
+    "AL057"
+  ],
+  "AL-Crenshaw": [
+    "AL058"
+  ],
+  "AL-Escambia": [
+    "AL059"
+  ],
+  "AL-Covington": [
+    "AL060"
+  ],
+  "AL-Mobile Inland": [
+    "AL261"
+  ],
+  "AL-Baldwin Inland": [
+    "AL262"
+  ],
+  "AL-Mobile Central": [
+    "AL263"
+  ],
+  "AL-Baldwin Central": [
+    "AL264"
+  ],
+  "AL-Mobile Coastal": [
+    "AL265"
+  ],
+  "AL-Baldwin Coastal": [
+    "AL266"
+  ],
+  "FL-Escambia Inland": [
+    "FL201"
+  ],
+  "FL-Escambia Coastal": [
+    "FL202"
+  ],
+  "FL-Santa Rosa Inland": [
+    "FL203"
+  ],
+  "FL-Santa Rosa Coastal": [
+    "FL204"
+  ],
+  "FL-Okaloosa Inland": [
+    "FL205"
+  ],
+  "FL-Okaloosa Coastal": [
+    "FL206"
+  ],
+  "MS-Wayne": [
+    "MS067"
+  ],
+  "MS-Perry": [
+    "MS075"
+  ],
+  "MS-Greene": [
+    "MS076"
+  ],
+  "MS-Stone": [
+    "MS078"
+  ],
+  "MS-George": [
+    "MS079"
+  ],
+  "MN-Douglas": [
+    "MN041"
+  ],
+  "MN-Todd": [
+    "MN042"
+  ],
+  "MN-Morrison": [
+    "MN043"
+  ],
+  "MN-Mille Lacs": [
+    "MN044"
+  ],
+  "MN-Kanabec": [
+    "MN045"
+  ],
+  "MN-Stevens": [
+    "MN047"
+  ],
+  "MN-Pope": [
+    "MN048"
+  ],
+  "MN-Stearns": [
+    "MN049"
+  ],
+  "MN-Benton": [
+    "MN050"
+  ],
+  "MN-Sherburne": [
+    "MN051"
+  ],
+  "MN-Isanti": [
+    "MN052"
+  ],
+  "MN-Chisago": [
+    "MN053"
+  ],
+  "MN-Lac Qui Parle": [
+    "MN054"
+  ],
+  "MN-Swift": [
+    "MN055"
+  ],
+  "MN-Chippewa": [
+    "MN056"
+  ],
+  "MN-Kandiyohi": [
+    "MN057"
+  ],
+  "MN-Meeker": [
+    "MN058"
+  ],
+  "MN-Wright": [
+    "MN059"
+  ],
+  "MN-Hennepin": [
+    "MN060"
+  ],
+  "MN-Anoka": [
+    "MN061"
+  ],
+  "MN-Ramsey": [
+    "MN062"
+  ],
+  "MN-Washington": [
+    "MN063"
+  ],
+  "MN-Yellow Medicine": [
+    "MN064"
+  ],
+  "MN-Renville": [
+    "MN065"
+  ],
+  "MN-McLeod": [
+    "MN066"
+  ],
+  "MN-Sibley": [
+    "MN067"
+  ],
+  "MN-Carver": [
+    "MN068"
+  ],
+  "MN-Scott": [
+    "MN069"
+  ],
+  "MN-Dakota": [
+    "MN070"
+  ],
+  "MN-Redwood": [
+    "MN073"
+  ],
+  "MN-Brown": [
+    "MN074"
+  ],
+  "MN-Nicollet": [
+    "MN075"
+  ],
+  "MN-Le Sueur": [
+    "MN076"
+  ],
+  "MN-Rice": [
+    "MN077"
+  ],
+  "MN-Goodhue": [
+    "MN078"
+  ],
+  "MN-Watonwan": [
+    "MN082"
+  ],
+  "MN-Blue Earth": [
+    "MN083"
+  ],
+  "MN-Waseca": [
+    "MN084"
+  ],
+  "MN-Steele": [
+    "MN085"
+  ],
+  "MN-Martin": [
+    "MN091"
+  ],
+  "MN-Faribault": [
+    "MN092"
+  ],
+  "MN-Freeborn": [
+    "MN093"
+  ],
+  "WI-Polk": [
+    "WI014"
+  ],
+  "WI-Barron": [
+    "WI015"
+  ],
+  "WI-Rusk": [
+    "WI016"
+  ],
+  "WI-St. Croix": [
+    "WI023"
+  ],
+  "WI-Pierce": [
+    "WI024"
+  ],
+  "WI-Dunn": [
+    "WI025"
+  ],
+  "WI-Pepin": [
+    "WI026"
+  ],
+  "WI-Chippewa": [
+    "WI027"
+  ],
+  "WI-Eau Claire": [
+    "WI028"
+  ],
+  "MI-Keweenaw": [
+    "MI001"
+  ],
+  "MI-Ontonagon": [
+    "MI002"
+  ],
+  "MI-Houghton": [
+    "MI003"
+  ],
+  "MI-Baraga": [
+    "MI004"
+  ],
+  "MI-Marquette": [
+    "MI005"
+  ],
+  "MI-Alger": [
+    "MI006"
+  ],
+  "MI-Luce": [
+    "MI007"
+  ],
+  "MI-Gogebic": [
+    "MI009"
+  ],
+  "MI-Iron": [
+    "MI010"
+  ],
+  "MI-Dickinson": [
+    "MI011"
+  ],
+  "MI-Menominee": [
+    "MI012"
+  ],
+  "MI-Delta": [
+    "MI013"
+  ],
+  "MI-Southern Schoolcraft": [
+    "MI014"
+  ],
+  "MI-Southern Houghton": [
+    "MI084"
+  ],
+  "MI-Northern Schoolcraft": [
+    "MI085"
+  ],
+  "NC-Cherokee": [
+    "NC060"
+  ],
+  "NC-Clay": [
+    "NC061"
+  ],
+  "TN-Scott": [
+    "TN012"
+  ],
+  "TN-Campbell": [
+    "TN013"
+  ],
+  "TN-Claiborne": [
+    "TN014"
+  ],
+  "TN-Hancock": [
+    "TN015"
+  ],
+  "TN-Hawkins": [
+    "TN016"
+  ],
+  "TN-Sullivan": [
+    "TN017"
+  ],
+  "TN-Johnson": [
+    "TN018"
+  ],
+  "TN-Morgan": [
+    "TN035"
+  ],
+  "TN-Anderson": [
+    "TN036"
+  ],
+  "TN-Union": [
+    "TN037"
+  ],
+  "TN-Grainger": [
+    "TN038"
+  ],
+  "TN-Hamblen": [
+    "TN039"
+  ],
+  "TN-Northwest Cocke": [
+    "TN040"
+  ],
+  "TN-Cocke Smoky Mountains": [
+    "TN041"
+  ],
+  "TN-Northwest Greene": [
+    "TN042"
+  ],
+  "TN-Southeast Greene": [
+    "TN043"
+  ],
+  "TN-Washington": [
+    "TN044"
+  ],
+  "TN-Unicoi": [
+    "TN045"
+  ],
+  "TN-Northwest Carter": [
+    "TN046"
+  ],
+  "TN-Southeast Carter": [
+    "TN047"
+  ],
+  "TN-Roane": [
+    "TN067"
+  ],
+  "TN-Loudon": [
+    "TN068"
+  ],
+  "TN-Knox": [
+    "TN069"
+  ],
+  "TN-Jefferson": [
+    "TN070"
+  ],
+  "TN-NW Blount": [
+    "TN071"
+  ],
+  "TN-Blount Smoky Mountains": [
+    "TN072"
+  ],
+  "TN-North Sevier": [
+    "TN073"
+  ],
+  "TN-Sevier Smoky Mountains": [
+    "TN074"
+  ],
+  "TN-Sequatchie": [
+    "TN081"
+  ],
+  "TN-Bledsoe": [
+    "TN082"
+  ],
+  "TN-Rhea": [
+    "TN083"
+  ],
+  "TN-Meigs": [
+    "TN084"
+  ],
+  "TN-McMinn": [
+    "TN085"
+  ],
+  "TN-Northwest Monroe": [
+    "TN086"
+  ],
+  "TN-Southeast Monroe": [
+    "TN087"
+  ],
+  "TN-Marion": [
+    "TN098"
+  ],
+  "TN-Hamilton": [
+    "TN099"
+  ],
+  "TN-Bradley": [
+    "TN100"
+  ],
+  "TN-West Polk": [
+    "TN101"
+  ],
+  "TN-East Polk": [
+    "TN102"
+  ],
+  "VA-Lee": [
+    "VA001"
+  ],
+  "VA-Wise": [
+    "VA002"
+  ],
+  "VA-Scott": [
+    "VA005"
+  ],
+  "VA-Russell": [
+    "VA006"
+  ],
+  "VA-Washington": [
+    "VA008"
+  ],
+  "ID-Northern Clearwater Mountains": [
+    "ID005"
+  ],
+  "ID-Southern Clearwater Mountains": [
+    "ID006"
+  ],
+  "ID-Orofino/Grangeville Region": [
+    "ID007"
+  ],
+  "ID-Lower Hells Canyon/Salmon River Region": [
+    "ID008"
+  ],
+  "ID-Western Lemhi County": [
+    "ID009"
+  ],
+  "ID-Eastern Lemhi County": [
+    "ID010"
+  ],
+  "MT-Kootenai/Cabinet Region": [
+    "MT001"
+  ],
+  "MT-West Glacier/Bob Marshall Region": [
+    "MT002"
+  ],
+  "MT-Flathead/Mission Valleys": [
+    "MT003"
+  ],
+  "MT-Lower Clark Fork Region": [
+    "MT004"
+  ],
+  "MT-Missoula/Bitterroot Valleys": [
+    "MT005"
+  ],
+  "MT-Bitterroot/Sapphire Mountains": [
+    "MT006"
+  ],
+  "MT-Butte/Pintlar Region": [
+    "MT007"
+  ],
+  "MT-Blackfoot Region": [
+    "MT043"
+  ],
+  "CA-San Francisco": [
+    "CA006"
+  ],
+  "CA-Marin Coastal Range": [
+    "CA502"
+  ],
+  "CA-Sonoma Coastal Range": [
+    "CA503"
+  ],
+  "CA-North Bay Interior Mountains": [
+    "CA504"
+  ],
+  "CA-Coastal North Bay Including Point Reyes National Seashore": [
+    "CA505"
+  ],
+  "CA-North Bay Interior Valleys": [
+    "CA506"
+  ],
+  "CA-San Francisco Bay Shoreline": [
+    "CA508"
+  ],
+  "CA-San Fransisco Peninsula Coast": [
+    "CA509"
+  ],
+  "CA-East Bay Interior Valleys": [
+    "CA510"
+  ],
+  "CA-Santa Cruz Mountains": [
+    "CA512"
+  ],
+  "CA-Santa Clara Valley Including San Jose": [
+    "CA513"
+  ],
+  "CA-Eastern Santa Clara Hills": [
+    "CA514"
+  ],
+  "CA-East Bay Hills": [
+    "CA515"
+  ],
+  "CA-Southern Salinas Valley/Arroyo Seco and Lake San Antonio": [
+    "CA516"
+  ],
+  "CA-Santa Lucia Mountains and Los Padres National Forest": [
+    "CA517"
+  ],
+  "CA-Mountains Of San Benito County And Interior Monterey County Including Pinnacles National Monument": [
+    "CA518"
+  ],
+  "CA-Northern Salinas Valley/Hollister Valley and Carmel Valley": [
+    "CA528"
+  ],
+  "CA-Northern Monterey Bay": [
+    "CA529"
+  ],
+  "CA-Southern Monterey Bay and Big Sur Coast": [
+    "CA530"
+  ],
+  "IA-Monona": [
+    "IA043"
+  ],
+  "IA-Harrison": [
+    "IA055"
+  ],
+  "IA-Shelby": [
+    "IA056"
+  ],
+  "IA-Pottawattamie": [
+    "IA069"
+  ],
+  "IA-Mills": [
+    "IA079"
+  ],
+  "IA-Montgomery": [
+    "IA080"
+  ],
+  "IA-Fremont": [
+    "IA090"
+  ],
+  "IA-Page": [
+    "IA091"
+  ],
+  "NE-Knox": [
+    "NE011"
+  ],
+  "NE-Cedar": [
+    "NE012"
+  ],
+  "NE-Thurston": [
+    "NE015"
+  ],
+  "NE-Antelope": [
+    "NE016"
+  ],
+  "NE-Pierce": [
+    "NE017"
+  ],
+  "NE-Wayne": [
+    "NE018"
+  ],
+  "NE-Boone": [
+    "NE030"
+  ],
+  "NE-Madison": [
+    "NE031"
+  ],
+  "NE-Stanton": [
+    "NE032"
+  ],
+  "NE-Cuming": [
+    "NE033"
+  ],
+  "NE-Burt": [
+    "NE034"
+  ],
+  "NE-Platte": [
+    "NE042"
+  ],
+  "NE-Colfax": [
+    "NE043"
+  ],
+  "NE-Dodge": [
+    "NE044"
+  ],
+  "NE-Washington": [
+    "NE045"
+  ],
+  "NE-Butler": [
+    "NE050"
+  ],
+  "NE-Saunders": [
+    "NE051"
+  ],
+  "NE-Douglas": [
+    "NE052"
+  ],
+  "NE-Sarpy": [
+    "NE053"
+  ],
+  "NE-Seward": [
+    "NE065"
+  ],
+  "NE-Lancaster": [
+    "NE066"
+  ],
+  "NE-Cass": [
+    "NE067"
+  ],
+  "NE-Otoe": [
+    "NE068"
+  ],
+  "NE-Saline": [
+    "NE078"
+  ],
+  "NE-Jefferson": [
+    "NE088"
+  ],
+  "NE-Gage": [
+    "NE089"
+  ],
+  "NE-Johnson": [
+    "NE090"
+  ],
+  "NE-Nemaha": [
+    "NE091"
+  ],
+  "NE-Pawnee": [
+    "NE092"
+  ],
+  "NE-Richardson": [
+    "NE093"
+  ],
+  "TN-Stewart": [
+    "TN005"
+  ],
+  "TN-Montgomery": [
+    "TN006"
+  ],
+  "TN-Robertson": [
+    "TN007"
+  ],
+  "TN-Sumner": [
+    "TN008"
+  ],
+  "TN-Macon": [
+    "TN009"
+  ],
+  "TN-Clay": [
+    "TN010"
+  ],
+  "TN-Pickett": [
+    "TN011"
+  ],
+  "TN-Benton": [
+    "TN022"
+  ],
+  "TN-Houston": [
+    "TN023"
+  ],
+  "TN-Humphreys": [
+    "TN024"
+  ],
+  "TN-Dickson": [
+    "TN025"
+  ],
+  "TN-Cheatham": [
+    "TN026"
+  ],
+  "TN-Davidson": [
+    "TN027"
+  ],
+  "TN-Wilson": [
+    "TN028"
+  ],
+  "TN-Trousdale": [
+    "TN029"
+  ],
+  "TN-Smith": [
+    "TN030"
+  ],
+  "TN-Jackson": [
+    "TN031"
+  ],
+  "TN-Putnam": [
+    "TN032"
+  ],
+  "TN-Overton": [
+    "TN033"
+  ],
+  "TN-Fentress": [
+    "TN034"
+  ],
+  "TN-Perry": [
+    "TN056"
+  ],
+  "TN-Hickman": [
+    "TN057"
+  ],
+  "TN-Lewis": [
+    "TN058"
+  ],
+  "TN-Williamson": [
+    "TN059"
+  ],
+  "TN-Maury": [
+    "TN060"
+  ],
+  "TN-Marshall": [
+    "TN061"
+  ],
+  "TN-Rutherford": [
+    "TN062"
+  ],
+  "TN-Cannon": [
+    "TN063"
+  ],
+  "TN-De Kalb": [
+    "TN064"
+  ],
+  "TN-White": [
+    "TN065"
+  ],
+  "TN-Cumberland": [
+    "TN066"
+  ],
+  "TN-Bedford": [
+    "TN075"
+  ],
+  "TN-Coffee": [
+    "TN077"
+  ],
+  "TN-Warren": [
+    "TN078"
+  ],
+  "TN-Grundy": [
+    "TN079"
+  ],
+  "TN-Van Buren": [
+    "TN080"
+  ],
+  "TN-Wayne": [
+    "TN093"
+  ],
+  "TN-Lawrence": [
+    "TN094"
+  ],
+  "TN-Giles": [
+    "TN095"
+  ],
+  "CT-Northern Fairfield": [
+    "CT005"
+  ],
+  "CT-Northern New Haven": [
+    "CT006"
+  ],
+  "CT-Northern Middlesex": [
+    "CT007"
+  ],
+  "CT-Northern New London": [
+    "CT008"
+  ],
+  "CT-Southern Fairfield": [
+    "CT009"
+  ],
+  "CT-Southern New Haven": [
+    "CT010"
+  ],
+  "CT-Southern Middlesex": [
+    "CT011"
+  ],
+  "CT-Southern New London": [
+    "CT012"
+  ],
+  "NJ-Western Passaic": [
+    "NJ002"
+  ],
+  "NJ-Eastern Passaic": [
+    "NJ004"
+  ],
+  "NJ-Hudson": [
+    "NJ006"
+  ],
+  "NJ-Western Bergen": [
+    "NJ103"
+  ],
+  "NJ-Eastern Bergen": [
+    "NJ104"
+  ],
+  "NJ-Western Essex": [
+    "NJ105"
+  ],
+  "NJ-Eastern Essex": [
+    "NJ106"
+  ],
+  "NJ-Western Union": [
+    "NJ107"
+  ],
+  "NJ-Eastern Union": [
+    "NJ108"
+  ],
+  "NY-Orange": [
+    "NY067"
+  ],
+  "NY-Putnam": [
+    "NY068"
+  ],
+  "NY-Rockland": [
+    "NY069"
+  ],
+  "NY-Northern Westchester": [
+    "NY070"
+  ],
+  "NY-Southern Westchester": [
+    "NY071"
+  ],
+  "NY-New York (Manhattan)": [
+    "NY072"
+  ],
+  "NY-Bronx": [
+    "NY073"
+  ],
+  "NY-Richmond (Staten Is.)": [
+    "NY074"
+  ],
+  "NY-Kings (Brooklyn)": [
+    "NY075"
+  ],
+  "NY-Northwest Suffolk": [
+    "NY078"
+  ],
+  "NY-Northeast Suffolk": [
+    "NY079"
+  ],
+  "NY-Southwest Suffolk": [
+    "NY080"
+  ],
+  "NY-Southeast Suffolk": [
+    "NY081"
+  ],
+  "NY-Northern Queens": [
+    "NY176"
+  ],
+  "NY-Northern Nassau": [
+    "NY177"
+  ],
+  "NY-Southern Queens": [
+    "NY178"
+  ],
+  "NY-Southern Nassau": [
+    "NY179"
+  ],
+  "ID-Northern Panhandle": [
+    "ID001"
+  ],
+  "ID-Coeur d'Alene Area": [
+    "ID002"
+  ],
+  "ID-Idaho Palouse": [
+    "ID003"
+  ],
+  "ID-Central Panhandle Mountains": [
+    "ID004"
+  ],
+  "ID-Lewiston Area": [
+    "ID026"
+  ],
+  "ID-Lewis and Southern Nez Perce Counties": [
+    "ID027"
+  ],
+  "WA-Northeast Blue Mountains": [
+    "WA031"
+  ],
+  "WA-Lower Garfield and Asotin Counties": [
+    "WA032"
+  ],
+  "WA-Washington Palouse": [
+    "WA033"
+  ],
+  "WA-Moses Lake Area": [
+    "WA034"
+  ],
+  "WA-Upper Columbia Basin": [
+    "WA035"
+  ],
+  "WA-Spokane Area": [
+    "WA036"
+  ],
+  "WA-Northeast Mountains": [
+    "WA037"
+  ],
+  "WA-Okanogan Highlands": [
+    "WA038"
+  ],
+  "WA-Wenatchee Area": [
+    "WA041"
+  ],
+  "WA-Okanogan Valley": [
+    "WA043"
+  ],
+  "WA-Waterville Plateau": [
+    "WA044"
+  ],
+  "WA-Central Chelan County": [
+    "WA047"
+  ],
+  "WA-Western Chelan County": [
+    "WA048"
+  ],
+  "WA-Western Okanogan County": [
+    "WA049"
+  ],
+  "OK-Harper": [
+    "OK004"
+  ],
+  "OK-Woods": [
+    "OK005"
+  ],
+  "OK-Alfalfa": [
+    "OK006"
+  ],
+  "OK-Grant": [
+    "OK007"
+  ],
+  "OK-Kay": [
+    "OK008"
+  ],
+  "OK-Ellis": [
+    "OK009"
+  ],
+  "OK-Woodward": [
+    "OK010"
+  ],
+  "OK-Major": [
+    "OK011"
+  ],
+  "OK-Garfield": [
+    "OK012"
+  ],
+  "OK-Noble": [
+    "OK013"
+  ],
+  "OK-Roger Mills": [
+    "OK014"
+  ],
+  "OK-Dewey": [
+    "OK015"
+  ],
+  "OK-Custer": [
+    "OK016"
+  ],
+  "OK-Blaine": [
+    "OK017"
+  ],
+  "OK-Kingfisher": [
+    "OK018"
+  ],
+  "OK-Logan": [
+    "OK019"
+  ],
+  "OK-Payne": [
+    "OK020"
+  ],
+  "OK-Beckham": [
+    "OK021"
+  ],
+  "OK-Washita": [
+    "OK022"
+  ],
+  "OK-Caddo": [
+    "OK023"
+  ],
+  "OK-Canadian": [
+    "OK024"
+  ],
+  "OK-Oklahoma": [
+    "OK025"
+  ],
+  "OK-Lincoln": [
+    "OK026"
+  ],
+  "OK-Grady": [
+    "OK027"
+  ],
+  "OK-McClain": [
+    "OK028"
+  ],
+  "OK-Cleveland": [
+    "OK029"
+  ],
+  "OK-Pottawatomie": [
+    "OK030"
+  ],
+  "OK-Seminole": [
+    "OK031"
+  ],
+  "OK-Hughes": [
+    "OK032"
+  ],
+  "OK-Harmon": [
+    "OK033"
+  ],
+  "OK-Greer": [
+    "OK034"
+  ],
+  "OK-Kiowa": [
+    "OK035"
+  ],
+  "OK-Jackson": [
+    "OK036"
+  ],
+  "OK-Tillman": [
+    "OK037"
+  ],
+  "OK-Comanche": [
+    "OK038"
+  ],
+  "OK-Stephens": [
+    "OK039"
+  ],
+  "OK-Garvin": [
+    "OK040"
+  ],
+  "OK-Murray": [
+    "OK041"
+  ],
+  "OK-Pontotoc": [
+    "OK042"
+  ],
+  "OK-Coal": [
+    "OK043"
+  ],
+  "OK-Cotton": [
+    "OK044"
+  ],
+  "OK-Jefferson": [
+    "OK045"
+  ],
+  "OK-Carter": [
+    "OK046"
+  ],
+  "OK-Johnston": [
+    "OK047"
+  ],
+  "OK-Atoka": [
+    "OK048"
+  ],
+  "OK-Love": [
+    "OK050"
+  ],
+  "OK-Marshall": [
+    "OK051"
+  ],
+  "OK-Bryan": [
+    "OK052"
+  ],
+  "TX-Hardeman": [
+    "TX083"
+  ],
+  "TX-Foard": [
+    "TX084"
+  ],
+  "TX-Wilbarger": [
+    "TX085"
+  ],
+  "TX-Wichita": [
+    "TX086"
+  ],
+  "TX-Knox": [
+    "TX087"
+  ],
+  "TX-Baylor": [
+    "TX088"
+  ],
+  "TX-Archer": [
+    "TX089"
+  ],
+  "TX-Clay": [
+    "TX090"
+  ],
+  "IL-Jefferson": [
+    "IL075"
+  ],
+  "IL-Wayne": [
+    "IL076"
+  ],
+  "IL-Edwards": [
+    "IL077"
+  ],
+  "IL-Wabash": [
+    "IL078"
+  ],
+  "IL-Perry": [
+    "IL080"
+  ],
+  "IL-Franklin": [
+    "IL081"
+  ],
+  "IL-Hamilton": [
+    "IL082"
+  ],
+  "IL-White": [
+    "IL083"
+  ],
+  "IL-Jackson": [
+    "IL084"
+  ],
+  "IL-Williamson": [
+    "IL085"
+  ],
+  "IL-Saline": [
+    "IL086"
+  ],
+  "IL-Gallatin": [
+    "IL087"
+  ],
+  "IL-Union": [
+    "IL088"
+  ],
+  "IL-Johnson": [
+    "IL089"
+  ],
+  "IL-Pope": [
+    "IL090"
+  ],
+  "IL-Hardin": [
+    "IL091"
+  ],
+  "IL-Alexander": [
+    "IL092"
+  ],
+  "IL-Pulaski": [
+    "IL093"
+  ],
+  "IL-Massac": [
+    "IL094"
+  ],
+  "IN-Gibson": [
+    "IN081"
+  ],
+  "IN-Pike": [
+    "IN082"
+  ],
+  "IN-Posey": [
+    "IN085"
+  ],
+  "IN-Vanderburgh": [
+    "IN086"
+  ],
+  "IN-Warrick": [
+    "IN087"
+  ],
+  "IN-Spencer": [
+    "IN088"
+  ],
+  "KY-Fulton": [
+    "KY001"
+  ],
+  "KY-Hickman": [
+    "KY002"
+  ],
+  "KY-Carlisle": [
+    "KY003"
+  ],
+  "KY-Ballard": [
+    "KY004"
+  ],
+  "KY-McCracken": [
+    "KY005"
+  ],
+  "KY-Graves": [
+    "KY006"
+  ],
+  "KY-Livingston": [
+    "KY007"
+  ],
+  "KY-Marshall": [
+    "KY008"
+  ],
+  "KY-Calloway": [
+    "KY009"
+  ],
+  "KY-Crittenden": [
+    "KY010"
+  ],
+  "KY-Lyon": [
+    "KY011"
+  ],
+  "KY-Trigg": [
+    "KY012"
+  ],
+  "KY-Caldwell": [
+    "KY013"
+  ],
+  "KY-Union": [
+    "KY014"
+  ],
+  "KY-Webster": [
+    "KY015"
+  ],
+  "KY-Hopkins": [
+    "KY016"
+  ],
+  "KY-Christian": [
+    "KY017"
+  ],
+  "KY-Henderson": [
+    "KY018"
+  ],
+  "KY-Daviess": [
+    "KY019"
+  ],
+  "KY-McLean": [
+    "KY020"
+  ],
+  "KY-Muhlenberg": [
+    "KY021"
+  ],
+  "KY-Todd": [
+    "KY022"
+  ],
+  "MO-Perry": [
+    "MO076"
+  ],
+  "MO-Bollinger": [
+    "MO086"
+  ],
+  "MO-Cape Girardeau": [
+    "MO087"
+  ],
+  "MO-Wayne": [
+    "MO100"
+  ],
+  "MO-Carter": [
+    "MO107"
+  ],
+  "MO-Ripley": [
+    "MO108"
+  ],
+  "MO-Butler": [
+    "MO109"
+  ],
+  "MO-Stoddard": [
+    "MO110"
+  ],
+  "MO-Scott": [
+    "MO111"
+  ],
+  "MO-Mississippi": [
+    "MO112"
+  ],
+  "MO-New Madrid": [
+    "MO114"
+  ],
+  "OH-Tuscarawas": [
+    "OH039"
+  ],
+  "OH-Carroll": [
+    "OH040"
+  ],
+  "OH-Columbiana": [
+    "OH041"
+  ],
+  "OH-Coshocton": [
+    "OH048"
+  ],
+  "OH-Harrison": [
+    "OH049"
+  ],
+  "OH-Jefferson": [
+    "OH050"
+  ],
+  "OH-Muskingum": [
+    "OH057"
+  ],
+  "OH-Guernsey": [
+    "OH058"
+  ],
+  "OH-Belmont": [
+    "OH059"
+  ],
+  "OH-Noble": [
+    "OH068"
+  ],
+  "OH-Monroe": [
+    "OH069"
+  ],
+  "PA-Mercer": [
+    "PA007"
+  ],
+  "PA-Venango": [
+    "PA008"
+  ],
+  "PA-Forest": [
+    "PA009"
+  ],
+  "PA-Lawrence": [
+    "PA013"
+  ],
+  "PA-Butler": [
+    "PA014"
+  ],
+  "PA-Clarion": [
+    "PA015"
+  ],
+  "PA-Jefferson": [
+    "PA016"
+  ],
+  "PA-Beaver": [
+    "PA020"
+  ],
+  "PA-Allegheny": [
+    "PA021"
+  ],
+  "PA-Armstrong": [
+    "PA022"
+  ],
+  "PA-Washington": [
+    "PA029"
+  ],
+  "PA-Greene": [
+    "PA031"
+  ],
+  "PA-Westmoreland": [
+    "PA073"
+  ],
+  "PA-Westmoreland Ridges": [
+    "PA074"
+  ],
+  "PA-Fayette": [
+    "PA075"
+  ],
+  "PA-Fayette Ridges": [
+    "PA076"
+  ],
+  "PA-Indiana": [
+    "PA077"
+  ],
+  "PA-Higher Elevations of Indiana": [
+    "PA078"
+  ],
+  "WV-Hancock": [
+    "WV001"
+  ],
+  "WV-Brooke": [
+    "WV002"
+  ],
+  "WV-Ohio": [
+    "WV003"
+  ],
+  "WV-Marshall": [
+    "WV004"
+  ],
+  "WV-Wetzel": [
+    "WV012"
+  ],
+  "WV-Marion": [
+    "WV021"
+  ],
+  "WV-Monongalia": [
+    "WV509"
+  ],
+  "WV-Ridges of Eastern Monongalia and Northwestern Preston": [
+    "WV510"
+  ],
+  "WV-Preston": [
+    "WV511"
+  ],
+  "WV-Eastern Preston": [
+    "WV512"
+  ],
+  "WV-Western Tucker": [
+    "WV513"
+  ],
+  "WV-Eastern Tucker": [
+    "WV514"
+  ],
+  "OR-Western Columbia River Gorge": [
+    "OR015"
+  ],
+  "OR-Central Columbia River Gorge": [
+    "OR016"
+  ],
+  "OR-East Columbia River Gorge": [
+    "OR041"
+  ],
+  "OR-Lower Columbia Basin of Oregon": [
+    "OR044"
+  ],
+  "OR-Grande Ronde Valley": [
+    "OR049"
+  ],
+  "OR-Wallowa County": [
+    "OR050"
+  ],
+  "OR-Northern Blue Mountains of Oregon": [
+    "OR502"
+  ],
+  "OR-Southern Blue Mountains of Oregon": [
+    "OR503"
+  ],
+  "OR-John Day Basin": [
+    "OR505"
+  ],
+  "OR-Ochoco-John Day Highlands": [
+    "OR506"
+  ],
+  "OR-Foothills of the Northern Blue Mountains of Oregon": [
+    "OR507"
+  ],
+  "OR-Foothills of the Southern Blue Mountains of Oregon": [
+    "OR508"
+  ],
+  "OR-East Slopes of the Oregon Cascades": [
+    "OR509"
+  ],
+  "OR-North Central Oregon": [
+    "OR510"
+  ],
+  "OR-Central Oregon": [
+    "OR511"
+  ],
+  "WA-Upper Slopes of the Eastern Washington Cascades Crest": [
+    "WA522"
+  ],
+  "WA-Lower Slopes of the Eastern Washington Cascades Crest": [
+    "WA523"
+  ],
+  "WA-Eastern Columbia River Gorge of Washington": [
+    "WA024"
+  ],
+  "WA-Kittitas Valley": [
+    "WA026"
+  ],
+  "WA-Yakima Valley": [
+    "WA027"
+  ],
+  "WA-Lower Columbia Basin of Washington": [
+    "WA028"
+  ],
+  "WA-Foothills of the Blue Mountains of Washington": [
+    "WA029"
+  ],
+  "WA-Northwest Blue Mountains": [
+    "WA030"
+  ],
+  "WA-Simcoe Highlands": [
+    "WA521"
+  ],
+  "DE-New Castle": [
+    "DE001"
+  ],
+  "DE-Kent": [
+    "DE002"
+  ],
+  "DE-Inland Sussex": [
+    "DE003"
+  ],
+  "DE-Delaware Beaches": [
+    "DE004"
+  ],
+  "MD-Kent": [
+    "MD012"
+  ],
+  "MD-Queen Anne's": [
+    "MD015"
+  ],
+  "MD-Talbot": [
+    "MD019"
+  ],
+  "MD-Caroline": [
+    "MD020"
+  ],
+  "NJ-Sussex": [
+    "NJ001"
+  ],
+  "NJ-Warren": [
+    "NJ007"
+  ],
+  "NJ-Morris": [
+    "NJ008"
+  ],
+  "NJ-Hunterdon": [
+    "NJ009"
+  ],
+  "NJ-Somerset": [
+    "NJ010"
+  ],
+  "NJ-Middlesex": [
+    "NJ012"
+  ],
+  "NJ-Western Monmouth": [
+    "NJ013"
+  ],
+  "NJ-Eastern Monmouth": [
+    "NJ014"
+  ],
+  "NJ-Mercer": [
+    "NJ015"
+  ],
+  "NJ-Salem": [
+    "NJ016"
+  ],
+  "NJ-Gloucester": [
+    "NJ017"
+  ],
+  "NJ-Camden": [
+    "NJ018"
+  ],
+  "NJ-Northwestern Burlington": [
+    "NJ019"
+  ],
+  "NJ-Ocean": [
+    "NJ020"
+  ],
+  "NJ-Cumberland": [
+    "NJ021"
+  ],
+  "NJ-Atlantic": [
+    "NJ022"
+  ],
+  "NJ-Cape May": [
+    "NJ023"
+  ],
+  "NJ-Atlantic Coastal Cape May": [
+    "NJ024"
+  ],
+  "NJ-Coastal Atlantic": [
+    "NJ025"
+  ],
+  "NJ-Coastal Ocean": [
+    "NJ026"
+  ],
+  "NJ-Southeastern Burlington": [
+    "NJ027"
+  ],
+  "PA-Carbon": [
+    "PA054"
+  ],
+  "PA-Monroe": [
+    "PA055"
+  ],
+  "PA-Berks": [
+    "PA060"
+  ],
+  "PA-Lehigh": [
+    "PA061"
+  ],
+  "PA-Northampton": [
+    "PA062"
+  ],
+  "PA-Delaware": [
+    "PA070"
+  ],
+  "PA-Philadelphia": [
+    "PA071"
+  ],
+  "PA-Western Chester": [
+    "PA101"
+  ],
+  "PA-Eastern Chester": [
+    "PA102"
+  ],
+  "PA-Western Montgomery": [
+    "PA103"
+  ],
+  "PA-Eastern Montgomery": [
+    "PA104"
+  ],
+  "PA-Bucks": [
+    "PA105",
+    "PA106"
+  ],
+  "ID-Shoshone/Lava Beds": [
+    "ID051"
+  ],
+  "ID-Arco/Mud Lake Desert": [
+    "ID052"
+  ],
+  "ID-Upper Snake River Plain": [
+    "ID053"
+  ],
+  "ID-Lower Snake River Plain": [
+    "ID054"
+  ],
+  "ID-Eastern Magic Valley": [
+    "ID055"
+  ],
+  "ID-Southern Hills/Albion Mountains": [
+    "ID056"
+  ],
+  "ID-Raft River Region": [
+    "ID057"
+  ],
+  "ID-Marsh and Arbon Highlands": [
+    "ID058"
+  ],
+  "ID-Franklin/Eastern Oneida Region": [
+    "ID059"
+  ],
+  "ID-Bear River Range": [
+    "ID060"
+  ],
+  "ID-Bear Lake Valley": [
+    "ID061"
+  ],
+  "ID-Blackfoot Mountains": [
+    "ID062"
+  ],
+  "ID-Caribou Range": [
+    "ID063",
+    "ID075"
+  ],
+  "ID-Big Hole Mountains": [
+    "ID064"
+  ],
+  "ID-Teton Valley": [
+    "ID065"
+  ],
+  "ID-Centennial Mountains/Island Park": [
+    "ID066"
+  ],
+  "ID-Beaverhead/Lemhi Highlands": [
+    "ID067"
+  ],
+  "ID-Lost River Valleys": [
+    "ID068"
+  ],
+  "ID-Lost River Range": [
+    "ID069"
+  ],
+  "ID-Challis/Pahsimeroi Valleys": [
+    "ID070"
+  ],
+  "ID-Frank Church Wilderness": [
+    "ID071"
+  ],
+  "ID-Sawtooth/Stanley Basin": [
+    "ID072"
+  ],
+  "ID-Sun Valley Region": [
+    "ID073"
+  ],
+  "ID-Big Lost Highlands/Copper Basin": [
+    "ID074"
+  ],
+  "WY-Yellowstone National Park": [
+    "WY001"
+  ],
+  "AS-Tutuila and Aunuu": [
+    "AS001"
+  ],
+  "AS-Manua": [
+    "AS002"
+  ],
+  "AS-Swains Island": [
+    "AS003"
+  ],
+  "AS-Rose Atoll": [
+    "AS004"
+  ],
+  "FM-Kosrae": [
+    "FM001"
+  ],
+  "FM-Pingelap": [
+    "FM011"
+  ],
+  "FM-Mwoakilloa": [
+    "FM012"
+  ],
+  "FM-Pohnpei": [
+    "FM013"
+  ],
+  "FM-Pakin": [
+    "FM014"
+  ],
+  "FM-Sapwuahfik": [
+    "FM015"
+  ],
+  "FM-Oroluk": [
+    "FM016"
+  ],
+  "FM-Nukuoro": [
+    "FM017"
+  ],
+  "FM-Kapingamarangi": [
+    "FM018"
+  ],
+  "MH-Arno": [
+    "MH001"
+  ],
+  "MH-Majuro": [
+    "MH002"
+  ],
+  "MH-Wotje": [
+    "MH003"
+  ],
+  "MH-Mili": [
+    "MH004"
+  ],
+  "MH-Utrok": [
+    "MH005"
+  ],
+  "MH-Jaluit": [
+    "MH006"
+  ],
+  "MH-Ailinglaplap": [
+    "MH007"
+  ],
+  "MH-Kwajalein": [
+    "MH008"
+  ],
+  "MH-Ujae": [
+    "MH009"
+  ],
+  "MH-Enewetak": [
+    "MH010"
+  ],
+  "FM-Lukunoch": [
+    "FM021"
+  ],
+  "FM-Losap": [
+    "FM022"
+  ],
+  "FM-Chuuk Lagoon": [
+    "FM023"
+  ],
+  "FM-Fananu": [
+    "FM024"
+  ],
+  "FM-Onoun": [
+    "FM025"
+  ],
+  "FM-Polowat": [
+    "FM026"
+  ],
+  "FM-Satawal": [
+    "FM031"
+  ],
+  "FM-Woleai": [
+    "FM032"
+  ],
+  "FM-Faraulep": [
+    "FM033"
+  ],
+  "FM-Eauripik": [
+    "FM034"
+  ],
+  "FM-Fais": [
+    "FM035"
+  ],
+  "FM-Ulithi": [
+    "FM036"
+  ],
+  "FM-Yap": [
+    "FM037"
+  ],
+  "FM-Ngulu": [
+    "FM038"
+  ],
+  "PW-Kayangel": [
+    "PW001"
+  ],
+  "PW-Melekeok": [
+    "PW002"
+  ],
+  "PW-Airai": [
+    "PW003"
+  ],
+  "PW-Koror": [
+    "PW004"
+  ],
+  "PW-Peleliu": [
+    "PW005"
+  ],
+  "PW-Angaur": [
+    "PW006"
+  ],
+  "PW-Sonsorol": [
+    "PW007"
+  ],
+  "PW-Tobi": [
+    "PW008"
+  ],
+  "AZ-Parker Valley": [
+    "AZ530"
+  ],
+  "AZ-Kofa": [
+    "AZ531"
+  ],
+  "AZ-Yuma": [
+    "AZ532"
+  ],
+  "AZ-Central La Paz": [
+    "AZ533"
+  ],
+  "AZ-Aguila Valley": [
+    "AZ534"
+  ],
+  "AZ-Southeast Yuma County": [
+    "AZ535"
+  ],
+  "AZ-Gila River Valley": [
+    "AZ536"
+  ],
+  "AZ-Northwest Valley": [
+    "AZ537"
+  ],
+  "AZ-Tonopah Desert": [
+    "AZ538"
+  ],
+  "AZ-Gila Bend": [
+    "AZ539"
+  ],
+  "AZ-Buckeye/Avondale": [
+    "AZ540"
+  ],
+  "AZ-Cave Creek/New River": [
+    "AZ541"
+  ],
+  "AZ-Deer Valley": [
+    "AZ542"
+  ],
+  "AZ-Central Phoenix": [
+    "AZ543"
+  ],
+  "AZ-North Phoenix/Glendale": [
+    "AZ544"
+  ],
+  "AZ-New River Mesa": [
+    "AZ545"
+  ],
+  "AZ-Scottsdale/Paradise Valley": [
+    "AZ546"
+  ],
+  "AZ-Rio Verde/Salt River": [
+    "AZ547"
+  ],
+  "AZ-East Valley": [
+    "AZ548"
+  ],
+  "AZ-Fountain Hills/East Mesa": [
+    "AZ549"
+  ],
+  "AZ-South Mountain/Ahwatukee": [
+    "AZ550"
+  ],
+  "AZ-Southeast Valley/Queen Creek": [
+    "AZ551"
+  ],
+  "AZ-Superior": [
+    "AZ552"
+  ],
+  "AZ-Northwest Pinal County": [
+    "AZ553"
+  ],
+  "AZ-West Pinal County": [
+    "AZ554"
+  ],
+  "AZ-Apache Junction/Gold Canyon": [
+    "AZ555"
+  ],
+  "AZ-Tonto Basin": [
+    "AZ556"
+  ],
+  "AZ-Mazatzal Mountains": [
+    "AZ557"
+  ],
+  "AZ-Pinal/Superstition Mountains": [
+    "AZ558"
+  ],
+  "AZ-Sonoran Desert Natl Monument": [
+    "AZ559"
+  ],
+  "AZ-San Carlos": [
+    "AZ560"
+  ],
+  "AZ-Dripping Springs": [
+    "AZ561"
+  ],
+  "AZ-Globe/Miami": [
+    "AZ562"
+  ],
+  "AZ-Southeast Gila County": [
+    "AZ563"
+  ],
+  "CA-Joshua Tree NP West": [
+    "CA560"
+  ],
+  "CA-Joshua Tree NP East": [
+    "CA561"
+  ],
+  "CA-Imperial County Southwest": [
+    "CA562"
+  ],
+  "CA-Salton Sea": [
+    "CA563"
+  ],
+  "CA-Chuckwalla Mountains": [
+    "CA564"
+  ],
+  "CA-Imperial County Southeast": [
+    "CA565"
+  ],
+  "CA-Imperial County West": [
+    "CA566"
+  ],
+  "CA-Imperial Valley": [
+    "CA567"
+  ],
+  "CA-Chiriaco Summit": [
+    "CA568"
+  ],
+  "CA-Palo Verde Valley": [
+    "CA569"
+  ],
+  "CA-Chuckwalla Valley": [
+    "CA570"
+  ],
+  "CO-Western Mosquito Range/East Lake County Above 11000 Ft": [
+    "CO058"
+  ],
+  "CO-Leadville Vicinity/Lake County Below 11000 Ft": [
+    "CO059"
+  ],
+  "CO-Eastern Sawatch Mountains above 11000 Ft": [
+    "CO060"
+  ],
+  "CO-Western Chaffee County Between 9000 and 11000 Ft": [
+    "CO061"
+  ],
+  "CO-Central Chaffee County Below 9000 Ft": [
+    "CO062"
+  ],
+  "CO-Western Mosquito Range/East Chaffee County above 9000Ft": [
+    "CO063"
+  ],
+  "CO-Saguache County West of Continental Divide Below 10000 Ft": [
+    "CO064"
+  ],
+  "CO-Saguache County East of Continental Divide below 10000 Ft": [
+    "CO065"
+  ],
+  "CO-Saquache County East of Continental Divide below 10000 Ft": [
+    "CO065"
+  ],
+  "CO-La Garita Mountains Above 10000 Ft": [
+    "CO066"
+  ],
+  "CO-Upper Rio Grande Valley/Eastern San Juan Mountains Below 10000 Ft": [
+    "CO067"
+  ],
+  "CO-Eastern San Juan Mountains Above 10000 Ft": [
+    "CO068"
+  ],
+  "CO-Del Norte Vicinity/Northern San Luis Valley Below 8500 Ft": [
+    "CO069"
+  ],
+  "CO-Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft": [
+    "CO070"
+  ],
+  "CO-Southern San Luis Valley": [
+    "CO071"
+  ],
+  "CO-Northern Sangre de Cristo Mountains Between 8500 And 11000 Ft": [
+    "CO072"
+  ],
+  "CO-Northern Sangre de Christo Mountains Between 8500 And 11000 Ft": [
+    "CO072"
+  ],
+  "CO-Northern Sangre de Cristo Mountains above 11000 Ft": [
+    "CO073"
+  ],
+  "CO-Southern Sangre De Cristo Mountains Between 7500 and 11000 Ft": [
+    "CO074"
+  ],
+  "CO-Southern Sangre De Cristo Mountains Above 11000 Ft": [
+    "CO075"
+  ],
+  "CO-Northwestern Fremont County  Above 8500Ft": [
+    "CO076"
+  ],
+  "CO-Western/Central Fremont County Below 8500 Ft": [
+    "CO077"
+  ],
+  "CO-Wet Mountain Valley Below 8500 Ft": [
+    "CO078"
+  ],
+  "CO-Wet Mountains between 6300 and 10000Ft": [
+    "CO079"
+  ],
+  "CO-Wet Mountains above 10000 Ft": [
+    "CO080"
+  ],
+  "CO-Teller County/Rampart Range above 7500fT/Pike's Peak Between 7500 And 11000 Ft": [
+    "CO081"
+  ],
+  "CO-Pikes Peak above 11000 Ft": [
+    "CO082"
+  ],
+  "CO-Canon City Vicinity/Eastern Fremont County": [
+    "CO083"
+  ],
+  "CO-Northern El Paso County/Monument Ridge/Rampart Range Below 7500 Ft": [
+    "CO084"
+  ],
+  "CO-Colorado Springs Vicinity/Southern El Paso County/Rampart Range Below 7400 Ft": [
+    "CO085"
+  ],
+  "CO-Pueblo Vicinity/Pueblo County Below 6300 Feet": [
+    "CO086"
+  ],
+  "CO-Walsenburg Vicinity/Upper Huerfano River Basin Below 7500 Ft": [
+    "CO087"
+  ],
+  "CO-Trinidad Vicinity/Western Las Animas County Below 7500 Ft": [
+    "CO088"
+  ],
+  "CO-Crowley County": [
+    "CO089"
+  ],
+  "CO-La Junta Vicinity/Otero County": [
+    "CO093"
+  ],
+  "CO-Eastern Las Animas County": [
+    "CO094"
+  ],
+  "CO-Western Kiowa County": [
+    "CO095"
+  ],
+  "CO-Eastern Kiowa County": [
+    "CO096"
+  ],
+  "CO-Las Animas Vicinity/Bent County": [
+    "CO097"
+  ],
+  "CO-Lamar Vicinity/Prowers County": [
+    "CO098"
+  ],
+  "CO-Springfield Vicinity/Baca County": [
+    "CO099"
+  ],
+  "NC-Person": [
+    "NC007"
+  ],
+  "NC-Granville": [
+    "NC008"
+  ],
+  "NC-Vance": [
+    "NC009"
+  ],
+  "NC-Warren": [
+    "NC010"
+  ],
+  "NC-Halifax": [
+    "NC011"
+  ],
+  "NC-Forsyth": [
+    "NC021"
+  ],
+  "NC-Guilford": [
+    "NC022"
+  ],
+  "NC-Alamance": [
+    "NC023"
+  ],
+  "NC-Orange": [
+    "NC024"
+  ],
+  "NC-Durham": [
+    "NC025"
+  ],
+  "NC-Franklin": [
+    "NC026"
+  ],
+  "NC-Nash": [
+    "NC027"
+  ],
+  "NC-Edgecombe": [
+    "NC028"
+  ],
+  "NC-Davidson": [
+    "NC038"
+  ],
+  "NC-Randolph": [
+    "NC039"
+  ],
+  "NC-Chatham": [
+    "NC040"
+  ],
+  "NC-Wake": [
+    "NC041"
+  ],
+  "NC-Johnston": [
+    "NC042"
+  ],
+  "NC-Wilson": [
+    "NC043"
+  ],
+  "NC-Stanly": [
+    "NC073"
+  ],
+  "NC-Montgomery": [
+    "NC074"
+  ],
+  "NC-Moore": [
+    "NC075"
+  ],
+  "NC-Lee": [
+    "NC076"
+  ],
+  "NC-Harnett": [
+    "NC077"
+  ],
+  "NC-Wayne": [
+    "NC078"
+  ],
+  "NC-Anson": [
+    "NC083"
+  ],
+  "NC-Richmond": [
+    "NC084"
+  ],
+  "NC-Scotland": [
+    "NC085"
+  ],
+  "NC-Hoke": [
+    "NC086"
+  ],
+  "NC-Cumberland": [
+    "NC088"
+  ],
+  "NC-Sampson": [
+    "NC089"
+  ],
+  "CA-Surprise Valley California": [
+    "CA070"
+  ],
+  "CA-Lassen-Eastern Plumas-Eastern Sierra Counties": [
+    "CA071"
+  ],
+  "CA-Greater Lake Tahoe Area": [
+    "CA072"
+  ],
+  "CA-Mono": [
+    "CA073"
+  ],
+  "NV-Mineral and Southern Lyon Counties": [
+    "NV001"
+  ],
+  "NV-Greater Lake Tahoe Area": [
+    "NV002"
+  ],
+  "NV-Greater Reno-Carson City-Minden Area": [
+    "NV003"
+  ],
+  "NV-Western Nevada Basin and Range including Pyramid Lake": [
+    "NV004"
+  ],
+  "NV-Northern Washoe County": [
+    "NV005"
+  ],
+  "WY-Absaroka Mountains": [
+    "WY002"
+  ],
+  "WY-Cody Foothills": [
+    "WY003"
+  ],
+  "WY-North Big Horn Basin": [
+    "WY004"
+  ],
+  "WY-Southwest Big Horn Basin": [
+    "WY005"
+  ],
+  "WY-Southeast Big Horn Basin": [
+    "WY006"
+  ],
+  "WY-Owl Creek and Bridger Mountains": [
+    "WY007"
+  ],
+  "WY-Bighorn Mountains West": [
+    "WY008"
+  ],
+  "WY-Bighorn Mountains Southeast": [
+    "WY009"
+  ],
+  "WY-Northeast Johnson County": [
+    "WY010"
+  ],
+  "WY-Southeast Johnson County": [
+    "WY011"
+  ],
+  "WY-Teton and Gros Ventre Mountains": [
+    "WY012"
+  ],
+  "WY-Jackson Hole": [
+    "WY013"
+  ],
+  "WY-Wind River Mountains West": [
+    "WY014"
+  ],
+  "WY-Wind River Mountains East": [
+    "WY015"
+  ],
+  "WY-Upper Wind River Basin": [
+    "WY016"
+  ],
+  "WY-Wind River Basin": [
+    "WY017"
+  ],
+  "WY-Lander Foothills": [
+    "WY018"
+  ],
+  "WY-Green Mountains and Rattlesnake Range": [
+    "WY019"
+  ],
+  "WY-Natrona County Lower Elevations": [
+    "WY020"
+  ],
+  "WY-Casper Mountain": [
+    "WY022"
+  ],
+  "WY-Star Valley": [
+    "WY023"
+  ],
+  "WY-Salt River and Wyoming Ranges": [
+    "WY024"
+  ],
+  "WY-Upper Green River Basin Foothills": [
+    "WY025"
+  ],
+  "WY-Upper Green River Basin": [
+    "WY026"
+  ],
+  "WY-South Lincoln County": [
+    "WY027"
+  ],
+  "WY-Rock Springs and Green River": [
+    "WY028"
+  ],
+  "WY-Flaming Gorge": [
+    "WY029"
+  ],
+  "WY-East Sweetwater County": [
+    "WY030"
+  ],
+  "KY-Greenup": [
+    "KY101"
+  ],
+  "KY-Carter": [
+    "KY102"
+  ],
+  "KY-Boyd": [
+    "KY103"
+  ],
+  "KY-Lawrence": [
+    "KY105"
+  ],
+  "OH-Perry": [
+    "OH066"
+  ],
+  "OH-Morgan": [
+    "OH067"
+  ],
+  "OH-Athens": [
+    "OH075"
+  ],
+  "OH-Washington": [
+    "OH076"
+  ],
+  "OH-Jackson": [
+    "OH083"
+  ],
+  "OH-Vinton": [
+    "OH084"
+  ],
+  "OH-Meigs": [
+    "OH085"
+  ],
+  "OH-Gallia": [
+    "OH086"
+  ],
+  "OH-Lawrence": [
+    "OH087"
+  ],
+  "VA-Dickenson": [
+    "VA003"
+  ],
+  "VA-Buchanan": [
+    "VA004"
+  ],
+  "WV-Wayne": [
+    "WV005"
+  ],
+  "WV-Cabell": [
+    "WV006"
+  ],
+  "WV-Mason": [
+    "WV007"
+  ],
+  "WV-Jackson": [
+    "WV008"
+  ],
+  "WV-Wood": [
+    "WV009"
+  ],
+  "WV-Pleasants": [
+    "WV010"
+  ],
+  "WV-Tyler": [
+    "WV011"
+  ],
+  "WV-Lincoln": [
+    "WV013"
+  ],
+  "WV-Putnam": [
+    "WV014"
+  ],
+  "WV-Kanawha": [
+    "WV015"
+  ],
+  "WV-Roane": [
+    "WV016"
+  ],
+  "WV-Wirt": [
+    "WV017"
+  ],
+  "WV-Calhoun": [
+    "WV018"
+  ],
+  "WV-Ritchie": [
+    "WV019"
+  ],
+  "WV-Doddridge": [
+    "WV020"
+  ],
+  "WV-Mingo": [
+    "WV024"
+  ],
+  "WV-Logan": [
+    "WV025"
+  ],
+  "WV-Boone": [
+    "WV026"
+  ],
+  "WV-Clay": [
+    "WV027"
+  ],
+  "WV-Braxton": [
+    "WV028"
+  ],
+  "WV-Gilmer": [
+    "WV029"
+  ],
+  "WV-Lewis": [
+    "WV030"
+  ],
+  "WV-Harrison": [
+    "WV031"
+  ],
+  "WV-Taylor": [
+    "WV032"
+  ],
+  "WV-McDowell": [
+    "WV033"
+  ],
+  "WV-Wyoming": [
+    "WV034"
+  ],
+  "WV-Upshur": [
+    "WV039"
+  ],
+  "WV-Barbour": [
+    "WV040"
+  ],
+  "WV-Northwest Raleigh": [
+    "WV515"
+  ],
+  "WV-Southeast Raleigh": [
+    "WV516"
+  ],
+  "WV-Northwest Fayette": [
+    "WV517"
+  ],
+  "WV-Southeast Fayette": [
+    "WV518"
+  ],
+  "WV-Northwest Nicholas": [
+    "WV519"
+  ],
+  "WV-Southeast Nicholas": [
+    "WV520"
+  ],
+  "WV-Northwest Webster": [
+    "WV521"
+  ],
+  "WV-Southeast Webster": [
+    "WV522"
+  ],
+  "WV-Northwest Pocahontas": [
+    "WV523"
+  ],
+  "WV-Southeast Pocahontas": [
+    "WV524"
+  ],
+  "WV-Northwest Randolph": [
+    "WV525"
+  ],
+  "WV-Southeast Randolph": [
+    "WV526"
+  ],
+  "NC-Ashe": [
+    "NC001"
+  ],
+  "NC-Alleghany": [
+    "NC002"
+  ],
+  "NC-Surry": [
+    "NC003"
+  ],
+  "NC-Stokes": [
+    "NC004"
+  ],
+  "NC-Rockingham": [
+    "NC005"
+  ],
+  "NC-Caswell": [
+    "NC006"
+  ],
+  "NC-Watauga": [
+    "NC018"
+  ],
+  "NC-Wilkes": [
+    "NC019"
+  ],
+  "NC-Yadkin": [
+    "NC020"
+  ],
+  "VA-Tazewell": [
+    "VA007"
+  ],
+  "VA-Smyth": [
+    "VA009"
+  ],
+  "VA-Bland": [
+    "VA010"
+  ],
+  "VA-Giles": [
+    "VA011"
+  ],
+  "VA-Wythe": [
+    "VA012"
+  ],
+  "VA-Pulaski": [
+    "VA013"
+  ],
+  "VA-Montgomery": [
+    "VA014"
+  ],
+  "VA-Grayson": [
+    "VA015"
+  ],
+  "VA-Carroll": [
+    "VA016"
+  ],
+  "VA-Floyd": [
+    "VA017"
+  ],
+  "VA-Craig": [
+    "VA018"
+  ],
+  "VA-Alleghany": [
+    "VA019"
+  ],
+  "VA-Bath": [
+    "VA020"
+  ],
+  "VA-Roanoke": [
+    "VA022"
+  ],
+  "VA-Botetourt": [
+    "VA023"
+  ],
+  "VA-Rockbridge": [
+    "VA024"
+  ],
+  "VA-Patrick": [
+    "VA032"
+  ],
+  "VA-Franklin": [
+    "VA033"
+  ],
+  "VA-Bedford": [
+    "VA034"
+  ],
+  "VA-Amherst": [
+    "VA035"
+  ],
+  "VA-Henry": [
+    "VA043"
+  ],
+  "VA-Pittsylvania": [
+    "VA044"
+  ],
+  "VA-Campbell": [
+    "VA045"
+  ],
+  "VA-Appomattox": [
+    "VA046"
+  ],
+  "VA-Buckingham": [
+    "VA047"
+  ],
+  "VA-Halifax": [
+    "VA058"
+  ],
+  "VA-Charlotte": [
+    "VA059"
+  ],
+  "WV-Mercer": [
+    "WV042"
+  ],
+  "WV-Summers": [
+    "WV043"
+  ],
+  "WV-Monroe": [
+    "WV044"
+  ],
+  "WV-Eastern Greenbrier": [
+    "WV507"
+  ],
+  "WV-Western Greenbrier": [
+    "WV508"
+  ],
+  "WA-San Juan County": [
+    "WA001"
+  ],
+  "WA-Western Whatcom County": [
+    "WA503"
+  ],
+  "WA-Southwest Interior": [
+    "WA504"
+  ],
+  "WA-Western Skagit County": [
+    "WA506"
+  ],
+  "WA-Everett and Vicinity": [
+    "WA507"
+  ],
+  "WA-Tacoma Area": [
+    "WA509"
+  ],
+  "WA-Admiralty Inlet Area": [
+    "WA510"
+  ],
+  "WA-Hood Canal Area": [
+    "WA511"
+  ],
+  "WA-Lower Chehalis Valley Area": [
+    "WA512"
+  ],
+  "WA-Olympics": [
+    "WA513"
+  ],
+  "WA-Eastern Strait of Juan de Fuca": [
+    "WA514"
+  ],
+  "WA-Western Strait of Juan De Fuca": [
+    "WA515"
+  ],
+  "WA-North Coast": [
+    "WA516"
+  ],
+  "WA-Central Coast": [
+    "WA517"
+  ],
+  "WA-East Puget Sound Lowlands": [
+    "WA555"
+  ],
+  "WA-Bellevue and Vicinity": [
+    "WA556"
+  ],
+  "WA-Seattle and Vicinity": [
+    "WA558"
+  ],
+  "WA-Bremerton and Vicinity": [
+    "WA559"
+  ],
+  "WA-West Slopes North Cascades and Passes": [
+    "WA567"
+  ],
+  "WA-West Slopes North Central Cascdes": [
+    "WA568"
+  ],
+  "WA-West Slopes South Central Cascades and Passes": [
+    "WA569"
+  ],
+  "KS-Bourbon": [
+    "KS073"
+  ],
+  "KS-Crawford": [
+    "KS097"
+  ],
+  "KS-Cherokee": [
+    "KS101"
+  ],
+  "MO-Benton": [
+    "MO055"
+  ],
+  "MO-Morgan": [
+    "MO056"
+  ],
+  "MO-Miller": [
+    "MO057"
+  ],
+  "MO-Maries": [
+    "MO058"
+  ],
+  "MO-Vernon": [
+    "MO066"
+  ],
+  "MO-St. Clair": [
+    "MO067"
+  ],
+  "MO-Hickory": [
+    "MO068"
+  ],
+  "MO-Camden": [
+    "MO069"
+  ],
+  "MO-Pulaski": [
+    "MO070"
+  ],
+  "MO-Phelps": [
+    "MO071"
+  ],
+  "MO-Barton": [
+    "MO077"
+  ],
+  "MO-Cedar": [
+    "MO078"
+  ],
+  "MO-Polk": [
+    "MO079"
+  ],
+  "MO-Dallas": [
+    "MO080"
+  ],
+  "MO-Laclede": [
+    "MO081"
+  ],
+  "MO-Texas": [
+    "MO082"
+  ],
+  "MO-Dent": [
+    "MO083"
+  ],
+  "MO-Jasper": [
+    "MO088"
+  ],
+  "MO-Dade": [
+    "MO089"
+  ],
+  "MO-Greene": [
+    "MO090"
+  ],
+  "MO-Webster": [
+    "MO091"
+  ],
+  "MO-Wright": [
+    "MO092"
+  ],
+  "MO-Newton": [
+    "MO093"
+  ],
+  "MO-Lawrence": [
+    "MO094"
+  ],
+  "MO-Christian": [
+    "MO095"
+  ],
+  "MO-Douglas": [
+    "MO096"
+  ],
+  "MO-Howell": [
+    "MO097"
+  ],
+  "MO-Shannon": [
+    "MO098"
+  ],
+  "MO-McDonald": [
+    "MO101"
+  ],
+  "MO-Barry": [
+    "MO102"
+  ],
+  "MO-Stone": [
+    "MO103"
+  ],
+  "MO-Taney": [
+    "MO104"
+  ],
+  "MO-Ozark": [
+    "MO105"
+  ],
+  "MO-Oregon": [
+    "MO106"
+  ],
+  "CA-San Diego County Coastal Areas": [
+    "CA043"
+  ],
+  "CA-San Bernardino and Riverside County Valleys -The Inland Empire": [
+    "CA048"
+  ],
+  "CA-San Diego County Valleys": [
+    "CA050"
+  ],
+  "CA-San Bernardino County Mountains": [
+    "CA055"
+  ],
+  "CA-Riverside County Mountains": [
+    "CA056"
+  ],
+  "CA-Santa Ana Mountains and Foothills": [
+    "CA057"
+  ],
+  "CA-San Diego County Mountains": [
+    "CA058"
+  ],
+  "CA-Apple and Lucerne Valleys": [
+    "CA060"
+  ],
+  "CA-Coachella Valley": [
+    "CA061"
+  ],
+  "CA-San Diego County Deserts": [
+    "CA062"
+  ],
+  "CA-San Gorgonio Pass Near Banning": [
+    "CA065"
+  ],
+  "CA-Orange County Coastal": [
+    "CA552"
+  ],
+  "CA-Orange County Inland": [
+    "CA554"
+  ],
+  "AR-Sevier": [
+    "AR050"
+  ],
+  "AR-Howard": [
+    "AR051"
+  ],
+  "AR-Little River": [
+    "AR059"
+  ],
+  "AR-Hempstead": [
+    "AR060"
+  ],
+  "AR-Nevada": [
+    "AR061"
+  ],
+  "AR-Miller": [
+    "AR070"
+  ],
+  "AR-Lafayette": [
+    "AR071"
+  ],
+  "AR-Columbia": [
+    "AR072"
+  ],
+  "AR-Union": [
+    "AR073"
+  ],
+  "LA-Caddo": [
+    "LA001"
+  ],
+  "LA-Bossier": [
+    "LA002"
+  ],
+  "LA-Webster": [
+    "LA003"
+  ],
+  "LA-Claiborne": [
+    "LA004"
+  ],
+  "LA-Lincoln": [
+    "LA005"
+  ],
+  "LA-Union": [
+    "LA006"
+  ],
+  "LA-De Soto": [
+    "LA010"
+  ],
+  "LA-Red River": [
+    "LA011"
+  ],
+  "LA-Bienville": [
+    "LA012"
+  ],
+  "LA-Jackson": [
+    "LA013"
+  ],
+  "LA-Ouachita": [
+    "LA014"
+  ],
+  "LA-Sabine": [
+    "LA017"
+  ],
+  "LA-Natchitoches": [
+    "LA018"
+  ],
+  "LA-Winn": [
+    "LA019"
+  ],
+  "LA-Grant": [
+    "LA020"
+  ],
+  "LA-Caldwell": [
+    "LA021"
+  ],
+  "LA-La Salle": [
+    "LA022"
+  ],
+  "OK-McCurtain": [
+    "OK077"
+  ],
+  "TX-Red River": [
+    "TX096"
+  ],
+  "TX-Bowie": [
+    "TX097"
+  ],
+  "TX-Franklin": [
+    "TX108"
+  ],
+  "TX-Titus": [
+    "TX109"
+  ],
+  "TX-Camp": [
+    "TX110"
+  ],
+  "TX-Morris": [
+    "TX111"
+  ],
+  "TX-Cass": [
+    "TX112"
+  ],
+  "TX-Wood": [
+    "TX124"
+  ],
+  "TX-Upshur": [
+    "TX125"
+  ],
+  "TX-Marion": [
+    "TX126"
+  ],
+  "TX-Smith": [
+    "TX136"
+  ],
+  "TX-Gregg": [
+    "TX137"
+  ],
+  "TX-Harrison": [
+    "TX138"
+  ],
+  "TX-Cherokee": [
+    "TX149"
+  ],
+  "TX-Rusk": [
+    "TX150"
+  ],
+  "TX-Panola": [
+    "TX151"
+  ],
+  "TX-Nacogdoches": [
+    "TX152"
+  ],
+  "TX-Shelby": [
+    "TX153"
+  ],
+  "TX-Angelina": [
+    "TX165"
+  ],
+  "TX-San Augustine": [
+    "TX166"
+  ],
+  "TX-Sabine": [
+    "TX167"
+  ],
+  "TX-Fisher": [
+    "TX049"
+  ],
+  "TX-Nolan": [
+    "TX054"
+  ],
+  "TX-Sterling": [
+    "TX064"
+  ],
+  "TX-Coke": [
+    "TX065"
+  ],
+  "TX-Runnels": [
+    "TX066"
+  ],
+  "TX-Irion": [
+    "TX071"
+  ],
+  "TX-Tom Green": [
+    "TX072"
+  ],
+  "TX-Concho": [
+    "TX073"
+  ],
+  "TX-Crockett": [
+    "TX076"
+  ],
+  "TX-Schleicher": [
+    "TX077"
+  ],
+  "TX-Sutton": [
+    "TX078"
+  ],
+  "TX-Haskell": [
+    "TX098"
+  ],
+  "TX-Throckmorton": [
+    "TX099"
+  ],
+  "TX-Jones": [
+    "TX113"
+  ],
+  "TX-Shackelford": [
+    "TX114"
+  ],
+  "TX-Taylor": [
+    "TX127"
+  ],
+  "TX-Callahan": [
+    "TX128"
+  ],
+  "TX-Coleman": [
+    "TX139"
+  ],
+  "TX-Brown": [
+    "TX140"
+  ],
+  "TX-McCulloch": [
+    "TX154"
+  ],
+  "TX-San Saba": [
+    "TX155"
+  ],
+  "TX-Menard": [
+    "TX168"
+  ],
+  "TX-Kimble": [
+    "TX169"
+  ],
+  "TX-Mason": [
+    "TX170"
+  ],
+  "PR-San Juan and Vicinity": [
+    "PR001"
+  ],
+  "PR-Northeast": [
+    "PR002"
+  ],
+  "PR-Southeast": [
+    "PR003"
+  ],
+  "PR-Eastern Interior": [
+    "PR004"
+  ],
+  "PR-North Central": [
+    "PR005"
+  ],
+  "PR-Central Interior": [
+    "PR006"
+  ],
+  "PR-Ponce and Vicinity": [
+    "PR007"
+  ],
+  "PR-Northwest": [
+    "PR008"
+  ],
+  "PR-Western Interior": [
+    "PR009"
+  ],
+  "PR-Mayaguez and Vicinity": [
+    "PR010"
+  ],
+  "PR-Southwest": [
+    "PR011"
+  ],
+  "PR-Culebra": [
+    "PR012"
+  ],
+  "PR-Vieques": [
+    "PR013"
+  ],
+  "VI-St.Thomas...St. John.. and Adjacent Islands": [
+    "VI001"
+  ],
+  "VI-St Croix": [
+    "VI002"
+  ],
+  "UT-Great Salt Lake Desert and Mountains": [
+    "UT101"
+  ],
+  "UT-Tooele and Rush Valleys": [
+    "UT102"
+  ],
+  "UT-Eastern Box Elder County": [
+    "UT103"
+  ],
+  "UT-Northern Wasatch Front": [
+    "UT104"
+  ],
+  "UT-Salt Lake Valley": [
+    "UT105"
+  ],
+  "UT-Utah Valley": [
+    "UT106"
+  ],
+  "UT-Cache Valley/Utah Portion": [
+    "UT107"
+  ],
+  "UT-Wasatch Back": [
+    "UT108"
+  ],
+  "UT-Bear Lake and Bear River Valley": [
+    "UT109"
+  ],
+  "UT-Wasatch Mountains I-80 North": [
+    "UT110"
+  ],
+  "UT-Wasatch Mountains South of I-80": [
+    "UT111"
+  ],
+  "UT-Western Uinta Mountains": [
+    "UT112"
+  ],
+  "UT-Wasatch Plateau/Book Cliffs": [
+    "UT113"
+  ],
+  "UT-Western Uinta Basin": [
+    "UT114"
+  ],
+  "UT-Western Millard and Juab Counties": [
+    "UT115"
+  ],
+  "UT-Eastern Juab/Millard Counties": [
+    "UT116"
+  ],
+  "UT-Central Mountains": [
+    "UT117"
+  ],
+  "UT-Sanpete Valley": [
+    "UT118"
+  ],
+  "UT-Sevier Valley": [
+    "UT119"
+  ],
+  "UT-Castle Country": [
+    "UT120"
+  ],
+  "UT-San Rafael Swell": [
+    "UT121"
+  ],
+  "UT-Southwest Utah": [
+    "UT122"
+  ],
+  "UT-Lower Washington County": [
+    "UT123"
+  ],
+  "UT-Zion National Park": [
+    "UT124"
+  ],
+  "UT-Southern Mountains": [
+    "UT125"
+  ],
+  "UT-Upper Sevier River Valleys": [
+    "UT126"
+  ],
+  "UT-Bryce Canyon Country": [
+    "UT127"
+  ],
+  "UT-South Central Utah": [
+    "UT128"
+  ],
+  "UT-Capitol Reef National Park and Vicinity": [
+    "UT129"
+  ],
+  "UT-Western Canyonlands": [
+    "UT130"
+  ],
+  "UT-Glen Canyon Recreation Area/Lake Powell": [
+    "UT131"
+  ],
+  "WY-Southwest Wyoming": [
+    "WY021"
+  ],
+  "CA-Shasta Lake Area / Northern Shasta County": [
+    "CA013"
+  ],
+  "CA-Burney Basin / Eastern Shasta County": [
+    "CA014"
+  ],
+  "CA-Northern Sacramento Valley": [
+    "CA015"
+  ],
+  "CA-Central Sacramento Valley": [
+    "CA016"
+  ],
+  "CA-Southern Sacramento Valley": [
+    "CA017"
+  ],
+  "CA-Carquinez Strait and Delta": [
+    "CA018"
+  ],
+  "CA-Northern San Joaquin Valley": [
+    "CA019"
+  ],
+  "CA-Mountains Southwestern Shasta County to Western Colusa County": [
+    "CA063"
+  ],
+  "CA-Northeast Foothills/Sacramento Valley": [
+    "CA066"
+  ],
+  "CA-Motherlode": [
+    "CA067"
+  ],
+  "CA-Western Plumas County/Lassen Park": [
+    "CA068"
+  ],
+  "CA-West Slope Northern Sierra Nevada": [
+    "CA069"
+  ],
+  "AL-Coffee": [
+    "AL065"
+  ],
+  "AL-Dale": [
+    "AL066"
+  ],
+  "AL-Henry": [
+    "AL067"
+  ],
+  "AL-Geneva": [
+    "AL068"
+  ],
+  "AL-Houston": [
+    "AL069"
+  ],
+  "FL-North Walton": [
+    "FL007"
+  ],
+  "FL-Central Walton": [
+    "FL008"
+  ],
+  "FL-Holmes": [
+    "FL009"
+  ],
+  "FL-Washington": [
+    "FL010"
+  ],
+  "FL-Jackson": [
+    "FL011"
+  ],
+  "FL-Inland Bay": [
+    "FL012"
+  ],
+  "FL-Calhoun": [
+    "FL013"
+  ],
+  "FL-Inland Gulf": [
+    "FL014"
+  ],
+  "FL-Inland Franklin": [
+    "FL015"
+  ],
+  "FL-Gadsden": [
+    "FL016"
+  ],
+  "FL-Leon": [
+    "FL017"
+  ],
+  "FL-Inland Jefferson": [
+    "FL018"
+  ],
+  "FL-Madison": [
+    "FL019"
+  ],
+  "FL-Liberty": [
+    "FL026"
+  ],
+  "FL-Inland Wakulla": [
+    "FL027"
+  ],
+  "FL-Inland Taylor": [
+    "FL028"
+  ],
+  "FL-Lafayette": [
+    "FL029"
+  ],
+  "FL-Inland Dixie": [
+    "FL034"
+  ],
+  "FL-South Walton": [
+    "FL108"
+  ],
+  "FL-Coastal Bay": [
+    "FL112"
+  ],
+  "FL-Coastal Gulf": [
+    "FL114"
+  ],
+  "FL-Coastal Franklin": [
+    "FL115"
+  ],
+  "FL-Coastal Jefferson": [
+    "FL118"
+  ],
+  "FL-Coastal Wakulla": [
+    "FL127"
+  ],
+  "FL-Coastal Taylor": [
+    "FL128"
+  ],
+  "FL-Coastal Dixie": [
+    "FL134"
+  ],
+  "GA-Quitman": [
+    "GA120"
+  ],
+  "GA-Clay": [
+    "GA121"
+  ],
+  "GA-Randolph": [
+    "GA122"
+  ],
+  "GA-Calhoun": [
+    "GA123"
+  ],
+  "GA-Terrell": [
+    "GA124"
+  ],
+  "GA-Dougherty": [
+    "GA125"
+  ],
+  "GA-Lee": [
+    "GA126"
+  ],
+  "GA-Worth": [
+    "GA127"
+  ],
+  "GA-Turner": [
+    "GA128"
+  ],
+  "GA-Tift": [
+    "GA129"
+  ],
+  "GA-Ben Hill": [
+    "GA130"
+  ],
+  "GA-Irwin": [
+    "GA131"
+  ],
+  "GA-Early": [
+    "GA142"
+  ],
+  "GA-Miller": [
+    "GA143"
+  ],
+  "GA-Baker": [
+    "GA144"
+  ],
+  "GA-Mitchell": [
+    "GA145"
+  ],
+  "GA-Colquitt": [
+    "GA146"
+  ],
+  "GA-Cook": [
+    "GA147"
+  ],
+  "GA-Berrien": [
+    "GA148"
+  ],
+  "GA-Seminole": [
+    "GA155"
+  ],
+  "GA-Decatur": [
+    "GA156"
+  ],
+  "GA-Grady": [
+    "GA157"
+  ],
+  "GA-Thomas": [
+    "GA158"
+  ],
+  "GA-Brooks": [
+    "GA159"
+  ],
+  "GA-Lowndes": [
+    "GA160"
+  ],
+  "GA-Lanier": [
+    "GA161"
+  ],
+  "FL-Sumter": [
+    "FL043"
+  ],
+  "FL-Pinellas": [
+    "FL050"
+  ],
+  "FL-Polk": [
+    "FL052"
+  ],
+  "FL-Hardee": [
+    "FL056"
+  ],
+  "FL-Highlands": [
+    "FL057"
+  ],
+  "FL-De Soto": [
+    "FL061"
+  ],
+  "FL-Coastal Levy": [
+    "FL139"
+  ],
+  "FL-Coastal Citrus": [
+    "FL142"
+  ],
+  "FL-Coastal Hernando": [
+    "FL148"
+  ],
+  "FL-Inland Pasco": [
+    "FL149"
+  ],
+  "FL-Coastal Hillsborough": [
+    "FL151"
+  ],
+  "FL-Coastal Manatee": [
+    "FL155"
+  ],
+  "FL-Coastal Sarasota": [
+    "FL160"
+  ],
+  "FL-Coastal Charlotte": [
+    "FL162"
+  ],
+  "FL-Coastal Lee": [
+    "FL165"
+  ],
+  "FL-Inland Levy": [
+    "FL239"
+  ],
+  "FL-inland Citrus": [
+    "FL242"
+  ],
+  "FL-Inland Hernando": [
+    "FL248"
+  ],
+  "FL-Coastal Pasco": [
+    "FL249"
+  ],
+  "FL-Inland Hillsborough": [
+    "FL251"
+  ],
+  "FL-Inland Manatee": [
+    "FL255"
+  ],
+  "FL-Inland Sarasota": [
+    "FL260"
+  ],
+  "FL-Inland Charlotte": [
+    "FL262"
+  ],
+  "FL-Inland Lee": [
+    "FL265"
+  ],
+  "MT-East Glacier Park Region": [
+    "MT301"
+  ],
+  "MT-Northern High Plains": [
+    "MT302"
+  ],
+  "MT-Eastern Glacier, Western Toole, and Central Pondera": [
+    "MT303"
+  ],
+  "MT-Eastern Toole and Liberty": [
+    "MT304"
+  ],
+  "MT-Hill County": [
+    "MT305"
+  ],
+  "MT-Northern Blaine County": [
+    "MT306"
+  ],
+  "MT-Southern Rocky Mountain Front": [
+    "MT307"
+  ],
+  "MT-Southern High Plains": [
+    "MT308"
+  ],
+  "MT-Eastern Pondera and Eastern Teton": [
+    "MT309"
+  ],
+  "MT-Western and Central Chouteau County": [
+    "MT310"
+  ],
+  "MT-Bears Paw Mountains and Southern Blaine": [
+    "MT311"
+  ],
+  "MT-Cascade County below 5000ft": [
+    "MT312"
+  ],
+  "MT-Judith Basin County and Judith Gap": [
+    "MT313"
+  ],
+  "MT-Fergus County below 4500ft": [
+    "MT314"
+  ],
+  "MT-Upper Blackfoot and MacDonald Pass": [
+    "MT315"
+  ],
+  "MT-Gates of the Mountains": [
+    "MT316"
+  ],
+  "MT-Little Belt and Highwood Mountains": [
+    "MT317"
+  ],
+  "MT-Snowy and Judith Mountains": [
+    "MT318"
+  ],
+  "MT-Helena Valley": [
+    "MT319"
+  ],
+  "MT-Big Belt, Bridger and Castle Mountains": [
+    "MT320"
+  ],
+  "MT-Meagher County Valleys": [
+    "MT321"
+  ],
+  "MT-Elkhorn and Boulder Mountains": [
+    "MT322"
+  ],
+  "MT-Canyon Ferry Area": [
+    "MT323"
+  ],
+  "MT-Missouri Headwaters": [
+    "MT324"
+  ],
+  "MT-Madison River Valley": [
+    "MT325"
+  ],
+  "MT-Gallatin Valley": [
+    "MT326"
+  ],
+  "MT-Northwest Beaverhead County": [
+    "MT327"
+  ],
+  "MT-Beaverhead and Western Madison below 6000ft": [
+    "MT328"
+  ],
+  "MT-Ruby Mountains and Southern Beaverhead Mountains": [
+    "MT329"
+  ],
+  "MT-Gallatin and Madison County Mountains and Centennial Mountains": [
+    "MT330"
+  ],
+  "KS-Republic": [
+    "KS008"
+  ],
+  "KS-Washington": [
+    "KS009"
+  ],
+  "KS-Marshall": [
+    "KS010"
+  ],
+  "KS-Nemaha": [
+    "KS011"
+  ],
+  "KS-Brown": [
+    "KS012"
+  ],
+  "KS-Cloud": [
+    "KS020"
+  ],
+  "KS-Clay": [
+    "KS021"
+  ],
+  "KS-Riley": [
+    "KS022"
+  ],
+  "KS-Pottawatomie": [
+    "KS023"
+  ],
+  "KS-Jackson": [
+    "KS024"
+  ],
+  "KS-Jefferson": [
+    "KS026"
+  ],
+  "KS-Ottawa": [
+    "KS034"
+  ],
+  "KS-Dickinson": [
+    "KS035"
+  ],
+  "KS-Geary": [
+    "KS036"
+  ],
+  "KS-Morris": [
+    "KS037"
+  ],
+  "KS-Wabaunsee": [
+    "KS038"
+  ],
+  "KS-Shawnee": [
+    "KS039"
+  ],
+  "KS-Douglas": [
+    "KS040"
+  ],
+  "KS-Lyon": [
+    "KS054"
+  ],
+  "KS-Osage": [
+    "KS055"
+  ],
+  "KS-Franklin": [
+    "KS056"
+  ],
+  "KS-Coffey": [
+    "KS058"
+  ],
+  "KS-Anderson": [
+    "KS059"
+  ],
+  "AR-Benton": [
+    "AR001"
+  ],
+  "AR-Carroll": [
+    "AR002"
+  ],
+  "AR-Washington": [
+    "AR010"
+  ],
+  "AR-Madison": [
+    "AR011"
+  ],
+  "AR-Crawford": [
+    "AR019"
+  ],
+  "AR-Franklin": [
+    "AR020"
+  ],
+  "AR-Sebastian": [
+    "AR029"
+  ],
+  "OK-Pushmataha": [
+    "OK049"
+  ],
+  "OK-Choctaw": [
+    "OK053"
+  ],
+  "OK-Osage": [
+    "OK054"
+  ],
+  "OK-Washington": [
+    "OK055"
+  ],
+  "OK-Nowata": [
+    "OK056"
+  ],
+  "OK-Craig": [
+    "OK057"
+  ],
+  "OK-Ottawa": [
+    "OK058"
+  ],
+  "OK-Pawnee": [
+    "OK059"
+  ],
+  "OK-Tulsa": [
+    "OK060"
+  ],
+  "OK-Rogers": [
+    "OK061"
+  ],
+  "OK-Mayes": [
+    "OK062"
+  ],
+  "OK-Delaware": [
+    "OK063"
+  ],
+  "OK-Creek": [
+    "OK064"
+  ],
+  "OK-Okfuskee": [
+    "OK065"
+  ],
+  "OK-Okmulgee": [
+    "OK066"
+  ],
+  "OK-Wagoner": [
+    "OK067"
+  ],
+  "OK-Cherokee": [
+    "OK068"
+  ],
+  "OK-Adair": [
+    "OK069"
+  ],
+  "OK-Muskogee": [
+    "OK070"
+  ],
+  "OK-McIntosh": [
+    "OK071"
+  ],
+  "OK-Sequoyah": [
+    "OK072"
+  ],
+  "OK-Pittsburg": [
+    "OK073"
+  ],
+  "OK-Haskell": [
+    "OK074"
+  ],
+  "OK-Latimer": [
+    "OK075"
+  ],
+  "OK-Le Flore": [
+    "OK076"
+  ],
+  "AZ-Western Pima County Including Ajo/Organ Pipe Cactus National Monument": [
+    "AZ501"
+  ],
+  "AZ-Tohono O'odham Nation including Sells": [
+    "AZ502"
+  ],
+  "AZ-Upper Santa Cruz River and Altar Valleys including Nogales": [
+    "AZ503"
+  ],
+  "AZ-Tucson Metro Area including Tucson/Green Valley/Marana/Vail": [
+    "AZ504"
+  ],
+  "AZ-South Central Pinal County including Eloy/Picacho Peak State Park": [
+    "AZ505"
+  ],
+  "AZ-Southeast Pinal County including Kearny/Mammoth/Oracle": [
+    "AZ506"
+  ],
+  "AZ-Upper San Pedro River Valley including Sierra Vista/Benson": [
+    "AZ507"
+  ],
+  "AZ-Eastern Cochise County Below 5000 Feet including Douglas/Willcox": [
+    "AZ508"
+  ],
+  "AZ-Upper Gila River and Aravaipa Valleys including Clifton/Safford": [
+    "AZ509"
+  ],
+  "AZ-White Mountains of Graham and Greenlee Counties including Hannagan Meadow": [
+    "AZ510"
+  ],
+  "AZ-Galiuro and Pinaleno Mountains including Mount Graham": [
+    "AZ511"
+  ],
+  "AZ-Chiricahua Mountains including Chiricahua National Monument": [
+    "AZ512"
+  ],
+  "AZ-Dragoon/Mule/Huachuca and Santa Rita Mountains including Bisbee/Canelo Hills/Madera Canyon": [
+    "AZ513"
+  ],
+  "AZ-Santa Catalina and Rincon Mountains including Mount Lemmon/Summerhaven": [
+    "AZ514"
+  ],
+  "AZ-Baboquivari Mountains including Kitt Peak": [
+    "AZ515"
+  ],
+  "SD-Harding": [
+    "SD001"
+  ],
+  "SD-Northern Perkins ": [
+    "SD002"
+  ],
+  "SD-Butte": [
+    "SD012"
+  ],
+  "SD-Northern Meade Co Plains": [
+    "SD013"
+  ],
+  "SD-Ziebach": [
+    "SD014"
+  ],
+  "SD-Northern Black Hills ": [
+    "SD024"
+  ],
+  "SD-Northern Foothills ": [
+    "SD025"
+  ],
+  "SD-Rapid City": [
+    "SD026"
+  ],
+  "SD-Southern Foothills ": [
+    "SD027"
+  ],
+  "SD-Central Black Hills ": [
+    "SD028"
+  ],
+  "SD-Southern Black Hills ": [
+    "SD029"
+  ],
+  "SD-Custer Co Plains": [
+    "SD030"
+  ],
+  "SD-Pennington Co Plains": [
+    "SD031"
+  ],
+  "SD-Haakon": [
+    "SD032"
+  ],
+  "SD-Western Fall River ": [
+    "SD041"
+  ],
+  "SD-Northern Oglala Lakota ": [
+    "SD042"
+  ],
+  "SD-Northern Jackson ": [
+    "SD043"
+  ],
+  "SD-Bennett": [
+    "SD044"
+  ],
+  "SD-Mellette": [
+    "SD046"
+  ],
+  "SD-Todd": [
+    "SD047"
+  ],
+  "SD-Tripp": [
+    "SD049"
+  ],
+  "SD-Sturgis-Piedmont Foothills ": [
+    "SD072"
+  ],
+  "SD-Southern Meade Co Plains": [
+    "SD073"
+  ],
+  "SD-Hermosa Foot Hills": [
+    "SD074"
+  ],
+  "SD-Eastern Fall River ": [
+    "SD075"
+  ],
+  "SD-Southern Oglala Lakota ": [
+    "SD076"
+  ],
+  "SD-Southern Jackson ": [
+    "SD077"
+  ],
+  "SD-Southern Perkins ": [
+    "SD078"
+  ],
+  "WY-Northern Cambell": [
+    "WY054"
+  ],
+  "WY-Southern Campbell": [
+    "WY055"
+  ],
+  "WY-Western Crook ": [
+    "WY056"
+  ],
+  "WY-Wyoming Black Hills ": [
+    "WY057"
+  ],
+  "WY-Weston": [
+    "WY058"
+  ],
+  "WY-Weston County Plains ": [
+    "WY058"
+  ],
+  "WY-Newcastle ": [
+    "WY059"
+  ],
+  "WY-Northeastern Crook ": [
+    "WY060"
+  ],
+  "WY-Northeastern Crook": [
+    "WY071"
+  ],
+  "AZ-Northwest Plateau": [
+    "AZ001"
+  ],
+  "AZ-Lake Havasu and Fort Mohave": [
+    "AZ002"
+  ],
+  "AZ-Northwest Deserts": [
+    "AZ003"
+  ],
+  "AZ-Lake Mead National Recreation Area": [
+    "AZ036"
+  ],
+  "CA-Eastern Sierra Slopes of Inyo County": [
+    "CA519"
+  ],
+  "CA-Owens Valley": [
+    "CA520"
+  ],
+  "CA-White Mountains of Inyo County": [
+    "CA521"
+  ],
+  "CA-Death Valley National Park": [
+    "CA522"
+  ],
+  "CA-Western Mojave Desert": [
+    "CA523"
+  ],
+  "CA-Eastern Mojave Desert Including the Mojave National Preserve": [
+    "CA524"
+  ],
+  "CA-Morongo Basin": [
+    "CA525"
+  ],
+  "CA-Cadiz Basin": [
+    "CA526"
+  ],
+  "CA-San Bernadino County-Upper Colorado River Valley": [
+    "CA527"
+  ],
+  "NV-Esmeralda and Central Nye County": [
+    "NV014"
+  ],
+  "NV-Lincoln County": [
+    "NV015"
+  ],
+  "NV-Northeast Clark County": [
+    "NV016"
+  ],
+  "NV-Western Clark and Southern Nye County": [
+    "NV017"
+  ],
+  "NV-Sheep Range": [
+    "NV018"
+  ],
+  "NV-Spring Mountains-Red Rock Canyon": [
+    "NV019"
+  ],
+  "NV-Las Vegas Valley": [
+    "NV020"
+  ],
+  "NV-Lake Mead National Recreation Area": [
+    "NV021"
+  ],
+  "NV-Southern Clark County": [
+    "NV022"
+  ],
+  "FL-Northern Columbia": [
+    "FL322"
+  ],
+  "FL-Southeastern Columbia": [
+    "FL422"
+  ],
+  "FL-Southwestern Columbia": [
+    "FL522"
+  ],
+  "OR-Clatsop County Coast": [
+    "OR101"
+  ],
+  "OR-Tillamook County Coast": [
+    "OR102"
+  ],
+  "OR-Central Coast of Oregon": [
+    "OR103"
+  ],
+  "OR-North Oregon Coast Range Lowlands": [
+    "OR104"
+  ],
+  "OR-Central Oregon Coast Range Lowlands": [
+    "OR105"
+  ],
+  "OR-North Oregon Coast Range": [
+    "OR106"
+  ],
+  "OR-Central Oregon Coast Range": [
+    "OR107"
+  ],
+  "OR-Lower Columbia River": [
+    "OR108"
+  ],
+  "OR-Tualatin Valley": [
+    "OR109"
+  ],
+  "OR-West Hills and Chehalem Mountains": [
+    "OR110"
+  ],
+  "OR-Inner Portland Metro": [
+    "OR111"
+  ],
+  "OR-East Portland Metro": [
+    "OR112"
+  ],
+  "OR-Outer Southeast Portland Metro": [
+    "OR113"
+  ],
+  "OR-West Central Willamette Valley": [
+    "OR114"
+  ],
+  "OR-East Central Willamette Valley": [
+    "OR115"
+  ],
+  "OR-Benton County Lowlands": [
+    "OR116"
+  ],
+  "OR-Linn County Lowlands": [
+    "OR117"
+  ],
+  "OR-Lane County Lowlands": [
+    "OR118"
+  ],
+  "OR-West Columbia River Gorge of Oregon above 500 ft": [
+    "OR119"
+  ],
+  "OR-West Columbia River Gorge I-84 Corridor": [
+    "OR120"
+  ],
+  "OR-Upper Hood River Valley": [
+    "OR121"
+  ],
+  "OR-Central Columbia River Gorge I-84 Corridor": [
+    "OR122"
+  ],
+  "OR-Clackamas County Cascade Foothills": [
+    "OR123"
+  ],
+  "OR-Cascade Foothills of Marion and Linn Counties": [
+    "OR124"
+  ],
+  "OR-Lane County Cascade Foothills": [
+    "OR125"
+  ],
+  "OR-North Oregon Cascades": [
+    "OR126"
+  ],
+  "OR-Cascades of Marion and Linn Counties": [
+    "OR127"
+  ],
+  "OR-Cascades of Lane County": [
+    "OR128"
+  ],
+  "WA-South Washington Coast": [
+    "WA201"
+  ],
+  "WA-Willapa and Wahkiakum Lowlands": [
+    "WA202"
+  ],
+  "WA-Willapa Hills": [
+    "WA203"
+  ],
+  "WA-Cowlitz County Lowlands": [
+    "WA204"
+  ],
+  "WA-North Clark County Lowlands": [
+    "WA205"
+  ],
+  "WA-Inner Vancouver Metro": [
+    "WA206"
+  ],
+  "WA-East Clark County Lowlands": [
+    "WA207"
+  ],
+  "WA-South Washington Cascade Foothills": [
+    "WA208"
+  ],
+  "WA-West Columbia River Gorge - SR 14": [
+    "WA209"
+  ],
+  "WA-Central Columbia River Gorge - SR 14": [
+    "WA210"
+  ],
+  "WA-South Washington Cascades": [
+    "WA211"
+  ]
+}

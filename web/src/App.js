@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Globe from "react-globe.gl";
 import axios from "axios";
+import Card from './components/Card';
+import Navbar from "./components/Navbar";
+import { motion, AnimatePresence } from 'framer-motion';
+
 import * as THREE from "three";
 import { useRef } from "react";
 
@@ -69,6 +73,12 @@ function App() {
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [emergencies, setEmergencies] = useState([]);
   const [disasterSet, setDisasterSet] = useState(new Set());
+  const [selectedItem, setSelectedItem] = useState(null); // Added state
+
+  function handleMenuItemSelect(item) {
+    setSelectedItem(item);
+  }
+  
   
   const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
 
@@ -151,6 +161,83 @@ function App() {
     return county.trim();
   }
 
+  function getActiveAlerts() {
+    let countyToZonesData = null;
+    let zoneToCountyData = null;
+  
+    // Fetch county_to_zones.json
+    fetch('./county_to_zones.json')
+      .then(response => response.json())
+      .then(data => {
+        countyToZonesData = data;
+        console.log('county_to_zones.json:', countyToZonesData);
+      })
+      .catch(error => console.error('Error fetching county_to_zones.json:', error));
+  
+    // Fetch zone_to_county.json
+    fetch('./zone_to_county.json')
+      .then(response => response.json())
+      .then(data => {
+        zoneToCountyData = data;
+        console.log('zone_to_county.json:', zoneToCountyData);
+      })
+      .catch(error => console.error('Error fetching zone_to_county.json:', error));
+
+    axios.get("https://api.weather.gov/alerts/active")
+      .then((res) => {
+        console.log(res.data.features);
+
+        // Create a set of all active zones and a mapping of UGC codes to features
+        const ugcSet = new Set();
+        const ugcToFeatureMap = {};
+
+        res.data.features.forEach(feature => {
+          const ugcCodes = feature.properties.geocode.UGC;
+          ugcCodes.forEach(code => {
+            const modifiedCode = code.slice(0, 2) + code.slice(3);
+            ugcSet.add(modifiedCode);
+
+            if (!ugcToFeatureMap[modifiedCode]) {
+              ugcToFeatureMap[modifiedCode] = [];
+            }
+            ugcToFeatureMap[modifiedCode].push(feature);
+          });
+        });
+
+        console.log("UGC Set:", ugcSet);
+        console.log("UGC to Feature Map:", ugcToFeatureMap);
+
+        const countySet = new Set();
+
+        ugcSet.forEach(ugcCode => {
+          if (zoneToCountyData && zoneToCountyData[ugcCode]) {
+            countySet.add(zoneToCountyData[ugcCode]);
+          }
+        });
+
+        console.log("County Set:", countySet);
+
+        // Fetch all zones
+        fetch(`./counties.geojson?timestamp=${new Date().getTime()}`)
+          .then(res => res.json())
+          .then(data => {
+            var filtered_counties = [];
+
+            for (let i = 0; i < data.features.length; i++) {
+              const feature = data.features[i];
+              const state = stateMap[feature.properties.STATEFP];
+              const county = feature.properties.NAME;
+                if (countySet.has(`${state}-${county}`)) {
+                  filtered_counties.push(feature);
+                }
+            }
+            console.log("filtered", filtered_counties)
+            setDisplayedCounties({ features: filtered_counties });
+          })
+          .catch((err) => console.error("Error fetching data:", err));
+      })
+  }
+
   function updateImpactedCounties(k = 4) {
     // Get the date one week ago
     const filter_date = getDateKWeeksInThePast(k)
@@ -163,7 +250,7 @@ function App() {
         const declaredEmergencies = affected_counties.data.DisasterDeclarationsSummaries;
         setEmergencies(declaredEmergencies);
 
-        console.log("emergencies", declaredEmergencies);
+        // console.log("emergencies", declaredEmergencies);
 
         // Create a set of state-county pairs for efficient filtering
         const disasterSet = new Set();
@@ -174,13 +261,13 @@ function App() {
           disasterSet.add(`${stateCode}-${county}`);
         }
 
-        console.log("Set", disasterSet);
+        // console.log("Set", disasterSet);
 
         // Load all county data
         fetch('./counties.geojson')
           .then(res => res.json())
           .then((all_counties) => {
-          console.log("newcounties", all_counties)
+          // console.log("newcounties", all_counties)
           
           const filteredCounties = all_counties.features.filter(county => {
             const state = stateMap[county.properties.STATEFP];
@@ -188,7 +275,7 @@ function App() {
             return disasterSet.has(`${state}-${name}`);
           });
   
-          console.log("filter", filteredCounties)
+          // console.log("filter", filteredCounties)
   
           setDisplayedCounties({ features: filteredCounties });
         });
@@ -236,8 +323,43 @@ function App() {
 
 
   return (
-    <div>
-      <div className="flex flex-row h-full">
+    <div className="relative h-screen w-screen">
+      {/* Navbar */}
+      <Navbar onMenuItemSelect={handleMenuItemSelect} />
+
+      {/* Cards with Animations */}
+      <AnimatePresence>
+        {selectedItem && (
+          <>
+            {/* Left Card */}
+            <motion.div
+              key="left-card"
+              initial={{ x: '-100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="absolute left-4 top-28 z-20 ml-20 w-fit"
+            >
+              <Card title={selectedItem} position="left" onClose={() => setSelectedItem(null)} />
+            </motion.div>
+
+            {/* Right Card */}
+            <motion.div
+              key="right-card"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '100%', opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="absolute right-4 top-28 z-20 mr-20"
+            >
+              <Card title={selectedItem} position="right" onClose={() => setSelectedItem(null)} />
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* Globe */}
+      <div className="absolute top-0 left-0 h-full w-full">
         <Globe
             // initial load
             ref={globeRef}
@@ -250,8 +372,8 @@ function App() {
             globeImageUrl="./earth.jpg"
             polygonsData={displayedCounties.features}
             polygonStrokeColor={() => '#000000'}
-            polygonCapColor={() => '#fff'}
-            polygonSideColor={() => '#fff'}
+            polygonCapColor={() => 'rgba(255, 255, 255, 1)'}
+            polygonSideColor={() => 'rgba(0, 0, 0, 0)'}
             onPolygonClick={handleCountyClick}
             hexPolygonLabel={({ properties: d }) => `
             {console.log(d)}
