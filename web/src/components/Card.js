@@ -3,44 +3,102 @@ import React from 'react';
 const Card = ({ title, position, onClose }) => {
   let content;
   switch (title) {
-    case 'General Tips':
+    case 'How a Disaster Gets Declared':
       content = (
         <div className=''>
-          <h2 className="card-title">General Tips</h2>
+          <h2 className="card-title">How a Disaster Gets Declared</h2>
           <ul className="list-disc pl-5">
-            <li>Create an emergency kit with essentials.</li>
-            <li>Develop a family communication plan.</li>
-            <li>Stay informed about local alerts and warnings.</li>
-            <li>Know your evacuation routes.</li>
+            <li>Local government declares a state of emergency.</li>
+            <li>State government requests federal assistance.</li>
+            <li>President declares a disaster.</li>
           </ul>
         </div>
       );
       break;
-    case 'Resources':
-      content = (
-        <div className=''>
-          <h2 className="card-title">Resources</h2>
-          <ul className="list-disc pl-5">
-            <li><a href="https://www.ready.gov/" target="_blank" rel="noopener noreferrer">Ready.gov</a></li>
-            <li><a href="https://www.redcross.org/" target="_blank" rel="noopener noreferrer">Red Cross</a></li>
-            <li><a href="https://www.fema.gov/" target="_blank" rel="noopener noreferrer">FEMA</a></li>
-          </ul>
-        </div>
-      );
+    case 'Disaster Authorities':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Disaster Authorities</h2>
+            <ul className="list-disc pl-5">
+                <li>Federal Emergency Management Agency (FEMA)</li>
+                <li>State Emergency Management Agency (SEMA)</li>
+                <li>Local Emergency Management Agency (LEMA)</li>
+            </ul>
+            </div>
+        );
       break;
-    case 'After the incident':
-      content = (
-        <div className=''>
-          <h2 className="card-title">After the Incident</h2>
-          <ul className="list-disc pl-5">
-            <li>Ensure your safety before returning home.</li>
-            <li>Check for structural damage.</li>
-            <li>Contact your insurance company.</li>
-            <li>Seek assistance if needed.</li>
-          </ul>
-        </div>
-      );
-      break;
+    case 'Historic Disasters':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Historic Disasters</h2>
+            <ul className="list-disc pl-5">
+                <li>1906 San Francisco Earthquake</li>
+                <li>1927 Mississippi River Flood</li>
+                <li>2005 Hurricane Katrina</li>
+            </ul>
+            </div>
+        );
+        break;
+    case 'Common Rumors':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Common Rumors</h2>
+            <ul className="list-disc pl-5">
+                <li>Gas leaks are common after a disaster.</li>
+                <li>Water is safe to drink after a disaster.</li>
+                <li>Power lines are safe to touch after a disaster.</li>
+            </ul>
+            </div>
+        );
+        break;
+    case 'Save Your Family Treasures':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Save Your Family Treasures</h2>
+            <ul className="list-disc pl-5">
+                <li>Store important documents in a safe place.</li>
+                <li>Take photos of family heirlooms.</li>
+                <li>Back up digital photos and documents.</li>
+            </ul>
+            </div>
+        );
+        break;
+    case 'Volunteer and Donate':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Volunteer and Donate</h2>
+            <ul className="list-disc pl-5">
+                <li>Volunteer with local organizations.</li>
+                <li>Donate to local charities.</li>
+                <li>Support disaster relief efforts.</li>
+            </ul>
+            </div>
+        );
+        break;
+    case 'Governments and Private Non-Profits':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Governments and Private Non-Profits</h2>
+            <ul className="list-disc pl-5">
+                <li>Local government provides emergency services.</li>
+                <li>State government coordinates disaster response.</li>
+                <li>Private non-profits offer assistance to survivors.</li>
+            </ul>
+            </div>
+        );
+        break;
+    case 'Individuals and Families':
+        content = (
+            <div className=''>
+            <h2 className="card-title">Individuals and Families</h2>
+            <ul className="list-disc pl-5">
+                <li>Register for disaster assistance.</li>
+                <li>Apply for disaster loans and grants.</li>
+                <li>Seek help from local charities.</li>
+            </ul>
+            </div>
+        );
+        break;
     default:
       content = null;
   }
