@@ -85,10 +85,10 @@ class ChatBotAPI(Resource):
             {{
                 "summary": "Your summary here."
             }}"""
-            "Please provide only the JSON object, and do not include any additional text, code blocks, or formatting. "
+            "Please provide only the JSON object, and do not include any additional text, code blocks, or any escape characters. "
         )
 
-
+        print("THIS IS THE RAW RESPONSE")
         
         # Combine context with the user prompt
         combined_prompt = f"{context}\nUser: {user_prompt}\nAssistant:"
@@ -98,28 +98,35 @@ class ChatBotAPI(Resource):
 
         generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
         #print(generated_response)
+        
 
 
         response = generated_response[0]['results'][0]['generated_text']
+        
+    
         cleaned_response = response.strip('"\n')
 
         # Step 2: Replace escaped quotes with actual quotes
         cleaned_response = cleaned_response.replace('\\"', '"')
 
         # Step 3: Replace literal newlines and tabs for JSON
-        cleaned_response = cleaned_response.replace('\\n', '\n').replace('\\t', '\t')
+        cleaned_response = cleaned_response.replace('\\n', ' ')
 
         # Print the cleaned string to verify its format
         print("Cleaned Response:")
         print(cleaned_response)
 
+        return cleaned_response
+
         # Wrap the string in double quotes to make it a valid JSON string
-        valid_json_string = f'{cleaned_response}"'
+        valid_json_string = f'{cleaned_response}'
+        print(valid_json_string)
         print(cleaned_response)
 
 
         # Step 3: Load the cleaned string as a JSON object
         try:
+
             json_response = json.loads(valid_json_string)
             # Print the formatted JSON object
             print("\nFormatted JSON Response:")
