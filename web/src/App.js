@@ -116,9 +116,13 @@ function App() {
             polygonsData={displayedCounties.features}
             polygonStrokeColor={() => '#000000'}
             polygonCapColor={() => '#fff'}
-            onGlobeClick={handleGlobeClick}
+            polygonSideColor={() => '#fff'}
             onPolygonClick={handleCountyClick}
-            // onZoom={handleZoom}
+            hexPolygonLabel={({ properties: d }) => `
+            {console.log(d)}
+              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+              Population: <i>${d.POP_EST}</i>
+            `}
             />
         <div className="w-1/2">
 
