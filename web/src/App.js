@@ -41,7 +41,10 @@ function App() {
             polygonStrokeColor={() => '#000000'}
             polygonCapColor={() => '#fff'}
             onGlobeClick={handleGlobeClick}
-            onZoom={handleZoom}/>
+            onZoom={handleZoom}
+
+            />
+
         <div className="w-1/2">
 
         </div>
