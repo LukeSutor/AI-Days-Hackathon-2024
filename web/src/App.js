@@ -51,12 +51,12 @@ const stateCoordinates = {
 function App() {
   const globeRef = useRef(null);
 
-  const [markers, setMarkers] = useState([]);
-  const [displayedCounties, setDisplayedCounties] = useState({ features: [] });
-  const [emergencies, setEmergencies] = useState([]);
+  const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [countyToAlerts, setCountyToAlerts] = useState({});
-  const [disasterSet, setDisasterSet] = useState(new Set());
   const [selectedItem, setSelectedItem] = useState(null);
+  const [safetyTips, setSafetyTips] = useState([])
+  const [stepsToTake, setStepsToTake] = useState([])
+
 
   function handleMenuItemSelect(item) {
     setSelectedItem(item);
@@ -90,32 +90,41 @@ function App() {
     });
   };
 
-  function handleCountyClick(e) {
+  async function handleCountyClick(e) {
     console.log(e);
     const state = stateMap[e.properties.STATEFP];
     const county = e.properties.NAME;
 
-    if (stateCoordinates[state]) {
-      zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
+    console.log(stateCoordinates[state].lat, stateCoordinates[state].lng); 
+    zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
+
+    const newCameraPosition = { lat: stateCoordinates[state].lat, lng: stateCoordinates[state].lng, altitude: 1.5 };
+
+    console.log(newCameraPosition);
+
+    // Get the data for the model, just include the first element of the arrays
+    var properties = {
+      ends: e.properties.ends[0],
+      description: e.properties.descriptions[0],
+      event: e.properties.events[0]
     }
 
-    const matchingEmergencies = emergencies.filter(emergency => {
-      return emergency.state.trim() === state && extractCounty(emergency.designatedArea) === county;
+    // Call summary backend
+    const response = await axios.post('http://127.0.0.1:5000/incident_advice', {
+      properties
     });
 
-    console.log("Matching Emergencies:", matchingEmergencies);
+    // Set values
+    if(response.status == 200) {
+      setSafetyTips(response.data.safety_tips);
+      setStepsToTake(response.data.steps_to_take);
+    } else {
+      console.error("Error in incident API response", response)
+    }
   }
 
   function handleZoom(e) {
     console.log(e);
-  }
-
-  function extractCounty(county) {
-    const index = county.indexOf('(');
-    if (index !== -1) {
-      return county.substring(0, index).trim();
-    }
-    return county.trim();
   }
 
   function getTopSeverity(current, newVal) {
@@ -135,7 +144,7 @@ function App() {
       case "Moderate":
         return "#FFFF00"; // Yellow
       case "Minor":
-        return "#008000"; // Green
+        return "#1a75ff";
       default:
         return "#A9A9A9"; // Gray
     }
@@ -180,8 +189,13 @@ function App() {
         }
       });
 
-      setCountyToAlerts(countyToZonesMap);
+      setCountyToAlerts(countyToZonesMap)
 
+      // console.log("County to Zones Map:", countyToZonesMap);
+  
+      // console.log("County Set:", countySet);
+  
+      // Fetch all zones
       const countiesResponse = await fetch(`./counties.geojson?timestamp=${new Date().getTime()}`);
       const countiesData = await countiesResponse.json();
       const filteredCounties = [];
@@ -189,22 +203,28 @@ function App() {
         const state = stateMap[feature.properties.STATEFP];
         const county = feature.properties.NAME;
         if (countySet.has(`${state}-${county}`)) {
-
-          let severity = "Unknown";
-          let headlines = [];
-          let descriptions = [];
-          let areas = [];
+          
+          var severity = "Unknown";
+          var headlines = [];
+          var descriptions = [];
+          var areas = [];
+          var events = [];
+          var ends = [];
           for (const alert of countyToZonesMap[`${state}-${county}`]) {
             severity = getTopSeverity(severity, alert.properties.severity);
             headlines.push(alert.properties.headline);
             descriptions.push(alert.properties.description);
             areas.push(alert.properties.areaDesc);
+            events.push(alert.properties.event);
+            ends.push(alert.properties.ends);
           }
 
           feature.properties.severity = severity;
           feature.properties.headlines = headlines;
           feature.properties.descriptions = descriptions;
           feature.properties.areas = areas;
+          feature.properties.events = events;
+          feature.properties.ends = ends;
 
           filteredCounties.push(feature);
         }
@@ -298,39 +318,47 @@ function App() {
       {/* Globe */}
       <div className="absolute top-0 left-0 h-full w-full">
         <Globe
-          ref={globeRef}
-          onGlobeReady={globeReady}
-          camera={{
-            lat: cameraPosition.lat,
-            lng: cameraPosition.lng,
-            altitude: cameraPosition.altitude,
-          }}
-          globeImageUrl="./earth.jpg"
-          polygonsData={displayedCounties.features}
-          polygonStrokeColor={() => '#000000'}
-          polygonCapColor={({ properties: p }) => severityToColor(p.severity)}
-          polygonSideColor={({ properties: p }) => severityToColor(p.severity)}
-          onPolygonClick={handleCountyClick}
-          hexPolygonLabel={({ properties: d }) => `
-            <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-            Population: <i>${d.POP_EST}</i>
-          `}
-          customLayerData={[...Array(500).keys()].map(() => ({
-            lat: (Math.random() - 1) * 360,
-            lng: (Math.random() - 1) * 360,
-            altitude: Math.random() * 2,
-            size: Math.random() * 0.4,
-            color: '#ffffff',
-          }))}
-          customThreeObject={(sliceData) => {
-            const { size, color } = sliceData;
-            return new THREE.Mesh(new THREE.SphereGeometry(size), new THREE.MeshBasicMaterial({ color }));
-          }}
-          customThreeObjectUpdate={(obj, sliceData) => {
-            const { lat, lng, altitude } = sliceData;
-            return Object.assign(obj.position, globeRef.current?.getCoords(lat, lng, altitude));
-          }}
-        />
+            // initial load
+            ref={globeRef}
+            onGlobeReady={globeReady}
+            camera={{
+              lat: cameraPosition.lat,
+              lng: cameraPosition.lng,
+              altitude: cameraPosition.altitude,
+            }}
+            globeImageUrl="./earth.jpg"
+            polygonsData={displayedCounties.features}
+            polygonStrokeColor={() => '#000000'}
+            polygonCapColor={({ properties: p }) => severityToColor(p.severity)}
+            polygonSideColor={({ properties: p }) => severityToColor(p.severity)}
+            polygonAltitude={0.001}
+            onPolygonClick={handleCountyClick}
+            hexPolygonLabel={({ properties: d }) => `
+            {console.log(d)}
+              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+              Population: <i>${d.POP_EST}</i>
+            `}
+
+            // stars in atmosphere?
+            customLayerData={[...Array(500).keys()].map(() => ({
+              lat: (Math.random() - 1) * 360,
+              lng: (Math.random() - 1) * 360,
+              altitude: Math.random() * 2,
+              size: Math.random() * 0.4,
+              color: '#ffffff',
+            }))}
+            customThreeObject={(sliceData) => {
+              const { size, color } = sliceData;
+              return new THREE.Mesh(new THREE.SphereGeometry(size), new THREE.MeshBasicMaterial({ color }));
+            }}
+            customThreeObjectUpdate={(obj, sliceData) => {
+              const { lat, lng, altitude } = sliceData;
+              return Object.assign(obj.position, globeRef.current?.getCoords(lat, lng, altitude));
+            }}
+            />
+        <div className="w-1/2">
+
+        </div>
       </div>
     </div>
   );
