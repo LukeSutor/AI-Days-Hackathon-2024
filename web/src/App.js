@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Globe from "react-globe.gl";
 import axios from "axios";
-import { useEffect, useState } from "react";
 
 function handleGlobeClick(e) {
   console.log(e);
 }
 
 function App() {
-
   const [markers, setMarkers] = useState([]);
+  const [counties, setCounties] = useState({ features: []});
   // test
   useEffect(() => {
     // load data
@@ -19,6 +18,9 @@ function App() {
         setMarkers(features);
       })
       .catch((err) => console.error("Error fetching data:", err));
+
+      // Load county data
+      fetch('./counties.geojson').then(res => res.json()).then(setCounties);
   }, []);
 
 
@@ -30,6 +32,8 @@ function App() {
     <div>
       <div className="flex flex-row h-full">
         <Globe
+            globeImageUrl="./earth.jpg"
+            polygonsData={counties.features}
             onGlobeClick={handleGlobeClick}/>
         <div className="w-1/2">
 
