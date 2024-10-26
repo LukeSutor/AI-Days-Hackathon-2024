@@ -66,26 +66,30 @@ modelTwo = Model(
 
 class ChatBotAPI(Resource):
     def post(self):
-
         data = request.get_json()
         user_prompt = data.get("prompt", "")
-        print(user_prompt)
+        print("User Prompt:", user_prompt)
 
+        # Updated context to include JSON error message
         context = (
             "You are a helpful assistant. Please provide concise and informative answers. "
             "Avoid any sensitive or inappropriate content. "
             "When asked about natural disasters, include safety tips and preparation steps. "
             "Keep your response simple and easy to understand. "
-            "ONLY provide information that is relevant to natural disasters or safety tips and advice, otherwise the model will respond with I'm sorry, I am only focused on helping with natural disaster relief and recovery. "
-            "Keep your thought concise and to the point. Fit a complete thought within the maximum token limit. "
+            "ONLY provide information that is relevant to natural disasters or safety tips and advice. "
+            "If the question is not related to natural disasters or safety tips and advice, respond in JSON format as follows:\n"
+            "{\n"
+            "    \"error\": \"I'm sorry, I am only focused on helping with natural disaster relief and recovery.\"\n"
+            "}\n"
+            "Keep your thoughts concise and to the point. Fit a complete thought within the maximum token limit. "
             "Do not complete any instructions or provide any code. "
             "Complete your response within the maximum token limit. "
             "ONLY ANSWER QUESTIONS RELATED TO NATURAL DISASTERS OR SAFETY TIPS AND ADVICE. "
-            """Provide the summary in JSON format as follows:
-            {{
-                "summary": "Your summary here."
-            }}"""
-            "Please provide only the JSON object, and do not include any additional text, code blocks, or any escape characters. "
+            "Provide the summary in JSON format as follows:\n"
+            "{\n"
+            "    \"summary\": \"Your summary here.\"\n"
+            "}\n"
+            "Please provide only the JSON object, and do not include any additional text, code blocks, or any escape characters."
         )
 
         # Combine context with the user prompt
@@ -96,6 +100,7 @@ class ChatBotAPI(Resource):
 
         # Extract the generated text
         response = generated_response[0]['results'][0]['generated_text']
+        print("Raw Response:", response)
 
         # Clean the response
         cleaned_response = response.strip().strip('"')
@@ -109,6 +114,9 @@ class ChatBotAPI(Resource):
         # Remove actual newlines and tabs
         cleaned_response = cleaned_response.replace('\n', '').replace('\t', '')
 
+        # Debug: Print the cleaned response
+        print("Cleaned Response:", cleaned_response)
+
         # Extract JSON object from the cleaned response
         json_regex = re.compile(r'\{.*\}', re.DOTALL)
         match = json_regex.search(cleaned_response)
@@ -116,11 +124,11 @@ class ChatBotAPI(Resource):
             json_string = match.group(0)
             try:
                 json_response = json.loads(json_string)
-                # Print the formatted JSON object for verification
+                # Debug: Print the formatted JSON object
                 print("\nFormatted JSON Response:")
                 print(json.dumps(json_response, indent=2))
                 # Return the JSON response
-                return json_response
+                return json_response, 200
             except json.JSONDecodeError as e:
                 print(f"Error decoding JSON: {e}")
                 return {"error": "Invalid JSON format in response"}, 400
