@@ -32,10 +32,9 @@ function App() {
   
     // Load affected counties
     axios.get(`https://www.fema.gov/api/open/v1/FemaWebDeclarationAreas?$filter=entryDate%20gt%20'${filter_date}'`)
-      .then((res) => { 
-        console.log(res.data.FemaWebDeclarationAreas)
-        
-        const declaredEmergencies = res.data.FemaWebDeclarationAreas;
+      .then((affected_counties) => { 
+
+        const declaredEmergencies = affected_counties.data.FemaWebDeclarationAreas;
 
         // Create a set of state-county pairs for efficient filtering
         const disasterSet = new Set();
@@ -47,23 +46,33 @@ function App() {
           placeName = placeName.replace(" (County)", "");
           disasterSet.add(`${stateCode}-${placeName}`);
         }
- 
         console.log("SET", disasterSet)
 
-        const filteredCounties = allCounties.features.filter(county => {
-          const state = stateMap[county.properties.STATEFP];
-          const name = county.properties.NAME.trim();
-          return disasterSet.has(`${state}-${name}`);
+        // Load all county data
+        var allCounties2 = {features: []}
+        fetch('./counties.geojson')
+          .then(res => res.json())
+          .then((all_counties) => {
+          console.log("newcounties", all_counties)
+          
+          const filteredCounties = all_counties.features.filter(county => {
+            const state = stateMap[county.properties.STATEFP];
+            const name = county.properties.NAME.trim();
+            return disasterSet.has(`${state}-${name}`);
+          });
+  
+          console.log("filter", filteredCounties)
+  
+          setDisplayedCounties({ features: filteredCounties });
         });
+        
 
-        console.log("filter", filteredCounties)
+ 
 
-        setDisplayedCounties({ features: filteredCounties });
+        console.log("Allcounties", allCounties2);
+
       })
       .catch((err) => console.error("Error fetching data:", err));
-
-    // Filter by affected counties
-
   }
 
   useEffect(() => {
@@ -74,9 +83,6 @@ function App() {
         setMarkers(features);
       })
       .catch((err) => console.error("Error fetching data:", err));
-
-    // Load all county data
-    fetch('./counties.geojson').then(res => res.json()).then(setAllCounties);
       
     // Load the affected counties and filter them on the globe
     updateImpactedCounties()
