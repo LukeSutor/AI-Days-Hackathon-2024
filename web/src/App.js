@@ -6,6 +6,10 @@ function handleGlobeClick(e) {
   console.log(e);
 }
 
+function handleZoom(e) {
+  console.log(e);
+}
+
 function App() {
   const [markers, setMarkers] = useState([]);
   const [counties, setCounties] = useState({ features: []});
@@ -34,7 +38,10 @@ function App() {
         <Globe
             globeImageUrl="./earth.jpg"
             polygonsData={counties.features}
-            onGlobeClick={handleGlobeClick}/>
+            polygonStrokeColor={() => '#000000'}
+            polygonCapColor={() => '#fff'}
+            onGlobeClick={handleGlobeClick}
+            onZoom={handleZoom}/>
         <div className="w-1/2">
 
         </div>
