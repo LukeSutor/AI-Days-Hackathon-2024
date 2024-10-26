@@ -105,7 +105,15 @@ const Chat = () => {
                                     </div>
                                 </div>
                             ))}
-                            {loading && <div>Loading...</div>}
+                            {loading && <div className="flex items-center space-x-1">
+                                            <p className="text-white leading-none -mt-1.5 mr-1">Typing</p>
+                                            <div className="flex space-x-1 ">
+                                                <div className="h-2 w-2 bg-white rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                                                <div className="h-2 w-2 bg-white rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+                                                <div className="h-2 w-2 bg-white rounded-full animate-bounce"></div>
+                                            </div>
+                                        </div>}
+
                         </div>
                     </div>
                     <div className="p-4 border-t">
