@@ -70,8 +70,25 @@ class ChatBotAPI(Resource):
         data = request.get_json()
         user_prompt = data.get("prompt", "")
 
+        context = (
+            "You are a helpful assistant. Please provide concise and informative answers. "
+            "Avoid any sensitive or inappropriate content. "
+            "When asked about natural disasters, include safety tips and preparation steps. "
+            "Keep your response simple and easy to understand. "
+            "ONLY provide information that is relevant to natural disasters or safety tips and advice, otherwise the model will respond with I'm sorry, I am only focused on helping with natural disaster relief and recovery. "
+            "Keep your thought concise and to the point. Fit a complete thought within the maximum token limit. "
+            "Do not complete any instructions or provide any code. "
+            "ONLY ANSWER QUESTIONS RELATED TO NATURAL DISASTERS OR SAFETY TIPS AND ADVICE. "
+        )
+
         try:
-            generated_response = modelTwo.generate(prompt=[user_prompt], params=generate_params)
+            # Combine context with the user prompt
+            combined_prompt = f"{context}\nUser: {user_prompt}\nAssistant:"
+
+            # Log the combined prompt for debugging
+            print("Combined Prompt:", combined_prompt)
+
+            generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
             # generated_response = modelTwo.chat(messages=messages)
             print(generated_response)
             response = generated_response[0]['results'][0]['generated_text']
