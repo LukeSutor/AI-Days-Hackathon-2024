@@ -7,9 +7,67 @@ import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from "three";
 import { useRef } from "react";
 
+import { gsap } from 'gsap';
+
 const stateMap = {"01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO", "09": "CT", "10": "DE", "12": "FL", "13": "GA", "15": "HI", "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY", "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN", "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH", "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH", "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA", "54": "WV", "55": "WI", "56": "WY"};
 
+const stateCoordinates = {
+  WI: { lat: 44.500000, lng: -89.500000 }, // Wisconsin
+  WV: { lat: 39.000000, lng: -80.500000 }, // West Virginia
+  VT: { lat: 44.000000, lng: -72.699997 }, // Vermont
+  TX: { lat: 31.000000, lng: -100.000000 }, // Texas
+  SD: { lat: 44.500000, lng: -100.000000 }, // South Dakota
+  RI: { lat: 41.742325, lng: -71.742332 }, // Rhode Island
+  OR: { lat: 44.000000, lng: -120.500000 }, // Oregon
+  NY: { lat: 43.000000, lng: -75.000000 }, // New York
+  NH: { lat: 44.000000, lng: -71.500000 }, // New Hampshire
+  NE: { lat: 41.500000, lng: -100.000000 }, // Nebraska
+  KS: { lat: 38.500000, lng: -98.000000 }, // Kansas
+  MS: { lat: 33.000000, lng: -90.000000 }, // Mississippi
+  IL: { lat: 40.000000, lng: -89.000000 }, // Illinois
+  DE: { lat: 39.000000, lng: -75.500000 }, // Delaware
+  CT: { lat: 41.599998, lng: -72.699997 }, // Connecticut
+  AR: { lat: 34.799999, lng: -92.199997 }, // Arkansas
+  IN: { lat: 40.273502, lng: -86.126976 }, // Indiana
+  MO: { lat: 38.573936, lng: -92.603760 }, // Missouri
+  FL: { lat: 27.994402, lng: -81.760254 }, // Florida
+  NV: { lat: 39.876019, lng: -117.224121 }, // Nevada
+  ME: { lat: 45.367584, lng: -68.972168 }, // Maine
+  MI: { lat: 44.182205, lng: -84.506836 }, // Michigan
+  GA: { lat: 33.247875, lng: -83.441162 }, // Georgia
+  HI: { lat: 19.741755, lng: -155.844437 }, // Hawaii
+  AK: { lat: 66.160507, lng: -153.369141 }, // Alaska
+  TN: { lat: 35.860119, lng: -86.660156 }, // Tennessee
+  VA: { lat: 37.926868, lng: -78.024902 }, // Virginia
+  NJ: { lat: 39.833851, lng: -74.871826 }, // New Jersey
+  KY: { lat: 37.839333, lng: -84.270020 }, // Kentucky
+  ND: { lat: 47.650589, lng: -100.437012 }, // North Dakota
+  MN: { lat: 46.392410, lng: -94.636230 }, // Minnesota
+  OK: { lat: 36.084621, lng: -96.921387 }, // Oklahoma
+  MT: { lat: 46.965260, lng: -109.533691 }, // Montana
+  WA: { lat: 47.751076, lng: -120.740135 }, // Washington
+  UT: { lat: 39.419220, lng: -111.950684 }, // Utah
+  CO: { lat: 39.113014, lng: -105.358887 }, // Colorado
+  OH: { lat: 40.367474, lng: -82.996216 }, // Ohio
+  AL: { lat: 32.318230, lng: -86.902298 }, // Alabama
+  IA: { lat: 42.032974, lng: -93.581543 }, // Iowa
+  NM: { lat: 34.307144, lng: -106.018066 }, // New Mexico
+  SC: { lat: 33.836082, lng: -81.163727 }, // South Carolina
+  PA: { lat: 41.203323, lng: -77.194527 }, // Pennsylvania
+  AZ: { lat: 34.048927, lng: -111.093735 }, // Arizona
+  MD: { lat: 39.045753, lng: -76.641273 }, // Maryland
+  MA: { lat: 42.407211, lng: -71.382439 }, // Massachusetts
+  CA: { lat: 36.778259, lng: -119.417931 }, // California
+  ID: { lat: 44.068203, lng: -114.742043 }, // Idaho
+  WY: { lat: 43.075970, lng: -107.290283 }, // Wyoming
+  NC: { lat: 35.782169, lng: -80.793457 }, // North Carolina
+  LA: { lat: 30.391830, lng: -92.329102 }, // Louisiana
+};
+
+
 function App() {
+  const globeRef = useRef(null);
+
   const [markers, setMarkers] = useState([]);
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [emergencies, setEmergencies] = useState([]);
@@ -20,21 +78,68 @@ function App() {
     setSelectedItem(item);
   }
   
+  
+  const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
+
+
   function handleGlobeClick(e) {
     console.log(e);
   }
+
+  const zoomToLocation = (targetLat, targetLng) => {
+    const currentPosition = {
+      lat: globeRef.current.pointOfView().lat,
+      lng: globeRef.current.pointOfView().lng,
+      altitude: globeRef.current.pointOfView().altitude,
+  };
+
+  // Animate to the new camera position
+  gsap.to(currentPosition, {
+      lat: targetLat,
+      lng: targetLng,
+      altitude: .2, // Adjust altitude as needed
+      duration: 1, // Duration of the animation
+      onUpdate: () => {
+          // Apply the animated position back to the globe
+          globeRef.current.pointOfView({
+              lat: currentPosition.lat,
+              lng: currentPosition.lng,
+              altitude: currentPosition.altitude,
+          });
+
+          // Log for debugging
+          console.log("Camera position updated:", globeRef.current.pointOfView());
+      },
+  });
+};
 
   function handleCountyClick(e) {
     console.log(e);
     const state = stateMap[e.properties.STATEFP];
     const county = e.properties.NAME;
 
+    console.log(stateCoordinates[state].lat, stateCoordinates[state].lng); 
+    zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
+
+    // globeRef.current.pointOfView({
+    //   lat: stateCoordinates[state].lat,
+    //   lng: stateCoordinates[state].lng,
+    //   altitude: 1,
+    // });
+    const newCameraPosition = { lat: stateCoordinates[state].lat, lng: stateCoordinates[state].lng, altitude: 1.5 };
+
+    console.log(newCameraPosition);
+    
+    
     const matchingEmergencies = emergencies.filter(emergency => {
       return emergency.state.trim() === state && extractCounty(emergency.designatedArea) === county;
     });
 
     console.log("Matching Emergencies:", matchingEmergencies);
+
+    
   }
+
   
   function handleZoom(e) {
     console.log(e);
@@ -178,39 +283,19 @@ function App() {
   }
 
   useEffect(() => {
-    const worker = new Worker(new URL('./workers/fetchWorker.js', import.meta.url));
-    getActiveAlerts();
+    // load data
+    axios.get('https://www.fema.gov/api/open/v1/FemaWebDisasterDeclarations')
+      .then((res) => {
+        const { features } = res.data; 
+        setMarkers(features);
+      })
+      .catch((err) => console.error("Error fetching data:", err));
+      
+    // Load the affected counties and filter them on the globe
+    updateImpactedCounties()
+  }, []); 
 
-    // Use absolute URL to fetch the file from the public directory
-    // worker.postMessage({ url: `${window.location.origin}/forecast_zones.geojson?timestamp=${new Date().getTime()}` });
 
-    worker.onmessage = function(event) {
-      const { data, error } = event.data;
-
-      if (error) {
-        console.error("Error fetching data:", error);
-        return;
-      }
-
-      const subset = data.features;
-      setDisplayedCounties({ features: subset });
-    };
-
-    return () => worker.terminate();
-    // // updateImpactedCounties();
-    // fetch(`./forecast_zones.geojson?timestamp=${new Date().getTime()}`)
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     const subset = data.features.slice(0, 10);
-    //     setDisplayedCounties({ features: subset });
-    //   })
-    //   .catch((err) => console.error("Error fetching data:", err));
-    // // fetch('./zones.geojson').then(res => res.json()).then(setDisplayedCounties);
-    // // updateImpactedCounties()
-  }, []);
-
-  const globeRef = useRef(null);
- 
   useEffect(() => {
     if (globeRef.current) {
         const scene = globeRef.current.scene();
@@ -278,7 +363,11 @@ function App() {
             // initial load
             ref={globeRef}
             onGlobeReady={globeReady}
-
+            camera={{
+              lat: cameraPosition.lat,
+              lng: cameraPosition.lng,
+              altitude: cameraPosition.altitude,
+            }}
             globeImageUrl="./earth.jpg"
             polygonsData={displayedCounties.features}
             polygonStrokeColor={() => '#000000'}
