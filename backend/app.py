@@ -88,52 +88,45 @@ class ChatBotAPI(Resource):
             "Please provide only the JSON object, and do not include any additional text, code blocks, or any escape characters. "
         )
 
-        print("THIS IS THE RAW RESPONSE")
-        
         # Combine context with the user prompt
         combined_prompt = f"{context}\nUser: {user_prompt}\nAssistant:"
 
-        # Log the combined prompt for debugging
-        #print("Combined Prompt:", combined_prompt)
-
+        # Generate the response from the model
         generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
-        #print(generated_response)
-        
 
-
+        # Extract the generated text
         response = generated_response[0]['results'][0]['generated_text']
-        
-    
-        cleaned_response = response.strip('"\n')
 
-        # Step 2: Replace escaped quotes with actual quotes
+        # Clean the response
+        cleaned_response = response.strip().strip('"')
+
+        # Replace escaped quotes with actual quotes
         cleaned_response = cleaned_response.replace('\\"', '"')
 
-        # Step 3: Replace literal newlines and tabs for JSON
-        cleaned_response = cleaned_response.replace('\\n', ' ')
+        # Remove any literal newlines and tabs
+        cleaned_response = cleaned_response.replace('\\n', '').replace('\\t', '')
 
-        # Print the cleaned string to verify its format
-        print("Cleaned Response:")
-        print(cleaned_response)
+        # Remove actual newlines and tabs
+        cleaned_response = cleaned_response.replace('\n', '').replace('\t', '')
 
-        return cleaned_response
-
-        # Wrap the string in double quotes to make it a valid JSON string
-        valid_json_string = f'{cleaned_response}'
-        print(valid_json_string)
-        print(cleaned_response)
-
-
-        # Step 3: Load the cleaned string as a JSON object
-        try:
-
-            json_response = json.loads(valid_json_string)
-            # Print the formatted JSON object
-            print("\nFormatted JSON Response:")
-            print(json.dumps(json_response, indent=2))
-            return json_response
-        except json.JSONDecodeError as e:
-            print(f"Error decoding JSON: {e}")
+        # Extract JSON object from the cleaned response
+        json_regex = re.compile(r'\{.*\}', re.DOTALL)
+        match = json_regex.search(cleaned_response)
+        if match:
+            json_string = match.group(0)
+            try:
+                json_response = json.loads(json_string)
+                # Print the formatted JSON object for verification
+                print("\nFormatted JSON Response:")
+                print(json.dumps(json_response, indent=2))
+                # Return the JSON response
+                return json_response
+            except json.JSONDecodeError as e:
+                print(f"Error decoding JSON: {e}")
+                return {"error": "Invalid JSON format in response"}, 400
+        else:
+            print("No JSON object found in the response")
+            return {"error": "No JSON object found in the response"}, 400
                 
 
 class DataSummaryAPI(Resource):
