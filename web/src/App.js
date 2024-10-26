@@ -6,12 +6,24 @@ const stateMap = {"01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "0
 
 function App() {
   const [markers, setMarkers] = useState([]);
-  const [allCounties, setAllCounties] = useState({ features: []});
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
-  const [disasterCounties, setDisasterCounties] = useState([]);
+  const [emergencies, setEmergencies] = useState([]);
+  const [disasterSet, setDisasterSet] = useState(new Set());
   
   function handleGlobeClick(e) {
     console.log(e);
+  }
+
+  function handleCountyClick(e) {
+    console.log(e);
+    const state = stateMap[e.properties.STATEFP];
+    const county = e.properties.NAME;
+
+    const matchingEmergencies = emergencies.filter(emergency => {
+      return emergency.state.trim() === state && extractCounty(emergency.designatedArea) === county;
+    });
+
+    console.log("Matching Emergencies:", matchingEmergencies);
   }
   
   function handleZoom(e) {
@@ -21,35 +33,44 @@ function App() {
   function getDateKWeeksInThePast(k = 1) {
     const now = new Date();
     const oneWeekInMilliseconds = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
-    const pastDate = new Date(now.getTime() - oneWeekInMilliseconds);
+    const pastDate = new Date(now.getTime() - (oneWeekInMilliseconds * k));
     return pastDate.toISOString();
   }
 
-  function updateImpactedCounties() {
+  function extractCounty(county) {
+    const index = county.indexOf('(');
+    if (index !== -1) {
+      return county.substring(0, index).trim();
+    }
+    return county.trim();
+  }
+
+  function updateImpactedCounties(k = 4) {
     // Get the date one week ago
-    const filter_date = getDateKWeeksInThePast()
+    const filter_date = getDateKWeeksInThePast(k)
     console.log(filter_date);
   
     // Load affected counties
-    axios.get(`https://www.fema.gov/api/open/v1/FemaWebDeclarationAreas?$filter=entryDate%20gt%20'${filter_date}'`)
+    axios.get(`https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$filter=incidentBeginDate%20gt%20'${filter_date}'&$allrecords=true`)
       .then((affected_counties) => { 
 
-        const declaredEmergencies = affected_counties.data.FemaWebDeclarationAreas;
+        const declaredEmergencies = affected_counties.data.DisasterDeclarationsSummaries;
+        setEmergencies(declaredEmergencies);
+
+        console.log("emergencies", declaredEmergencies);
 
         // Create a set of state-county pairs for efficient filtering
         const disasterSet = new Set();
         for (let i = 0; i < declaredEmergencies.length; i++) {
           const emergency = declaredEmergencies[i];
-          const stateCode = emergency.stateCode.trim();
-          var placeName = emergency.placeName.trim();
-          // Get rid of the " (County)" ending
-          placeName = placeName.replace(" (County)", "");
-          disasterSet.add(`${stateCode}-${placeName}`);
+          const stateCode = emergency.state.trim();
+          var county = extractCounty(emergency.designatedArea);
+          disasterSet.add(`${stateCode}-${county}`);
         }
-        console.log("SET", disasterSet)
+
+        console.log("Set", disasterSet);
 
         // Load all county data
-        var allCounties2 = {features: []}
         fetch('./counties.geojson')
           .then(res => res.json())
           .then((all_counties) => {
@@ -65,12 +86,6 @@ function App() {
   
           setDisplayedCounties({ features: filteredCounties });
         });
-        
-
- 
-
-        console.log("Allcounties", allCounties2);
-
       })
       .catch((err) => console.error("Error fetching data:", err));
   }
@@ -101,9 +116,13 @@ function App() {
             polygonsData={displayedCounties.features}
             polygonStrokeColor={() => '#000000'}
             polygonCapColor={() => '#fff'}
-            onGlobeClick={handleGlobeClick}
-            onPolygonClick={handleGlobeClick}
-            // onZoom={handleZoom}
+            polygonSideColor={() => '#fff'}
+            onPolygonClick={handleCountyClick}
+            hexPolygonLabel={({ properties: d }) => `
+            {console.log(d)}
+              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+              Population: <i>${d.POP_EST}</i>
+            `}
             />
         <div className="w-1/2">
 
