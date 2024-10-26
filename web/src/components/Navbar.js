@@ -18,7 +18,7 @@ const Navbar = ({ onMenuItemSelect }) => {
     };
 
     return (
-        <div className="navbar bg-opacity-50 fixed top-0 left-0 w-full z-10">
+        <div className="navbar bg-black bg-opacity-50 fixed top-0 left-0 w-full z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     {/* <ul
