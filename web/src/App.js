@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Globe from "react-globe.gl";
 import axios from "axios";
+import Card from './components/Card';
+import Navbar from "./components/Navbar";
+import { motion, AnimatePresence } from 'framer-motion';
+
 
 const stateMap = {"01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO", "09": "CT", "10": "DE", "12": "FL", "13": "GA", "15": "HI", "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY", "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN", "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH", "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH", "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA", "54": "WV", "55": "WI", "56": "WY"};
 
@@ -9,6 +13,11 @@ function App() {
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [emergencies, setEmergencies] = useState([]);
   const [disasterSet, setDisasterSet] = useState(new Set());
+  const [selectedItem, setSelectedItem] = useState(null); // Added state
+
+  function handleMenuItemSelect(item) {
+    setSelectedItem(item);
+  }
   
   function handleGlobeClick(e) {
     console.log(e);
@@ -109,24 +118,55 @@ function App() {
 
 
   return (
-    <div>
-      <div className="flex flex-row h-full">
-        <Globe
-            globeImageUrl="./earth.jpg"
-            polygonsData={displayedCounties.features}
-            polygonStrokeColor={() => '#000000'}
-            polygonCapColor={() => '#fff'}
-            polygonSideColor={() => '#fff'}
-            onPolygonClick={handleCountyClick}
-            hexPolygonLabel={({ properties: d }) => `
-            {console.log(d)}
-              <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-              Population: <i>${d.POP_EST}</i>
-            `}
-            />
-        <div className="w-1/2">
+    <div className="relative h-screen w-screen">
+      {/* Navbar */}
+      <Navbar onMenuItemSelect={handleMenuItemSelect} />
 
-        </div>
+      {/* Cards with Animations */}
+      <AnimatePresence>
+        {selectedItem && (
+          <>
+            {/* Left Card */}
+            <motion.div
+              key="left-card"
+              initial={{ x: '-100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="absolute left-4 top-28 z-20 ml-20 w-fit"
+            >
+              <Card title={selectedItem} position="left" onClose={() => setSelectedItem(null)} />
+            </motion.div>
+
+            {/* Right Card */}
+            <motion.div
+              key="right-card"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '100%', opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="absolute right-4 top-28 z-20 mr-20"
+            >
+              <Card title={selectedItem} position="right" onClose={() => setSelectedItem(null)} />
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* Globe */}
+      <div className="absolute top-0 left-0 h-full w-full">
+        <Globe
+          globeImageUrl="./earth.jpg"
+          polygonsData={displayedCounties.features}
+          polygonStrokeColor={() => '#000000'}
+          polygonCapColor={() => '#fff'}
+          polygonSideColor={() => '#fff'}
+          onPolygonClick={handleCountyClick}
+          hexPolygonLabel={({ properties: d }) => `
+            <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+            Population: <i>${d.POP_EST}</i>
+          `}
+        />
       </div>
     </div>
   );
