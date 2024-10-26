@@ -115,7 +115,7 @@ function App() {
     });
 
     // Set values
-    if(response.status == 200) {
+    if(response.status === 200) {
       setSafetyTips(response.data.safety_tips);
       setStepsToTake(response.data.steps_to_take);
     } else {
