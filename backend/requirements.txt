@@ -1,0 +1,10 @@
+Flask==3.0.3
+Flask-Cors==5.0.0
+Flask-RESTful==0.3.10
+ibm-watsonx-ai==1.1.20
+langchain==0.3.4
+langchain-ibm==0.3.1
+python-dotenv==1.0.1
+requests==2.32.2
+ibm-cos-sdk==2.13.6
+pydantic==2.9.2
