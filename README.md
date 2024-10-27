@@ -1,71 +1,78 @@
-# ClimateLens 🌦️
+# ClimateLens: Empowering Communities Through Real-time Disaster Intelligence
 
-Welcome to **ClimateLens** - your AI-powered weather sentinel. With ClimateLens, you can visualize real-time weather disasters, receive AI-generated incident summaries and safety tips, and chat with our bot for the latest weather insights. Stay informed, stay safe.
+## Inspiration
+In recent years, we've witnessed an unprecedented surge in natural disasters worldwide, from devastating wildfires to catastrophic floods. What struck us most was not just the increasing frequency of these events, but the critical gap in how this information is communicated to communities. While weather alerts exist, they're often technical and difficult for the average person to interpret and act upon. This realization inspired us to create ClimateLens, a solution that bridges the gap between complex weather data and actionable insights for communities.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+## What it does
+ClimateLens is an interactive web application featuring a dynamic 3D globe that visualizes real-time weather alerts across the United States. By integrating with the weather.gov alerts API, we highlight affected counties using a color-coded severity system. Users can click on any highlighted county to receive:
+- AI-generated plain-language summaries of current weather incidents
+- Practical, actionable tips for preparation and response
+- Customized next steps based on the specific type and severity of the event
 
----
+Additionally, our AI-powered chatbot serves as a 24/7 knowledge resource for any weather or natural disaster-related queries, making critical information accessible to everyone
 
-## Project Overview
+## How we built it
+Our solution combines several key technologies:
+- Frontend: Built using React, Three.js, react-globe.gl, and TailwindCSS
+- Backend: Flask integrated with IBM's watsonx.ai platform
+- AI Integration: Leveraged IBM's watsonx.ai platform and its Granite and Llama models to generate incident summaries and recommendations
+- Natural Language Processing: Implemented a chatbot using Meta's Llama model for natural disaster information
 
-ClimateLens is a web application designed to keep communities informed and prepared for severe weather events. Leveraging real-time data and AI, it offers users:
-1. Real-time visualizations of weather disasters.
-2. AI-generated incident summaries and safety tips.
-3. Interactive chat functionality with an AI bot for weather-related insights.
+## Challenges we ran into
+1. Data Complexity: Processing and storing weather alert data proved challenging due to the amount of data and issues with matching inconsistently named counties.
+2. Real-time Updates: Ensuring smooth real-time updates without overwhelming the system or creating laggy user experiences required careful optimization.
+3. AI Response Accuracy: Prompt-tuning the AI to provide accurate, relevant, and actionable information while maintaining a conversational tone took significant iteration.
+4. Geographic Visualization: Implementing the interactive globe with accurate county-level highlighting required complex geometric calculations and optimization.
+5. Globe Optimizations: Ensuring that the globe remained performant no matter how many counties were added to it required that the 3D county data was high quality without sacrificing performance.
 
-Our mission is to empower users with essential information and safety guidance during critical times.
+## What we learned
+- The importance of user-centered design in crisis communication
+- Practical applications of AI in disaster preparedness and response
+- Technical skills in working with geographic data and real-time APIs
+- The value of cross-disciplinary collaboration in solving complex problems
 
-## Features
+## What's next for ClimateLens
+We envision several exciting expansions for ClimateLens:
+1. Global Coverage: Extending our platform beyond the United States to provide worldwide disaster monitoring and response guidance
+2. Mobile App Development: Creating a mobile version with push notifications for immediate alerts
+3. Community Features: Adding functionality for users to share local updates and resources
+5. Integration with Emergency Services: Partnering with local emergency response teams to provide direct communication channels
 
-- **Real-Time Disaster Visualization**: Maps and graphics to help users understand current weather conditions.
-- **AI-Generated Incident Summaries**: Concise, relevant summaries of ongoing events with safety recommendations.
-- **Weather Chatbot**: Interactive chatbot for quick access to weather insights and questions.
+Our goal is to continue evolving ClimateLens into a comprehensive platform that not only informs but actively helps communities build resilience against natural disasters.
 
-## Tech Stack
-
-- **Frontend**: React
-- **Backend**: Flask
-- **AI & ML**: IBM Watsonx.ai (or other AI service as required)
-- **Mapping & Visualization**: Various APIs for real-time data visualization (like Mapbox or Google Maps, if applicable)
-
-## Installation
+# Installation
 
 ### Prerequisites
 
-- **Python 3.12+**
-- **Node.js & npm**
+- Python 3.12 **(Note that the Python version must be 3.12)**
+- Node.js & npm
 
 ### Backend Setup (Flask)
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/YourUsername/ClimateLens.git
+    git clone https://github.com/LukeSutor/AI-Days-Hackathon-2024.git
     cd AI-Days-Hackathon-2024
     ```
 
 2. Set up a virtual environment and install dependencies:
     ```bash
-    python3 -m venv env
-    source env/bin/activate  # For Windows, use `env\Scripts\activate`
+    cd backend
+    conda create -n hackathon python=3.12
+    conda activate hackathon
     pip install -r requirements.txt
     ```
 
 3. Run the Flask server:
     ```bash
-    flask run
+    python app.py
     ```
 
 ### Frontend Setup (React)
 
-1. Navigate to the frontend directory:
+1. In a new terminal window, navigate to the frontend directory:
     ```bash
-    cd frontend
+    cd web
     ```
 
 2. Install dependencies:
@@ -80,7 +87,9 @@ Our mission is to empower users with essential information and safety guidance d
 
 ### Environment Variables
 
-Configure any API keys (e.g., for AI or mapping services) in a `.env` file for both the Flask and React applications.
+There are two required environment variables shown in ```/backend/.env.template```  
+Please fill these values with your IBM API Key and IBM Project ID and save them in a ```.env``` file inside of ```/backend```  
+Here are the instructions for getting your own access keys: https://ibm.ent.box.com/s/4l0atwnkb2xzw54d9eyflm77pf9sdsc9
 
 ## Usage
 
@@ -94,9 +103,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Creators
 
-Luke Sutor
-Ronan Virmani
-Michael Carroll
+Luke Sutor  
+Ronan Virmani  
+Michael Carroll  
+Mateo Friedman  
 
 ---
 
