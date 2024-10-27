@@ -32,12 +32,10 @@ const CountyCard = ({ county, description, safetyTips, stepsToTake, stateMap, on
         <p className="text-xl font-semibold">Description:</p>
         <div className="ml-4">
           {description == "" ? (
-            <div className="flex items-end">Loading
-              <div className="flex space-x-1 pb-1 ml-1">
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce"></div>
-              </div>
+            <div className="flex flex-col space-y-2 w-full my-2">
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
             </div>
           ) : (
             <p>{description}</p>
@@ -46,12 +44,10 @@ const CountyCard = ({ county, description, safetyTips, stepsToTake, stateMap, on
         <p className="text-xl font-semibold">Safety Tips:</p>
         <div className="ml-4">
           {safetyTips.length == 0 ? (
-            <div className="flex items-end">Loading
-              <div className="flex space-x-1 pb-1 ml-1">
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce"></div>
-              </div>
+            <div className="flex flex-col space-y-2 w-full my-2">
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
             </div>
           ) : (
             <ol className="list-decimal list-inside">
@@ -66,12 +62,10 @@ const CountyCard = ({ county, description, safetyTips, stepsToTake, stateMap, on
         <p className="text-xl font-semibold">Steps to Take:</p>
         <div className="ml-4">
           {stepsToTake.length == 0 ? (
-            <div className="flex items-end">Loading
-              <div className="flex space-x-1 pb-1 ml-1">
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-                <div className="h-1 w-1 bg-black rounded-full animate-bounce"></div>
-              </div>
+            <div className="flex flex-col space-y-2 w-full my-2">
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
+              <div className="w-full h-4 bg-gray-300 animate-pulse rounded-lg" />
             </div>
           ) : (
             <ol className="list-decimal list-inside">

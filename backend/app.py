@@ -260,6 +260,9 @@ class IncidentTipsAPI(Resource):
             
             if len(tips) == 1:
                 tips = [tips.strip() + '.' for tips in tips[0].split('.') if tips.strip()]
+            
+            # Remove empty tips
+            tips = [tip.strip() for tip in tips if tip.strip()]
 
             response = {"safety_tips": tips}
             return response, 200
@@ -328,6 +331,9 @@ class IncidentStepsAPI(Resource):
 
             if len(next_steps) == 1:
                 next_steps = [step.strip() + '.' for step in next_steps[0].split('.') if step.strip()]
+
+            # Remove empty next steps or steps that are only spaces
+            next_steps = [step.strip() for step in next_steps if step.strip()]
 
             response = {"steps_to_take": next_steps}
             return response, 200
