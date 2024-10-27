@@ -58,6 +58,7 @@ function App() {
   const globeRef = useRef(null);
   const textAddedRef = useRef(false); // Ref to track if text has been added
 
+  const [allCounties, setAllCounties] = useState({ features: [] });
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [countyToAlerts, setCountyToAlerts] = useState({});
   const [selectedItem, setSelectedItem] = useState(null);
@@ -67,7 +68,13 @@ function App() {
   const [description, setDescription] = useState("")
   const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
   const [textMesh, setTextMesh] = useState(null);
-
+  const [filteredItems, setFilteredItems] = useState({
+    'Extreme': true,
+    'Severe': true,
+    'Moderate': true,
+    'Minor': true,
+    'Unknown': true,
+  });
   const [disableZoomIn , setDisableZoomIn] = useState(false);
   const [disableZoomOut , setDisableZoomOut] = useState(false);
   const [zoomPercentage, setZoomPercentage] = useState(100);
@@ -76,6 +83,13 @@ function App() {
   function handleMenuItemSelect(item) {
     resetCounty();
     setSelectedItem(item);
+  }
+
+  function filterCallback(severity) {
+    setFilteredItems(prevState => ({
+      ...prevState,
+      [severity]: !prevState[severity]
+    }));
   }
 
   function handleFadeOut(scene) {
@@ -408,7 +422,7 @@ function App() {
           filteredCounties.push(feature);
         }
       }
-
+      setAllCounties({ features: filteredCounties });
       setDisplayedCounties({ features: filteredCounties });
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -490,6 +504,11 @@ function App() {
     }
   }, [textMesh])
 
+  useEffect(() => {
+    const filteredCounties = allCounties.features.filter(county => filteredItems[county.properties.severity]);
+    setDisplayedCounties({ features: filteredCounties });
+  }, [filteredItems])
+
   const globeReady = () => {
     if (globeRef.current) {
       globeRef.current.controls().autoRotate = false;
@@ -523,7 +542,7 @@ function App() {
         onCountySelect={handleCountyClick}
       />
       <div className="flex items-start h-auto absolute bottom-4 left-4 m-5">
-        <Legend/>
+        <Legend filteredItems={filteredItems} filterCallback={filterCallback} />
         <div className="bottom-40 left-44 m-1 border-2 border-white bg-black bg-opacity-50 p-2 text-white rounded shadow-lg flex flex-col space-y-2 z-50">
           <FontAwesomeIcon onClick={ disableZoomIn ? null : zoomIn} icon={faSearchPlus} className={`w-6 h-6 ${disableZoomIn ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
           <FontAwesomeIcon onClick={ disableZoomOut ? null : zoomOut} icon={faSearchMinus} className={`w-6 h-6 ${disableZoomOut ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
