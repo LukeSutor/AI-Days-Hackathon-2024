@@ -340,8 +340,6 @@ function App() {
       const scene = globeRef.current.scene();
       const controls = globeRef.current.controls();
       controls.addEventListener('change', () => {
-        console.log(controls._lastPosition)
-
         const isWithinRange = (value, target, range) => Math.abs(value - target) <= range;
         const targetPosition = { x: -242.34768052722947, y: 140.22991192613964, z: -1.781444430520931 };
         if (textMesh && (isWithinRange(controls._lastPosition.x, targetPosition.x, 5) &&
