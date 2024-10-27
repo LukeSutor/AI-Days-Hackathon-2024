@@ -231,16 +231,16 @@ class IncidentTipsAPI(Resource):
 
             # Prepare and execute prompt
             prompt_template = """You are an emergency response assistant. Given the following incident details, provide exactly three concise safety tips for affected individuals. These tips should be tailored for their specific location and the incident they are experiencing. Respond in plaintext format with each tip separated by a pipe (|) character. Do not include any additional text, formatting, numbering, or characters other than the tips and pipe separators.
-Incident Event:
-{event}
-Incident Description:
-{description}
-Incident Status:
-{incident_status}
-Example Response:
-Stay indoors and away from windows.|Secure loose outdoor objects.|Have a battery-powered radio for updates.
-Your Response:
-"""
+                Incident Event:
+                {event}
+                Incident Description:
+                {description}
+                Incident Status:
+                {incident_status}
+                Example Response:
+                Stay indoors and away from windows.|Secure loose outdoor objects.|Have a battery-powered radio for updates.
+                Your Response:
+            """
             prompt = PromptTemplate.from_template(prompt_template)
             agent = prompt | model
 
@@ -299,16 +299,16 @@ class IncidentStepsAPI(Resource):
 
             # Prepare and execute prompt
             prompt_template = """You are an emergency response assistant. Given the following incident details, provide exactly three concise next steps for affected individuals to follow. These steps should be tailored for their specific location and the incident they are experiencing. Respond in plaintext format with each step separated by a pipe (|) character. Do not include any additional text, formatting, numbering, or characters other than the steps and pipe separators.
-Incident Event:
-{event}
-Incident Description:
-{description}
-Incident Status:
-{incident_status}
-Example Response:
-Evacuate the area immediately.|Follow instructions from local authorities.|Seek medical attention if needed.
-Your Response:
-"""
+            Incident Event:
+            {event}
+            Incident Description:
+            {description}
+            Incident Status:
+            {incident_status}
+            Example Response:
+            Evacuate the area immediately.|Follow instructions from local authorities.|Seek medical attention if needed.
+            Your Response:
+            """
             prompt = PromptTemplate.from_template(prompt_template)
             agent = prompt | model
 
