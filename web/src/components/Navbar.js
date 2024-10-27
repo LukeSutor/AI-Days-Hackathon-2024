@@ -95,7 +95,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
   ];
 
   return (
-    <div className="navbar bg-black bg-opacity-50 fixed top-0 left-0 w-full z-10">
+    <div className="navbar bg-black bg-opacity-20 fixed top-0 left-0 w-full z-10 border-b border-white">
       <div className="navbar-start">
         <div className="flex space-x-5">
           {menus.map((menu, index) => (
@@ -105,7 +105,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
               ref={(el) => (dropdownRefs.current[index] = el)}
             >
               <button
-                className="text-white text-md px-3 py-2 rounded-md text-md font-medium hover:bg-gray-700 focus:outline-none"
+                className="text-white text-md px-3 py-2 rounded-md text-md font-medium hover:bg-white hover:bg-opacity-20 focus:outline-none"
                 onClick={() => toggleDropdown(index)}
                 aria-haspopup="true"
                 aria-expanded={openDropdown === index}
@@ -114,18 +114,18 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
               </button>
               {/* Dropdown Menu */}
               <div
-                className={`absolute left-0 mt-2 bg-white text-black rounded-md shadow-lg overflow-hidden transition-all duration-300 ${
+                className={`absolute left-0 mt-2 bg-white bg-opacity-90 text-black rounded-md shadow-lg overflow-hidden transition-all duration-300 ${
                   openDropdown === index
                     ? 'max-h-screen opacity-100'
                     : 'max-h-0 opacity-0'
                 }`}
                 style={{ width: '300px' }}
               >
-                <ul className="flex flex-col bg-white text-black">
+                <ul className="flex flex-col bg-white text-black bg-opacity-30 text-black">
                   {menu.items.map((item, idx) => (
-                    <li key={idx} className="border-b last:border-b-0">
+                    <li key={idx} className="border-b last:border-b-2 border-black g-white bg-opacity-10">
                       <button
-                        className="w-full text-left px-4 py-2 hover:bg-gray-200"
+                        className="w-full text-left px-4 py-2 hover:bg-white hover:bg-opacity-100"
                         onClick={() => {
                           onMenuItemSelect(item);
                           setOpenDropdown(null);
@@ -142,10 +142,10 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
         </div>
       </div>
       <div className="navbar-center relative">
-        <label className="input input-bordered flex items-center gap-2 focus:border-4 focus:border-blue-500">
+        <label className="input input-bordered flex items-center gap-2 border-2 border-black bg-white bg-opacity-90">
           <input
             type="text"
-            className="grow placeholder-gray-500 text-black bg-transparent"
+            className="grow placeholder-black text-black bg-transparent"
             placeholder="Search County"
             value={searchTerm}
             onChange={handleSearchTermChange}
@@ -156,7 +156,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="black"
-            className="h-4 w-4 opacity-70 cursor-pointer"
+            className="h-4 w-4 bg-white bg-opacity-90 cursor-pointer"
             aria-label="Search"
           >
             <path
@@ -168,12 +168,12 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
         </label>
         {/* Search Suggestions Dropdown */}
         {searchResults.length > 0 && (
-          <div className="absolute top-full mt-2 w-full bg-white border border-gray-300 rounded-md shadow-lg z-10">
+          <div className="absolute top-full mt-2 w-full bg-white border border-black rounded-md shadow-lg z-10">
             <ul className="max-h-60 overflow-y-auto">
               {searchResults.map((county, index) => (
                 <li
                   key={index}
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="px-4 py-2 hover:bg-blue-500 cursor-pointer"
                   onClick={() => {
                     onCountySelect(county);
                     setSearchTerm('');
