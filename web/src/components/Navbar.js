@@ -95,7 +95,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
   ];
 
   return (
-    <div className="navbar bg-black bg-opacity-50 fixed top-0 left-0 w-full z-10">
+    <div className="navbar bg-black bg-opacity-10 fixed top-0 left-0 w-full z-10">
       <div className="navbar-start">
         <div className="flex space-x-5">
           {menus.map((menu, index) => (
