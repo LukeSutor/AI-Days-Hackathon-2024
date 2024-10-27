@@ -121,7 +121,7 @@ const Chat = () => {
             {/* Chatbox */}
             {isOpen && (
                 <div 
-                    className={`bg-neutral-900 shadow-lg rounded-lg w-96 absolute bottom-4 right-4 transition-transform 
+                    className={`bg-black bg-opacity-50 shadow-lg rounded-lg w-96 absolute bottom-4 right-4 transition-transform 
                         ${isAnimating ? 'slide-out' : 'slide-in'}`}
                 >
                     <div className="p-4">
@@ -132,19 +132,19 @@ const Chat = () => {
                             onClick={handleClose} 
                         />
                 </div>
-                    <div className="h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                    <div className="h-1 border-b border-white"></div>
                     <div className="p-4 h-72 overflow-y-auto" ref={chatBoxRef}>
                         <div className="flex flex-col space-y-2">
                             {memoizedChatHistory.map((msg, index) => (
                                 <div key={index} className={`flex ${msg.sender === 'bot' ? 'justify-start' : 'justify-end'}`}>
-                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-200':'bg-blue-500 text-white'}`}                                    
+                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-100':'bg-blue-500 text-white'}`}                                    
                                     >
                                         {msg.text}
                                     </div>
                                 </div>
                             ))}
                             {loading && <div className="flex items-center space-x-1">
-                                            <p className="text-white leading-none -mt-1.5 mr-1">Typing</p>
+                                            <p className="text-white leading-none -mt-1.5 mr-1 bg-black">Typing</p>
                                             <div className="flex space-x-1 ">
                                                 <div className="h-2 w-2 bg-white rounded-full animate-bounce [animation-delay:-0.3s]"></div>
                                                 <div className="h-2 w-2 bg-white rounded-full animate-bounce [animation-delay:-0.15s]"></div>
@@ -157,14 +157,14 @@ const Chat = () => {
                     <div className="p-4 border-t flex">
                         <input 
                             type="text" 
-                            className="w-full border rounded-lg p-2 mr-4 h-10" 
+                            className="w-full border rounded-lg p-2 mr-4 h-10 text-black" 
                             placeholder="Type your message..."
                             value={userInput}
                             onChange={handleInputChange}
                             onKeyDown={handleKeyDown}
 
                         />
-                        <FontAwesomeIcon className="items-center justify-center size-6 h-10"icon={faPaperPlane} type="submit" style={{ cursor: 'pointer'}} onClick={handleSubmit}/>
+                        <FontAwesomeIcon className="items-center justify-center size-6 h-10"icon={faPaperPlane} type="submit" style={{ cursor: 'pointer', color:'white'}} onClick={handleSubmit}/>
 
 
                     </div>
