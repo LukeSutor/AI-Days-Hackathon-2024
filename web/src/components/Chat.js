@@ -137,7 +137,7 @@ const Chat = () => {
                         <div className="flex flex-col space-y-2">
                             {memoizedChatHistory.map((msg, index) => (
                                 <div key={index} className={`flex ${msg.sender === 'bot' ? 'justify-start' : 'justify-end'}`}>
-                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-100':'bg-blue-500 text-white'}`}                                    
+                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-100 text-black':'bg-blue-500 text-white'}`}                                    
                                     >
                                         {msg.text}
                                     </div>
@@ -157,7 +157,7 @@ const Chat = () => {
                     <div className="p-4 border-t flex">
                         <input 
                             type="text" 
-                            className="w-full border rounded-lg p-2 mr-4 h-10 text-black" 
+                            className="w-full border rounded-lg p-2 mr-4 h-10 text-black bg-white" 
                             placeholder="Type your message..."
                             value={userInput}
                             onChange={handleInputChange}
