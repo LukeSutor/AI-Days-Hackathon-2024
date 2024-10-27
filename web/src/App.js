@@ -12,7 +12,7 @@ import { gsap } from 'gsap';
 import Legend from "./components/Legend";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-
+import { useMemo } from "react";
 
 const stateMap = {
   "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO",
@@ -500,6 +500,17 @@ function App() {
     }
   };
 
+
+  const customLayerData = useMemo(() => (
+    [...Array(500).keys()].map(() => ({
+      lat: (Math.random() - 1) * 360,
+      lng: (Math.random() - 1) * 360,
+      altitude: Math.random() * 2 + 0.5,
+      size: Math.random() * 0.4,
+      color: '#ffffff',
+    }))
+  ), []);
+
   return (
     <div className="relative h-screen w-screen bg-gray-100">
       {/* Navbar */}
@@ -624,13 +635,7 @@ function App() {
             onPolygonClick={handleCountyClick}
 
             // stars in atmosphere?
-            customLayerData={[...Array(500).keys()].map(() => ({
-              lat: (Math.random() - 1) * 360,
-              lng: (Math.random() - 1) * 360,
-              altitude: Math.random() * 2 + 0.5,
-              size: Math.random() * 0.4,
-              color: '#ffffff',
-            }))}
+            customLayerData={customLayerData}
             customThreeObject={(sliceData) => {
               const { size, color } = sliceData;
               return new THREE.Mesh(new THREE.SphereGeometry(size), new THREE.MeshBasicMaterial({ color }));
