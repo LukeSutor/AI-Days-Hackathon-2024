@@ -112,7 +112,7 @@ const Chat = () => {
             {!isOpen && (
                 <button 
                     onClick={handleOpen} 
-                    className="bg-gradient-to-r from-blue-500 to-purple-500 w-20 h-20 text-white p-2 rounded-full fixed bottom-4 right-4 transition-transform duration-300 hover:scale-105"
+                    className="bg-white bg-opacity-10 border-2 border-white w-20 h-20 text-white p-2 rounded-full fixed bottom-4 right-4 transition-transform duration-300 hover:scale-105"
                 >
                     <FontAwesomeIcon icon={faComment} className="w-8 h-8"/>
                 </button>
