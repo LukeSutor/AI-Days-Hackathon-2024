@@ -9,6 +9,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from "three";
 import { gsap } from 'gsap';
 import Legend from "./components/Legend";
+import Zoom from "./components/Zoom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons'
+
 
 const stateMap = {
   "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO",
@@ -68,12 +72,108 @@ function App() {
     setSelectedItem(item);
   }
 
+
+
   function resetCounty() {
     setClickedCounty(null);
     setSafetyTips([]);
     setStepsToTake([]);
     setDescription("");
   }
+
+
+  const zoomOut = () => {
+    const currentPosition = {
+      lat: globeRef.current.pointOfView().lat,
+      lng: globeRef.current.pointOfView().lng,
+      altitude: globeRef.current.pointOfView().altitude,
+    };
+
+    if (currentPosition.altitude >= 6) {
+      return;
+    }
+
+
+    let targetAltitude = currentPosition.altitude
+
+    if (targetAltitude > 1) {
+      targetAltitude += 0.75;
+    }
+    else if (targetAltitude > 0.3) {
+      targetAltitude+=0.3;
+    }
+    else {
+      targetAltitude+=0.1;
+    }
+
+    gsap.to(currentPosition, {
+      lat: currentPosition.lat,
+      lng: currentPosition.lng,
+      altitude: targetAltitude,
+      duration: 1,
+      onUpdate: () => {
+        globeRef.current.pointOfView({
+          lat: currentPosition.lat,
+          lng: currentPosition.lng,
+          altitude: currentPosition.altitude,
+        });
+
+        console.log(currentPosition.lat, currentPosition.lng, currentPosition.altitude);
+      },
+    });
+    
+};
+
+  const zoomIn = () => {
+    const currentPosition = {
+      lat: globeRef.current.pointOfView().lat,
+      lng: globeRef.current.pointOfView().lng,
+      altitude: globeRef.current.pointOfView().altitude,
+    };
+
+
+
+
+    let targetAltitude = currentPosition.altitude
+
+    if (currentPosition.altitude <= 0.1) {
+      return;
+    }
+    
+    if (currentPosition.altitude - 0.1 <= 0.1) {
+      targetAltitude = 0.1;
+    }
+
+    if (currentPosition.altitude - 0.2 < 0.3) {
+      targetAltitude-=0.1;
+    } else if (currentPosition.altitude - 0.2 > 1) {
+      targetAltitude-=0.5;
+    } else {
+      targetAltitude-=0.3;
+    }
+
+    if (targetAltitude < 0.1) {
+      targetAltitude = 0.1;
+    }
+
+    gsap.to(currentPosition, {
+      lat: currentPosition.lat,
+      lng: currentPosition.lng,
+      altitude: targetAltitude,
+      duration: 1,
+      onUpdate: () => {
+        globeRef.current.pointOfView({
+          lat: currentPosition.lat,
+          lng: currentPosition.lng,
+          altitude: currentPosition.altitude,
+        });
+
+        console.log(currentPosition.lat, currentPosition.lng, currentPosition.altitude);
+      },
+    });
+    
+};
+  
 
   const zoomToLocation = (targetLat, targetLng) => {
     const currentPosition = {
@@ -93,17 +193,17 @@ function App() {
           lng: currentPosition.lng,
           altitude: currentPosition.altitude,
         });
+
+        console.log(currentPosition.lat, currentPosition.lng);
       },
     });
   };
 
   function handleCountyClick(e) {
-    console.log(e);
     setSelectedItem(null);
     setClickedCounty(e);
     const state = stateMap[e.properties.STATEFP];
 
-    console.log(stateCoordinates[state].lat, stateCoordinates[state].lng); 
     zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
 
     // Get the data for the model, just include the first element of the arrays
@@ -116,7 +216,6 @@ function App() {
     // Call summary backend
     axios.post('http://127.0.0.1:5000/summarize_description', {properties})
     .then(res => {
-      // Set values
       if(res.status == 200) {
         console.log(res);
         setDescription(res.data.description);
@@ -304,7 +403,16 @@ function App() {
         counties={displayedCounties.features}
         onCountySelect={handleCountyClick}
       />
-      <Legend />
+      <div className="flex items-start h-auto absolute bottom-4 left-4 m-5">
+        <Legend/>
+        <div className="bottom-40 left-44 m-1 border-2 border-white bg-transparent p-2 text-white rounded shadow-lg flex flex-col space-y-2 z-50">
+          <FontAwesomeIcon style={{ cursor: 'pointer'}} onClick={zoomIn} icon={faSearchPlus} className="w-6 h-6"/>
+          <FontAwesomeIcon style={{ cursor: 'pointer'}} onClick={zoomOut} icon={faSearchMinus} className="w-6 h-6"/>
+        </div>  
+      </div>
+     
+
+
 
       {/* Cards with Animations */}
       <AnimatePresence>
@@ -391,6 +499,7 @@ function App() {
             // initial load
             ref={globeRef}
             onGlobeReady={globeReady}
+            maxZoom={0.1}
             camera={{
               lat: cameraPosition.lat,
               lng: cameraPosition.lng,
