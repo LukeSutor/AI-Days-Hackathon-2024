@@ -407,4 +407,4 @@ Your Response:
 api.add_resource(DescriptionSummaryAPI, '/summarize_description')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
