@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from "three";
 import { gsap } from 'gsap';
+import Legend from "./components/Legend";
 
 const stateMap = {
   "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO",
@@ -303,6 +304,7 @@ function App() {
         counties={displayedCounties.features}
         onCountySelect={handleCountyClick}
       />
+      <Legend />
 
       {/* Cards with Animations */}
       <AnimatePresence>
@@ -316,7 +318,7 @@ function App() {
             }}
           >
             {/* Container for both Cards */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-12 p-4">
               {/* Left Card */}
               <motion.div
                 key={`left-${selectedItem}`}
