@@ -10,6 +10,9 @@ import { FontLoader, TextGeometry } from 'three-stdlib';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import Legend from "./components/Legend";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons'
+import { useMemo } from "react";
 
 const stateMap = {
   "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO",
@@ -65,6 +68,10 @@ function App() {
   const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
   const [textMesh, setTextMesh] = useState(null);
 
+  const [disableZoomIn , setDisableZoomIn] = useState(false);
+  const [disableZoomOut , setDisableZoomOut] = useState(false);
+  const [zoomPercentage, setZoomPercentage] = useState(100);
+
 
   function handleMenuItemSelect(item) {
     resetCounty();
@@ -91,7 +98,130 @@ function App() {
     setDescription("");
   }
 
+
+  const zoomOut = () => {
+    const currentPosition = {
+      lat: globeRef.current.pointOfView().lat,
+      lng: globeRef.current.pointOfView().lng,
+      altitude: globeRef.current.pointOfView().altitude,
+    };
+
+    if (currentPosition.altitude >= 0.1) {
+      setDisableZoomIn(false);
+    }
+
+    if (currentPosition.altitude >= 4) {
+      setDisableZoomOut(true);
+      return;
+    }
+    else{
+      setDisableZoomOut(false);
+    }
+
+
+    let targetAltitude = currentPosition.altitude
+    if (targetAltitude >= 4) {
+      setDisableZoomOut(true);
+      return;
+    }
+
+    if (currentPosition.altitude + 0.75 >= 4) {
+      targetAltitude = 4;
+      setDisableZoomOut(true);
+    } else if (targetAltitude > 1) {
+      targetAltitude += 0.75;
+    }
+    else if (targetAltitude > 0.3) {
+      targetAltitude+=0.3;
+    }
+    else {
+      targetAltitude+=0.1;
+    }
+
+    if (targetAltitude >= 4) {
+      targetAltitude = 4;
+      setDisableZoomOut(true);
+    }
+
+    gsap.to(currentPosition, {
+      lat: currentPosition.lat,
+      lng: currentPosition.lng,
+      altitude: targetAltitude,
+      duration: 1,
+      onUpdate: () => {
+        globeRef.current.pointOfView({
+          lat: currentPosition.lat,
+          lng: currentPosition.lng,
+          altitude: currentPosition.altitude,
+        });
+
+      },
+    });
+    
+};
+
+  const zoomIn = () => {
+    const currentPosition = {
+      lat: globeRef.current.pointOfView().lat,
+      lng: globeRef.current.pointOfView().lng,
+      altitude: globeRef.current.pointOfView().altitude,
+    };
+
+
+
+    let targetAltitude = currentPosition.altitude
+
+    if (currentPosition.altitude <= 0.1) {
+      setDisableZoomIn(true);
+      return;
+    }
+    else{
+      setDisableZoomIn(false);
+    }
+    
+    setDisableZoomOut(false);
+
+    if (currentPosition.altitude - 0.1 <= 0.1) {
+      targetAltitude = 0.1;
+      setDisableZoomIn(true);
+    } else if (currentPosition.altitude - 0.1 < 0.3) {
+      targetAltitude-=0.1;
+    } else if (currentPosition.altitude - 0.2 > 1) {
+      targetAltitude-=0.5;
+    } else if (currentPosition.altitude >= 2) {
+      targetAltitude-=0.75;
+    } else {
+      targetAltitude-=0.3;
+    }
+
+
+
+    if (targetAltitude <= 0.1) {
+      targetAltitude = 0.1;
+      setDisableZoomIn(true);
+    }
+
+    gsap.to(currentPosition, {
+      lat: currentPosition.lat,
+      lng: currentPosition.lng,
+      altitude: targetAltitude,
+      duration: 1,
+      onUpdate: () => {
+        globeRef.current.pointOfView({
+          lat: currentPosition.lat,
+          lng: currentPosition.lng,
+          altitude: currentPosition.altitude,
+        });
+
+      },
+    });
+    
+};
+  
+
   const zoomToLocation = (targetLat, targetLng) => {
+    setDisableZoomIn(false);
+    setDisableZoomOut(false);
     const currentPosition = {
       lat: globeRef.current.pointOfView().lat,
       lng: globeRef.current.pointOfView().lng,
@@ -109,17 +239,17 @@ function App() {
           lng: currentPosition.lng,
           altitude: currentPosition.altitude,
         });
+
+        console.log(currentPosition.lat, currentPosition.lng);
       },
     });
   };
 
   function handleCountyClick(e) {
-    console.log(e);
     setSelectedItem(null);
     setClickedCounty(e);
     const state = stateMap[e.properties.STATEFP];
 
-    console.log(stateCoordinates[state].lat, stateCoordinates[state].lng); 
     zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
 
     // Get the data for the model, just include the first element of the arrays
@@ -132,7 +262,6 @@ function App() {
     // Call summary backend
     axios.post('http://127.0.0.1:5000/summarize_description', {properties})
     .then(res => {
-      // Set values
       if(res.status == 200) {
         console.log(res);
         setDescription(res.data.description);
@@ -150,6 +279,7 @@ function App() {
     .then(res => {
       // Set values
       if(res.status == 200) {
+        console.log(res.data.safety_tips)
         setSafetyTips(res.data.safety_tips);
       } else {
         console.error("Error in tips API response", res)
@@ -373,6 +503,17 @@ function App() {
     }
   };
 
+
+  const customLayerData = useMemo(() => (
+    [...Array(500).keys()].map(() => ({
+      lat: (Math.random() - 1) * 360,
+      lng: (Math.random() - 1) * 360,
+      altitude: Math.random() * 2 + 0.5,
+      size: Math.random() * 0.4,
+      color: '#ffffff',
+    }))
+  ), []);
+
   return (
     <div className="relative h-screen w-screen bg-gray-100">
       {/* Navbar */}
@@ -381,7 +522,16 @@ function App() {
         counties={displayedCounties.features}
         onCountySelect={handleCountyClick}
       />
-      <Legend />
+      <div className="flex items-start h-auto absolute bottom-4 left-4 m-5">
+        <Legend/>
+        <div className="bottom-40 left-44 m-1 border-2 border-white bg-black bg-opacity-50 p-2 text-white rounded shadow-lg flex flex-col space-y-2 z-50">
+          <FontAwesomeIcon onClick={ disableZoomIn ? null : zoomIn} icon={faSearchPlus} className={`w-6 h-6 ${disableZoomIn ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
+          <FontAwesomeIcon onClick={ disableZoomOut ? null : zoomOut} icon={faSearchMinus} className={`w-6 h-6 ${disableZoomOut ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
+        </div>  
+      </div>
+     
+
+
 
       {/* Cards with Animations */}
       <AnimatePresence>
@@ -469,6 +619,7 @@ function App() {
             // initial load
             ref={globeRef}
             onGlobeReady={globeReady}
+            maxZoom={0.1}
             camera={{
               lat: cameraPosition.lat,
               lng: cameraPosition.lng,
@@ -487,13 +638,7 @@ function App() {
             onPolygonClick={handleCountyClick}
 
             // stars in atmosphere?
-            customLayerData={[...Array(500).keys()].map(() => ({
-              lat: (Math.random() - 1) * 360,
-              lng: (Math.random() - 1) * 360,
-              altitude: Math.random() * 2 + 0.5,
-              size: Math.random() * 0.4,
-              color: '#ffffff',
-            }))}
+            customLayerData={customLayerData}
             customThreeObject={(sliceData) => {
               const { size, color } = sliceData;
               return new THREE.Mesh(new THREE.SphereGeometry(size), new THREE.MeshBasicMaterial({ color }));

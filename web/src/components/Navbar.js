@@ -1,5 +1,7 @@
 // Navbar.js
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect, useRef } from 'react';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -152,19 +154,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
             onFocus={(e) => (e.target.placeholder = '')}
             onBlur={(e) => (e.target.placeholder = 'Search County')}
           />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            fill="black"
-            className="h-4 w-4 bg-white bg-opacity-90 cursor-pointer"
-            aria-label="Search"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <FontAwesomeIcon icon={faSearch} className="text-black" />
         </label>
         {/* Search Suggestions Dropdown */}
         {searchResults.length > 0 && (
