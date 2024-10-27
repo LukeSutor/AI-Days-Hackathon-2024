@@ -58,6 +58,7 @@ function App() {
   const [clickedCounty, setClickedCounty] = useState(null);
   const [safetyTips, setSafetyTips] = useState([])
   const [stepsToTake, setStepsToTake] = useState([])
+  const [description, setDescription] = useState("")
   const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
 
 
@@ -70,6 +71,7 @@ function App() {
     setClickedCounty(null);
     setSafetyTips([]);
     setStepsToTake([]);
+    setDescription("");
   }
 
   const zoomToLocation = (targetLat, targetLng) => {
@@ -94,7 +96,7 @@ function App() {
     });
   };
 
-  async function handleCountyClick(e) {
+  function handleCountyClick(e) {
     console.log(e);
     setSelectedItem(null);
     setClickedCounty(e);
@@ -102,10 +104,6 @@ function App() {
 
     console.log(stateCoordinates[state].lat, stateCoordinates[state].lng); 
     zoomToLocation(stateCoordinates[state].lat, stateCoordinates[state].lng);
-
-    const newCameraPosition = { lat: stateCoordinates[state].lat, lng: stateCoordinates[state].lng, altitude: 1.5 };
-
-    // console.log(newCameraPosition);
 
     // Get the data for the model, just include the first element of the arrays
     var properties = {
@@ -115,21 +113,28 @@ function App() {
     }
 
     // Call summary backend
-    const response = await axios.post('http://127.0.0.1:5000/incident_advice', {
-      properties
-    });
+    axios.post('http://127.0.0.1:5000/summarize_description', {properties})
+    .then(res => {
+      // Set values
+      if(res.status == 200) {
+        console.log(res);
+        setDescription(res.data.description);
+      } else {
+        console.error("Error in description summarizer API response", res)
+      }
+    })
 
-    // Set values
-    if(response.status === 200) {
-      setSafetyTips(response.data.safety_tips);
-      setStepsToTake(response.data.steps_to_take);
-    } else {
-      console.error("Error in incident API response", response)
-    }
-  }
-
-  function handleZoom(e) {
-    console.log(e);
+    // Call next steps and tips backend
+    axios.post('http://127.0.0.1:5000/incident_advice', {properties})
+    .then(res => {
+      // Set values
+      if(res.status == 200) {
+        setSafetyTips(res.data.safety_tips);
+        setStepsToTake(res.data.steps_to_take);
+      } else {
+        console.error("Error in incident API response", res)
+      }
+    })
   }
 
   function getTopSeverity(current, newVal) {
@@ -196,7 +201,7 @@ function App() {
 
       setCountyToAlerts(countyToZonesMap)
 
-      // console.log("County to Zones Map:", countyToZonesMap);
+      console.log("County to Zones Map:", countyToZonesMap);
   
       // console.log("County Set:", countySet);
   
@@ -339,10 +344,11 @@ function App() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: '-100%', opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-full max-w-2xl"
+              className="w-full w-screen max-w-2xl"
             >
               <CountyCard
                 county={clickedCounty}
+                description={description}
                 safetyTips={safetyTips}
                 stepsToTake={stepsToTake}
                 onClose={() => resetCounty()}

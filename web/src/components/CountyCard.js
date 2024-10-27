@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountyCard = ({ county, safetyTips, stepsToTake, onClose }) => {
+const CountyCard = ({ county, description, safetyTips, stepsToTake, onClose }) => {
     return (
       <div className={`card bg-white text-black border border-gray-300 shadow-xl`}>
         <div className="card-body relative overflow-y-auto p-6">
@@ -12,7 +12,20 @@ const CountyCard = ({ county, safetyTips, stepsToTake, onClose }) => {
             ✕
           </button>
           <p className="text-3xl"><b>{county.properties.events[0]}</b></p>
-          <p>Description: {county.properties.descriptions[0]}</p>
+          <p className="text-xl font-semibold">Description:</p>
+          <div className="ml-4">
+            {description == "" ? (
+              <div className="flex items-end">Loading
+                <div className="flex space-x-1 pb-1 ml-1">
+                  <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                  <div className="h-1 w-1 bg-black rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+                  <div className="h-1 w-1 bg-black rounded-full animate-bounce"></div>
+                </div>
+              </div>
+            ) : (
+              <p>{description}</p>
+            )}
+          </div>
           <p className="text-xl font-semibold">Safety Tips:</p>
           <div className="ml-4">
             {safetyTips.length == 0 ? (
@@ -27,7 +40,7 @@ const CountyCard = ({ county, safetyTips, stepsToTake, onClose }) => {
               <ol className="list-decimal list-inside">
                 {safetyTips.map((tip) => {
                   return (
-                    <li>{tip}</li>
+                    <li key={tip}>{tip}</li>
                   );
                 })}
               </ol>
@@ -47,7 +60,7 @@ const CountyCard = ({ county, safetyTips, stepsToTake, onClose }) => {
               <ol className="list-decimal list-inside">
                 {stepsToTake.map((step) => {
                   return (
-                    <li>{step}</li>
+                    <li key={step}>{step}</li>
                   );
                 })}
               </ol>
