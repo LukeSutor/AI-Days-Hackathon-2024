@@ -185,10 +185,10 @@ function App() {
 
     let targetAltitude = currentPosition.altitude
 
-    setDisableZoomOut(false);
 
     if (currentPosition.altitude <= 0.1) {
       setDisableZoomIn(true);
+      setDisableZoomOut(false);
       return;
     }
     else{
@@ -210,10 +210,14 @@ function App() {
     }
 
 
-
+    if (targetAltitude <= 4){
+      setDisableZoomOut(false);
+    }
+    
     if (targetAltitude <= 0.1) {
       targetAltitude = 0.1;
       setDisableZoomIn(true);
+      setDisableZoomOut(false);
     }
 
     gsap.to(currentPosition, {
