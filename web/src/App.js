@@ -188,6 +188,8 @@ function App() {
       targetAltitude-=0.1;
     } else if (currentPosition.altitude - 0.2 > 1) {
       targetAltitude-=0.5;
+    } else if (currentPosition.altitude >= 2) {
+      targetAltitude-=0.75;
     } else {
       targetAltitude-=0.3;
     }
@@ -523,7 +525,7 @@ function App() {
         <Legend/>
         <div className="bottom-40 left-44 m-1 border-2 border-white bg-black bg-opacity-50 p-2 text-white rounded shadow-lg flex flex-col space-y-2 z-50">
           <FontAwesomeIcon onClick={ disableZoomIn ? null : zoomIn} icon={faSearchPlus} className={`w-6 h-6 ${disableZoomIn ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
-          <FontAwesomeIcon style={{ cursor: 'pointer'}} onClick={zoomOut} icon={faSearchMinus} className={`w-6 h-6 ${disableZoomOut ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
+          <FontAwesomeIcon onClick={ disableZoomOut ? null : zoomOut} icon={faSearchMinus} className={`w-6 h-6 ${disableZoomOut ? 'text-gray-400 cursor-default' : 'text-white cursor-pointer'}`}/>
         </div>  
       </div>
      
