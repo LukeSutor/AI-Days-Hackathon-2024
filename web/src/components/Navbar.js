@@ -178,8 +178,11 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
         )}
       </div>
       <div className="navbar-end">
+
         {/* Add any additional navbar items here */}
-      </div>
+        <h1 className="text-white text-3xl font-londrina ">ClimateLens</h1>
+        <img src="/alertsicon.png" alt="Logo" className="h-12 ml-2 mr-2" />
+        </div>
     </div>
   );
 };
