@@ -380,14 +380,14 @@ class DescriptionSummaryAPI(Resource):
 
         # Prepare the prompt for the Watson LLM
         prompt_template = """You are an emergency response assistant. Given the following incident details, provide a concise and informative summary of the incident's description. The summary should be tailored for people who want a quick update on the alert. The description should describe what is happening and where. Respond in plaintext format, do not include any additional text or formatting.
-Incident Event:
-{event}
-Incident Description:
-{description}
-Incident Status:
-{incident_status}
-Your Response:
-"""
+        Incident Event:
+        {event}
+        Incident Description:
+        {description}
+        Incident Status:
+        {incident_status}
+        Your Response:
+        """
 
         prompt = PromptTemplate.from_template(prompt_template)
 
