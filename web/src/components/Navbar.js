@@ -142,7 +142,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
         </div>
       </div>
       <div className="navbar-center relative">
-        <label className="input input-bordered flex items-center gap-2 border-2 border-black hover:border-blue-500 bg-white bg-opacity-90">
+        <label className="input input-bordered flex items-center gap-2 border-2 border-black bg-white bg-opacity-90">
           <input
             type="text"
             className="grow placeholder-black text-black bg-transparent"
@@ -156,7 +156,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="black"
-            className="h-4 w-4 opacity-90 cursor-pointer"
+            className="h-4 w-4 bg-white bg-opacity-90 cursor-pointer"
             aria-label="Search"
           >
             <path
