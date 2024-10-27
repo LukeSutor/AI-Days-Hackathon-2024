@@ -185,6 +185,8 @@ function App() {
 
     let targetAltitude = currentPosition.altitude
 
+    setDisableZoomOut(false);
+
     if (currentPosition.altitude <= 0.1) {
       setDisableZoomIn(true);
       return;
@@ -193,7 +195,6 @@ function App() {
       setDisableZoomIn(false);
     }
     
-    setDisableZoomOut(false);
 
     if (currentPosition.altitude - 0.1 <= 0.1) {
       targetAltitude = 0.1;
