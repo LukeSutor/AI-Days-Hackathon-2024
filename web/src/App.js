@@ -71,8 +71,17 @@ function App() {
     setSelectedItem(item);
   }
 
-  function handleCameraMove(e) {
-    console.log(e)
+  function handleFadeOut(scene) {
+    gsap.to(textMesh.scale, {
+      x: 0,
+      y: 0,
+      z: 0,
+      duration: 0.75,
+      onComplete: () => {
+        scene.remove(textMesh);
+        setTextMesh(null); 
+      }
+    });
   }
 
   function resetCounty() {
@@ -290,7 +299,7 @@ function App() {
   
       const loader = new FontLoader();
       loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
-        const textGeometry = new TextGeometry('Welcome, drag to move and click \non or search for a county to begin', {
+        const textGeometry = new TextGeometry('Click or search to begin', {
           font: font,
           size: 3,
           height: 1,
@@ -325,7 +334,7 @@ function App() {
 
 
       // Set the position of the group
-      textGroup.position.set(-150, 115, 0); // Adjust position as needed
+      textGroup.position.set(-150, 115, -1); // Adjust position as needed
 
       setTextMesh(textGroup);
       scene.add(textGroup);
@@ -345,16 +354,7 @@ function App() {
         if (textMesh && (isWithinRange(controls._lastPosition.x, targetPosition.x, 5) &&
                           isWithinRange(controls._lastPosition.y, targetPosition.y, 5) &&
                           isWithinRange(controls._lastPosition.z, targetPosition.z, 5))) {
-          gsap.to(textMesh.scale, {
-            x: 0,
-            y: 0,
-            z: 0,
-            duration: 1,
-            onComplete: () => {
-              scene.remove(textMesh);
-              setTextMesh(null); 
-            }
-          });
+          setTimeout(() => handleFadeOut(scene), 2000);
         }
       });
     }
@@ -454,6 +454,7 @@ function App() {
                 description={description}
                 safetyTips={safetyTips}
                 stepsToTake={stepsToTake}
+                stateMap={stateMap}
                 onClose={() => resetCounty()}
               />
             </motion.div>
@@ -479,6 +480,10 @@ function App() {
             polygonCapColor={({ properties: p }) => severityToColor(p.severity)}
             polygonSideColor={({ properties: p }) => severityToColor(p.severity)}
             polygonAltitude={0.001}
+            polygonLabel={({ properties: p }) => `<p className="text-black">
+            <b className="text-black">${p.NAME}, ${stateMap[p.STATEFP]}</b> <br />
+            Severity: <i>${p.severity}</i></p>
+            `}
             onPolygonClick={handleCountyClick}
 
             // stars in atmosphere?
