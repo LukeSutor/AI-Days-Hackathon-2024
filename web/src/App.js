@@ -632,7 +632,7 @@ function App() {
             // initial load
             ref={globeRef}
             onGlobeReady={globeReady}
-            maxZoom={0.1}
+            //maxZoom={0.1}
             camera={{
               lat: cameraPosition.lat,
               lng: cameraPosition.lng,

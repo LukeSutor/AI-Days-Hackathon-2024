@@ -97,7 +97,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
   ];
 
   return (
-    <div className="navbar bg-black bg-opacity-20 fixed top-0 left-0 w-full z-10 border-b border-white">
+    <div className="navbar bg-black bg-opacity-40 fixed top-0 left-0 w-full z-10 border-b border-white">
       <div className="navbar-start">
         <div className="flex space-x-5">
           {menus.map((menu, index) => (
@@ -180,7 +180,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
       <div className="navbar-end">
 
         {/* Add any additional navbar items here */}
-        <h1 className="text-white text-3xl font-londrina ">ClimateLens</h1>
+        <h1 className="text-white text-4xl font-londrina tracking-wide">ClimateLens</h1>
         <img src="/alertsicon.png" alt="Logo" className="h-12 ml-2 mr-2" />
         </div>
     </div>
