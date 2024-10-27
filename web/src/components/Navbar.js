@@ -105,7 +105,7 @@ const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
               ref={(el) => (dropdownRefs.current[index] = el)}
             >
               <button
-                className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 focus:outline-none"
+                className="text-white text-md px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 focus:outline-none"
                 onClick={() => toggleDropdown(index)}
                 aria-haspopup="true"
                 aria-expanded={openDropdown === index}

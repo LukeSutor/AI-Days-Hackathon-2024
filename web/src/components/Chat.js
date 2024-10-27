@@ -43,7 +43,7 @@ const Chat = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (userInput.trim() == '') {
+        if (userInput.trim() === '') {
             return; 
         }
         setChatHistory((prev) => [...prev, { text: userInput, sender: 'user' }]);
@@ -65,13 +65,13 @@ const Chat = () => {
                 prompt: message
             });
 
-            if (response.data.summary || response.data.error) {
-                const message = response.data.summary || response.data.error;
+            if (response.data.answer || response.data.error) {
+                const message = response.data.answer || response.data.error;
 
                 setChatHistory((prev) => [...prev, { text: message, sender: 'bot' }]);
             
                 
-            console.log('Response from API:', response.data.summary);
+            console.log('Response from API:', response.data.answer);
             }
         } catch (error) {
             const errorMessage = error.response ? error.response.data.error : 'An error occurred';
