@@ -155,7 +155,6 @@ function App() {
           altitude: currentPosition.altitude,
         });
 
-        console.log(currentPosition.lat, currentPosition.lng, currentPosition.altitude);
       },
     });
     
@@ -212,7 +211,6 @@ function App() {
           altitude: currentPosition.altitude,
         });
 
-        console.log(currentPosition.lat, currentPosition.lng, currentPosition.altitude);
       },
     });
     
@@ -220,6 +218,8 @@ function App() {
   
 
   const zoomToLocation = (targetLat, targetLng) => {
+    setDisableZoomIn(false);
+    setDisableZoomOut(false);
     const currentPosition = {
       lat: globeRef.current.pointOfView().lat,
       lng: globeRef.current.pointOfView().lng,
