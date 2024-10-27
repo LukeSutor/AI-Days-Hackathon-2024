@@ -191,92 +191,140 @@ class DataSummaryAPI(Resource):
 
 api.add_resource(DataSummaryAPI, '/summarize')
 
-class IncidentAPI(Resource):
+class IncidentTipsAPI(Resource):
     def post(self):
-        incident_data = request.get_json(force=True)
+        try:            
+            # Parse request data
+            incident_data = request.get_json(force=True)
+            if not incident_data:
+                return {"error": "No incident data provided."}, 400
 
-        if not incident_data:
-            return {"error": "No incident data provided."}, 400
+            # Extract data
+            properties = incident_data.get('properties', {})
+            event = properties.get('event', 'Unknown Event')
+            description = properties.get('description', 'No description provided.')
+            ends = properties.get('ends')
 
-        # Extract important information from the incident data
-        properties = incident_data.get('properties', {})
-        event = properties.get('event', 'Unknown Event')
-        description = properties.get('description', 'No description provided.')
-        ends = properties.get('ends')
-        
-        # Determine if the incident is ongoing
-        try:
-            if ends:
-                # Parse the 'ends' time, accounting for timezone offsets
-                ends_time = datetime.fromisoformat(ends.replace('Z', '+00:00'))
-                current_time = datetime.now(timezone.utc)
-                is_ongoing = current_time < ends_time
-            else:
-                is_ongoing = True  # If 'ends' is not provided, assume it's ongoing
-        except ValueError as e:
-            is_ongoing = True  # Assume ongoing if parsing fails
+            # Process timestamp
+            try:
+                if ends:
+                    ends_time = datetime.fromisoformat(ends.replace('Z', '+00:00'))
+                    current_time = datetime.now(timezone.utc)
+                    is_ongoing = current_time < ends_time
+                else:
+                    is_ongoing = True
+            except ValueError as e:
+                is_ongoing = True
 
-        if is_ongoing:
-            incident_status = "The incident is currently ongoing."
-        else:
-            incident_status = f"The incident ended on {ends}."
+            incident_status = "The incident is currently ongoing." if is_ongoing else f"The incident ended on {ends}."
 
-        # Prepare the prompt for the Watson LLM
-        prompt_template = """
-        You are an emergency response assistant. Given the following incident details, provide steps to take and safety tips for affected individuals. Respond in JSON format as shown below.
+            # Prepare and execute prompt
+            prompt_template = """You are an emergency response assistant. Given the following incident details, provide exactly three concise safety tips for affected individuals. These tips should be tailored for their specific location and the incident they are experiencing. Respond in plaintext format with each tip separated by a pipe (|) character. Do not include any additional text, formatting, numbering, or characters other than the tips and pipe separators.
+Incident Event:
+{event}
+Incident Description:
+{description}
+Incident Status:
+{incident_status}
+Example Response:
+Stay indoors and away from windows.|Secure loose outdoor objects.|Have a battery-powered radio for updates.
+Your Response:
+"""
+            prompt = PromptTemplate.from_template(prompt_template)
+            agent = prompt | model
 
-        Incident Event:
-        {event}
+            raw_response = agent.invoke({
+                "event": event,
+                "description": description,
+                "incident_status": incident_status
+            })
 
-        Incident Description:
-        {description}
+            # Process response
+            raw_response = raw_response.strip()
+            raw_response = raw_response.replace('\n', '')
+            raw_response = raw_response.replace('||', '|')
+            raw_response = raw_response.removeprefix("|")
+            raw_response = raw_response.removesuffix("|")
+            tips = raw_response.split("|")
+            
+            if len(tips) == 1:
+                tips = [tips.strip() + '.' for tips in tips[0].split('.') if tips.strip()]
 
-        Incident Status:
-        {incident_status}
+            response = {"safety_tips": tips}
+            return response, 200
 
-        Provide the response in the following JSON structure:
-        {{
-            "steps_to_take": ["Step 1", "Step 2", ...],
-            "safety_tips": ["Tip 1", "Tip 2", ...]
-        }}
+        except Exception as e:
+            return {"error": "An unexpected error occurred"}, 500
 
-        Please provide only the JSON object, without additional text or formatting.
-        """
+api.add_resource(IncidentTipsAPI, '/incident_tips')
 
-        prompt = PromptTemplate.from_template(prompt_template)
 
-        # Combine prompt and model
-        agent = prompt | model
+class IncidentStepsAPI(Resource):
+    def post(self):
+        try:            
+            # Parse request data
+            incident_data = request.get_json(force=True)
+            if not incident_data:
+                return {"error": "No incident data provided."}, 400
 
-        # Invoke the agent with the incident details
-        raw_response = agent.invoke({
-            "event": event,
-            "description": description,
-            "incident_status": incident_status
-        })
+            # Extract data
+            properties = incident_data.get('properties', {})
+            event = properties.get('event', 'Unknown Event')
+            description = properties.get('description', 'No description provided.')
+            ends = properties.get('ends')
 
-        
-        # Extract the JSON object from the raw response
-        code_block_pattern = r"```json\s*([\s\S]*?)\s*```"
-        code_block_match = re.search(code_block_pattern, raw_response)
-        if code_block_match:
-            json_str = code_block_match.group(1)
-        else:
-            # Try to find JSON object directly
-            json_match = re.search(r'\{[\s\S]*\}', raw_response)
-            if json_match:
-                json_str = json_match.group(0)
-            else:
-                return {"error": "No JSON object found in the model's response."}, 500
+            # Process timestamp
+            try:
+                if ends:
+                    ends_time = datetime.fromisoformat(ends.replace('Z', '+00:00'))
+                    current_time = datetime.now(timezone.utc)
+                    is_ongoing = current_time < ends_time
+                else:
+                    is_ongoing = True
+            except ValueError as e:
+                is_ongoing = True
 
-        # Parse the JSON string
-        try:
-            parsed_response = json.loads(json_str)
-            return parsed_response, 200
-        except json.JSONDecodeError as e:
-            return {"error": "Invalid JSON format in the model's response.", "details": str(e)}, 500
+            incident_status = "The incident is currently ongoing." if is_ongoing else f"The incident ended on {ends}."
 
-api.add_resource(IncidentAPI, '/incident_advice')
+            # Prepare and execute prompt
+            prompt_template = """You are an emergency response assistant. Given the following incident details, provide exactly three concise next steps for affected individuals to follow. These steps should be tailored for their specific location and the incident they are experiencing. Respond in plaintext format with each step separated by a pipe (|) character. Do not include any additional text, formatting, numbering, or characters other than the steps and pipe separators.
+Incident Event:
+{event}
+Incident Description:
+{description}
+Incident Status:
+{incident_status}
+Example Response:
+Evacuate the area immediately.|Follow instructions from local authorities.|Seek medical attention if needed.
+Your Response:
+"""
+            prompt = PromptTemplate.from_template(prompt_template)
+            agent = prompt | model
+
+            raw_response = agent.invoke({
+                "event": event,
+                "description": description,
+                "incident_status": incident_status
+            })
+
+            # Process response
+            raw_response = raw_response.strip()
+            raw_response = raw_response.replace('\n', '')
+            raw_response = raw_response.replace('||', '|')
+            raw_response = raw_response.removeprefix("|")
+            raw_response = raw_response.removesuffix("|")
+            next_steps = raw_response.split("|")
+
+            if len(next_steps) == 1:
+                next_steps = [step.strip() + '.' for step in next_steps[0].split('.') if step.strip()]
+
+            response = {"steps_to_take": next_steps}
+            return response, 200
+
+        except Exception as e:
+            return {"error": "An unexpected error occurred"}, 500
+
+api.add_resource(IncidentStepsAPI, '/incident_steps')
 
 class DescriptionSummaryAPI(Resource):
     def post(self):
@@ -314,25 +362,15 @@ class DescriptionSummaryAPI(Resource):
             return response, 200
 
         # Prepare the prompt for the Watson LLM
-        prompt_template = """
-        You are an emergency response assistant. Given the following incident details, provide a concise and informative summary of the incident's description. The summary should be tailored for people who want a quick update on the alert. Respond in JSON format as shown below.
-
-        Incident Event:
-        {event}
-
-        Incident Description:
-        {description}
-
-        Incident Status:
-        {incident_status}
-
-        Provide the response in the following JSON structure:
-        {{
-            "description": "..."
-        }}
-
-        The description should describe what is happening and where. Please provide only the JSON object, without additional text or formatting. The JSON object should only have 1 field called "description" that contains the summarized description.
-        """
+        prompt_template = """You are an emergency response assistant. Given the following incident details, provide a concise and informative summary of the incident's description. The summary should be tailored for people who want a quick update on the alert. The description should describe what is happening and where. Respond in plaintext format, do not include any additional text or formatting.
+Incident Event:
+{event}
+Incident Description:
+{description}
+Incident Status:
+{incident_status}
+Your Response:
+"""
 
         prompt = PromptTemplate.from_template(prompt_template)
 
@@ -346,26 +384,8 @@ class DescriptionSummaryAPI(Resource):
             "incident_status": incident_status
         })
 
-        
-        # Extract the JSON object from the raw response
-        code_block_pattern = r"```json\s*([\s\S]*?)\s*```"
-        code_block_match = re.search(code_block_pattern, raw_response)
-        if code_block_match:
-            json_str = code_block_match.group(1)
-        else:
-            # Try to find JSON object directly
-            json_match = re.search(r'\{[\s\S]*\}', raw_response)
-            if json_match:
-                json_str = json_match.group(0)
-            else:
-                return {"error": "No JSON object found in the model's response."}, 500
-
-        # Parse the JSON string
-        try:
-            parsed_response = json.loads(json_str)
-            return parsed_response, 200
-        except json.JSONDecodeError as e:
-            return {"error": "Invalid JSON format in the model's response.", "details": str(e)}, 500
+        # Return the summary
+        return {"description": raw_response}, 200
 
 api.add_resource(DescriptionSummaryAPI, '/summarize_description')
 

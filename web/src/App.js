@@ -123,17 +123,41 @@ function App() {
         console.error("Error in description summarizer API response", res)
       }
     })
+    .catch(err => {
+      console.error("Error fetching description summary", err);
+      setDescription("No description available.");
+    })
 
     // Call next steps and tips backend
-    axios.post('http://127.0.0.1:5000/incident_advice', {properties})
+    axios.post('http://127.0.0.1:5000/incident_tips', {properties})
     .then(res => {
+      console.log("tips", res);
       // Set values
       if(res.status == 200) {
         setSafetyTips(res.data.safety_tips);
+      } else {
+        console.error("Error in tips API response", res)
+      }
+    })
+    .catch(err => {
+      console.error("Error in tips API response", err);
+      setSafetyTips(["No tips available."]);
+    })
+
+    // Call next steps and tips backend
+    axios.post('http://127.0.0.1:5000/incident_steps', {properties})
+    .then(res => {
+      console.log("steps", res);
+      // Set values
+      if(res.status == 200) {
         setStepsToTake(res.data.steps_to_take);
       } else {
-        console.error("Error in incident API response", res)
+        console.error("Error in next steps API response", res)
       }
+    })
+    .catch(err => {
+      console.error("Error in next steps API response", err);
+      setStepsToTake(["No next steps available."]);
     })
   }
 
