@@ -12,9 +12,6 @@ const Chat = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
 
-    const formatResponse = (responseText) => {
-        return responseText.replace(/\n/g, '<br />');
-    };
 
     const handleOpen = () => {
         setIsOpen(true);
@@ -34,6 +31,7 @@ const Chat = () => {
 
     const handleInputChange = (e) => {
         setUserInput(e.target.value);
+
     };
 
     const handleKeyDown = (e) => {
@@ -45,19 +43,36 @@ const Chat = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if (userInput.trim() == '') {
+            return; 
+        }
         setChatHistory((prev) => [...prev, { text: userInput, sender: 'user' }]);
         
         setUserInput('');
 
         setLoading(true);
+
+
         try {
+
+
+            let message = userInput.trim();
+            if (message.charAt(message.length - 1) !== '?') {
+              message += '?'; // Append a question mark
+            }
+
             const response = await axios.post('http://127.0.0.1:5000/chat', {
-                prompt: userInput
+                prompt: message
             });
-            console.log('Response from API:', response.data); 
-            const formattedResponse = formatResponse(response.data)
-            console.log(formattedResponse);
-            setChatHistory((prev) => [...prev, { text: formattedResponse, sender: 'bot' }]);
+
+            if (response.data.summary || response.data.error) {
+                const message = response.data.summary || response.data.error;
+
+                setChatHistory((prev) => [...prev, { text: message, sender: 'bot' }]);
+            
+                
+            console.log('Response from API:', response.data.summary);
+            }
         } catch (error) {
             const errorMessage = error.response ? error.response.data.error : 'An error occurred';
             setChatHistory((prev) => [...prev, { text: errorMessage, sender: 'bot' }]);
@@ -100,8 +115,9 @@ const Chat = () => {
                         <div className="flex flex-col space-y-2">
                             {memoizedChatHistory.map((msg, index) => (
                                 <div key={index} className={`flex ${msg.sender === 'bot' ? 'justify-start' : 'justify-end'}`}>
-                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-200':'bg-blue-500 text-white'}`} dangerouslySetInnerHTML={{ __html: msg.text }}                                    
+                                    <div className={`p-2 rounded-lg ${msg.sender === 'bot' ?  'bg-gray-200':'bg-blue-500 text-white'}`}                                    
                                     >
+                                        {msg.text}
                                     </div>
                                 </div>
                             ))}

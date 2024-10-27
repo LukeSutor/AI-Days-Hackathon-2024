@@ -89,6 +89,11 @@ class ChatBotAPI(Resource):
             "    \"summary\": \"Your summary here.\"\n"
             "}\n"
             "Please provide only the JSON object, and do not include any additional text, code blocks, or any escape characters."
+
+
+            """
+            User: How do I prepare for a hurricane?
+            Assistant: "summary": "To prepare for a hurricane, make sure you have a plan, stock up on supplies, and stay informed about weather updates. Consider boarding up windows and securing outdoor furniture and decorations. Keep a battery-powered radio and flashlight on hand, and have a first aid kit and emergency supplies, such as water, non-perishable food, and a battery-powered charger for your phone. Stay indoors and away from windows during the storm, and follow evacuation orders if necessary."""
         )
 
         # Combine context with the user prompt
@@ -115,6 +120,7 @@ class ChatBotAPI(Resource):
         # Extract JSON object from the cleaned response
         json_regex = re.compile(r'\{.*\}', re.DOTALL)
         match = json_regex.search(cleaned_response)
+        print(cleaned_response)
         if match:
             json_string = match.group(0)
             try:
