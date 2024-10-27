@@ -10,7 +10,6 @@ import { FontLoader, TextGeometry } from 'three-stdlib';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import Legend from "./components/Legend";
-import Zoom from "./components/Zoom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 
