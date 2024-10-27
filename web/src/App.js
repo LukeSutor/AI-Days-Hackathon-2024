@@ -269,7 +269,11 @@ function App() {
   return (
     <div className="relative h-screen w-screen bg-gray-100">
       {/* Navbar */}
-      <Navbar onMenuItemSelect={handleMenuItemSelect} />
+      <Navbar
+        onMenuItemSelect={handleMenuItemSelect}
+        counties={displayedCounties.features}
+        onCountySelect={handleCountyClick}
+      />
 
       {/* Cards with Animations */}
       <AnimatePresence>

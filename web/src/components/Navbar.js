@@ -1,22 +1,49 @@
 // Navbar.js
 import React, { useState, useEffect, useRef } from 'react';
 
-const Navbar = ({ onMenuItemSelect }) => {
+const Navbar = ({ onMenuItemSelect, counties, onCountySelect }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
   const [openDropdown, setOpenDropdown] = useState(null);
   const dropdownRefs = useRef({});
-
-  const handleSearch = async () => {
-    if (searchTerm.trim() === '') return;
-
-    try {
-      // Implement search functionality here
-      console.log(`Search for: ${searchTerm}`);
-      setSearchTerm('');
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
+  const stateMap = {
+    "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO",
+    "09": "CT", "10": "DE", "11": "DC", "12": "FL", "13": "GA", "15": "HI",
+    "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY",
+    "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN",
+    "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH",
+    "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH",
+    "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD",
+    "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA",
+    "54": "WV", "55": "WI", "56": "WY", "72": "PR"
   };
+  const handleSearchTermChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  useEffect(() => {
+    const delayDebounceFn = setTimeout(() => {
+      if (searchTerm.length > 0) {
+        const lowerCaseSearchTerm = searchTerm.toLowerCase();
+        const results = counties.filter((county) => {
+          const countyName = county.properties.NAME
+            ? county.properties.NAME.toLowerCase()
+            : '';
+          const stateFP = county.properties.STATEFP;
+          const stateAbbr = stateMap[stateFP] ? stateMap[stateFP].toLowerCase() : '';
+          return (
+            countyName.includes(lowerCaseSearchTerm) ||
+            stateAbbr.includes(lowerCaseSearchTerm)
+          );
+        });
+        setSearchResults(results.slice(0, 10)); // Limit to top 10 results
+      } else {
+        setSearchResults([]);
+      }
+    }, 300); // Delay of 300ms
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [searchTerm, counties]);
 
   const toggleDropdown = (menu) => {
     setOpenDropdown((prev) => (prev === menu ? null : menu));
@@ -114,24 +141,22 @@ const Navbar = ({ onMenuItemSelect }) => {
           ))}
         </div>
       </div>
-      <div className="navbar-center">
+      <div className="navbar-center relative">
         <label className="input input-bordered flex items-center gap-2 focus:border-4 focus:border-blue-500">
           <input
             type="text"
             className="grow placeholder-gray-500 text-black bg-transparent"
             placeholder="Search County"
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={handleSearchTermChange}
             onFocus={(e) => (e.target.placeholder = '')}
             onBlur={(e) => (e.target.placeholder = 'Search County')}
-            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="black"
             className="h-4 w-4 opacity-70 cursor-pointer"
-            onClick={handleSearch}
             aria-label="Search"
           >
             <path
@@ -141,6 +166,26 @@ const Navbar = ({ onMenuItemSelect }) => {
             />
           </svg>
         </label>
+        {/* Search Suggestions Dropdown */}
+        {searchResults.length > 0 && (
+          <div className="absolute top-full mt-2 w-full bg-white border border-gray-300 rounded-md shadow-lg z-10">
+            <ul className="max-h-60 overflow-y-auto">
+              {searchResults.map((county, index) => (
+                <li
+                  key={index}
+                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={() => {
+                    onCountySelect(county);
+                    setSearchTerm('');
+                    setSearchResults([]);
+                  }}
+                >
+                  {county.properties.NAME}, {stateMap[county.properties.STATEFP]}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
       <div className="navbar-end">
         {/* Add any additional navbar items here */}
