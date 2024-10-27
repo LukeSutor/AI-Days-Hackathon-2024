@@ -8,7 +8,6 @@ Welcome to **ClimateLens** - your AI-powered weather sentinel. With ClimateLens,
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
