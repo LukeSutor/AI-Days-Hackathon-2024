@@ -11,7 +11,7 @@ const legendItems = [
 
 const Legend = () => {
   return (
-    <div className="bottom-4 left-4 m-5 border-2 border-white bg-black bg-opacity-50 p-8 text-white rounded shadow-lg flex flex-col space-y-2 z-50">
+    <div className=" m-1 border-2 border-white bg-black bg-opacity-50 p-8 text-white rounded shadow-lg flex flex-col space-y-2 z-50">
       <h1 className="text-xl font-semibold mb-2">Severity</h1>
       <ul>
         {legendItems.map((item, index) => (
