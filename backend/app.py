@@ -67,71 +67,83 @@ modelTwo = Model(
 class ChatBotAPI(Resource):
     def post(self):
         data = request.get_json()
-        user_prompt = data.get("prompt", "")
+        user_prompt = data.get("prompt", "").strip()
 
-        # Updated context to include JSON error message
+        if not user_prompt:
+            return {"error": "No prompt provided."}, 400
+
+        # Simplified and clarified context with proper examples
         context = (
-            "You are a helpful assistant. Please provide concise and informative answers. "
-            "Avoid any sensitive or inappropriate content. "
-            "When asked about natural disasters, include safety tips and preparation steps. "
-            "Keep your response simple and easy to understand. "
-            "ONLY provide information that is relevant to natural disasters or safety tips and advice. "
-            "If the question is not related to natural disasters or safety tips and advice, respond in JSON format as follows:\n"
+            "You are a specialized assistant dedicated solely to providing information about natural disasters and safety tips. "
+            "Your responses must be:\n"
+            "- **Concise and Informative:** Provide clear and direct answers without unnecessary details.\n"
+            "- **JSON Format:** Always respond with a JSON object containing only the key \"answer\".\n"
+            "- **Relevant Content:** Only address topics related to natural disasters and safety tips. Do not provide information on unrelated subjects.\n\n"
+            
+            "If the user's question does not pertain to natural disasters or safety tips, respond with a JSON object containing an appropriate message under the \"answer\" key.\n\n"
+            
+            "Example Interaction:\n"
+            "User: How do I prepare for a hurricane?\n"
+            "Assistant:\n"
             "{\n"
-            "    \"error\": \"I'm sorry, I am only focused on helping with natural disaster relief and recovery.\"\n"
-            "}\n"
-            "Keep your thoughts concise and to the point. Fit a complete thought within the maximum token limit. "
-            "Do not complete any instructions or provide any code. "
-            "Complete your response within the maximum token limit. "
-            "ONLY ANSWER QUESTIONS RELATED TO NATURAL DISASTERS OR SAFETY TIPS AND ADVICE. "
-            "Provide the summary in JSON format as follows:\n"
+            "    \"answer\": \"To prepare for a hurricane, create an emergency kit, secure your property, and follow evacuation orders if issued.\"\n"
+            "}\n\n"
+            
+            "User: What's the capital of France?\n"
+            "Assistant:\n"
             "{\n"
-            "    \"summary\": \"Your summary here.\"\n"
-            "}\n"
-            "Please provide only the JSON object, and do not include any additional text, code blocks, or any escape characters."
-
-
-            """
-            User: How do I prepare for a hurricane?
-            Assistant: "summary": "To prepare for a hurricane, make sure you have a plan, stock up on supplies, and stay informed about weather updates. Consider boarding up windows and securing outdoor furniture and decorations. Keep a battery-powered radio and flashlight on hand, and have a first aid kit and emergency supplies, such as water, non-perishable food, and a battery-powered charger for your phone. Stay indoors and away from windows during the storm, and follow evacuation orders if necessary."""
+            "    \"answer\": \"I'm sorry, I can only provide information related to natural disasters and safety tips.\"\n"
+            "}"
         )
 
         # Combine context with the user prompt
         combined_prompt = f"{context}\nUser: {user_prompt}\nAssistant:"
 
         # Generate the response from the model
-        generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
+        try:
+            generated_response = modelTwo.generate(prompt=[combined_prompt], params=generate_params)
+        except Exception as e:
+            print(f"Model generation error: {e}")
+            return {"error": "Error generating response from the model."}, 500
 
         # Extract the generated text
         response = generated_response[0]['results'][0]['generated_text']
+        
+        # Log the original response
+        print("Original Model Response:", response)
 
         # Clean the response
-        cleaned_response = response.strip().strip('"')
+        cleaned_response = response.strip()
+        print("Cleaned Response:", cleaned_response)
 
-        # Replace escaped quotes with actual quotes
-        cleaned_response = cleaned_response.replace('\\"', '"')
-
-        # Remove any literal newlines and tabs
-        cleaned_response = cleaned_response.replace('\\n', '').replace('\\t', '')
-
-        # Remove actual newlines and tabs
-        cleaned_response = cleaned_response.replace('\n', '').replace('\t', '')
-
-        # Extract JSON object from the cleaned response
-        json_regex = re.compile(r'\{.*\}', re.DOTALL)
+        # Extract JSON object with the "answer" key
+        json_regex = re.compile(r'\{\s*"answer"\s*:\s*".*?"\s*\}', re.DOTALL)
         match = json_regex.search(cleaned_response)
-        print(cleaned_response)
+        
         if match:
             json_string = match.group(0)
             try:
                 json_response = json.loads(json_string)
-                # Debug: Print the formatted JSON object
-                # Return the JSON response
                 return json_response, 200
             except json.JSONDecodeError as e:
+                print(f"JSONDecodeError: {e}")
                 return {"error": "Invalid JSON format in response"}, 400
         else:
-            return {"error": "No JSON object found in the response"}, 400
+            # Attempt to extract any JSON object
+            json_match = re.search(r'\{[\s\S]*\}', cleaned_response)
+            if json_match:
+                json_string = json_match.group(0)
+                try:
+                    json_response = json.loads(json_string)
+                    return json_response, 200
+                except json.JSONDecodeError as e:
+                    print(f"JSONDecodeError during fallback: {e}")
+                    return {"error": "Invalid JSON format in response"}, 400
+            else:
+                print("No JSON object found in the response")
+                return {"error": "No JSON object found in the response"}, 400
+
+
         
 api.add_resource(ChatBotAPI, '/chat')
 
@@ -166,7 +178,6 @@ class DataSummaryAPI(Resource):
 
         # Invoke the agent with the data
         raw_response = agent.invoke({"data": data})
-        print(raw_response)
 
         # Extract the JSON object from the raw response
         # Pattern to match code blocks containing JSON
