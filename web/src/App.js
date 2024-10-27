@@ -277,6 +277,7 @@ function App() {
     .then(res => {
       // Set values
       if(res.status == 200) {
+        console.log(res.data.safety_tips)
         setSafetyTips(res.data.safety_tips);
       } else {
         console.error("Error in tips API response", res)
