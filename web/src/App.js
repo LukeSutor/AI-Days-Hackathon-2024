@@ -6,7 +6,8 @@ import Card from './components/Card';
 import CountyCard from "./components/CountyCard";
 import Navbar from "./components/Navbar";
 import { motion, AnimatePresence } from 'framer-motion';
-import * as THREE from "three";
+import { FontLoader, TextGeometry } from 'three-stdlib';
+import * as THREE from 'three';
 import { gsap } from 'gsap';
 import Legend from "./components/Legend";
 
@@ -52,6 +53,7 @@ const stateCoordinates = {
 
 function App() {
   const globeRef = useRef(null);
+  const textAddedRef = useRef(false); // Ref to track if text has been added
 
   const [displayedCounties, setDisplayedCounties] = useState({ features: []});
   const [countyToAlerts, setCountyToAlerts] = useState({});
@@ -61,11 +63,16 @@ function App() {
   const [stepsToTake, setStepsToTake] = useState([])
   const [description, setDescription] = useState("")
   const [cameraPosition, setCameraPosition] = useState({ lat: 30, lng: -90, altitude: 1.8 });
+  const [textMesh, setTextMesh] = useState(null);
 
 
   function handleMenuItemSelect(item) {
     resetCounty();
     setSelectedItem(item);
+  }
+
+  function handleCameraMove(e) {
+    console.log(e)
   }
 
   function resetCounty() {
@@ -132,7 +139,6 @@ function App() {
     // Call next steps and tips backend
     axios.post('http://127.0.0.1:5000/incident_tips', {properties})
     .then(res => {
-      console.log("tips", res);
       // Set values
       if(res.status == 200) {
         setSafetyTips(res.data.safety_tips);
@@ -148,7 +154,6 @@ function App() {
     // Call next steps and tips backend
     axios.post('http://127.0.0.1:5000/incident_steps', {properties})
     .then(res => {
-      console.log("steps", res);
       // Set values
       if(res.status == 200) {
         setStepsToTake(res.data.steps_to_take);
@@ -226,7 +231,7 @@ function App() {
 
       setCountyToAlerts(countyToZonesMap)
 
-      console.log("County to Zones Map:", countyToZonesMap);
+      // console.log("County to Zones Map:", countyToZonesMap);
   
       // console.log("County Set:", countySet);
   
@@ -272,16 +277,90 @@ function App() {
   }
 
   useEffect(() => {
-    if (globeRef.current) {
+    if (globeRef.current && !textAddedRef.current) {
+      textAddedRef.current = true;
+
+      console.log(textAddedRef)
+      console.log("HERE");
       const scene = globeRef.current.scene();
 
       const sunlight = new THREE.DirectionalLight(0xffffff, 3);
       sunlight.position.set(50, 50, 50);
       scene.add(sunlight);
+  
+      const loader = new FontLoader();
+      loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
+        const textGeometry = new TextGeometry('Welcome, drag to move and click \non or search for a county to begin', {
+          font: font,
+          size: 3,
+          height: 1,
+          curveSegments: 12,
+          bevelEnabled: true,
+          bevelThickness: 0.05,
+          bevelSize: 0.05,
+          bevelOffset: 0,
+          bevelSegments: 5
+        });
+
+        const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+        const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+        
+      // Compute the bounding box of the text geometry
+      textGeometry.computeBoundingBox();
+      const boundingBox = textGeometry.boundingBox;
+      const centerX = (boundingBox.max.x - boundingBox.min.x) / 2;
+      const centerY = (boundingBox.max.y - boundingBox.min.y) / 2;
+      const centerZ = (boundingBox.max.z - boundingBox.min.z) / 2;
+
+      // Create a group and add the text mesh to the group
+      const textGroup = new THREE.Group();
+      textGroup.add(textMesh);
+
+      // Adjust the position of the text mesh within the group to center it
+      textMesh.position.set(-centerX, -centerY, -centerZ);
+
+      // Rotate the group instead of the text mesh
+      textGroup.rotation.y = -Math.PI / 2;
+      // textGroup.rotation.x = Math.PI / 1.1;
+
+
+      // Set the position of the group
+      textGroup.position.set(-150, 115, 0); // Adjust position as needed
+
+      setTextMesh(textGroup);
+      scene.add(textGroup);
+      });
 
       getActiveAlerts();
     }
   }, []);
+
+  useEffect(() => {
+    if(globeRef.current) {
+      const scene = globeRef.current.scene();
+      const controls = globeRef.current.controls();
+      controls.addEventListener('change', () => {
+        console.log(controls._lastPosition)
+
+        const isWithinRange = (value, target, range) => Math.abs(value - target) <= range;
+        const targetPosition = { x: -242.34768052722947, y: 140.22991192613964, z: -1.781444430520931 };
+        if (textMesh && (isWithinRange(controls._lastPosition.x, targetPosition.x, 5) &&
+                          isWithinRange(controls._lastPosition.y, targetPosition.y, 5) &&
+                          isWithinRange(controls._lastPosition.z, targetPosition.z, 5))) {
+          gsap.to(textMesh.scale, {
+            x: 0,
+            y: 0,
+            z: 0,
+            duration: 1,
+            onComplete: () => {
+              scene.remove(textMesh);
+              setTextMesh(null); 
+            }
+          });
+        }
+      });
+    }
+  }, [textMesh])
 
   const globeReady = () => {
     if (globeRef.current) {
