@@ -253,8 +253,6 @@ function App() {
           lng: currentPosition.lng,
           altitude: currentPosition.altitude,
         });
-
-        console.log(currentPosition.lat, currentPosition.lng);
       },
     });
   };
@@ -277,7 +275,6 @@ function App() {
     axios.post('http://127.0.0.1:5000/summarize_description', {properties})
     .then(res => {
       if(res.status == 200) {
-        console.log(res);
         setDescription(res.data.description);
       } else {
         console.error("Error in description summarizer API response", res)
@@ -293,7 +290,6 @@ function App() {
     .then(res => {
       // Set values
       if(res.status == 200) {
-        console.log(res.data.safety_tips)
         setSafetyTips(res.data.safety_tips);
       } else {
         console.error("Error in tips API response", res)
@@ -383,10 +379,6 @@ function App() {
       });
 
       setCountyToAlerts(countyToZonesMap)
-
-      // console.log("County to Zones Map:", countyToZonesMap);
-  
-      // console.log("County Set:", countySet);
   
       // Fetch all zones
       const countiesResponse = await fetch(`./counties.geojson?timestamp=${new Date().getTime()}`);
@@ -432,9 +424,6 @@ function App() {
   useEffect(() => {
     if (globeRef.current && !textAddedRef.current) {
       textAddedRef.current = true;
-
-      console.log(textAddedRef)
-      console.log("HERE");
       const scene = globeRef.current.scene();
 
       const sunlight = new THREE.DirectionalLight(0xffffff, 3);
